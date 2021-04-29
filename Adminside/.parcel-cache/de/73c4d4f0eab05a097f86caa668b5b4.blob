@@ -1,0 +1,661 @@
+var define;
+!(function (e, n) {
+  "object" == typeof exports && "undefined" != typeof module ? n(exports, require("react"), require("prop-types")) : "function" == typeof define && define.amd ? define(["exports", "react", "prop-types"], n) : n((e = e || self).reactDropzone = {}, e.React, e.PropTypes);
+})(this, function (e, oe, n) {
+  "use strict";
+  var u = ("default" in oe) ? oe.default : oe;
+  function ie(e, n, t) {
+    return ((n in e) ? Object.defineProperty(e, n, {
+      value: t,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }) : e[n] = t, e);
+  }
+  function r(n, e) {
+    var t = Object.keys(n);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(n);
+      (e && (r = r.filter(function (e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable;
+      })), t.push.apply(t, r));
+    }
+    return t;
+  }
+  function ue(n) {
+    for (var e = 1; e < arguments.length; e++) {
+      var t = null != arguments[e] ? arguments[e] : {};
+      e % 2 ? r(t, !0).forEach(function (e) {
+        ie(n, e, t[e]);
+      }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : r(t).forEach(function (e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e));
+      });
+    }
+    return n;
+  }
+  function ae(e, n) {
+    if (null == e) return {};
+    var t, r, o = (function (e, n) {
+      if (null == e) return {};
+      var t, r, o = {}, i = Object.keys(e);
+      for (r = 0; r < i.length; r++) (t = i[r], 0 <= n.indexOf(t) || (o[t] = e[t]));
+      return o;
+    })(e, n);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) (t = i[r], 0 <= n.indexOf(t) || Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t]));
+    }
+    return o;
+  }
+  function ce(e, n) {
+    return (function (e) {
+      if (Array.isArray(e)) return e;
+    })(e) || (function (e, n) {
+      if (!((Symbol.iterator in Object(e)) || "[object Arguments]" === Object.prototype.toString.call(e))) return;
+      var t = [], r = !0, o = !1, i = void 0;
+      try {
+        for (var u, a = e[Symbol.iterator](); !(r = (u = a.next()).done) && (t.push(u.value), !n || t.length !== n); r = !0) ;
+      } catch (e) {
+        (o = !0, i = e);
+      } finally {
+        try {
+          r || null == a.return || a.return();
+        } finally {
+          if (o) throw i;
+        }
+      }
+      return t;
+    })(e, n) || (function () {
+      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+    })();
+  }
+  function le(e) {
+    return (function (e) {
+      if (Array.isArray(e)) {
+        for (var n = 0, t = new Array(e.length); n < e.length; n++) t[n] = e[n];
+        return t;
+      }
+    })(e) || (function (e) {
+      if ((Symbol.iterator in Object(e)) || "[object Arguments]" === Object.prototype.toString.call(e)) return Array.from(e);
+    })(e) || (function () {
+      throw new TypeError("Invalid attempt to spread non-iterable instance");
+    })();
+  }
+  function l(i, u, a, c) {
+    return new (a = a || Promise)(function (e, n) {
+      function t(e) {
+        try {
+          o(c.next(e));
+        } catch (e) {
+          n(e);
+        }
+      }
+      function r(e) {
+        try {
+          o(c.throw(e));
+        } catch (e) {
+          n(e);
+        }
+      }
+      function o(n) {
+        n.done ? e(n.value) : new a(function (e) {
+          e(n.value);
+        }).then(t, r);
+      }
+      o((c = c.apply(i, u || [])).next());
+    });
+  }
+  function f(t, r) {
+    var o, i, u, e, a = {
+      label: 0,
+      sent: function () {
+        if (1 & u[0]) throw u[1];
+        return u[1];
+      },
+      trys: [],
+      ops: []
+    };
+    return (e = {
+      next: n(0),
+      throw: n(1),
+      return: n(2)
+    }, "function" == typeof Symbol && (e[Symbol.iterator] = function () {
+      return this;
+    }), e);
+    function n(n) {
+      return function (e) {
+        return (function (n) {
+          if (o) throw new TypeError("Generator is already executing.");
+          for (; a; ) try {
+            if ((o = 1, i && (u = 2 & n[0] ? i.return : n[0] ? i.throw || ((u = i.return) && u.call(i), 0) : i.next) && !(u = u.call(i, n[1])).done)) return u;
+            switch ((i = 0, u && (n = [2 & n[0], u.value]), n[0])) {
+              case 0:
+              case 1:
+                u = n;
+                break;
+              case 4:
+                return (a.label++, {
+                  value: n[1],
+                  done: !1
+                });
+              case 5:
+                (a.label++, i = n[1], n = [0]);
+                continue;
+              case 7:
+                (n = a.ops.pop(), a.trys.pop());
+                continue;
+              default:
+                if (!(u = 0 < (u = a.trys).length && u[u.length - 1]) && (6 === n[0] || 2 === n[0])) {
+                  a = 0;
+                  continue;
+                }
+                if (3 === n[0] && (!u || n[1] > u[0] && n[1] < u[3])) {
+                  a.label = n[1];
+                  break;
+                }
+                if (6 === n[0] && a.label < u[1]) {
+                  (a.label = u[1], u = n);
+                  break;
+                }
+                if (u && a.label < u[2]) {
+                  (a.label = u[2], a.ops.push(n));
+                  break;
+                }
+                (u[2] && a.ops.pop(), a.trys.pop());
+                continue;
+            }
+            n = r.call(t, a);
+          } catch (e) {
+            (n = [6, e], i = 0);
+          } finally {
+            o = u = 0;
+          }
+          if (5 & n[0]) throw n[1];
+          return {
+            value: n[0] ? n[1] : void 0,
+            done: !0
+          };
+        })([n, e]);
+      };
+    }
+  }
+  function t(e, n) {
+    var t = "function" == typeof Symbol && e[Symbol.iterator];
+    if (!t) return e;
+    var r, o, i = t.call(e), u = [];
+    try {
+      for (; (void 0 === n || 0 < n--) && !(r = i.next()).done; ) u.push(r.value);
+    } catch (e) {
+      o = {
+        error: e
+      };
+    } finally {
+      try {
+        r && !r.done && (t = i.return) && t.call(i);
+      } finally {
+        if (o) throw o.error;
+      }
+    }
+    return u;
+  }
+  function o() {
+    for (var e = [], n = 0; n < arguments.length; n++) e = e.concat(t(arguments[n]));
+    return e;
+  }
+  n = n && n.hasOwnProperty("default") ? n.default : n;
+  var i = new Map([["avi", "video/avi"], ["gif", "image/gif"], ["ico", "image/x-icon"], ["jpeg", "image/jpeg"], ["jpg", "image/jpeg"], ["mkv", "video/x-matroska"], ["mov", "video/quicktime"], ["mp4", "video/mp4"], ["pdf", "application/pdf"], ["png", "image/png"], ["zip", "application/zip"], ["doc", "application/msword"], ["docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"]]);
+  function a(e, n) {
+    var t = (function (e) {
+      var n = e.name;
+      if (n && -1 !== n.lastIndexOf(".") && !e.type) {
+        var t = n.split(".").pop().toLowerCase(), r = i.get(t);
+        r && Object.defineProperty(e, "type", {
+          value: r,
+          writable: !1,
+          configurable: !1,
+          enumerable: !0
+        });
+      }
+      return e;
+    })(e);
+    if ("string" != typeof t.path) {
+      var r = e.webkitRelativePath;
+      Object.defineProperty(t, "path", {
+        value: "string" == typeof n ? n : "string" == typeof r && 0 < r.length ? r : e.name,
+        writable: !1,
+        configurable: !1,
+        enumerable: !0
+      });
+    }
+    return t;
+  }
+  var c = [".DS_Store", "Thumbs.db"];
+  function fe(n) {
+    return l(this, void 0, void 0, function () {
+      return f(this, function (e) {
+        return [2, (function (e) {
+          return !!e.dataTransfer;
+        })(n) && n.dataTransfer ? (function (t, r) {
+          return l(this, void 0, void 0, function () {
+            var n;
+            return f(this, function (e) {
+              switch (e.label) {
+                case 0:
+                  return t.items ? (n = p(t.items).filter(function (e) {
+                    return "file" === e.kind;
+                  }), "drop" !== r ? [2, n] : [4, Promise.all(n.map(d))]) : [3, 2];
+                case 1:
+                  return [2, s((function t(e) {
+                    return e.reduce(function (e, n) {
+                      return o(e, Array.isArray(n) ? t(n) : [n]);
+                    }, []);
+                  })(e.sent()))];
+                case 2:
+                  return [2, s(p(t.files).map(function (e) {
+                    return a(e);
+                  }))];
+              }
+            });
+          });
+        })(n.dataTransfer, n.type) : (function (e) {
+          return ((function (e) {
+            return null !== e;
+          })(e.target) && e.target.files ? p(e.target.files) : []).map(function (e) {
+            return a(e);
+          });
+        })(n)];
+      });
+    });
+  }
+  function s(e) {
+    return e.filter(function (e) {
+      return -1 === c.indexOf(e.name);
+    });
+  }
+  function p(e) {
+    for (var n = [], t = 0; t < e.length; t++) {
+      var r = e[t];
+      n.push(r);
+    }
+    return n;
+  }
+  function d(e) {
+    if ("function" != typeof e.webkitGetAsEntry) return v(e);
+    var n = e.webkitGetAsEntry();
+    return n && n.isDirectory ? y(n) : v(e);
+  }
+  function v(e) {
+    var n = e.getAsFile();
+    if (!n) return Promise.reject(e + " is not a File");
+    var t = a(n);
+    return Promise.resolve(t);
+  }
+  function g(n) {
+    return l(this, void 0, void 0, function () {
+      return f(this, function (e) {
+        return [2, n.isDirectory ? y(n) : (function (r) {
+          return l(this, void 0, void 0, function () {
+            return f(this, function (e) {
+              return [2, new Promise(function (t, n) {
+                r.file(function (e) {
+                  var n = a(e, r.fullPath);
+                  t(n);
+                }, function (e) {
+                  n(e);
+                });
+              })];
+            });
+          });
+        })(n)];
+      });
+    });
+  }
+  function y(e) {
+    var n = e.createReader();
+    return new Promise(function (u, a) {
+      var c = [];
+      !(function i() {
+        var e = this;
+        n.readEntries(function (o) {
+          return l(e, void 0, void 0, function () {
+            var n, t, r;
+            return f(this, function (e) {
+              switch (e.label) {
+                case 0:
+                  if (o.length) return [3, 5];
+                  e.label = 1;
+                case 1:
+                  return (e.trys.push([1, 3, , 4]), [4, Promise.all(c)]);
+                case 2:
+                  return (n = e.sent(), u(n), [3, 4]);
+                case 3:
+                  return (t = e.sent(), a(t), [3, 4]);
+                case 4:
+                  return [3, 6];
+                case 5:
+                  (r = Promise.all(o.map(g)), c.push(r), i(), e.label = 6);
+                case 6:
+                  return [2];
+              }
+            });
+          });
+        }, function (e) {
+          a(e);
+        });
+      })();
+    });
+  }
+  var b, m, h = ((function (e) {
+    function r(e) {
+      if (o[e]) return o[e].exports;
+      var n = o[e] = {
+        i: e,
+        l: !1,
+        exports: {}
+      };
+      return (t[e].call(n.exports, n, n.exports, r), n.l = !0, n.exports);
+    }
+    var t, o;
+    e.exports = (o = {}, r.m = t = [function (e, n, t) {
+      (n.__esModule = !0, n.default = function (e, n) {
+        if (e && n) {
+          var t = Array.isArray(n) ? n : n.split(","), r = e.name || "", o = e.type || "", i = o.replace(/\/.*$/, "");
+          return t.some(function (e) {
+            var n = e.trim();
+            return "." === n.charAt(0) ? r.toLowerCase().endsWith(n.toLowerCase()) : n.endsWith("/*") ? i === n.replace(/\/.*$/, "") : o === n;
+          });
+        }
+        return !0;
+      });
+    }], r.c = o, r.d = function (e, n, t) {
+      r.o(e, n) || Object.defineProperty(e, n, {
+        configurable: !1,
+        enumerable: !0,
+        get: t
+      });
+    }, r.n = function (e) {
+      var n = e && e.__esModule ? function () {
+        return e.default;
+      } : function () {
+        return e;
+      };
+      return (r.d(n, "a", n), n);
+    }, r.o = function (e, n) {
+      return Object.prototype.hasOwnProperty.call(e, n);
+    }, r.p = "", r(r.s = 0));
+  })(b = {
+    exports: {}
+  }, b.exports), b.exports), D = (m = h) && m.__esModule && Object.prototype.hasOwnProperty.call(m, "default") ? m.default : m;
+  function se(e, n) {
+    return "application/x-moz-file" === e.type || D(e, n);
+  }
+  function pe(e, n, t) {
+    if (w(e.size)) {
+      if (w(n) && w(t)) return e.size >= n && e.size <= t;
+      if (w(n)) return e.size >= n;
+      if (w(t)) return e.size <= t;
+    }
+    return !0;
+  }
+  function w(e) {
+    return null != e;
+  }
+  function de(e) {
+    return "function" == typeof e.isPropagationStopped ? e.isPropagationStopped() : void 0 !== e.cancelBubble && e.cancelBubble;
+  }
+  function ve(e) {
+    return e.dataTransfer ? Array.prototype.some.call(e.dataTransfer.types, function (e) {
+      return "Files" === e || "application/x-moz-file" === e;
+    }) : !!e.target && !!e.target.files;
+  }
+  function ge(e) {
+    e.preventDefault();
+  }
+  function ye(e) {
+    var n = 0 < arguments.length && void 0 !== e ? e : window.navigator.userAgent;
+    return (function (e) {
+      return -1 !== e.indexOf("MSIE") || -1 !== e.indexOf("Trident/");
+    })(n) || (function (e) {
+      return -1 !== e.indexOf("Edge/");
+    })(n);
+  }
+  function be() {
+    for (var e = arguments.length, o = new Array(e), n = 0; n < e; n++) o[n] = arguments[n];
+    return function (n) {
+      for (var e = arguments.length, t = new Array(1 < e ? e - 1 : 0), r = 1; r < e; r++) t[r - 1] = arguments[r];
+      return o.some(function (e) {
+        return (!de(n) && e && e.apply(void 0, [n].concat(t)), de(n));
+      });
+    };
+  }
+  var O = oe.forwardRef(function (e, n) {
+    var t = e.children, r = F(ae(e, ["children"])), o = r.open, i = ae(r, ["open"]);
+    return (oe.useImperativeHandle(n, function () {
+      return {
+        open: o
+      };
+    }, [o]), u.createElement(oe.Fragment, null, t(ue({}, i, {
+      open: o
+    }))));
+  });
+  O.displayName = "Dropzone";
+  var me = {
+    isFocused: !(O.propTypes = {
+      children: n.func,
+      accept: n.oneOfType([n.string, n.arrayOf(n.string)]),
+      multiple: n.bool,
+      preventDropOnDocument: n.bool,
+      noClick: n.bool,
+      noKeyboard: n.bool,
+      noDrag: n.bool,
+      noDragEventsBubbling: n.bool,
+      minSize: n.number,
+      maxSize: n.number,
+      disabled: n.bool,
+      getFilesFromEvent: n.func,
+      onFileDialogCancel: n.func,
+      onDragEnter: n.func,
+      onDragLeave: n.func,
+      onDragOver: n.func,
+      onDrop: n.func,
+      onDropAccepted: n.func,
+      onDropRejected: n.func
+    }),
+    isFileDialogActive: !1,
+    isDragActive: !1,
+    isDragAccept: !1,
+    isDragReject: !1,
+    draggedFiles: [],
+    acceptedFiles: [],
+    rejectedFiles: []
+  };
+  function F() {
+    function e() {
+      I && setTimeout(function () {
+        S.current && (S.current.files.length || (R({
+          type: "closeDialog"
+        }), "function" == typeof h && h()));
+      }, 300);
+    }
+    var n = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {}, u = n.accept, t = n.disabled, p = void 0 !== t && t, r = n.getFilesFromEvent, o = void 0 === r ? fe : r, i = n.maxSize, a = void 0 === i ? 1 / 0 : i, c = n.minSize, l = void 0 === c ? 0 : c, f = n.multiple, s = void 0 === f || f, d = n.onDragEnter, v = n.onDragLeave, g = n.onDragOver, y = n.onDrop, b = n.onDropAccepted, m = n.onDropRejected, h = n.onFileDialogCancel, D = n.preventDropOnDocument, w = void 0 === D || D, O = n.noClick, F = void 0 !== O && O, j = n.noKeyboard, x = void 0 !== j && j, P = n.noDrag, A = void 0 !== P && P, k = n.noDragEventsBubbling, E = void 0 !== k && k, C = oe.useRef(null), S = oe.useRef(null), z = ce(oe.useReducer(he, me), 2), T = z[0], R = z[1], L = T.isFocused, I = T.isFileDialogActive, K = T.draggedFiles, _ = oe.useCallback(function () {
+      S.current && (R({
+        type: "openDialog"
+      }), S.current.value = null, S.current.click());
+    }, [R]);
+    oe.useEffect(function () {
+      return (window.addEventListener("focus", e, !1), function () {
+        window.removeEventListener("focus", e, !1);
+      });
+    }, [S, I, h]);
+    function M(e) {
+      C.current && C.current.contains(e.target) || (e.preventDefault(), W.current = []);
+    }
+    var B = oe.useCallback(function (e) {
+      C.current && C.current.isEqualNode(e.target) && (32 !== e.keyCode && 13 !== e.keyCode || (e.preventDefault(), _()));
+    }, [C, S]), q = oe.useCallback(function () {
+      R({
+        type: "focus"
+      });
+    }, []), G = oe.useCallback(function () {
+      R({
+        type: "blur"
+      });
+    }, []), N = oe.useCallback(function () {
+      F || (ye() ? setTimeout(_, 0) : _());
+    }, [S, F]), W = oe.useRef([]);
+    oe.useEffect(function () {
+      return (w && (document.addEventListener("dragover", ge, !1), document.addEventListener("drop", M, !1)), function () {
+        w && (document.removeEventListener("dragover", ge), document.removeEventListener("drop", M));
+      });
+    }, [C, w]);
+    function $(e) {
+      return p ? null : e;
+    }
+    function H(e) {
+      return x ? null : $(e);
+    }
+    function J(e) {
+      return A ? null : $(e);
+    }
+    var Q = oe.useCallback(function (n) {
+      (n.preventDefault(), n.persist(), Y(n), -1 === W.current.indexOf(n.target) && (W.current = [].concat(le(W.current), [n.target])), ve(n) && Promise.resolve(o(n)).then(function (e) {
+        de(n) && !E || (R({
+          draggedFiles: e,
+          isDragActive: !0,
+          type: "setDraggedFiles"
+        }), d && d(n));
+      }));
+    }, [o, d, E]), U = oe.useCallback(function (e) {
+      if ((e.preventDefault(), e.persist(), Y(e), e.dataTransfer)) try {
+        e.dataTransfer.dropEffect = "copy";
+      } catch (e) {}
+      return (ve(e) && g && g(e), !1);
+    }, [g, E]), V = oe.useCallback(function (n) {
+      (n.preventDefault(), n.persist(), Y(n));
+      var e = W.current.filter(function (e) {
+        return e !== n.target && C.current && C.current.contains(e);
+      });
+      0 < (W.current = e).length || (R({
+        isDragActive: !1,
+        type: "setDraggedFiles",
+        draggedFiles: []
+      }), ve(n) && v && v(n));
+    }, [C, v, E]), X = oe.useCallback(function (r) {
+      (r.preventDefault(), r.persist(), Y(r), W.current = [], ve(r) && Promise.resolve(o(r)).then(function (e) {
+        if (!de(r) || E) {
+          var n = [], t = [];
+          (e.forEach(function (e) {
+            se(e, u) && pe(e, l, a) ? n.push(e) : t.push(e);
+          }), !s && 1 < n.length && t.push.apply(t, le(n.splice(0))), R({
+            acceptedFiles: n,
+            rejectedFiles: t,
+            type: "setFiles"
+          }), y && y(n, t, r), 0 < t.length && m && m(t, r), 0 < n.length && b && b(n, r));
+        }
+      }), R({
+        type: "reset"
+      }));
+    }, [s, u, l, a, o, y, b, m, E]), Y = function (e) {
+      E && e.stopPropagation();
+    }, Z = oe.useMemo(function () {
+      return function () {
+        var e = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {}, n = e.refKey, t = void 0 === n ? "ref" : n, r = e.onKeyDown, o = e.onFocus, i = e.onBlur, u = e.onClick, a = e.onDragEnter, c = e.onDragOver, l = e.onDragLeave, f = e.onDrop, s = ae(e, ["refKey", "onKeyDown", "onFocus", "onBlur", "onClick", "onDragEnter", "onDragOver", "onDragLeave", "onDrop"]);
+        return ue(ie({
+          onKeyDown: H(be(r, B)),
+          onFocus: H(be(o, q)),
+          onBlur: H(be(i, G)),
+          onClick: $(be(u, N)),
+          onDragEnter: J(be(a, Q)),
+          onDragOver: J(be(c, U)),
+          onDragLeave: J(be(l, V)),
+          onDrop: J(be(f, X))
+        }, t, C), p || x ? {} : {
+          tabIndex: 0
+        }, {}, s);
+      };
+    }, [C, B, q, G, N, Q, U, V, X, x, A, p]), ee = oe.useCallback(function (e) {
+      e.stopPropagation();
+    }, []), ne = oe.useMemo(function () {
+      return function () {
+        var e = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {}, n = e.refKey, t = void 0 === n ? "ref" : n, r = e.onChange, o = e.onClick, i = ae(e, ["refKey", "onChange", "onClick"]);
+        return ue({}, ie({
+          accept: u,
+          multiple: s,
+          type: "file",
+          style: {
+            display: "none"
+          },
+          onChange: $(be(r, X)),
+          onClick: $(be(o, ee)),
+          autoComplete: "off",
+          tabIndex: -1
+        }, t, S), {}, i);
+      };
+    }, [S, u, s, X, p]), te = K.length, re = 0 < te && (function (e) {
+      var n = e.files, t = e.accept, r = e.minSize, o = e.maxSize;
+      return !(!e.multiple && 1 < n.length) && n.every(function (e) {
+        return se(e, t) && pe(e, r, o);
+      });
+    })({
+      files: K,
+      accept: u,
+      minSize: l,
+      maxSize: a,
+      multiple: s
+    });
+    return ue({}, T, {
+      isDragAccept: re,
+      isDragReject: 0 < te && !re,
+      isFocused: L && !p,
+      getRootProps: Z,
+      getInputProps: ne,
+      rootRef: C,
+      inputRef: S,
+      open: $(_)
+    });
+  }
+  function he(e, n) {
+    switch (n.type) {
+      case "focus":
+        return ue({}, e, {
+          isFocused: !0
+        });
+      case "blur":
+        return ue({}, e, {
+          isFocused: !1
+        });
+      case "openDialog":
+        return ue({}, e, {
+          isFileDialogActive: !0
+        });
+      case "closeDialog":
+        return ue({}, e, {
+          isFileDialogActive: !1
+        });
+      case "setDraggedFiles":
+        var t = n.isDragActive;
+        return ue({}, e, {
+          draggedFiles: n.draggedFiles,
+          isDragActive: t
+        });
+      case "setFiles":
+        return ue({}, e, {
+          acceptedFiles: n.acceptedFiles,
+          rejectedFiles: n.rejectedFiles
+        });
+      case "reset":
+        return ue({}, e, {
+          isFileDialogActive: !1,
+          isDragActive: !1,
+          draggedFiles: [],
+          acceptedFiles: [],
+          rejectedFiles: []
+        });
+      default:
+        return e;
+    }
+  }
+  (e.default = O, e.useDropzone = F, Object.defineProperty(e, "__esModule", {
+    value: !0
+  }));
+});

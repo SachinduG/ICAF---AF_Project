@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/PostCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/PostEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/PostList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/UserCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/UserEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/UserList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/31/40d884be2913494d780b40816030e0.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/31/40d884be2913494d780b40816030e0.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +79,8 @@
       <workItem from="1619427658256" duration="1621000" />
       <workItem from="1619512118293" duration="332000" />
       <workItem from="1619527634319" duration="2546000" />
-      <workItem from="1619531748503" duration="230000" />
+      <workItem from="1619531748503" duration="257000" />
+      <workItem from="1619701924556" duration="4677000" />
     </task>
     <servers />
   </component>
