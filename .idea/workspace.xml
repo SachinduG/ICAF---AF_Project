@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="admin panel created">
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/.gitignore" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="server connected to monogodb">
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/PostCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/PostEdit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/PostList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/UserCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/UserEdit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/UserList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +80,7 @@
       <workItem from="1619531748503" duration="257000" />
       <workItem from="1619701924556" duration="4821000" />
       <workItem from="1619709654617" duration="566000" />
-      <workItem from="1619762012332" duration="4665000" />
+      <workItem from="1619762012332" duration="7728000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -100,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619709760598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="server connected to monogodb">
+      <created>1619767286027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619767286027</updated>
+    </task>
+    <task id="LOCAL-00003" summary="server connected to monogodb">
+      <created>1619767298327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619767298327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="admin panel created" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin panel created" />
+    <MESSAGE value="server connected to monogodb" />
+    <option name="LAST_COMMIT_MESSAGE" value="server connected to monogodb" />
   </component>
 </project>

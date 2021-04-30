@@ -9,6 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
+app.use(express.json());
+
 //connect to monogoDB
 mongoose.connect(
     process.env.MDB_CONNECT,
@@ -20,3 +22,6 @@ mongoose.connect(
     if(err) return console.error(err);
     console.log("Connected to MongoDB");
 });
+
+//set up routes
+app.use("/auth", require("./routes/userRoute"));
