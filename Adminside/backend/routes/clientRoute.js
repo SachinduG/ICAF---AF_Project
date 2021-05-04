@@ -19,4 +19,13 @@ router.post("/", auth, async  (req, res) => {
     }
 });
 
+router.get("/", auth, async(req, res) => {
+    try{
+        const clients = await  client.find();
+        res.json(clients);
+    }catch (err){
+        console.error(err);
+        res.status(500).send();
+    }
+});
 module.exports = router;
