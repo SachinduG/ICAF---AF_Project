@@ -25,3 +25,4 @@ mongoose.connect(
 
 //set up routes
 app.use("/auth", require("./routes/userRoute"));
+app.use("/client", require("./routes/clientRoute"));
