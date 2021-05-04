@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="login route created">
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/clientModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/clientRoute.js" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="client route created">
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/clientRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/clientRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <workItem from="1619865297264" duration="1205000" />
       <workItem from="1619963493260" duration="2625000" />
       <workItem from="1620050575792" duration="22000" />
-      <workItem from="1620134219042" duration="3093000" />
+      <workItem from="1620134219042" duration="3803000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620136379342</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="client route created">
+      <created>1620137335719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620137335719</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +161,7 @@
     <MESSAGE value="user routes created" />
     <MESSAGE value="token created" />
     <MESSAGE value="login route created" />
-    <option name="LAST_COMMIT_MESSAGE" value="login route created" />
+    <MESSAGE value="client route created" />
+    <option name="LAST_COMMIT_MESSAGE" value="client route created" />
   </component>
 </project>

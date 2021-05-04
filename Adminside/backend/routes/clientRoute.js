@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const client = require("../models/clientModel");
+const auth = require("../middleware/auth");
 
-router.post("/", async  (req, res) => {
+router.post("/", auth, async  (req, res) => {
     try{
         const { name } = req.body;
 
