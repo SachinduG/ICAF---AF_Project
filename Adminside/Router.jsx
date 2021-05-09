@@ -4,14 +4,14 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 function Router(){
     return <BrowserRouter>
         <Switch>
-            <Route path="/">
+            <Route exact path="/">
                 <div>Home</div>
             </Route>
             <Route path="/register">
                 <div>Register</div>
             </Route>
             <Route path="/login">
-                <div>Home</div>
+                <div>Login</div>
             </Route>
             <Route path="/client">
                 <div>Clients</div>
