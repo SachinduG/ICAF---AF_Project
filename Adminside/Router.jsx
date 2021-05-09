@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
+import Register from "./components/auth/Register";
 
 function Router(){
     return <BrowserRouter>
@@ -10,7 +11,7 @@ function Router(){
                 <div>Home</div>
             </Route>
             <Route path="/register">
-                <div>Register</div>
+                <Register/>
             </Route>
             <Route path="/login">
                 <div>Login</div>

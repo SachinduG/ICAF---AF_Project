@@ -26517,6 +26517,8 @@ try {
   var _reactRouterDom = require("react-router-dom");
   var _componentsLayoutNavbar = require("./components/layout/Navbar");
   var _componentsLayoutNavbarDefault = _parcelHelpers.interopDefault(_componentsLayoutNavbar);
+  var _componentsAuthRegister = require("./components/auth/Register");
+  var _componentsAuthRegisterDefault = _parcelHelpers.interopDefault(_componentsAuthRegister);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx";
   function Router() {
     return (
@@ -26524,21 +26526,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 7,
           columnNumber: 12
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
+          lineNumber: 8,
           columnNumber: 9
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
+          lineNumber: 9,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26547,14 +26549,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
+          lineNumber: 10,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10,
+          lineNumber: 11,
           columnNumber: 17
         }
       }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26562,29 +26564,29 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 13,
           columnNumber: 13
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 14,
           columnNumber: 17
         }
-      }, "Register")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/login",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 17
         }
       }, "Login")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26592,14 +26594,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 17
         }
       }, "Clients"))))
@@ -26615,7 +26617,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Register":"4h2oD"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -72352,6 +72354,88 @@ var Zoom = /*#__PURE__*/_react.forwardRef(function Zoom(props, ref) {
 } : void 0;
 exports.default = Zoom;
 
-},{"@babel/runtime/helpers/esm/extends":"5qnVv","@babel/runtime/helpers/esm/slicedToArray":"4Qm8F","@babel/runtime/helpers/esm/objectWithoutProperties":"5UtKX","react":"3b2NM","prop-types":"4dfy5","react-transition-group":"7Iywh","../styles/transitions":"6uLgv","../styles/useTheme":"WDbNZ","../transitions/utils":"5xVFa","../utils/useForkRef":"5XQwt","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"@babel/runtime/helpers/esm/extends":"5qnVv","@babel/runtime/helpers/esm/slicedToArray":"4Qm8F","@babel/runtime/helpers/esm/objectWithoutProperties":"5UtKX","react":"3b2NM","prop-types":"4dfy5","react-transition-group":"7Iywh","../styles/transitions":"6uLgv","../styles/useTheme":"WDbNZ","../transitions/utils":"5xVFa","../utils/useForkRef":"5XQwt","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4h2oD":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx";
+  function Register() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6,
+          columnNumber: 13
+        }
+      }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "email",
+        placeholder: "Email Address",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "Password",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "Confirm-Password",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 17
+        }
+      }, "Register")))
+    );
+  }
+  _c = Register;
+  exports.default = Register;
+  var _c;
+  $RefreshReg$(_c, "Register");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map
