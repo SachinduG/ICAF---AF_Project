@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients list route created" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients list route created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iPortfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DS-Assign/Seller/access/frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -79,7 +81,12 @@
       <workItem from="1619865297264" duration="1205000" />
       <workItem from="1619963493260" duration="2625000" />
       <workItem from="1620050575792" duration="22000" />
-      <workItem from="1620134219042" duration="4563000" />
+      <workItem from="1620134219042" duration="4698000" />
+      <workItem from="1620154035072" duration="48000" />
+      <workItem from="1620154180227" duration="128000" />
+      <workItem from="1620154450104" duration="616000" />
+      <workItem from="1620302702565" duration="25000" />
+      <workItem from="1620566666757" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -144,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620138767880</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="clients list route created">
+      <created>1620138806674</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620138806674</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
