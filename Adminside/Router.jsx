@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
 
 function Router(){
     return <BrowserRouter>
@@ -14,7 +15,7 @@ function Router(){
                 <Register/>
             </Route>
             <Route path="/login">
-                <div>Login</div>
+                <Login/>
             </Route>
             <Route path="/client">
                 <div>Clients</div>

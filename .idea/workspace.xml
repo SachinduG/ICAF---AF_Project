@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="axios installed" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register created">
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +88,7 @@
       <workItem from="1620154450104" duration="616000" />
       <workItem from="1620302702565" duration="25000" />
       <workItem from="1620566666757" duration="3825000" />
-      <workItem from="1620628165110" duration="1604000" />
+      <workItem from="1620628165110" duration="2581000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -228,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620629956347</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="cors installed">
+      <created>1620630017003</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1620630017003</updated>
+    </task>
+    <task id="LOCAL-00022" summary="cors installed">
+      <created>1620630215339</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1620630215339</updated>
+    </task>
+    <task id="LOCAL-00023" summary="register created">
+      <created>1620630851273</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1620630851273</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,8 +280,9 @@
     <MESSAGE value="clients list route created" />
     <MESSAGE value="frontend router created" />
     <MESSAGE value="navbar created" />
-    <MESSAGE value="register created" />
     <MESSAGE value="axios installed" />
-    <option name="LAST_COMMIT_MESSAGE" value="axios installed" />
+    <MESSAGE value="cors installed" />
+    <MESSAGE value="register created" />
+    <option name="LAST_COMMIT_MESSAGE" value="register created" />
   </component>
 </project>

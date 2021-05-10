@@ -26481,14 +26481,17 @@ try {
   require('./App.css');
   var _Router = require("./Router");
   var _RouterDefault = _parcelHelpers.interopDefault(_Router);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\App.jsx";
+  _axiosDefault.default.default.withCredentials = true;
   function App() {
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_RouterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 9,
           columnNumber: 14
         }
       }))
@@ -26504,7 +26507,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./App.css":"236Ri","./Router":"2dedi","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"236Ri":[function() {},{}],"2dedi":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"236Ri","./Router":"2dedi","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"236Ri":[function() {},{}],"2dedi":[function(require,module,exports) {
 var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26519,6 +26522,8 @@ try {
   var _componentsLayoutNavbarDefault = _parcelHelpers.interopDefault(_componentsLayoutNavbar);
   var _componentsAuthRegister = require("./components/auth/Register");
   var _componentsAuthRegisterDefault = _parcelHelpers.interopDefault(_componentsAuthRegister);
+  var _componentsAuthLogin = require("./components/auth/Login");
+  var _componentsAuthLoginDefault = _parcelHelpers.interopDefault(_componentsAuthLogin);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx";
   function Router() {
     return (
@@ -26526,21 +26531,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
+          lineNumber: 8,
           columnNumber: 12
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
+          lineNumber: 9,
           columnNumber: 9
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
+          lineNumber: 10,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26549,14 +26554,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10,
+          lineNumber: 11,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
+          lineNumber: 12,
           columnNumber: 17
         }
       }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26564,14 +26569,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 14,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 15,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26579,29 +26584,29 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 13
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthLoginDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 17
         }
-      }, "Login")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/client",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 21,
           columnNumber: 17
         }
       }, "Clients"))))
@@ -26617,7 +26622,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Login":"b1IMF"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -72401,6 +72406,7 @@ try {
           columnNumber: 13
         }
       }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: register,
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -74207,6 +74213,102 @@ module.exports = function isAxiosError(payload) {
   return (typeof payload === 'object') && (payload.isAxiosError === true);
 };
 
-},{}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{}],"b1IMF":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Login.jsx", _s = $RefreshSig$();
+  function Login() {
+    _s();
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    async function login(e) {
+      e.preventDefault();
+      try {
+        const loginData = {
+          email,
+          password
+        };
+        await _axiosDefault.default.post("https://localhost:5000/auth/login", loginData);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 13
+        }
+      }, "Log in to your account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: login,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "email",
+        placeholder: "Email Address",
+        onChange: e => setEmail(e.target.value),
+        value: email,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "Password",
+        onChange: e => setPassword(e.target.value),
+        value: password,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 17
+        }
+      }, "Login")))
+    );
+  }
+  _s(Login, "3B3pqDcVnkT+z/sPK6Z9zQsLP+s=");
+  _c = Login;
+  exports.default = Login;
+  var _c;
+  $RefreshReg$(_c, "Login");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map
