@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
-    </list>
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="axios installed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -90,7 +86,7 @@
       <workItem from="1620154450104" duration="616000" />
       <workItem from="1620302702565" duration="25000" />
       <workItem from="1620566666757" duration="3825000" />
-      <workItem from="1620628165110" duration="1284000" />
+      <workItem from="1620628165110" duration="1604000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -218,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620570510815</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="axios installed">
+      <created>1620629782155</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629782155</updated>
+    </task>
+    <task id="LOCAL-00020" summary="axios installed">
+      <created>1620629956347</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629956347</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +258,7 @@
     <MESSAGE value="frontend router created" />
     <MESSAGE value="navbar created" />
     <MESSAGE value="register created" />
-    <option name="LAST_COMMIT_MESSAGE" value="register created" />
+    <MESSAGE value="axios installed" />
+    <option name="LAST_COMMIT_MESSAGE" value="axios installed" />
   </component>
 </project>
