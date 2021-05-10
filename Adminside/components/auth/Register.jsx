@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function Register() {
     const [email, setEmail] = useState("");
@@ -13,7 +14,8 @@ function Register() {
                 password,
                 passwordVerify,
             };
-            await axios post("")
+
+            await axios.post("https://localhost:5000/auth/", registerData);
         }catch (err){
             console.error(err);
         }
