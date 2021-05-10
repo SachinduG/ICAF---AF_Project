@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar created">
-      <change afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,8 @@
       <workItem from="1620154180227" duration="128000" />
       <workItem from="1620154450104" duration="616000" />
       <workItem from="1620302702565" duration="25000" />
-      <workItem from="1620566666757" duration="3463000" />
+      <workItem from="1620566666757" duration="3825000" />
+      <workItem from="1620628165110" duration="1284000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -200,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620569873946</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="register created">
+      <created>1620570474568</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620570474568</updated>
+    </task>
+    <task id="LOCAL-00018" summary="register created">
+      <created>1620570510815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620570510815</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +247,7 @@
     <MESSAGE value="clients list route created" />
     <MESSAGE value="frontend router created" />
     <MESSAGE value="navbar created" />
-    <option name="LAST_COMMIT_MESSAGE" value="navbar created" />
+    <MESSAGE value="register created" />
+    <option name="LAST_COMMIT_MESSAGE" value="register created" />
   </component>
 </project>

@@ -26617,7 +26617,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Register":"4h2oD"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -72364,55 +72364,78 @@ try {
   _parcelHelpers.defineInteropFlag(exports);
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx";
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
   function Register() {
+    _s();
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const [passwordVerify, setPasswordVerify] = _react.useState("");
+    async function register(e) {
+      e.preventDefault();
+      try {
+        const registerData = {
+          email,
+          password,
+          passwordVerify
+        };
+        await axios;
+      } catch (err) {
+        console.error(err);
+      }
+    }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 5,
+          lineNumber: 23,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 24,
           columnNumber: 13
         }
       }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
+          lineNumber: 25,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
+        onChange: e => setEmail(e.target.value),
+        value: email,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
+          lineNumber: 26,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
         type: "password",
         placeholder: "Password",
+        onChange: e => setPassword(e.target.value),
+        value: password,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
+          lineNumber: 31,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
         type: "password",
         placeholder: "Confirm-Password",
+        onChange: e => setPasswordVerify(e.target.value),
+        value: passwordVerify,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10,
+          lineNumber: 36,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -72420,12 +72443,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
+          lineNumber: 41,
           columnNumber: 17
         }
       }, "Register")))
     );
   }
+  _s(Register, "2m+2UmGnC227AV//XTCZIUNhQBg=");
   _c = Register;
   exports.default = Register;
   var _c;
