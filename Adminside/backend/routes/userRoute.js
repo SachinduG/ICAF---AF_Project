@@ -121,22 +121,19 @@ router.get("/logout", (req, res) => {
         .send();
 });
 
-function auth(req, res, next){
+router.get("/loggedIn", (req, res) => {
     try{
         const token = req.cookies.token;
-
         if(!token){
-            return res.status(401).json({ errorMessage: "Unauthorized"});
+            return res.json(false);
         }
 
-        //validate the token
-        const verified = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = verified.user;
+        jwt.verify(token, process.env.JWT_SECRET);
 
-        next();
+        res.send(true);
     } catch (err){
-        console.error(err);
-        res.status(401).json({errorMessage: "Unauthorized"});
+        res.json(false);
     }
-}
+});
+
 module.exports = router;

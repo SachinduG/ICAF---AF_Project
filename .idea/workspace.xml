@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="useRoutes edited">
       <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1620566666757" duration="3825000" />
       <workItem from="1620628165110" duration="3439000" />
       <workItem from="1620632804644" duration="631000" />
-      <workItem from="1620724764969" duration="295000" />
+      <workItem from="1620724764969" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -262,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620631206140</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="useRoutes edited">
+      <created>1620725092521</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1620725092522</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +300,7 @@
     <MESSAGE value="cors installed" />
     <MESSAGE value="login created" />
     <MESSAGE value="register created" />
-    <option name="LAST_COMMIT_MESSAGE" value="register created" />
+    <MESSAGE value="useRoutes edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="useRoutes edited" />
   </component>
 </project>
