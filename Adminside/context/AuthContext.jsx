@@ -1,5 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {createContext, useEffect, useState} from "react";
 import axios from "axios";
+
+const AuthContext = createContext();
 
 function AuthContextProvider(){
     const [loggedIn, setLoggedIn] = useState(undefined);
@@ -12,7 +14,10 @@ function AuthContextProvider(){
     useEffect(() => {
         getLoggedIn();
     }, []);
-    return <></>
+
+    return <AuthContextProvider value={loggedIn}>
+
+    </AuthContextProvider>;
 
 };
 
