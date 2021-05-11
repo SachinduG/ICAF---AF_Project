@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="context created">
-      <change afterPath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="logout created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
     </list>
@@ -95,7 +96,7 @@
       <workItem from="1620628165110" duration="3439000" />
       <workItem from="1620632804644" duration="631000" />
       <workItem from="1620724764969" duration="3180000" />
-      <workItem from="1620728000417" duration="2052000" />
+      <workItem from="1620728000417" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -307,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620730035834</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="logout created">
+      <created>1620730480339</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1620730480339</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +351,7 @@
     <MESSAGE value="useRoutes edited" />
     <MESSAGE value="context provider created" />
     <MESSAGE value="context created" />
-    <option name="LAST_COMMIT_MESSAGE" value="context created" />
+    <MESSAGE value="logout created" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout created" />
   </component>
 </project>

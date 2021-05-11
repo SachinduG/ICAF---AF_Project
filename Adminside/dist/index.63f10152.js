@@ -32815,8 +32815,11 @@ try {
   function LogOutBtn() {
     _s();
     const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = useHistory();
     async function logout() {
       await _axiosDefault.default.get("http://localhost:5000/auth/logut");
+      await getLoggedIn();
+      history.push("/");
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -32824,13 +32827,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 17,
           columnNumber: 9
         }
       }, "Log Out")
     );
   }
-  _s(LogOutBtn, "hV6JVnTFHpXs0kmTybsr64/m51w=");
+  _s(LogOutBtn, "P/gSagTfVUPmkzytRTEkwAjCrsI=", true);
   _c = LogOutBtn;
   exports.default = LogOutBtn;
   var _c;
@@ -32853,12 +32856,16 @@ try {
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _axios = require("axios");
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
   function Register() {
     _s();
     const [email, setEmail] = _react.useState("");
     const [password, setPassword] = _react.useState("");
     const [passwordVerify, setPasswordVerify] = _react.useState("");
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = useHistory();
     async function register(e) {
       e.preventDefault();
       try {
@@ -32868,6 +32875,8 @@ try {
           passwordVerify
         };
         await _axiosDefault.default.post("https://localhost:5000/auth/", registerData);
+        await getLoggedIn();
+        history.push("/");
       } catch (err) {
         console.error(err);
       }
@@ -32877,14 +32886,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 31,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 32,
           columnNumber: 13
         }
       }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -32892,7 +32901,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 33,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32903,7 +32912,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 34,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32914,7 +32923,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 39,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32925,7 +32934,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 44,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -32933,13 +32942,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 49,
           columnNumber: 17
         }
       }, "Register")))
     );
   }
-  _s(Register, "2m+2UmGnC227AV//XTCZIUNhQBg=");
+  _s(Register, "8lIRLHQZDrBg2Rwxon+Wg6dm0fA=", true);
   _c = Register;
   exports.default = Register;
   var _c;
@@ -32950,7 +32959,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"b1IMF":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../context/AuthContext":"7EfDm"}],"b1IMF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32962,11 +32971,15 @@ try {
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _axios = require("axios");
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Login.jsx", _s = $RefreshSig$();
   function Login() {
     _s();
     const [email, setEmail] = _react.useState("");
     const [password, setPassword] = _react.useState("");
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = useHistory();
     async function login(e) {
       e.preventDefault();
       try {
@@ -32975,6 +32988,8 @@ try {
           password
         };
         await _axiosDefault.default.post("https://localhost:5000/auth/login", loginData);
+        await getLoggedIn();
+        history.push("/");
       } catch (err) {
         console.error(err);
       }
@@ -32984,14 +32999,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 31,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 32,
           columnNumber: 13
         }
       }, "Log in to your account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -32999,7 +33014,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 33,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -33010,7 +33025,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 34,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -33021,7 +33036,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 39,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -33029,13 +33044,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 45,
           columnNumber: 17
         }
       }, "Login")))
     );
   }
-  _s(Login, "3B3pqDcVnkT+z/sPK6Z9zQsLP+s=");
+  _s(Login, "9chFx/1lAuWUEBKFRkQb9csVkIg=", true);
   _c = Login;
   exports.default = Login;
   var _c;
@@ -33046,6 +33061,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../context/AuthContext":"7EfDm"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map
