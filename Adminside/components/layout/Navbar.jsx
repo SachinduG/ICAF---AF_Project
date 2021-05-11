@@ -7,16 +7,14 @@ function Navbar(){
     return (
         <div>
             <Link to="/">Home</Link>
-            {
-                !loggedIn && (
+            {loggedIn === false && (
                     <>
                         <Link to="/register">Register</Link>
                         <Link to="/login">Login</Link>
                     </>
                 )
             }
-            {
-                loggedIn && (
+            {loggedIn === true && (
                     <>
                         <Link to="/client">Clients</Link>
                     </>

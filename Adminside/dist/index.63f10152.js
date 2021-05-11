@@ -26532,29 +26532,33 @@ try {
   var _componentsAuthRegisterDefault = _parcelHelpers.interopDefault(_componentsAuthRegister);
   var _componentsAuthLogin = require("./components/auth/Login");
   var _componentsAuthLoginDefault = _parcelHelpers.interopDefault(_componentsAuthLogin);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx";
+  var _contextAuthContext = require("./context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx", _s = $RefreshSig$();
   function Router() {
+    _s();
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 12
+          lineNumber: 12,
+          columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 9
+          lineNumber: 13,
+          columnNumber: 13
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10,
-          columnNumber: 9
+          lineNumber: 14,
+          columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         exact: true,
@@ -26562,64 +26566,65 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
-          columnNumber: 13
+          lineNumber: 15,
+          columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 17
+          lineNumber: 16,
+          columnNumber: 21
         }
-      }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      }, "Home")), loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/register",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
-          columnNumber: 13
+          lineNumber: 20,
+          columnNumber: 29
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
-          columnNumber: 17
+          lineNumber: 21,
+          columnNumber: 33
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/login",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
-          columnNumber: 13
+          lineNumber: 23,
+          columnNumber: 29
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthLoginDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 17
+          lineNumber: 24,
+          columnNumber: 33
         }
-      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      }))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/client",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
-          columnNumber: 13
+          lineNumber: 30,
+          columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 17
+          lineNumber: 31,
+          columnNumber: 29
         }
-      }, "Clients"))))
+      }, "Clients")))))
     );
   }
+  _s(Router, "LvSQ5LmaGJElnUB+eDOIEfrxAPQ=");
   _c = Router;
   exports.default = Router;
   var _c;
@@ -26630,7 +26635,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","./components/auth/Login":"b1IMF","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","./components/auth/Login":"b1IMF","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./context/AuthContext":"7EfDm"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -30947,12 +30952,12 @@ try {
           lineNumber: 9,
           columnNumber: 13
         }
-      }, "Home"), !loggedIn && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+      }, "Home"), loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/register",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 12,
           columnNumber: 25
         }
       }, "Register"), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30960,15 +30965,15 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 13,
           columnNumber: 25
         }
-      }, "Login")), loggedIn && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+      }, "Login")), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/client",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 19,
           columnNumber: 25
         }
       }, "Clients")))
