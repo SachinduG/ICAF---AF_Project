@@ -30932,6 +30932,8 @@ try {
   var _reactRouterDom = require("react-router-dom");
   var _contextAuthContext = require("../../context/AuthContext");
   var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _authLogOutBtn = require("../auth/LogOutBtn");
+  var _authLogOutBtnDefault = _parcelHelpers.interopDefault(_authLogOutBtn);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Navbar.jsx", _s = $RefreshSig$();
   function Navbar() {
     _s();
@@ -30941,7 +30943,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
+          lineNumber: 9,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30949,7 +30951,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
+          lineNumber: 10,
           columnNumber: 13
         }
       }, "Home"), loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30957,7 +30959,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 13,
           columnNumber: 25
         }
       }, "Register"), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30965,7 +30967,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 14,
           columnNumber: 25
         }
       }, "Login")), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30973,10 +30975,17 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 25
         }
-      }, "Clients")))
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
+      })))
     );
   }
   _s(Navbar, "BqpBbvcR7D05G3CArRyJxrdORYE=");
@@ -30990,7 +30999,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7EfDm":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../auth/LogOutBtn":"1zMyK"}],"7EfDm":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31011,8 +31020,8 @@ try {
     _s();
     const [loggedIn, setLoggedIn] = _react.useState(undefined);
     async function getLoggedIn() {
-      const loggedIn = await _axiosDefault.default.get("https://localhost:5000/auth/loggedIn");
-      setLoggedIn(loggedIn.data);
+      const loggedInRes = await _axiosDefault.default.get("http://localhost:5000/auth/loggedIn");
+      setLoggedIn(loggedInRes.data);
     }
     _react.useEffect(() => {
       getLoggedIn();
@@ -32788,7 +32797,51 @@ module.exports = function isAxiosError(payload) {
   return (typeof payload === 'object') && (payload.isAxiosError === true);
 };
 
-},{}],"4h2oD":[function(require,module,exports) {
+},{}],"1zMyK":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\LogOutBtn.jsx", _s = $RefreshSig$();
+  function LogOutBtn() {
+    _s();
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    async function logout() {
+      await _axiosDefault.default.get("http://localhost:5000/auth/logut");
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("button", {
+        onClick: logout,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 9
+        }
+      }, "Log Out")
+    );
+  }
+  _s(LogOutBtn, "hV6JVnTFHpXs0kmTybsr64/m51w=");
+  _c = LogOutBtn;
+  exports.default = LogOutBtn;
+  var _c;
+  $RefreshReg$(_c, "LogOutBtn");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4h2oD":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
