@@ -26483,16 +26483,24 @@ try {
   var _RouterDefault = _parcelHelpers.interopDefault(_Router);
   var _axios = require("axios");
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("./context/AuthContext");
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\App.jsx";
   _axiosDefault.default.default.withCredentials = true;
   function App() {
     return (
-      /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_RouterDefault.default, {
+      /*#__PURE__*/_reactDefault.default.createElement(_contextAuthContext.AuthContextProvider, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 14
+          lineNumber: 11,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_RouterDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 13
         }
       }))
     );
@@ -26507,7 +26515,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./App.css":"236Ri","./Router":"2dedi","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"236Ri":[function() {},{}],"2dedi":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"236Ri","./Router":"2dedi","axios":"7rA65","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"236Ri":[function() {},{}],"2dedi":[function(require,module,exports) {
 var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30917,14 +30925,18 @@ try {
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _reactRouterDom = require("react-router-dom");
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Navbar.jsx";
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Navbar.jsx", _s = $RefreshSig$();
   function Navbar() {
+    _s();
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 8,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30932,36 +30944,37 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
+          lineNumber: 9,
           columnNumber: 13
         }
-      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+      }, "Home"), !loggedIn && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/register",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 13
+          lineNumber: 13,
+          columnNumber: 25
         }
       }, "Register"), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/login",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 13
+          lineNumber: 14,
+          columnNumber: 25
         }
-      }, "Login"), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+      }, "Login")), loggedIn && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/client",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10,
-          columnNumber: 13
+          lineNumber: 21,
+          columnNumber: 25
         }
-      }, "Clients"))
+      }, "Clients")))
     );
   }
+  _s(Navbar, "BqpBbvcR7D05G3CArRyJxrdORYE=");
   _c = Navbar;
   exports.default = Navbar;
   var _c;
@@ -30972,116 +30985,60 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"4h2oD":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react":"3b2NM","react-router-dom":"1PMSK","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7EfDm":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
   var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
   _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "AuthContextProvider", function () {
+    return AuthContextProvider;
+  });
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _axios = require("axios");
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
-  function Register() {
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\context\\AuthContext.jsx", _s = $RefreshSig$();
+  const AuthContext = /*#__PURE__*/_react.createContext();
+  function AuthContextProvider(props) {
     _s();
-    const [email, setEmail] = _react.useState("");
-    const [password, setPassword] = _react.useState("");
-    const [passwordVerify, setPasswordVerify] = _react.useState("");
-    async function register(e) {
-      e.preventDefault();
-      try {
-        const registerData = {
-          email,
-          password,
-          passwordVerify
-        };
-        await _axiosDefault.default.post("https://localhost:5000/auth/", registerData);
-      } catch (err) {
-        console.error(err);
-      }
+    const [loggedIn, setLoggedIn] = _react.useState(undefined);
+    async function getLoggedIn() {
+      const loggedIn = await _axiosDefault.default.get("https://localhost:5000/auth/loggedIn");
+      setLoggedIn(loggedIn.data);
     }
+    _react.useEffect(() => {
+      getLoggedIn();
+    }, []);
     return (
-      /*#__PURE__*/_reactDefault.default.createElement("div", {
+      /*#__PURE__*/_reactDefault.default.createElement(AuthContextProvider, {
+        value: {
+          loggedIn,
+          getLoggedIn
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 19,
           columnNumber: 9
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 13
-        }
-      }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
-        onSubmit: register,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 13
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
-        type: "email",
-        placeholder: "Email Address",
-        onChange: e => setEmail(e.target.value),
-        value: email,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 17
-        }
-      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        type: "password",
-        placeholder: "Password",
-        onChange: e => setPassword(e.target.value),
-        value: password,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33,
-          columnNumber: 17
-        }
-      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        type: "password",
-        placeholder: "Confirm-Password",
-        onChange: e => setPasswordVerify(e.target.value),
-        value: passwordVerify,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 17
-        }
-      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
-        type: "submit",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43,
-          columnNumber: 17
-        }
-      }, "Register")))
+      }, props.children)
     );
   }
-  _s(Register, "2m+2UmGnC227AV//XTCZIUNhQBg=");
-  _c = Register;
-  exports.default = Register;
+  _s(AuthContextProvider, "81emVA+KGXopSnfrhBepOR4HVzY=");
+  _c = AuthContextProvider;
+  exports.default = AuthContext;
   var _c;
-  $RefreshReg$(_c, "Register");
+  $RefreshReg$(_c, "AuthContextProvider");
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
 'use strict';
@@ -32826,7 +32783,116 @@ module.exports = function isAxiosError(payload) {
   return (typeof payload === 'object') && (payload.isAxiosError === true);
 };
 
-},{}],"b1IMF":[function(require,module,exports) {
+},{}],"4h2oD":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
+  function Register() {
+    _s();
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const [passwordVerify, setPasswordVerify] = _react.useState("");
+    async function register(e) {
+      e.preventDefault();
+      try {
+        const registerData = {
+          email,
+          password,
+          passwordVerify
+        };
+        await _axiosDefault.default.post("https://localhost:5000/auth/", registerData);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 13
+        }
+      }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: register,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "email",
+        placeholder: "Email Address",
+        onChange: e => setEmail(e.target.value),
+        value: email,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "Password",
+        onChange: e => setPassword(e.target.value),
+        value: password,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        type: "password",
+        placeholder: "Confirm-Password",
+        onChange: e => setPasswordVerify(e.target.value),
+        value: passwordVerify,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 17
+        }
+      }, "Register")))
+    );
+  }
+  _s(Register, "2m+2UmGnC227AV//XTCZIUNhQBg=");
+  _c = Register;
+  exports.default = Register;
+  var _c;
+  $RefreshReg$(_c, "Register");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"b1IMF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
