@@ -26485,7 +26485,7 @@ try {
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _contextAuthContext = require("./context/AuthContext");
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\App.jsx";
-  _axiosDefault.default.default.withCredentials = true;
+  _axiosDefault.default.defaults.withCredentials = true;
   function App() {
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_contextAuthContext.AuthContextProvider, {
@@ -26635,7 +26635,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","./components/auth/Login":"b1IMF","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./context/AuthContext":"7EfDm"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/layout/Navbar":"2mdwo","./components/auth/Register":"4h2oD","./components/auth/Login":"b1IMF","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -30999,7 +30999,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../auth/LogOutBtn":"1zMyK"}],"7EfDm":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","../../context/AuthContext":"7EfDm","../auth/LogOutBtn":"1zMyK","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7EfDm":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32874,7 +32874,7 @@ try {
           password,
           passwordVerify
         };
-        await _axiosDefault.default.post("https://localhost:5000/auth/", registerData);
+        await _axiosDefault.default.post("http://localhost:5000/auth/", registerData);
         await getLoggedIn();
         history.push("/");
       } catch (err) {
@@ -32959,7 +32959,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../context/AuthContext":"7EfDm"}],"b1IMF":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"b1IMF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32987,7 +32987,7 @@ try {
           email,
           password
         };
-        await _axiosDefault.default.post("https://localhost:5000/auth/login", loginData);
+        await _axiosDefault.default.post("http://localhost:5000/auth/login", loginData);
         await getLoggedIn();
         history.push("/");
       } catch (err) {
@@ -33061,6 +33061,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../context/AuthContext":"7EfDm"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map

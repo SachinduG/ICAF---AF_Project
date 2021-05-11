@@ -19,7 +19,7 @@ function Register() {
                 passwordVerify,
             };
 
-            await axios.post("https://localhost:5000/auth/", registerData);
+            await axios.post("http://localhost:5000/auth/", registerData);
             await getLoggedIn();
             history.push("/");
         }catch (err){

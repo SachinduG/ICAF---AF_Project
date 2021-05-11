@@ -4,7 +4,7 @@ import Router from "./Router";
 import axios from "axios"
 import { AuthContextProvider } from "./context/AuthContext";
 
-axios.default.withCredentials = true;
+axios.defaults.withCredentials = true;
 
 function App(){
     return (

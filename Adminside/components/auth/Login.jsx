@@ -18,7 +18,7 @@ function Login() {
                 password,
             };
 
-            await axios.post("https://localhost:5000/auth/login", loginData);
+            await axios.post("http://localhost:5000/auth/login", loginData);
             await getLoggedIn();
             history.push("/");
 
