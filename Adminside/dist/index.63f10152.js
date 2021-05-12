@@ -32811,29 +32811,32 @@ try {
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _contextAuthContext = require("../../context/AuthContext");
   var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\LogOutBtn.jsx", _s = $RefreshSig$();
   function LogOutBtn() {
     _s();
     const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
-    const history = useHistory();
-    async function logout() {
-      await _axiosDefault.default.get("http://localhost:5000/auth/logut");
+    const history = _reactRouterDom.useHistory();
+    async function logOut() {
+      await _axiosDefault.default.get("http://localhost:5000/auth/logout");
       await getLoggedIn();
       history.push("/");
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("button", {
-        onClick: logout,
+        onClick: logOut,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 9
         }
       }, "Log Out")
     );
   }
-  _s(LogOutBtn, "P/gSagTfVUPmkzytRTEkwAjCrsI=", true);
+  _s(LogOutBtn, "P/gSagTfVUPmkzytRTEkwAjCrsI=", false, function () {
+    return [_reactRouterDom.useHistory];
+  });
   _c = LogOutBtn;
   exports.default = LogOutBtn;
   var _c;
@@ -32844,7 +32847,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4h2oD":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"4h2oD":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32858,6 +32861,7 @@ try {
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _contextAuthContext = require("../../context/AuthContext");
   var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
   function Register() {
     _s();
@@ -32865,7 +32869,7 @@ try {
     const [password, setPassword] = _react.useState("");
     const [passwordVerify, setPasswordVerify] = _react.useState("");
     const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
-    const history = useHistory();
+    const history = _reactRouterDom.useHistory();
     async function register(e) {
       e.preventDefault();
       try {
@@ -32886,14 +32890,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 32,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 33,
           columnNumber: 13
         }
       }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -32901,7 +32905,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 34,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32912,7 +32916,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32923,7 +32927,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 40,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32934,7 +32938,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 45,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -32942,13 +32946,15 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 50,
           columnNumber: 17
         }
       }, "Register")))
     );
   }
-  _s(Register, "8lIRLHQZDrBg2Rwxon+Wg6dm0fA=", true);
+  _s(Register, "8lIRLHQZDrBg2Rwxon+Wg6dm0fA=", false, function () {
+    return [_reactRouterDom.useHistory];
+  });
   _c = Register;
   exports.default = Register;
   var _c;
@@ -32959,7 +32965,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"b1IMF":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"b1IMF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32973,13 +32979,14 @@ try {
   var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _contextAuthContext = require("../../context/AuthContext");
   var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Login.jsx", _s = $RefreshSig$();
   function Login() {
     _s();
     const [email, setEmail] = _react.useState("");
     const [password, setPassword] = _react.useState("");
     const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
-    const history = useHistory();
+    const history = _reactRouterDom.useHistory();
     async function login(e) {
       e.preventDefault();
       try {
@@ -32999,14 +33006,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 32,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 33,
           columnNumber: 13
         }
       }, "Log in to your account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -33014,7 +33021,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 34,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -33025,7 +33032,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -33036,7 +33043,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 40,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -33044,13 +33051,15 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 46,
           columnNumber: 17
         }
       }, "Login")))
     );
   }
-  _s(Login, "9chFx/1lAuWUEBKFRkQb9csVkIg=", true);
+  _s(Login, "9chFx/1lAuWUEBKFRkQb9csVkIg=", false, function () {
+    return [_reactRouterDom.useHistory];
+  });
   _c = Login;
   exports.default = Login;
   var _c;
@@ -33061,6 +33070,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map

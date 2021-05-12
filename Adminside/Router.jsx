@@ -25,7 +25,7 @@ function Router(){
                             </Route>
                         </>
                 )}
-                {loggedIn === true &&  (
+                {loggedIn === true && (
                     <>
                         <Route path="/client">
                             <div>Clients</div>

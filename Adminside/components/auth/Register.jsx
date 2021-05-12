@@ -1,6 +1,7 @@
 import React, {useContext, useState} from "react";
 import axios from "axios";
 import AuthContext from "../../context/AuthContext";
+import { useHistory } from "react-router-dom";
 
 function Register() {
     const [email, setEmail] = useState("");
