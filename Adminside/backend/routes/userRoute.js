@@ -116,7 +116,7 @@ router.get("/logout", (req, res) => {
     res.
         cookie("token", "",{
             httpOnly: true,
-            expire: new Date(0)
+            expire: new Date(0),
     })
         .send();
 });
