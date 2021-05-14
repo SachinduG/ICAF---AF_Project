@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ClientForm(){
+function ClientList(){
     return<div>
 
     </div>;
 };
 
-export default ClientForm;
+export default ClientList;
