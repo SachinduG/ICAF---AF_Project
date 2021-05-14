@@ -1047,14 +1047,14 @@ var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 try {
-  var _react = require('react');
+  var _react = require("react");
   var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _reactDom = require('react-dom');
+  var _reactDom = require("react-dom");
   var _reactDomDefault = _parcelHelpers.interopDefault(_reactDom);
-  var _App = require('./App');
+  var _App = require("./App");
   var _AppDefault = _parcelHelpers.interopDefault(_App);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\index.jsx";
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\index.js";
   _reactDomDefault.default.render(/*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.StrictMode, {
     __self: undefined,
     __source: {
@@ -1069,7 +1069,7 @@ try {
       lineNumber: 7,
       columnNumber: 9
     }
-  })), document.getElementById('app'));
+  })), document.getElementById("root"));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
@@ -26478,7 +26478,6 @@ try {
   _parcelHelpers.defineInteropFlag(exports);
   var _react = require('react');
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  require('./App.css');
   var _Router = require("./Router");
   var _RouterDefault = _parcelHelpers.interopDefault(_Router);
   var _axios = require("axios");
@@ -26492,14 +26491,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
+          lineNumber: 10,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_RouterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 11,
           columnNumber: 13
         }
       }))
@@ -26515,7 +26514,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./App.css":"236Ri","./Router":"2dedi","axios":"7rA65","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"236Ri":[function() {},{}],"2dedi":[function(require,module,exports) {
+},{"react":"3b2NM","./Router":"2dedi","axios":"7rA65","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2dedi":[function(require,module,exports) {
 var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26624,7 +26623,7 @@ try {
       }, "Clients")))))
     );
   }
-  _s(Router, "LvSQ5LmaGJElnUB+eDOIEfrxAPQ=");
+  _s(Router, "BqpBbvcR7D05G3CArRyJxrdORYE=");
   _c = Router;
   exports.default = Router;
   var _c;
@@ -30970,19 +30969,19 @@ try {
           lineNumber: 14,
           columnNumber: 25
         }
-      }, "Login")), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+      }, "Log In")), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/client",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 19,
           columnNumber: 25
         }
       }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 20,
           columnNumber: 25
         }
       })))
@@ -32828,13 +32827,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 9
+          lineNumber: 17,
+          columnNumber: 12
         }
       }, "Log Out")
     );
   }
-  _s(LogOutBtn, "P/gSagTfVUPmkzytRTEkwAjCrsI=", false, function () {
+  _s(LogOutBtn, "hMhFRdfXysRlOj98XZKPG+uyhc4=", false, function () {
     return [_reactRouterDom.useHistory];
   });
   _c = LogOutBtn;
@@ -32847,7 +32846,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"4h2oD":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","react-router-dom":"1PMSK","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4h2oD":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32890,14 +32889,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 33,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 34,
           columnNumber: 13
         }
       }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -32905,7 +32904,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32916,7 +32915,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 36,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32927,7 +32926,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 41,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -32938,7 +32937,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 46,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -32946,7 +32945,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50,
+          lineNumber: 51,
           columnNumber: 17
         }
       }, "Register")))
@@ -32965,7 +32964,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"b1IMF":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","react-router-dom":"1PMSK","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"b1IMF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33054,7 +33053,7 @@ try {
           lineNumber: 46,
           columnNumber: 17
         }
-      }, "Login")))
+      }, "Log In")))
     );
   }
   _s(Login, "9chFx/1lAuWUEBKFRkQb9csVkIg=", false, function () {
@@ -33070,6 +33069,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","react-router-dom":"1PMSK","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","3L2qK","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map

@@ -14,7 +14,7 @@ function Register() {
     async function register(e){
         e.preventDefault();
         try{
-            const registerData ={
+            const registerData = {
                 email,
                 password,
                 passwordVerify,
@@ -23,6 +23,7 @@ function Register() {
             await axios.post("http://localhost:5000/auth/", registerData);
             await getLoggedIn();
             history.push("/");
+
         }catch (err){
             console.error(err);
         }

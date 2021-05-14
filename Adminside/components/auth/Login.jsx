@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
@@ -19,7 +19,7 @@ function Login() {
                 password,
             };
 
-            await axios.post("http://localhost:5000/auth/login", loginData);
+            await axios.post(" ", loginData);
             await getLoggedIn();
             history.push("/");
 
@@ -43,7 +43,7 @@ function Login() {
                        value={password}
                 />
 
-                <button type="submit">Login</button>
+                <button type="submit">Log In</button>
             </form>
         </div>
     );

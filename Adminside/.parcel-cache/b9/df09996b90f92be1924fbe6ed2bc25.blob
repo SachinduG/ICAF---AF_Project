@@ -9,7 +9,7 @@ try {
   require('react-dom');
   var _AppJsx = require('./App.jsx');
   var _AppJsxDefault = _parcelHelpers.interopDefault(_AppJsx);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\index.jsx";
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\index.js";
   ReactDOMDOM.render(/*#__PURE__*/_reactDefault.default.createElement(_AppJsxDefault.default, {
     name: "React App",
     __self: undefined,

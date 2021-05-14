@@ -2,12 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="logout created">
-      <change afterPath="$PROJECT_DIR$/Adminside/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/31/40d884be2913494d780b40816030e0.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/31/40d884be2913494d780b40816030e0.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/4e/2f919f7c85b21c27118d6131903f2e.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/bc/035bec3ad7344dc43cfc14290a59cd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d0/c5866772c7dbe5041ffc254c18f10e.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/02/05785ed8b8a8b90df06391c4386618.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/02/05785ed8b8a8b90df06391c4386618.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/12/553bfb65dc54c42a63d62a1fef72f7.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/12/553bfb65dc54c42a63d62a1fef72f7.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/14/f9f999c3005a06b4106d87b07a9d9d.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/14/f9f999c3005a06b4106d87b07a9d9d.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/15/e593eed5ac2240bd60712262d11f96.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/15/e593eed5ac2240bd60712262d11f96.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/18/49eb3af3dbcc663d23726e3c09053a.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/18/49eb3af3dbcc663d23726e3c09053a.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/19/8450596198ef42386a0250423f3f5a.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/19/8450596198ef42386a0250423f3f5a.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/20/9c417cd4c65b7d8f2fcf7fb35d35cd.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/20/9c417cd4c65b7d8f2fcf7fb35d35cd.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/24/94b8a502c1b3647144b478b3687edd.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/24/94b8a502c1b3647144b478b3687edd.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/31/97740041cb8ccba0000946b482acd8.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/31/97740041cb8ccba0000946b482acd8.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/3a/6858a00b09481f2f53bb86c7c4e3db.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/3a/6858a00b09481f2f53bb86c7c4e3db.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/43/17f99f80a557a9ed376275c2b5415e.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/43/17f99f80a557a9ed376275c2b5415e.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/47/696fe9c577ac366e6c559268efbe3e.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/47/696fe9c577ac366e6c559268efbe3e.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/58/0c762d0753de06a07a2b4d7b57bf57.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/58/0c762d0753de06a07a2b4d7b57bf57.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/6d/aa57efa8ac9a49157c147762e8809e.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/6d/aa57efa8ac9a49157c147762e8809e.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/77/6f78b905555ab9e93ea350e31e59e3.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/77/6f78b905555ab9e93ea350e31e59e3.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/7a/02d676308eb381323bd03421dd3c9b.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/7a/02d676308eb381323bd03421dd3c9b.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/88/6a9979edb41d16e2408eade21b8fd2.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/88/6a9979edb41d16e2408eade21b8fd2.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8a/22e68e12432eda7ddb01b3c4180c00.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8a/22e68e12432eda7ddb01b3c4180c00.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/a6bc02512cf542d1db12d57ab92937.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/a6bc02512cf542d1db12d57ab92937.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/feae20da0b65c0aeb63ea4dd4b18c1.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/feae20da0b65c0aeb63ea4dd4b18c1.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/97/e057acfbf6069587edda1c6fc71e53.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/97/e057acfbf6069587edda1c6fc71e53.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/2efe4ba519f15909ac2dfcab4eeadf.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/2efe4ba519f15909ac2dfcab4eeadf.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/6195557efa3661d64c5004f64cd4b1.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/6195557efa3661d64c5004f64cd4b1.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/a0/ac2fd6c2dcdb62f2519cbdcd95535f.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/a0/ac2fd6c2dcdb62f2519cbdcd95535f.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/b4/a0f8ebf2960fe0e61facf23bc45ddd.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/b4/a0f8ebf2960fe0e61facf23bc45ddd.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/b9/df09996b90f92be1924fbe6ed2bc25.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/b9/df09996b90f92be1924fbe6ed2bc25.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/c2/34e21f09a8d8b4a9ced7f7c63f95db.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/c2/34e21f09a8d8b4a9ced7f7c63f95db.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/c8/cc57dab4614a055480ea17fe31c847.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/c8/cc57dab4614a055480ea17fe31c847.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/cf/b2e34855dcfcd6efe57b173fdbef0b.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/cf/b2e34855dcfcd6efe57b173fdbef0b.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d4/4c5ec2e61d80ea00bdb2b9e5909240.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d4/4c5ec2e61d80ea00bdb2b9e5909240.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d5/eedbffd1714f5a596afa60439d48bc.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d5/eedbffd1714f5a596afa60439d48bc.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/dc/b7ed804bd994744412ca7c599aec17.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/dc/b7ed804bd994744412ca7c599aec17.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/ec/735de7638e0a01c9ee4e20caacb531.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/ec/735de7638e0a01c9ee4e20caacb531.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/f3/3edfa96b9280310e4a02fb225a6281.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/f3/3edfa96b9280310e4a02fb225a6281.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/fb/468b11288a71b3eb53439d6def37ec.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/fb/468b11288a71b3eb53439d6def37ec.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/ff/821f393268e5328d29ab318999ff30.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/ff/821f393268e5328d29ab318999ff30.blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/Router.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DS-Assign/Seller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -98,7 +143,13 @@
       <workItem from="1620724764969" duration="3180000" />
       <workItem from="1620728000417" duration="3493000" />
       <workItem from="1620797330214" duration="3937000" />
-      <workItem from="1620802287607" duration="1071000" />
+      <workItem from="1620802287607" duration="1205000" />
+      <workItem from="1620811567426" duration="90000" />
+      <workItem from="1620822965215" duration="1617000" />
+      <workItem from="1620825096971" duration="529000" />
+      <workItem from="1620877559869" duration="9000" />
+      <workItem from="1620981388344" duration="801000" />
+      <workItem from="1620991159826" duration="4207000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -359,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620802116938</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="logout created">
+      <created>1620803371819</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1620803371819</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

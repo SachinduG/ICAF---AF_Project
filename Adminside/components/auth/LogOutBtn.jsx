@@ -4,7 +4,7 @@ import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 
 function LogOutBtn(){
-    const {getLoggedIn} = useContext(AuthContext);
+    const { getLoggedIn } = useContext(AuthContext);
 
     const history = useHistory();
 
@@ -14,12 +14,7 @@ function LogOutBtn(){
         history.push("/");
     }
 
-    return (
-        <button onClick={logOut}>
-            Log Out
-        </button>
-    );
-
+    return <button onClick={logOut}>Log Out</button>;
 }
 
 export default LogOutBtn;
