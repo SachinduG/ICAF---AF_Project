@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="logout created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/02/05785ed8b8a8b90df06391c4386618.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/02/05785ed8b8a8b90df06391c4386618.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/12/553bfb65dc54c42a63d62a1fef72f7.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/12/553bfb65dc54c42a63d62a1fef72f7.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/14/f9f999c3005a06b4106d87b07a9d9d.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/14/f9f999c3005a06b4106d87b07a9d9d.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/15/e593eed5ac2240bd60712262d11f96.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/15/e593eed5ac2240bd60712262d11f96.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/18/49eb3af3dbcc663d23726e3c09053a.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/18/49eb3af3dbcc663d23726e3c09053a.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/19/8450596198ef42386a0250423f3f5a.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/19/8450596198ef42386a0250423f3f5a.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/20/9c417cd4c65b7d8f2fcf7fb35d35cd.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/20/9c417cd4c65b7d8f2fcf7fb35d35cd.blob" afterDir="false" />
@@ -22,37 +19,16 @@
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/88/6a9979edb41d16e2408eade21b8fd2.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/88/6a9979edb41d16e2408eade21b8fd2.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8a/22e68e12432eda7ddb01b3c4180c00.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8a/22e68e12432eda7ddb01b3c4180c00.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/a6bc02512cf542d1db12d57ab92937.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/a6bc02512cf542d1db12d57ab92937.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/feae20da0b65c0aeb63ea4dd4b18c1.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8e/feae20da0b65c0aeb63ea4dd4b18c1.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/97/e057acfbf6069587edda1c6fc71e53.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/97/e057acfbf6069587edda1c6fc71e53.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/2efe4ba519f15909ac2dfcab4eeadf.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/2efe4ba519f15909ac2dfcab4eeadf.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/6195557efa3661d64c5004f64cd4b1.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/9a/6195557efa3661d64c5004f64cd4b1.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/a0/ac2fd6c2dcdb62f2519cbdcd95535f.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/a0/ac2fd6c2dcdb62f2519cbdcd95535f.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/b4/a0f8ebf2960fe0e61facf23bc45ddd.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/b4/a0f8ebf2960fe0e61facf23bc45ddd.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/b9/df09996b90f92be1924fbe6ed2bc25.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/b9/df09996b90f92be1924fbe6ed2bc25.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/c2/34e21f09a8d8b4a9ced7f7c63f95db.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/c2/34e21f09a8d8b4a9ced7f7c63f95db.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/c8/cc57dab4614a055480ea17fe31c847.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/c8/cc57dab4614a055480ea17fe31c847.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/cf/b2e34855dcfcd6efe57b173fdbef0b.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/cf/b2e34855dcfcd6efe57b173fdbef0b.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d4/4c5ec2e61d80ea00bdb2b9e5909240.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d4/4c5ec2e61d80ea00bdb2b9e5909240.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/d5/eedbffd1714f5a596afa60439d48bc.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/d5/eedbffd1714f5a596afa60439d48bc.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/dc/b7ed804bd994744412ca7c599aec17.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/dc/b7ed804bd994744412ca7c599aec17.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/ec/735de7638e0a01c9ee4e20caacb531.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/ec/735de7638e0a01c9ee4e20caacb531.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/f3/3edfa96b9280310e4a02fb225a6281.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/f3/3edfa96b9280310e4a02fb225a6281.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/fb/468b11288a71b3eb53439d6def37ec.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/fb/468b11288a71b3eb53439d6def37ec.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/ff/821f393268e5328d29ab318999ff30.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/ff/821f393268e5328d29ab318999ff30.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/Router.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/context/AuthContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
