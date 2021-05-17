@@ -69,7 +69,7 @@ router.post("/login", async (req, res) => {
         const { email, password } = req.body;
 
         //validate
-        if(!email || !password){
+        if(!email || !password)
             return res
                 .status(400)
                 .json({ errorMessage: "Please enter all required fields."});
@@ -78,7 +78,7 @@ router.post("/login", async (req, res) => {
             if(!existingUser){
                 return res
                     .status(401)
-                    .json({ errorMessage: "Wrong email or password."});
+                    .json({ errorMessage: "Wrong email address."});
             }
 
             const passwordCorrect = await  bcrypt.compare(
@@ -88,7 +88,7 @@ router.post("/login", async (req, res) => {
             if(!passwordCorrect){
                 return res
                     .status(401)
-                    .json({ errorMessage: "Wrong email or password."});
+                    .json({ errorMessage: "Wrong password. Try again"});
             }
 
             //sign the token
@@ -105,7 +105,7 @@ router.post("/login", async (req, res) => {
                 httpOnly: true,
             })
                 .send();
-        }
+
     }catch(err){
         console.error(err);
         res.status(500).send();
