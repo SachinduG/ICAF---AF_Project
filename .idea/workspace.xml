@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="client created">
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clientForm created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +100,8 @@
       <workItem from="1620877559869" duration="9000" />
       <workItem from="1620981388344" duration="801000" />
       <workItem from="1620991159826" duration="4207000" />
-      <workItem from="1621001104875" duration="444000" />
+      <workItem from="1621001104875" duration="769000" />
+      <workItem from="1621257337725" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="admin panel created">
       <created>1619709760598</created>
@@ -384,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621001529985</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="clientForm created">
+      <created>1621001794074</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1621001794074</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,6 +428,7 @@
     <MESSAGE value="context created" />
     <MESSAGE value="logout created" />
     <MESSAGE value="client created" />
-    <option name="LAST_COMMIT_MESSAGE" value="client created" />
+    <MESSAGE value="clientForm created" />
+    <option name="LAST_COMMIT_MESSAGE" value="clientForm created" />
   </component>
 </project>
