@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import ClientForm from "./ClientForm";
 import ClientList from "./ClientList";
-import axios from "../../dist/index.63f10152";
+import axios from "axios";
 
 function Clients(){
     const [clients, setClients] = useState([]);
 
     async function getClients(){
-        const clientsRes = await axios.get("https://localhost:5000/client/");
+        const clientsRes = await axios.get("http://localhost:5000/client/");
         setClients(clientsRes.data);
     }
 

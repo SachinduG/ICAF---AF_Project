@@ -11,9 +11,10 @@ function ClientForm({getClients}){
             const clientData = {
                 name: clientName,
             };
-            await axios.post("https://localhost/5000/client/", clientData);
+            await axios.post("http://localhost/5000/client/", clientData);
             getClients();
         }catch (err){
+            alert(err);
             console.error(err);
         }
     }
