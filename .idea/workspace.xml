@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients">
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients list">
       <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,28 +103,7 @@
       <workItem from="1620991159826" duration="4207000" />
       <workItem from="1621001104875" duration="769000" />
       <workItem from="1621257337725" duration="5057000" />
-      <workItem from="1621499962937" duration="2073000" />
-    </task>
-    <task id="LOCAL-00002" summary="server connected to monogodb">
-      <created>1619767286027</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1619767286027</updated>
-    </task>
-    <task id="LOCAL-00003" summary="server connected to monogodb">
-      <created>1619767298327</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619767298327</updated>
-    </task>
-    <task id="LOCAL-00004" summary="user routes created">
-      <created>1619770413045</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1619770413045</updated>
+      <workItem from="1621499962937" duration="2432000" />
     </task>
     <task id="LOCAL-00005" summary="token created">
       <created>1619965735693</created>
@@ -447,7 +427,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621502179629</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="clients list">
+      <created>1621502331489</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1621502331489</updated>
+    </task>
+    <task id="LOCAL-00052" summary="clients list">
+      <created>1621502458383</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1621502458383</updated>
+    </task>
+    <task id="LOCAL-00053" summary="clients list">
+      <created>1621502538189</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1621502538189</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,6 +489,7 @@
     <MESSAGE value="clientForm created" />
     <MESSAGE value="minor fix" />
     <MESSAGE value="clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="clients" />
+    <MESSAGE value="clients list" />
+    <option name="LAST_COMMIT_MESSAGE" value="clients list" />
   </component>
 </project>
