@@ -17,10 +17,10 @@ function Clients(){
 
     return (
         <div>
-            <ClientForm/>
+            <ClientForm getClients={getClients}/>
             <ClientList clients={clients} />
         </div>
     );
-};
+}
 
 export default Clients;

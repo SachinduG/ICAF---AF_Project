@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from "axios";
 
-function ClientForm(){
+function ClientForm({getClients}){
     const [clientName, setClientName] = useState("");
 
     async function saveClient(e){
@@ -12,12 +12,12 @@ function ClientForm(){
                 name: clientName,
             };
             await axios.post("https://localhost/5000/client/", clientData);
+            getClients();
         }catch (err){
             console.error(err);
         }
     }
-}
-function ClientForm(){
+
     return (
         <div>
             <form onSubmit={saveClient}>
@@ -33,6 +33,6 @@ function ClientForm(){
             </form>
         </div>
     );
-};
+}
 
 export default ClientForm;

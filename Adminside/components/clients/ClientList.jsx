@@ -15,6 +15,6 @@ function ClientList({ clients }){
             </ul>
         </div>
     );
-};
+}
 
 export default ClientList;
