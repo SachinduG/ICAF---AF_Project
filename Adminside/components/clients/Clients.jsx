@@ -12,7 +12,7 @@ function Clients(){
     }
 
     useEffect(() => {
-        getClients()
+        getClients();
     }, []);
 
     return (
