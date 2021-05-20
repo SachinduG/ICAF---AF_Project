@@ -100,21 +100,7 @@
       <workItem from="1620991159826" duration="4207000" />
       <workItem from="1621001104875" duration="769000" />
       <workItem from="1621257337725" duration="5057000" />
-      <workItem from="1621499962937" duration="2735000" />
-    </task>
-    <task id="LOCAL-00007" summary="client route created">
-      <created>1620137335719</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1620137335719</updated>
-    </task>
-    <task id="LOCAL-00008" summary="client route authenticate">
-      <created>1620138286237</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1620138286237</updated>
+      <workItem from="1621499962937" duration="3132000" />
     </task>
     <task id="LOCAL-00009" summary="clients list route created">
       <created>1620138767880</created>
@@ -445,7 +431,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621502926087</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="clients list created">
+      <created>1621503053740</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1621503053740</updated>
+    </task>
+    <task id="LOCAL-00057" summary="clients list created">
+      <created>1621503273129</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1621503273129</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
