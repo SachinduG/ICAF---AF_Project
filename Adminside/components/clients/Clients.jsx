@@ -11,7 +11,7 @@ function Clients(){
         setClients(clientsRes.data);
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         getClients()
     }, []);
 
