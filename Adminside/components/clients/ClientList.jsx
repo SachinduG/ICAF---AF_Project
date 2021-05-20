@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ClientForm from "./ClientForm";
 
-function Client(){
+function Clients(){
     const [clients, setClients] = useState([]);
 
     async function getClients(){
@@ -18,7 +18,7 @@ function ClientList(){
         <div>
             <ul>
                 <ClientForm/>
-                <ClientList/>
+                <ClientList clients={clients}/>
             </ul>
         </div>
     );
