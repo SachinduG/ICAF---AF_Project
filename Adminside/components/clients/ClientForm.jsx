@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from "axios";
 
-function ClientForm({getClients}){
+function ClientForm({ getClients }){
     const [clientName, setClientName] = useState("");
 
     async function saveClient(e){
@@ -11,7 +11,7 @@ function ClientForm({getClients}){
             const clientData = {
                 name: clientName,
             };
-            await axios.post("http://localhost/5000/client/", clientData);
+            await axios.post("http://localhost:5000/client/", clientData);
             getClients();
         }catch (err){
             alert(err);
