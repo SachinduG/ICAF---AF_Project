@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ClientList({ clients }){
-    function renderClient() {
+    function renderClients() {
         return clients.map((client, i) => {
             return <li key={i}>{client.name}</li>;
         });
@@ -9,9 +9,7 @@ function ClientList({ clients }){
 
     return (
         <div>
-            <ul>
-                {renderClient()}
-            </ul>
+            <ul>{renderClients()}</ul>
         </div>
     );
 }

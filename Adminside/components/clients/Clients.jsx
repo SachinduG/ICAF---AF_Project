@@ -17,7 +17,7 @@ function Clients(){
 
     return (
         <div>
-            <ClientForm getClients={getClients}/>
+            <ClientForm getClients={getClients} />
             <ClientList clients={clients} />
         </div>
     );
