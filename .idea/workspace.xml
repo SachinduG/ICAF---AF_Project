@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients list">
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="clients list created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,21 +100,7 @@
       <workItem from="1620991159826" duration="4207000" />
       <workItem from="1621001104875" duration="769000" />
       <workItem from="1621257337725" duration="5057000" />
-      <workItem from="1621499962937" duration="2432000" />
-    </task>
-    <task id="LOCAL-00005" summary="token created">
-      <created>1619965735693</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1619965735693</updated>
-    </task>
-    <task id="LOCAL-00006" summary="login route created">
-      <created>1620136379342</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1620136379342</updated>
+      <workItem from="1621499962937" duration="2735000" />
     </task>
     <task id="LOCAL-00007" summary="client route created">
       <created>1620137335719</created>
@@ -448,7 +431,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621502538189</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="clients list">
+      <created>1621502720239</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1621502720239</updated>
+    </task>
+    <task id="LOCAL-00055" summary="clients list created">
+      <created>1621502926087</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1621502926087</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,6 +487,7 @@
     <MESSAGE value="minor fix" />
     <MESSAGE value="clients" />
     <MESSAGE value="clients list" />
-    <option name="LAST_COMMIT_MESSAGE" value="clients list" />
+    <MESSAGE value="clients list created" />
+    <option name="LAST_COMMIT_MESSAGE" value="clients list created" />
   </component>
 </project>

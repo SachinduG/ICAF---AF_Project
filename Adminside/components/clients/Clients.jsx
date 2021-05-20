@@ -14,9 +14,7 @@ function Clients(){
     useEffect(() =>{
         getClients()
     }, []);
-}
 
-function Clients(){
     return (
         <div>
             <ClientForm/>
