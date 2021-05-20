@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Clients(){
-    return<div>
+    return (
+        <div>
 
-    </div>;
+        </div>
+    );
 };
 
 export default Clients;
