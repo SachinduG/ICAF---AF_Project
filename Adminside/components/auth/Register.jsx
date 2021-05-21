@@ -74,7 +74,7 @@ function Register() {
 
             await axios.post("http://localhost:5000/auth/", registerData);
             await getLoggedIn();
-            history.push("/login");
+            history.push("/");
             await Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -145,7 +145,7 @@ function Register() {
                         />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <TextField id="password" name="password"label="Password" variant="outlined" fullWidth required
+                        <TextField id="password" name="password" label="Password" variant="outlined" fullWidth required
                                    type="password"
                                    onChange={(e) => setPassword(e.target.value)}
                                    value={password}

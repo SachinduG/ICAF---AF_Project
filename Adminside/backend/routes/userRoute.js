@@ -30,7 +30,6 @@ router.post("/", async (req, res) => {
                 .status(400)
                 .json({errorMessage: "Please enter the same password twice."});
 
-
         const existingUser = await User.findOne({email});
         if(existingUser)
             return res

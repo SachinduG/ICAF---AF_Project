@@ -72,7 +72,7 @@ function Login() {
             await axios.post("http://localhost:5000/auth/login", loginData);
 
             await getLoggedIn();
-            history.push("/login");
+            history.push("/");
             await Swal.fire({
                 position: 'center',
                 icon: 'success',

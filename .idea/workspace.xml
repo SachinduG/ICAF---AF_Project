@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register design">
       <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,21 +110,7 @@
       <workItem from="1621518946928" duration="2909000" />
       <workItem from="1621522455781" duration="1152000" />
       <workItem from="1621569757008" duration="1285000" />
-      <workItem from="1621571299515" duration="29633000" />
-    </task>
-    <task id="LOCAL-00032" summary="logout created">
-      <created>1620731251876</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1620731251876</updated>
-    </task>
-    <task id="LOCAL-00033" summary="logout created">
-      <created>1620731735872</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1620731735872</updated>
+      <workItem from="1621571299515" duration="30002000" />
     </task>
     <task id="LOCAL-00034" summary="logout created">
       <created>1620799377746</created>
@@ -454,7 +441,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621605797715</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="register design">
+      <created>1621606147356</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1621606147356</updated>
+    </task>
+    <task id="LOCAL-00082" summary="register design">
+      <created>1621606226170</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1621606226170</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
