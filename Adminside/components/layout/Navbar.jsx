@@ -7,7 +7,7 @@ function Navbar(){
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="nav-link" href="/">Home<span className="sr-only">(current)</span> </a>
+                <a className="nav-link" href="/" >Home<span className="sr-only">(current)</span> </a>
                 {loggedIn === false && (
                     <>
                         <a className="nav-link" href="/register">Register</a>

@@ -24,7 +24,7 @@ function LogOutBtn(){
         })
     }
 
-    return <button class="btn btn-outline-danger" onClick={logOut}>Log Out</button>;
+    return <button className="btn btn-outline-danger" onClick={logOut}>Log Out</button>;
 }
 
 export default LogOutBtn;

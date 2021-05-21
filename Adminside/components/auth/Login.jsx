@@ -53,7 +53,7 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                 />
-                <button type="submit" class="btn btn-outline-success" >Log in</button>
+                <button type="submit" className="btn btn-outline-success" >Log in</button>
             </form>
         </div>
     );
