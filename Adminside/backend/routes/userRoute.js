@@ -6,10 +6,10 @@ const jwt = require("jsonwebtoken");
 //register
 router.post("/", async (req, res) => {
     try {
-        const {email, password, passwordVerify} = req.body;
+        const {fname, lname, email, password, passwordVerify} = req.body;
 
         //validation
-        if (!email || !password || !passwordVerify)
+        if (!fname || !lname || !email || !password || !passwordVerify)
             return res
                 .status(400)
                 .json({errorMessage: "Please enter all required fields."});
@@ -37,6 +37,8 @@ router.post("/", async (req, res) => {
 
         //save a new user account to the db
         const newUser = new User({
+            fname,
+            lname,
             email,
             passwordHash,
         });
@@ -63,7 +65,6 @@ router.post("/", async (req, res) => {
 });
 
 //login
-
 router.post("/login", async (req, res) => {
     try{
         const { email, password } = req.body;

@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
 function Register() {
     const classes = useStyles();
 
+    const [fname, setFname] = useState("");
+    const [lname, setLname] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordVerify, setPasswordVerify] = useState("");
@@ -29,6 +31,8 @@ function Register() {
         e.preventDefault();
         try{
             const registerData = {
+                fname,
+                lname,
                 email,
                 password,
                 passwordVerify,
@@ -54,6 +58,16 @@ function Register() {
         <div>
             <h1>Register a new account</h1>
             <form onSubmit={register} className={classes.root}>
+                <TextField id="outlined-basic" label="First Name" variant="outlined" required
+                           type="text"
+                           onChange={(e) => setFname(e.target.value)}
+                           value={fname}
+                />
+                <TextField id="outlined-basic" label="Last Name" variant="outlined" required
+                           type="text"
+                           onChange={(e) => setLname(e.target.value)}
+                           value={lname}
+                />
                 <TextField id="outlined-basic" label="Email Address" variant="outlined" required
                            type="email"
                            onChange={(e) => setEmail(e.target.value)}
