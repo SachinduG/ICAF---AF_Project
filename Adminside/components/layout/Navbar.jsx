@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import {yellow} from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,9 +40,9 @@ function Navbar(){
                 <div className={classes.root}>
                     <AppBar position="static" color='primary'>
                         <Toolbar>
-                            <a className="nav-link" href="/" ><HomeRoundedIcon/><span className="sr-only">(current)</span> </a>
+                            <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
                             <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="/client">Clients</a>
+                                <a className="nav-link" href="/client" style={{color: "black"}}>Clients</a>
                             </Typography>
                             <LogOutBtn/>
                         </Toolbar>

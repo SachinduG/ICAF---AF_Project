@@ -8,14 +8,51 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+import Typography from '@material-ui/core/Typography';
+import {Checkbox, Container, CssBaseline, FormControlLabel} from "@material-ui/core";
+import Link from '@material-ui/core/Link';
+import Box from '@material-ui/core/Box';
+
+function Copyright() {
+    return (
+        <Typography variant="body2" color="textSecondary" align="center">
+            {'Copyright © '}
+            <Link color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
+                Sachindu
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
 
 const useStyles = makeStyles((theme) => ({
     margin: {
         margin: theme.spacing(1),
-    }
+    },
+    root: {
+        minWidth: 275,
+    },
+    title: {
+        fontSize: 25,
+    },
+    paper: {
+        marginTop: theme.spacing(8),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+    },
 }));
 
 function Login() {
+    const classes = useStyles();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -49,44 +86,58 @@ function Login() {
     }
 
     return (
-        <div className="container">
-            <h1>Log in to your account</h1>
-            <form onSubmit={login}>
+        <Container component="main" maxWidth="xs">
+            <CssBaseline/>
+            <div className={classes.paper}>
+                <Typography component="h1" variant="h5">
+                    Sign In
+                </Typography>
+                <form onSubmit={login} className={classes.form}>
 
-                <div className="form-group">
-                    <Grid container spacing={1} alignItems="flex-end">
-                        <Grid item>
-                            <AccountCircle />
+                    <div className="form-group">
+                        <Grid container spacing={1} alignItems="flex-end">
+                            <Grid item>
+                                <AccountCircle />
+                            </Grid>
+                            <Grid item>
+                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal" required fullWidth autoFocus
+                                           type="email"
+                                           onChange={(e) => setEmail(e.target.value)}
+                                           value={email}
+                                />
+                            </Grid>
                         </Grid>
-                        <Grid item>
-                            <TextField id="input-with-icon-grid" label="Email Address" required
-                                       type="email"
-                                       onChange={(e) => setEmail(e.target.value)}
-                                       value={email}
-                            />
+                    </div>
+
+                    <div className="form-group">
+                        <Grid container spacing={1} alignItems="flex-end">
+                            <Grid item>
+                                <LockOpenIcon />
+                            </Grid>
+                            <Grid item>
+                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth autoFocus  required
+                                           type="password"
+                                           onChange={(e) => setPassword(e.target.value)}
+                                           value={password}
+                                />
+                            </Grid>
+                        </Grid>
+                    </div>
+
+                    <button type="submit" className="btn btn-outline-success" >Log in</button><br/><br/>
+                    <Grid container>
+                        <Grid item >
+                            <Link href="/register" variant="body2">
+                                {"Don't have an account? Sign Up"}
+                            </Link>
                         </Grid>
                     </Grid>
-                </div>
-
-                <div className="form-group">
-                    <Grid container spacing={1} alignItems="flex-end">
-                        <Grid item>
-                            <LockOpenIcon />
-                        </Grid>
-                        <Grid item>
-                            <TextField id="input-with-icon-grid" label="Password" required
-                                       type="password"
-                                       onChange={(e) => setPassword(e.target.value)}
-                                       value={password}
-                            />
-                        </Grid>
-                    </Grid>
-
-                </div>
-
-                <button type="submit" className="btn btn-outline-success" >Log in</button>
-            </form>
-        </div>
+                </form>
+            </div>
+            <Box mt={10} mr={5}>
+                <Copyright />
+            </Box>
+        </Container>
     );
 }
 
