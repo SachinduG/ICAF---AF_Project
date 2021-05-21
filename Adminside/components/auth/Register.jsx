@@ -104,6 +104,12 @@ function Register() {
                     title: 'Oops...',
                     text: 'Please enter the same password twice!'
                 })
+            }else{
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'An account with this email address already exists!'
+                })
             }
         }
     }
