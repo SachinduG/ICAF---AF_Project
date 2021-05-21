@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="button designed" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="button designed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/LogOutBtn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +116,7 @@
       <workItem from="1621518946928" duration="2909000" />
       <workItem from="1621522455781" duration="1152000" />
       <workItem from="1621569757008" duration="1285000" />
+      <workItem from="1621571299515" duration="5416000" />
     </task>
     <task id="LOCAL-00017" summary="register created">
       <created>1620570474568</created>

@@ -2,19 +2,9 @@ import axios from "axios";
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
-}));
+import Swal from "sweetalert2";
 
 function Login() {
-    const classes = useStyles();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -35,6 +25,13 @@ function Login() {
 
             await getLoggedIn();
             history.push("/");
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You are successfully log in!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         } catch (err) {
             console.error(err);
         }
@@ -56,7 +53,7 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                 />
-                <Button type="submit" variant="contained" color="primary">Log in</Button>
+                <button type="submit" class="btn btn-outline-success" >Log in</button>
             </form>
         </div>
     );

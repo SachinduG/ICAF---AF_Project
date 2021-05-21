@@ -2,19 +2,9 @@ import React, {useContext, useState} from "react";
 import axios from "axios";
 import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
-}));
+import Swal from "sweetalert2";
 
 function Register() {
-    const classes = useStyles();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -35,6 +25,13 @@ function Register() {
             await axios.post("http://localhost:5000/auth/", registerData);
             await getLoggedIn();
             history.push("/");
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You are successfully sign in!',
+                showConfirmButton: false,
+                timer: 1500
+            })
 
         }catch (err){
             console.error(err);
@@ -60,7 +57,7 @@ function Register() {
                        onChange={(e) => setPasswordVerify(e.target.value)}
                        value={passwordVerify}
                 />
-                <Button type="submit" variant="contained">Register</Button>
+                <button type="submit" class="btn btn-outline-secondary">Register</button>
         </form>
     </div>
     );
