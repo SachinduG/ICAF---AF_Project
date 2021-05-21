@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import ClientForm from "./ClientForm";
 import ClientList from "./ClientList";
 import axios from "axios";
 
@@ -17,7 +16,6 @@ function Clients(){
 
     return (
         <div>
-            <ClientForm getClients={getClients} />
             <ClientList clients={clients} />
         </div>
     );
