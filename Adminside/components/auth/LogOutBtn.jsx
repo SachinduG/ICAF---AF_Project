@@ -14,13 +14,11 @@ function LogOutBtn(){
         await getLoggedIn();
         history.push("/");
         await Swal.fire({
+            position: 'top-end',
+            icon: 'warning',
             title: 'Log Out',
-            showClass: {
-                popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-                popup: 'animate__animated animate__fadeOutUp'
-            }
+            showConfirmButton: false,
+            timer: 1500
         })
     }
 
