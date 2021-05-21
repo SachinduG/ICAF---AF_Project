@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@material-ui/core/Typography';
-import {Checkbox, Container, CssBaseline, FormControlLabel} from "@material-ui/core";
+import {Container, CssBaseline} from "@material-ui/core";
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 
@@ -86,10 +86,10 @@ function Login() {
     }
 
     return (
-        <Container component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs" >
             <CssBaseline/>
             <div className={classes.paper}>
-                <Typography component="h1" variant="h5">
+                <Typography component="h1" variant="h5" >
                     Sign In
                 </Typography>
                 <form onSubmit={login} className={classes.form}>
@@ -100,7 +100,7 @@ function Login() {
                                 <AccountCircle />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal" required fullWidth autoFocus
+                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal"  fullWidth required
                                            type="email"
                                            onChange={(e) => setEmail(e.target.value)}
                                            value={email}
@@ -115,7 +115,7 @@ function Login() {
                                 <LockOpenIcon />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth autoFocus  required
+                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth  required autoFocus
                                            type="password"
                                            onChange={(e) => setPassword(e.target.value)}
                                            value={password}
@@ -124,7 +124,7 @@ function Login() {
                         </Grid>
                     </div>
 
-                    <button type="submit" className="btn btn-outline-success" >Log in</button><br/><br/>
+                    <button type="submit" className="btn btn-outline-success" style={{marginLeft:80}} >Log in</button><br/><br/>
                     <Grid container>
                         <Grid item >
                             <Link href="/register" variant="body2">
@@ -134,7 +134,7 @@ function Login() {
                     </Grid>
                 </form>
             </div>
-            <Box mt={10} mr={5}>
+            <Box mt={37} mr={10}>
                 <Copyright />
             </Box>
         </Container>
