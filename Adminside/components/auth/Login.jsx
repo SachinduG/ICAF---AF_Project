@@ -86,10 +86,10 @@ function Login() {
     }
 
     return (
-        <Container component="main" maxWidth="xs" >
+        <Container component="main" maxWidth="xs">
             <CssBaseline/>
             <div className={classes.paper}>
-                <Typography component="h1" variant="h5" >
+                <Typography component="h1" variant="h5" style={{marginRight: 180 }}>
                     Sign In
                 </Typography>
                 <form onSubmit={login} className={classes.form}>
@@ -100,7 +100,7 @@ function Login() {
                                 <AccountCircle />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal"  fullWidth required
+                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal"  fullWidth required autoFocus
                                            type="email"
                                            onChange={(e) => setEmail(e.target.value)}
                                            value={email}
@@ -115,7 +115,7 @@ function Login() {
                                 <LockOpenIcon />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth  required autoFocus
+                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth  required
                                            type="password"
                                            onChange={(e) => setPassword(e.target.value)}
                                            value={password}

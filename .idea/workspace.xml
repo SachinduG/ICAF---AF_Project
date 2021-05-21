@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="login design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/userModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,14 +110,7 @@
       <workItem from="1621518946928" duration="2909000" />
       <workItem from="1621522455781" duration="1152000" />
       <workItem from="1621569757008" duration="1285000" />
-      <workItem from="1621571299515" duration="23417000" />
-    </task>
-    <task id="LOCAL-00026" summary="useRoutes edited">
-      <created>1620725500484</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1620725500484</updated>
+      <workItem from="1621571299515" duration="24209000" />
     </task>
     <task id="LOCAL-00027" summary="context provider created">
       <created>1620726141036</created>
@@ -454,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621599003996</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="login design">
+      <created>1621599516528</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1621599516529</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
