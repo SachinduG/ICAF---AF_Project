@@ -81,7 +81,11 @@ function Login() {
                 timer: 1500
             })
         } catch (err) {
-            console.error(err);
+            await Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Email or Password is wrong!'
+            })
         }
     }
 
