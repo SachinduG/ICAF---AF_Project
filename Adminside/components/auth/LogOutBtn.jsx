@@ -14,7 +14,7 @@ function LogOutBtn(){
         await getLoggedIn();
         history.push("/");
         await Swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'warning',
             title: 'Log Out',
             showConfirmButton: false,

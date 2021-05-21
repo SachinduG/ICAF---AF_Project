@@ -49,33 +49,40 @@ function Login() {
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>Log in to your account</h1>
             <form onSubmit={login}>
-                <Grid container spacing={1} alignItems="flex-end">
-                    <Grid item>
-                        <AccountCircle />
+
+                <div className="form-group">
+                    <Grid container spacing={1} alignItems="flex-end">
+                        <Grid item>
+                            <AccountCircle />
+                        </Grid>
+                        <Grid item>
+                            <TextField id="input-with-icon-grid" label="Email Address" required
+                                       type="email"
+                                       onChange={(e) => setEmail(e.target.value)}
+                                       value={email}
+                            />
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <TextField id="input-with-icon-grid" label="Email Address"
-                            type="email"
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                        />
+                </div>
+
+                <div className="form-group">
+                    <Grid container spacing={1} alignItems="flex-end">
+                        <Grid item>
+                            <LockOpenIcon />
+                        </Grid>
+                        <Grid item>
+                            <TextField id="input-with-icon-grid" label="Password" required
+                                       type="password"
+                                       onChange={(e) => setPassword(e.target.value)}
+                                       value={password}
+                            />
+                        </Grid>
                     </Grid>
-                </Grid>
-                <Grid container spacing={1} alignItems="flex-end">
-                    <Grid item>
-                        <LockOpenIcon />
-                    </Grid>
-                    <Grid item>
-                        <TextField id="input-with-icon-grid" label="Password"
-                                   type="password"
-                                   onChange={(e) => setPassword(e.target.value)}
-                                   value={password}
-                        />
-                    </Grid>
-                </Grid>
+
+                </div>
 
                 <button type="submit" className="btn btn-outline-success" >Log in</button>
             </form>
