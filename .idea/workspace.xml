@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="login design">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="register design" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,14 +106,7 @@
       <workItem from="1621518946928" duration="2909000" />
       <workItem from="1621522455781" duration="1152000" />
       <workItem from="1621569757008" duration="1285000" />
-      <workItem from="1621571299515" duration="26902000" />
-    </task>
-    <task id="LOCAL-00029" summary="context provider created">
-      <created>1620729400782</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1620729400782</updated>
+      <workItem from="1621571299515" duration="27250000" />
     </task>
     <task id="LOCAL-00030" summary="context created">
       <created>1620730035834</created>
@@ -454,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621601544877</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="register design">
+      <created>1621603224597</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1621603224597</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +470,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="client route created" />
     <MESSAGE value="client route authenticate" />
     <MESSAGE value="clients list route created" />
     <MESSAGE value="frontend router created" />
@@ -498,6 +494,7 @@
     <MESSAGE value="text field designed" />
     <MESSAGE value="nav bar" />
     <MESSAGE value="login design" />
-    <option name="LAST_COMMIT_MESSAGE" value="login design" />
+    <MESSAGE value="register design" />
+    <option name="LAST_COMMIT_MESSAGE" value="register design" />
   </component>
 </project>

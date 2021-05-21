@@ -72,7 +72,7 @@ function Login() {
             await axios.post("http://localhost:5000/auth/login", loginData);
 
             await getLoggedIn();
-            history.push("/");
+            history.push("/login");
             await Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -127,9 +127,9 @@ function Login() {
                     <button type="submit" className="btn btn-outline-success" style={{marginLeft:80}} >Log in</button><br/><br/>
                     <Grid container>
                         <Grid item >
-                            <Link href="/register" variant="body2">
+                            <a href="/register" variant="body2" className="nav-link" >
                                 {"Don't have an account? Sign Up"}
-                            </Link>
+                            </a>
                         </Grid>
                     </Grid>
                 </form>
