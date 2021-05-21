@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        color: "black"
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -27,28 +26,28 @@ function Navbar(){
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                {loggedIn === false && (
-                    <>
+            {loggedIn === false && (
+                <div>
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                         <a className="nav-link" href="/register">Register</a>
                         <a className="nav-link" href="/login">Log In</a>
-                    </>
-                )}
-            </nav>
-            <div className={classes.root}>
-                {loggedIn === true && (
-                        <AppBar position="static">
-                            <Toolbar>
-                                <a className="nav-link" href="/" ><HomeRoundedIcon/><span className="sr-only">(current)</span> </a>
-                                <Typography variant="h6" className={classes.title} >
-                                    <a className="nav-link" href="/client">Clients</a>
-                                </Typography>
-                                <LogOutBtn/>
-                            </Toolbar>
-                        </AppBar>
+                    </nav>
+                </div>
 
-                )}
-            </div>
+            )}
+            {loggedIn === true && (
+                <div className={classes.root}>
+                    <AppBar position="static" color='primary'>
+                        <Toolbar>
+                            <a className="nav-link" href="/" ><HomeRoundedIcon/><span className="sr-only">(current)</span> </a>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="/client">Clients</a>
+                            </Typography>
+                            <LogOutBtn/>
+                        </Toolbar>
+                    </AppBar>
+                </div>
+            )}
         </div>
     );
 }

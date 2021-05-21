@@ -3,6 +3,7 @@ import axios from "axios";
 import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import Swal from "sweetalert2";
+import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 
 function LogOutBtn(){
     const { getLoggedIn } = useContext(AuthContext);
@@ -22,7 +23,7 @@ function LogOutBtn(){
         })
     }
 
-    return <button className="btn btn-outline-danger" onClick={logOut}>Log Out</button>;
+    return <button className="btn btn-outline-danger" onClick={logOut}>Log Out<ExitToAppRoundedIcon style={{}}/></button>;
 }
 
 export default LogOutBtn;

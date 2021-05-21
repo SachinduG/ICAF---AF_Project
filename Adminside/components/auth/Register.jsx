@@ -69,7 +69,7 @@ function Register() {
                            onChange={(e) => setPasswordVerify(e.target.value)}
                            value={passwordVerify}
                 />
-                <button type="submit" className="btn btn-outline-secondary">Register</button>
+                <button type="submit" className="btn btn-outline-info">Register</button>
         </form>
     </div>
     );
