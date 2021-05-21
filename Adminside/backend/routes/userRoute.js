@@ -13,11 +13,18 @@ router.post("/", async (req, res) => {
             return res
                 .status(400)
                 .json({errorMessage: "Please enter all required fields."});
-
+        if(lname.length < 3)
+            return res
+                .status(400)
+                .json({errorMessage: "Please enter a first name of at least 3 characters."});
+        if(fname.length < 3)
+            return res
+                .status(400)
+                .json({errorMessage: "Please enter a last name of at least 3 characters."});
         if(password.length < 6)
             return res
                 .status(400)
-                .json({errorMessage: "Please enter a password of at least 8 characters."});
+                .json({errorMessage: "Please enter a password of at least 6 characters."});
         if(password !== passwordVerify)
             return res
                 .status(400)

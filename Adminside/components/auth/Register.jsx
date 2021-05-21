@@ -72,21 +72,6 @@ function Register() {
                 passwordVerify,
             };
 
-            if(fname.length < 3){
-                await Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'First Name must be at least 3 characters!'
-                })
-            }
-            if(lname.length < 3){
-                await Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'First Name must be at least 3 characters!'
-                })
-            }
-
             await axios.post("http://localhost:5000/auth/", registerData);
             await getLoggedIn();
             history.push("/login");
@@ -99,7 +84,27 @@ function Register() {
             })
 
         }catch (err){
-            console.error(err);
+            if(fname.length < 3){
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'First Name must be at least 3 characters!'
+                })
+            }
+            if(lname.length < 3){
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Last Name must be at least 3 characters!'
+                })
+            }
+            if(password !== passwordVerify){
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please enter the same password twice!'
+                })
+            }
         }
     }
 
