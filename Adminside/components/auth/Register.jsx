@@ -2,8 +2,20 @@ import React, {useContext, useState} from "react";
 import axios from "axios";
 import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1),
+        },
+    },
+}));
 
 function Register() {
+    const classes = useStyles();
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordVerify, setPasswordVerify] = useState("");
@@ -48,7 +60,7 @@ function Register() {
                        onChange={(e) => setPasswordVerify(e.target.value)}
                        value={passwordVerify}
                 />
-                <button type="submit">Register</button>
+                <Button type="submit" variant="contained">Register</Button>
         </form>
     </div>
     );

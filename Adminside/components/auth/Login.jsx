@@ -2,8 +2,20 @@ import axios from "axios";
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1),
+        },
+    },
+}));
 
 function Login() {
+    const classes = useStyles();
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -44,7 +56,7 @@ function Login() {
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                 />
-                <button type="submit">Log in</button>
+                <Button type="submit" variant="contained" color="primary">Log in</Button>
             </form>
         </div>
     );
