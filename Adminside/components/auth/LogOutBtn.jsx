@@ -4,6 +4,7 @@ import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import Swal from "sweetalert2";
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppTwoTone';
+import {Button} from "@material-ui/core";
 
 function LogOutBtn(){
     const { getLoggedIn } = useContext(AuthContext);
@@ -23,7 +24,7 @@ function LogOutBtn(){
         })
     }
 
-    return <button className="btn btn-outline-danger" onClick={logOut}>Log Out<ExitToAppRoundedIcon /></button>;
+    return <Button variant="outlined" color="secondary" onClick={logOut}>Log Out<ExitToAppRoundedIcon /></Button>;
 }
 
 export default LogOutBtn;

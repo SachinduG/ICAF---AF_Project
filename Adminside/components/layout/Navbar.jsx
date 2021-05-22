@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    abRoot: {
+        backgroundColor: "#A0A0A0"
+    },
+    abStatic: {
+        border: "#202020 1px"
+    },
 }));
 
 function Navbar(){
@@ -37,11 +43,26 @@ function Navbar(){
             )}
             {loggedIn === true && (
                 <div className={classes.root}>
-                    <AppBar position="static" color='primary'>
+                    <AppBar position="static" style={{ borderRadius: "80px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
                         <Toolbar>
                             <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
                             <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="/client" style={{color: "black"}}>Clients</a>
+                                <a className="nav-link" href="/client" style={{color: "black"}}>Researchers</a>
+                            </Typography>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="#" style={{color: "black"}}>Presenters</a>
+                            </Typography>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="#" style={{color: "black"}}>Attendees</a>
+                            </Typography>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="#" style={{color: "black"}}>Research Papers</a>
+                            </Typography>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="#" style={{color: "black"}}>Presentations</a>
+                            </Typography>
+                            <Typography variant="h6" className={classes.title} >
+                                <a className="nav-link" href="#" style={{color: "black"}}>Workshops</a>
                             </Typography>
                             <LogOutBtn/>
                         </Toolbar>
