@@ -25,24 +25,22 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        '& > *': {
-            margin: theme.spacing(1),
-            width: '25ch',
-        },
+        minWidth: 250,
     },
     paper: {
-        marginTop: theme.spacing(8),
+        margin: theme.spacing(10, 0, 0, -10),
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-    },
-    avatar: {
-        margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
+        background: '#AAB7B8',
+        borderRadius: 15,
+        width: '130%',
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
         marginTop: theme.spacing(3),
+        marginLeft: theme.spacing(10),
+        marginRight: theme.spacing(10),
+        width: '90%',
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
@@ -118,7 +116,7 @@ function Register() {
         <Container component="main" maxWidth="xs">
             <CssBaseline/>
             <div className={classes.paper}>
-                <Typography component="h1" variant="h5">
+                <Typography component="h1" variant="h5" style={{marginTop:15}}>
                     Register
                 </Typography>
             <form onSubmit={register} className={classes.form}>
@@ -160,7 +158,7 @@ function Register() {
                     </Grid>
                 </Grid>
 
-                <button type="submit" className="btn btn-outline-success" style={{marginLeft:150, marginTop:20}}>Register</button><br/><br/>
+                <button type="submit" className="btn btn-outline-success" style={{marginLeft:190, marginTop:20}}>Register</button><br/><br/>
                 <Grid container justify="flex-center">
                     <Grid item>
                         <a href="/login" variant="body2" className="nav-link">
@@ -170,7 +168,7 @@ function Register() {
                 </Grid>
             </form>
             </div>
-            <Box mt={30} mr={10}>
+            <Box mt={26} mr={10}>
                 <Copyright />
             </Box>
     </Container>
