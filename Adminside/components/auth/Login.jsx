@@ -31,20 +31,24 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
     },
     root: {
-        minWidth: 275,
+        minWidth: 250,
     },
     title: {
         fontSize: 25,
     },
     paper: {
-        marginTop: theme.spacing(8),
+        marginTop: theme.spacing(12),
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        background: '#AAB7B8',
+        width: '95%',
+        borderRadius: 15,
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
-        marginTop: theme.spacing(1),
+        width: '100%',
+        marginTop: theme.spacing(2),
+        marginLeft: theme.spacing(14),
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
@@ -93,7 +97,7 @@ function Login() {
         <Container component="main" maxWidth="xs">
             <CssBaseline/>
             <div className={classes.paper}>
-                <Typography component="h1" variant="h5" style={{marginRight: 180 }}>
+                <Typography component="h1" variant="h5" style={{marginRight: 45, marginTop: 20}}>
                     Sign In
                 </Typography>
                 <form onSubmit={login} className={classes.form}>
@@ -128,7 +132,7 @@ function Login() {
                         </Grid>
                     </div>
 
-                    <button type="submit" className="btn btn-outline-success" style={{marginLeft:80}} >Log in</button><br/><br/>
+                    <button type="submit" className="btn btn-outline-success" style={{marginLeft:75}} >Log in</button><br/><br/>
                     <Grid container>
                         <Grid item >
                             <a href="/register" variant="body2" className="nav-link" >
