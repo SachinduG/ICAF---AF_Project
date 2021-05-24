@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,8 +24,16 @@ const useStyles = makeStyles((theme) => ({
 
 function Navbar(){
     const classes = useStyles();
-
+    const [anchorEl, setAnchorEl] = useState(null);
     const { loggedIn } = useContext(AuthContext);
+
+    const handleOpenMenu = e => {
+        setAnchorEl(e.currentTarget);
+    };
+
+    const handleMenuClose = e => {
+
+    }
 
     return (
         <div>
@@ -47,26 +52,44 @@ function Navbar(){
                         <Toolbar>
                             <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
                             <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="/client" style={{color: "black"}}>Researchers</a>
+                                <Button aria-controls='menu1'
+                                        onClick={handleOpenMenu}
+                                        disableRipple
+                                        variant='contained'
+                                        color='transparent'
+                                        style={{color: "black"}}>Clients
+                                </Button>
                             </Typography>
                             <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="#" style={{color: "black"}}>Presenters</a>
-                            </Typography>
-                            <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="#" style={{color: "black"}}>Attendees</a>
-                            </Typography>
-                            <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="#" style={{color: "black"}}>Research Papers</a>
-                            </Typography>
-                            <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="#" style={{color: "black"}}>Presentations</a>
-                            </Typography>
-                            <Typography variant="h6" className={classes.title} >
-                                <a className="nav-link" href="#" style={{color: "black"}}>Workshops</a>
+                                <Button aria-controls='menu2'
+                                        onClick={handleOpenMenu}
+                                        disableRipple
+                                        variant='contained'
+                                        color='transparent'
+                                        style={{color: "black"}}>Events
+                                </Button>
                             </Typography>
                             <LogOutBtn/>
                         </Toolbar>
                     </AppBar>
+                    <Menu
+                        id='menu1'
+                        onClose={handleMenuClose}
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}>
+                        <MenuList onClick={handleMenuClose}>Researchers</MenuList>
+                        <MenuList onClick={handleMenuClose}>Presenters</MenuList>
+                        <MenuList onClick={handleMenuClose}>Attendees</MenuList>
+                    </Menu>
+                    <Menu
+                        id='menu2'
+                        onClose={handleMenuClose}
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}>
+                        <MenuList onClick={handleMenuClose}>Research Papers</MenuList>
+                        <MenuList onClick={handleMenuClose}>Presentations</MenuList>
+                        <MenuList onClick={handleMenuClose}>Workshops</MenuList>
+                    </Menu>
                 </div>
             )}
         </div>
