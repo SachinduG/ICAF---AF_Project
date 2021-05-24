@@ -9,9 +9,10 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     menuButton: {
-        marginLeft: 'auto',
+        marginLeft: 2,
+        marginRight: 5,
         '&:hover':{
-            background: 'black',
+            background: 'white',
         },
     },
     title: {
@@ -54,26 +55,22 @@ function Navbar(){
                     <AppBar position="static" style={{ borderRadius: "80px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
                         <Toolbar>
                             <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
-                            <Typography variant="h6" className={classes.title} >
-                                <Button aria-controls='menu1'
-                                        onClick={handleOpenMenu}
-                                        disableRipple
-                                        variant='contained'
-                                        className={classes.menuButton}
-                                        color='default'
-                                        style={{color: "black"}}>Clients
-                                </Button>
-                            </Typography>
-                            <Typography variant="h6" className={classes.title} >
-                                <Button aria-controls='menu2'
-                                        onClick={handleOpenMenu}
-                                        disableRipple
-                                        variant='contained'
-                                        className={classes.menuButton}
-                                        color='default'
-                                        style={{color: "black"}}>Events
-                                </Button>
-                            </Typography>
+                            <Button aria-controls='menu1'
+                                    onClick={handleOpenMenu}
+                                    disableRipple
+                                    variant='contained'
+                                    className={classes.menuButton}
+                                    color='default'
+                                    style={{color: "black"}}>Clients
+                            </Button>
+                            <Button aria-controls='menu2'
+                                    onClick={handleOpenMenu}
+                                    disableRipple
+                                    variant='contained'
+                                    className={classes.menuButton}
+                                    color='default'
+                                    style={{color: "black"}}>Events
+                            </Button>
                             <LogOutBtn/>
                         </Toolbar>
                     </AppBar>
@@ -82,7 +79,7 @@ function Navbar(){
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuList onClick={handleMenuClose}>Researchers</MenuList>
+                        <MenuList onClick={handleMenuClose}><clients/></MenuList>
                         <MenuList onClick={handleMenuClose}>Presenters</MenuList>
                         <MenuList onClick={handleMenuClose}>Attendees</MenuList>
                     </Menu>

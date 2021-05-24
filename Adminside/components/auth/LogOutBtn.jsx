@@ -24,7 +24,7 @@ function LogOutBtn(){
         })
     }
 
-    return <Button variant="contained" color="secondary" onClick={logOut}>Log Out<ExitToAppRoundedIcon /></Button>;
+    return <Button variant="contained" color="secondary" style={{marginLeft: 'auto'}} onClick={logOut}>Log Out<ExitToAppRoundedIcon /></Button>;
 }
 
 export default LogOutBtn;
