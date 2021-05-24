@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     menuButton: {
-        marginRight: theme.spacing(2),
+        marginLeft: 'auto',
+        '&:hover':{
+            background: 'black',
+        },
     },
     title: {
         flexGrow: 1,
@@ -31,9 +34,9 @@ function Navbar(){
         setAnchorEl(e.currentTarget);
     };
 
-    const handleMenuClose = e => {
-
-    }
+    const handleMenuClose = () => {
+        setAnchorEl(null);
+    };
 
     return (
         <div>
@@ -56,7 +59,8 @@ function Navbar(){
                                         onClick={handleOpenMenu}
                                         disableRipple
                                         variant='contained'
-                                        color='transparent'
+                                        className={classes.menuButton}
+                                        color='default'
                                         style={{color: "black"}}>Clients
                                 </Button>
                             </Typography>
@@ -65,7 +69,8 @@ function Navbar(){
                                         onClick={handleOpenMenu}
                                         disableRipple
                                         variant='contained'
-                                        color='transparent'
+                                        className={classes.menuButton}
+                                        color='default'
                                         style={{color: "black"}}>Events
                                 </Button>
                             </Typography>
