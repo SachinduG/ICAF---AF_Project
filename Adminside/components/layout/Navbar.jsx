@@ -3,6 +3,7 @@ import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography} from "@material-ui/core";
+import Clients from '../clients/Clients';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -51,6 +52,7 @@ function Navbar(){
 
             )}
             {loggedIn === true && (
+
                 <div className={classes.root}>
                     <AppBar position="static" style={{ borderRadius: "80px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
                         <Toolbar>
@@ -79,7 +81,7 @@ function Navbar(){
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuList onClick={handleMenuClose}><clients/></MenuList>
+                        <MenuList onClick={handleMenuClose}><Clients/></MenuList>
                         <MenuList onClick={handleMenuClose}>Presenters</MenuList>
                         <MenuList onClick={handleMenuClose}>Attendees</MenuList>
                     </Menu>
