@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
-import HomeRoundedIcon from '@material-ui/icons';
-import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography} from "@material-ui/core";
+import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
+import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
+import { Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography } from "@material-ui/core";
 import Clients from '../clients/Clients';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,21 +57,25 @@ function Navbar(){
                             <Typography>
                                 <a className="nav-link" href="/"><HomeRoundedIcon/></a>
                             </Typography>
-                            <Button aria-controls='menu1'
-                                    onClick={handleOpenMenu}
-                                    disableRipple
-                                    variant='contained'
-                                    className={classes.menuButton}
-                                    color='default'
-                                    style={{color: "black"}}>Clients
+                            <Button
+                                aria-controls='menu1'
+                                startIcon={<PeopleOutlineRoundedIcon/>}
+                                onClick={handleOpenMenu}
+                                disableRipple
+                                variant='contained'
+                                className={classes.menuButton}
+                                color='default'
+                                style={{color: "black"}}>Clients
                             </Button>
-                            <Button aria-controls='menu2'
-                                    onClick={handleOpenMenu}
-                                    disableRipple
-                                    variant='contained'
-                                    className={classes.menuButton}
-                                    color='default'
-                                    style={{color: "black"}}>Events
+                            <Button
+                                aria-controls='menu2'
+                                startIcon={<DescriptionRoundedIcon/>}
+                                onClick={handleOpenMenu}
+                                disableRipple
+                                variant='contained'
+                                className={classes.menuButton}
+                                color='default'
+                                style={{color: "black"}}>Events
                             </Button>
                             <LogOutBtn/>
                         </Toolbar>
