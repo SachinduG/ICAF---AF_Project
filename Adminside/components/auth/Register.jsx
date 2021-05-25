@@ -159,7 +159,7 @@ function Register() {
                 </Grid>
 
                 <button type="submit" className="btn btn-outline-success" style={{marginLeft:190, marginTop:20}}>Register</button><br/><br/>
-                <Grid container justify="flex-center">
+                <Grid container justify="center">
                     <Grid item>
                         <a href="/login" variant="body2" className="nav-link">
                             Already have an account? Sign in

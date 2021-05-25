@@ -2,7 +2,8 @@ import React from "react";
 import Router from "./Router";
 import axios from "axios";
 import { AuthContextProvider } from "./context/AuthContext";
-import { ThemeProvider } from './utils/theme';
+import { ThemeProvider } from '@material-ui/core';
+import theme from './utils/theme';
 
 axios.defaults.withCredentials = true;
 

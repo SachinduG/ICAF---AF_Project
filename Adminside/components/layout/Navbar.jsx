@@ -19,12 +19,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
-    abRoot: {
-        backgroundColor: "#A0A0A0"
-    },
-    abStatic: {
-        border: "#202020 1px"
-    },
+
 }));
 
 function Navbar(){
@@ -55,7 +50,7 @@ function Navbar(){
             {loggedIn === true && (
 
                 <div className={classes.root}>
-                    <AppBar position="static" style={{ borderRadius: "10px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
+                    <AppBar position="static" color='primary' classes={{ positionStatic: classes.abStatic }}>
                         <Toolbar>
                             <Typography>
                                 <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
