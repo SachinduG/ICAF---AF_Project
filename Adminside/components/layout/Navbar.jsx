@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import HomeRoundedIcon from '@material-ui/icons';
 import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography} from "@material-ui/core";
 import Clients from '../clients/Clients';
 
@@ -39,7 +39,7 @@ function Navbar(){
         <div>
             {loggedIn === false && (
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{alignItems: 'center'}}>
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{marginLeft: 200}}>
                         <a className="nav-link" href="/">Welcome</a>
                         <a className="nav-link" href="/register">Register</a>
                         <a className="nav-link" href="/login">Log In</a>
@@ -50,10 +50,10 @@ function Navbar(){
             {loggedIn === true && (
 
                 <div className={classes.root}>
-                    <AppBar position="static" color='primary' classes={{ positionStatic: classes.abStatic }}>
+                    <AppBar position="static" color='primary'>
                         <Toolbar>
                             <Typography>
-                                <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
+                                <a className="nav-link" href="/"><HomeRoundedIcon/></a>
                             </Typography>
                             <Button aria-controls='menu1'
                                     onClick={handleOpenMenu}

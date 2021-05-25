@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="utils created">
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/utils/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/utils/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +115,7 @@
       <workItem from="1621686520894" duration="6495000" />
       <workItem from="1621832501869" duration="5614000" />
       <workItem from="1621851516396" duration="600000" />
-      <workItem from="1621912276576" duration="4336000" />
-    </task>
-    <task id="LOCAL-00048" summary="minor fix">
-      <created>1621501051499</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1621501051499</updated>
+      <workItem from="1621912276576" duration="5036000" />
     </task>
     <task id="LOCAL-00049" summary="clients">
       <created>1621501516303</created>
@@ -463,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621916852593</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="navbar">
+      <created>1621918414391</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1621918414391</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +479,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="frontend router created" />
     <MESSAGE value="navbar created" />
     <MESSAGE value="axios installed" />
     <MESSAGE value="cors installed" />
@@ -507,6 +503,7 @@
     <MESSAGE value="navbar designed" />
     <MESSAGE value="navbar dropdown" />
     <MESSAGE value="utils created" />
-    <option name="LAST_COMMIT_MESSAGE" value="utils created" />
+    <MESSAGE value="navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar" />
   </component>
 </project>
