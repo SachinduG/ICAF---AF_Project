@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar dropdown" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="utils created">
+      <change beforePath="$PROJECT_DIR$/Adminside/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/utils/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/utils/theme.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="JSX" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -112,14 +115,7 @@
       <workItem from="1621686520894" duration="6495000" />
       <workItem from="1621832501869" duration="5614000" />
       <workItem from="1621851516396" duration="600000" />
-      <workItem from="1621912276576" duration="2002000" />
-    </task>
-    <task id="LOCAL-00046" summary="minor fix">
-      <created>1621262288692</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1621262288692</updated>
+      <workItem from="1621912276576" duration="2813000" />
     </task>
     <task id="LOCAL-00047" summary="minor fix">
       <created>1621262331448</created>
@@ -457,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621915316231</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="utils created">
+      <created>1621915755048</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1621915755048</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +479,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clients list route created" />
     <MESSAGE value="frontend router created" />
     <MESSAGE value="navbar created" />
     <MESSAGE value="axios installed" />
@@ -501,6 +503,7 @@
     <MESSAGE value="register design" />
     <MESSAGE value="navbar designed" />
     <MESSAGE value="navbar dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="navbar dropdown" />
+    <MESSAGE value="utils created" />
+    <option name="LAST_COMMIT_MESSAGE" value="utils created" />
   </component>
 </project>
