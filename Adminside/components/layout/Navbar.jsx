@@ -4,7 +4,7 @@ import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
-import { Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography } from "@material-ui/core";
+import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
 import Clients from '../clients/Clients';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,10 +41,10 @@ function Navbar(){
         <div>
             {loggedIn === false && (
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{marginLeft: 200}}>
-                        <a className="nav-link" href="/">Welcome</a>
-                        <a className="nav-link" href="/register">Register</a>
-                        <a className="nav-link" href="/login">Log In</a>
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <a className="nav-link" href="/" style={{marginLeft: 610}}>Welcome</a>
+                            <a className="nav-link" href="/register">Register</a>
+                            <a className="nav-link" href="/login">Log In</a>
                     </nav>
                 </div>
 
@@ -81,22 +81,24 @@ function Navbar(){
                         </Toolbar>
                     </AppBar>
                     <Menu
+                        style={{ marginTop: '40px' }}
                         id='menu1'
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuList onClick={handleMenuClose}><Clients/></MenuList>
-                        <MenuList onClick={handleMenuClose}>Presenters</MenuList>
-                        <MenuList onClick={handleMenuClose}>Attendees</MenuList>
+                        <MenuItem onClick={handleMenuClose}><Clients/></MenuItem>
+                        <MenuItem onClick={handleMenuClose}>Presenters</MenuItem>
+                        <MenuItem onClick={handleMenuClose}>Attendees</MenuItem>
                     </Menu>
                     <Menu
+                        style={{ marginTop: '40px' }}
                         id='menu2'
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuList onClick={handleMenuClose}>Research Papers</MenuList>
-                        <MenuList onClick={handleMenuClose}>Presentations</MenuList>
-                        <MenuList onClick={handleMenuClose}>Workshops</MenuList>
+                        <MenuItem onClick={handleMenuClose}>Research Papers</MenuItem>
+                        <MenuItem onClick={handleMenuClose}>Presentations</MenuItem>
+                        <MenuItem onClick={handleMenuClose}>Workshops</MenuItem>
                     </Menu>
                 </div>
             )}
