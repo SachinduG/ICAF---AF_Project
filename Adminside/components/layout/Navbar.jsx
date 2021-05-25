@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     menuButton: {
-        marginLeft: 2,
-        marginRight: 5,
+        marginLeft: 10,
+        marginRight: 10,
         '&:hover':{
             background: 'white',
         },
@@ -44,7 +44,8 @@ function Navbar(){
         <div>
             {loggedIn === false && (
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{alignItems: 'center'}}>
+                        <a className="nav-link" href="/">Welcome</a>
                         <a className="nav-link" href="/register">Register</a>
                         <a className="nav-link" href="/login">Log In</a>
                     </nav>
@@ -54,9 +55,11 @@ function Navbar(){
             {loggedIn === true && (
 
                 <div className={classes.root}>
-                    <AppBar position="static" style={{ borderRadius: "80px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
+                    <AppBar position="static" style={{ borderRadius: "10px" }} classes={{ root: classes.abRoot, positionStatic: classes.abStatic }}>
                         <Toolbar>
-                            <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
+                            <Typography>
+                                <a className="nav-link" href="/" style={{color: "black"}}><HomeRoundedIcon/></a>
+                            </Typography>
                             <Button aria-controls='menu1'
                                     onClick={handleOpenMenu}
                                     disableRipple
