@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar dropdown">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,14 +112,9 @@
       <workItem from="1621656148239" duration="6782000" />
       <workItem from="1621669871914" duration="920000" />
       <workItem from="1621686520894" duration="6495000" />
-      <workItem from="1621832501869" duration="5495000" />
-    </task>
-    <task id="LOCAL-00043" summary="minor fix">
-      <created>1621259523985</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1621259523985</updated>
+      <workItem from="1621832501869" duration="5614000" />
+      <workItem from="1621851516396" duration="600000" />
+      <workItem from="1621912276576" duration="629000" />
     </task>
     <task id="LOCAL-00044" summary="minor fix">
       <created>1621259711029</created>
@@ -458,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621838515701</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="navbar dropdown">
+      <created>1621839256909</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1621839256909</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
