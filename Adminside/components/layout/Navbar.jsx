@@ -4,8 +4,7 @@ import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
-import {Button, MenuList, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
-import Clients from '../clients/Clients';
+import {Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 function Navbar(){
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl1, setAnchorEl1] = useState(null);
     const { loggedIn } = useContext(AuthContext);
 
     const handleOpenMenu = e => {
@@ -35,6 +35,14 @@ function Navbar(){
 
     const handleMenuClose = () => {
         setAnchorEl(null);
+    };
+
+    const handleOpenMenu1 = e => {
+        setAnchorEl1(e.currentTarget);
+    };
+
+    const handleMenuClose1 = () => {
+        setAnchorEl1(null);
     };
 
     return (
@@ -58,7 +66,7 @@ function Navbar(){
                                 <a className="nav-link" href="/"><HomeRoundedIcon/></a>
                             </Typography>
                             <Button
-                                aria-controls='menu1'
+                                aria-controls='menu'
                                 startIcon={<PeopleOutlineRoundedIcon/>}
                                 onClick={handleOpenMenu}
                                 disableRipple
@@ -70,7 +78,7 @@ function Navbar(){
                             <Button
                                 aria-controls='menu2'
                                 startIcon={<DescriptionRoundedIcon/>}
-                                onClick={handleOpenMenu}
+                                onClick={handleOpenMenu1}
                                 disableRipple
                                 variant='contained'
                                 className={classes.menuButton}
@@ -81,24 +89,24 @@ function Navbar(){
                         </Toolbar>
                     </AppBar>
                     <Menu
+                        id='menu'
                         style={{ marginTop: '40px' }}
-                        id='menu1'
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuItem onClick={handleMenuClose}><Clients/></MenuItem>
-                        <MenuItem onClick={handleMenuClose}>Presenters</MenuItem>
-                        <MenuItem onClick={handleMenuClose}>Attendees</MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{textDecoration: 'none'}}>Researcher</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{textDecoration: 'none'}}>Presenter</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/attendee" style={{textDecoration: 'none'}}>Attendee</a></MenuItem>
                     </Menu>
                     <Menu
-                        style={{ marginTop: '40px' }}
                         id='menu2'
-                        onClose={handleMenuClose}
-                        anchorEl={anchorEl}
-                        open={Boolean(anchorEl)}>
-                        <MenuItem onClick={handleMenuClose}>Research Papers</MenuItem>
-                        <MenuItem onClick={handleMenuClose}>Presentations</MenuItem>
-                        <MenuItem onClick={handleMenuClose}>Workshops</MenuItem>
+                        style={{ marginTop: '40px' }}
+                        onClose={handleMenuClose1}
+                        anchorEl={anchorEl1}
+                        open={Boolean(anchorEl1)}>
+                        <MenuItem onClick={handleMenuClose1}>Research Papers</MenuItem>
+                        <MenuItem onClick={handleMenuClose1}>Presentations</MenuItem>
+                        <MenuItem onClick={handleMenuClose1}>Workshops</MenuItem>
                     </Menu>
                 </div>
             )}

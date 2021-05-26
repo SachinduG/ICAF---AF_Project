@@ -33,4 +33,6 @@ mongoose.connect(
 
 //set up routes
 app.use("/auth", require("./routes/userRoute"));
-app.use("/client", require("./routes/clientRoute"));
+app.use("/researcher", require("./routes/researcherRoute"));
+app.use("/presenter", require("./routes/presenterRoute"));
+app.use("/attendee", require("./routes/attendeeRoute"));
