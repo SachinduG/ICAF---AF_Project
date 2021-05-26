@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar">
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/AttendeeList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Attendees.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/PresenterList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Presenters.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/clientModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/clientRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JSX" />
         <option value="JavaScript File" />
+        <option value="JSX" />
       </list>
     </option>
   </component>
@@ -35,6 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DS-Assign/Seller" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -116,21 +130,7 @@
       <workItem from="1621832501869" duration="5614000" />
       <workItem from="1621851516396" duration="600000" />
       <workItem from="1621912276576" duration="6746000" />
-      <workItem from="1621931423598" duration="1012000" />
-    </task>
-    <task id="LOCAL-00051" summary="clients list">
-      <created>1621502331489</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1621502331489</updated>
-    </task>
-    <task id="LOCAL-00052" summary="clients list">
-      <created>1621502458383</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1621502458383</updated>
+      <workItem from="1621931423598" duration="9875000" />
     </task>
     <task id="LOCAL-00053" summary="clients list">
       <created>1621502538189</created>
@@ -461,7 +461,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621927773227</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="navbar">
+      <created>1621932617905</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1621932617906</updated>
+    </task>
+    <task id="LOCAL-00101" summary="navbar">
+      <created>1621932711256</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1621932711256</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

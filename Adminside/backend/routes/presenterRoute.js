@@ -1,11 +1,11 @@
 const router = require("express").Router();
-const client = require("../models/clientModel");
+const presenter = require("../models/presenterModel");
 const auth = require("../middleware/auth");
 
 router.get("/", auth, async(req, res) => {
     try{
-        const clients = await  client.find();
-        res.json(clients);
+        const presenters = await  presenter.find();
+        res.json(presenters);
     }catch (err){
         console.error(err);
         res.status(500).send();
