@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
+
     fname: {
         type: String,
         required: true,
@@ -20,7 +21,8 @@ const userSchema = new mongoose.Schema({
     passwordHash: {
         type: String,
         required: true,
-        trim: true,},
+        trim: true,
+    },
 });
 
 const User = mongoose.model("admin", userSchema);
