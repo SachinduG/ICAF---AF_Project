@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="researcher routes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +121,7 @@
       <workItem from="1621912276576" duration="6746000" />
       <workItem from="1621931423598" duration="9875000" />
       <workItem from="1622034003065" duration="725000" />
-      <workItem from="1622088299111" duration="6418000" />
-    </task>
-    <task id="LOCAL-00059" summary="minor fix">
-      <created>1621519856555</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1621519856556</updated>
+      <workItem from="1622088299111" duration="7483000" />
     </task>
     <task id="LOCAL-00060" summary="minor fix">
       <created>1621520414906</created>
@@ -463,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622090888055</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="researcher routes">
+      <created>1622101123558</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1622101123558</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

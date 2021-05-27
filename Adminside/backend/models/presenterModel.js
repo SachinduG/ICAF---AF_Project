@@ -1,7 +1,28 @@
 const mongoose = require("mongoose");
 
 const presenterSchema = new mongoose.Schema({
-    name: { type: String, required: true },
+    fname: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    lname: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
+    mobile: {
+        type: String,
+        required: true,
+        trim: true,
+        maxlength: 10,
+    },
 });
 
 const presenter = mongoose.model("presenter", presenterSchema);
