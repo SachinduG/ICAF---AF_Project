@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="researcher routes">
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" afterDir="false" />
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="attendee routes">
+      <change afterPath="$PROJECT_DIR$/Adminside/components/layout/ErrorMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1rhTRhsfIlo3hbqPZlyzB6fuF1c" />
   <component name="ProjectViewState">
@@ -121,14 +129,7 @@
       <workItem from="1621912276576" duration="6746000" />
       <workItem from="1621931423598" duration="9875000" />
       <workItem from="1622034003065" duration="725000" />
-      <workItem from="1622088299111" duration="7483000" />
-    </task>
-    <task id="LOCAL-00060" summary="minor fix">
-      <created>1621520414906</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1621520414906</updated>
+      <workItem from="1622088299111" duration="8687000" />
     </task>
     <task id="LOCAL-00061" summary="minor fix">
       <created>1621520660645</created>
@@ -466,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622101123558</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="attendee routes">
+      <created>1622102240345</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1622102240345</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +493,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cors installed" />
     <MESSAGE value="login created" />
     <MESSAGE value="register created" />
     <MESSAGE value="useRoutes edited" />
@@ -510,6 +517,7 @@
     <MESSAGE value="navbar" />
     <MESSAGE value="install validator" />
     <MESSAGE value="researcher routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="researcher routes" />
+    <MESSAGE value="attendee routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="attendee routes" />
   </component>
 </project>
