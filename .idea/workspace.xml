@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar">
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/AttendeeList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Attendees.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/PresenterList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Presenters.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/clientModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/clientRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ClientList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Clients.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="navbar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,20 +115,7 @@
       <workItem from="1621851516396" duration="600000" />
       <workItem from="1621912276576" duration="6746000" />
       <workItem from="1621931423598" duration="9875000" />
-    </task>
-    <task id="LOCAL-00053" summary="clients list">
-      <created>1621502538189</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1621502538189</updated>
-    </task>
-    <task id="LOCAL-00054" summary="clients list">
-      <created>1621502720239</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1621502720239</updated>
+      <workItem from="1622034003065" duration="725000" />
     </task>
     <task id="LOCAL-00055" summary="clients list created">
       <created>1621502926087</created>
@@ -475,7 +446,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621932711256</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="navbar">
+      <created>1622034070130</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1622034070131</updated>
+    </task>
+    <task id="LOCAL-00103" summary="navbar">
+      <created>1622034100064</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1622034100065</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
