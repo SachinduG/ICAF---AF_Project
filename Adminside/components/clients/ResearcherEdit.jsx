@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ErrorMessage from "../layout/ErrorMessage";
 
-function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcher }) {
+function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcherData }) {
     const [ editFname, setEditFname ] = useState("");
     const [ editLname, setEditLname ] = useState("");
     const [ editEmail, setEditEmail ] = useState("");
@@ -10,18 +10,18 @@ function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcher 
     const [ errorMessage, setErrorMessage ] = useState(null);
 
     useEffect(() => {
-        if(editResearcher){
-            setEditFname(editResearcher.fname ? editResearcher.fname : "");
-            setEditLname(editResearcher.lname ? editResearcher.lname : "");
-            setEditEmail(editResearcher.email ? editResearcher.email : "");
-            setEditMobile(editResearcher.mobile ? editResearcher.mobile : "");
+        if(editResearcherData){
+            setEditFname(editResearcherData.fname ? editResearcherData.fname : "");
+            setEditLname(editResearcherData.lname ? editResearcherData.lname : "");
+            setEditEmail(editResearcherData.email ? editResearcherData.email : "");
+            setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
         }
-    }, [editResearcher]);
+    }, [editResearcherData]);
 
     async function saveResearcher(e){
         e.preventDefault();
 
-        const researcher = {
+        const researcherData = {
             fname: editFname ? editFname : undefined,
             lname: editLname ? editLname : undefined,
             email: editEmail ? editEmail : undefined,
@@ -29,9 +29,12 @@ function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcher 
         };
 
         try{
-            if(!editResearcher) await axios.post("http://localhost:5000/researcher/", researcher);
+            if(!editResearcherData) await axios.post("http://localhost:5000/researcher/", researcherData);
             else
-                await axios.put("http://localhost:5000/researcher/" ${editResearcher._id}, researcher);
+                await axios.put(
+                    "http://localhost:5000/researcher/"${editResearcher._id},
+                    researcherData
+                );
         }catch (err){
             if(err.response){
                 if(err.response.data.errorMessage){
