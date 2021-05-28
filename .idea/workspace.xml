@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="attendee routes">
-      <change afterPath="$PROJECT_DIR$/Adminside/components/layout/ErrorMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +127,9 @@
       <workItem from="1621912276576" duration="6746000" />
       <workItem from="1621931423598" duration="9875000" />
       <workItem from="1622034003065" duration="725000" />
-      <workItem from="1622088299111" duration="8687000" />
-    </task>
-    <task id="LOCAL-00061" summary="minor fix">
-      <created>1621520660645</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1621520660645</updated>
+      <workItem from="1622088299111" duration="8750000" />
+      <workItem from="1622107310810" duration="7348000" />
+      <workItem from="1622177042830" duration="2131000" />
     </task>
     <task id="LOCAL-00062" summary="minor fix">
       <created>1621521492169</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622102240345</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="attendee routes">
+      <created>1622103469482</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1622103469482</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
