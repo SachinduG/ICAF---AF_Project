@@ -32,7 +32,7 @@ mongoose.connect(
 });
 
 //set up routes
-app.use("/auth", require("./routes/userRoute"));
+app.use("/auth", require("./routes/adminRoute"));
 app.use("/researcher", require("./routes/researcherRoute"));
 app.use("/presenter", require("./routes/presenterRoute"));
 app.use("/attendee", require("./routes/attendeeRoute"));
