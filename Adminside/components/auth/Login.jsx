@@ -12,7 +12,6 @@ import Typography from '@material-ui/core/Typography';
 import {Container, CssBaseline} from "@material-ui/core";
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
-import ErrorMessage from "../layout/ErrorMessage";
 
 function Copyright() {
     return (
@@ -61,7 +60,6 @@ function Login() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [errorMessage, setErrorMessage] = useState(null);
 
     const { getLoggedIn } = useContext(AuthContext);
 
@@ -94,11 +92,6 @@ function Login() {
                 text: 'Email or Password is wrong!'
             });
 
-            if(err.response){
-                if(err.response.data.errorMessage){
-                    setErrorMessage(err.response.data.errorMessage);
-                }
-            }
         }
     }
 
@@ -109,12 +102,7 @@ function Login() {
                 <Typography component="h1" variant="h5" style={{marginRight: 45, marginTop: 20}}>
                     Sign In
                 </Typography>
-                {errorMessage && (
-                    <ErrorMessage
-                        message={errorMessage}
-                        clear={() => setErrorMessage(null)}
-                    />
-                )}
+
                 <form onSubmit={login} className={classes.form}>
 
                     <div className="form-group">

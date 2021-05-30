@@ -9,7 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import ErrorMessage from "../layout/ErrorMessage";
 
 function Copyright() {
     return (
@@ -56,7 +55,6 @@ function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordVerify, setPasswordVerify] = useState("");
-    const [errorMessage, setErrorMessage] = useState(null);
 
     const {getLoggedIn} = useContext(AuthContext);
     const history = useHistory();
@@ -105,11 +103,6 @@ function Register() {
                     text: 'Please enter the same password twice!'
                 })
             }
-            if(err.response) {
-                if (err.response.data.errorMessage) {
-                    setErrorMessage(err.response.data.errorMessage);
-                }
-            }
             else{
                 await Swal.fire({
                     icon: 'error',
@@ -127,12 +120,7 @@ function Register() {
                 <Typography component="h1" variant="h5" style={{marginTop:15}}>
                     Register
                 </Typography>
-                {errorMessage && (
-                    <ErrorMessage
-                        message={errorMessage}
-                        clear={() => setErrorMessage(null)}
-                    />
-                )}
+
             <form onSubmit={register} className={classes.form}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={6}>
