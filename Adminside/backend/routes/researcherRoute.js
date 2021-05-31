@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const Attendee = require('../models/attendeeModel')
+const Researcher = require('../models/researcherModel')
 const auth = require('../middleware/auth')
 
-// @url           POST /attendee/add
-// @description   add attendee
+// @url           POST /researcher/add
+// @description   add researcher
 // @access-mode   private
 router.post('/add', auth, async (req, res) => {
     try {
@@ -15,7 +15,7 @@ router.post('/add', auth, async (req, res) => {
             email: email,
             mobile: mobile,
         }
-        const newUser = new Attendee(user)
+        const newUser = new Researcher(user)
         await newUser.save()
         res.status(200).send({status: 'User added', user: newUser})
     } catch (error) {
@@ -24,12 +24,12 @@ router.post('/add', auth, async (req, res) => {
     }
 })
 
-// @url           GET /attendee/
-// @description   get all attendees
+// @url           GET /researcher/
+// @description   get all researchers
 // @access-mode   private
 router.get('/', auth, async (req, res) => {
     try {
-        const users = await Attendee.find()
+        const users = await Researcher.find()
         res.status(200).send({status: 'Fetched users', user: users})
     } catch (error) {
         res.status(500).send(error.message)
@@ -37,14 +37,14 @@ router.get('/', auth, async (req, res) => {
     }
 })
 
-// @url           PUT /attendee/update/:id
-// @description   update attendee
+// @url           PUT /researcher/update/:id
+// @description   update researcher
 // @access-mode   private
 router.put('/update/:id', auth, async(req, res) => {
     const userID = req.params.id
     try {
         const {fname, lname, mobile} = req.body
-        const user = await Attendee.findOneAndUpdate(userID, {fname: fname, lname: lname, mobile: mobile})
+        const user = await Researcher.findOneAndUpdate(userID, {fname: fname, lname: lname, mobile: mobile})
         res.status(200).send({status: 'Todo Updated', updatedUser: user})
     } catch (error) {
         res.status(500).send(error.message)
@@ -52,13 +52,13 @@ router.put('/update/:id', auth, async(req, res) => {
     }
 })
 
-// @url           DELETE /attendee/delete/:id
-// @description   delete attendee
+// @url           DELETE /researher/delete/:id
+// @description   delete researcher
 // @access-mode   private
 router.delete('/delete/:id', auth, async(req, res) => {
     const userID = req.params.id
     try {
-        const deleteUser = await Attendee.findByIdAndDelete(userID)
+        const deleteUser = await Researcher.findByIdAndDelete(userID)
         res.status(200).send({status: 'User Deleted', deletedUser: deleteUser})
     } catch (error) {
         res.status(500).send(error.message)

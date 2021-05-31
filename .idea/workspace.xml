@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/test.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/backend/tests/admin.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Researcher.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/adminModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/models/researcherModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/adminRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/routes/researcherRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/attendeeRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/presenterRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="JSX" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>

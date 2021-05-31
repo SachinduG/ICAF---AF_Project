@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const presenterSchema = new mongoose.Schema(
     {
@@ -25,13 +24,12 @@ const presenterSchema = new mongoose.Schema(
             trim: true,
             maxlength: 10,
         },
-        admin: { type: ObjectId, required: true },
     },
     {
         timestamps: true,
     }
 );
 
-const presenter = mongoose.model("presenter", presenterSchema);
+const presenter = mongoose.model("workshop_presenter", presenterSchema);
 
 module.exports = presenter;

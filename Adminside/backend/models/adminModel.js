@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const attendeeSchema = new mongoose.Schema(
+const adminSchema = new mongoose.Schema(
     {
         fname: {
             type: String,
@@ -18,11 +18,9 @@ const attendeeSchema = new mongoose.Schema(
             trim: true,
             lowercase: true,
         },
-        mobile: {
+        passwordHash: {
             type: String,
             required: true,
-            trim: true,
-            maxlength: 10,
         },
     },
     {
@@ -30,6 +28,6 @@ const attendeeSchema = new mongoose.Schema(
     }
 );
 
-const attendee = mongoose.model("attendee", attendeeSchema);
+const admin = mongoose.model("admin", adminSchema);
 
-module.exports = attendee;
+module.exports = admin;

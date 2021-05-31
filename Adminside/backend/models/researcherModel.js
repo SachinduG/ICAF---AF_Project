@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const attendeeSchema = new mongoose.Schema(
+const researcherSchema = new mongoose.Schema(
     {
         fname: {
             type: String,
@@ -30,6 +30,6 @@ const attendeeSchema = new mongoose.Schema(
     }
 );
 
-const attendee = mongoose.model("attendee", attendeeSchema);
+const researcher = mongoose.model("researcher", researcherSchema);
 
-module.exports = attendee;
+module.exports = researcher;
