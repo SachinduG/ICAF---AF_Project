@@ -20,8 +20,12 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
                 <p className="text-2">{researcher.lname}</p>
             )}
             {researcher.mobile && (
-                <p className=""
+                <p className="text-3">{researcher.mobile}</p>
             )}
+            <button className="btn-edit" onClick={() => editResearcher(researcher)}>Edit</button>
+            <button className="btn-delete" onClick={deleteResearcher}>Delete</button>
         </div>
-    )
+    );
 }
+
+export default Researcher;

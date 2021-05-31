@@ -27091,7 +27091,7 @@ exports.NavLink = NavLink;
 if ("development" === "production") {
   module.exports = require("./cjs/react-router.min.js");
 } else {
-  module.exports = require("./cjs/react-router.js");
+  module.exports = require("./cjs/react-Router.js");
 }
 
 },{"./cjs/react-router.js":"6hyRN"}],"6hyRN":[function(require,module,exports) {
