@@ -1,14 +1,14 @@
-import React, {useContext, useEffect, useState} from 'react';
 import axios from "axios";
+import React, {useContext, useEffect, useState} from "react";
 import AuthContext from "../../context/AuthContext";
-import ResearcherEdit from "./ResearcherEdit";
-import ResearcherList from "./ResearcherList";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
+import Researcher from "./Researcher";
+import ResearcherEditor from "./"
 
 function Researchers(){
     const [researchers, setResearchers] = useState([]);
-    const [researcherEditOpen, setResearcherEditOpen] = useState(false);
-    const [editResearcherData, setEditResearcherData] = useState(null);
+    const [researcherEditorOpen, setResearcherEditorOpen] = useState(false);
+    const [editResearcherData, setEditResearcherData] =useState(null);
 
     const { loggedIn } = useContext(AuthContext);
 
@@ -18,13 +18,13 @@ function Researchers(){
     }, [loggedIn]);
 
     async function getResearchers(){
-        const researchersRes = await axios.get("http://localhost:5000/researcher/");
-        setResearchers(researchersRes.data);
+        const researcherRes = await axios.get(`http://localhost:5000/researcher/`);
+        setResearchers(researcherRes.data);
     }
 
-    function editResearcher(researcherData){
+    function editResearcher(researcherData) {
         setEditResearcherData(researcherData);
-        setResearcherEditOpen(true);
+        setResearcherEditorOpen(true);
     }
 
     function renderResearchers(){
@@ -35,35 +35,30 @@ function Researchers(){
 
         return sortedResearchers.map((researcher, i) => {
             return (
-                <ResearcherList
+                <Researcher
                     key={i}
                     researcher={researcher}
                     getResearchers={getResearchers}
                     editResearcher={editResearcher}
-                />
+                    />
             );
         });
     }
 
-    return (
-        <div className="home" style={{marginTop: 100}}>
-            {!researcherEditOpen && loggedIn && (
+    return(
+        <div className = "home">
+            {!researcherEditorOpen && loggedIn && (
                 <button className="btn-editor-toggle" onClick={() =>
-                    setResearcherEditOpen(true)}>Add Researcher</button>
+                    setResearcherEditorOpen(true)}>Add researcher</button>
             )}
-            {researcherEditOpen && (
-                <ResearcherEdit
-                    setResearcherEditOpen={setResearcherEditOpen}
-                    getResearchers={getResearchers}
-                    editResearcherData={editResearcherData}
-                />
+            {researcherEditorOpen && (
+                <ResearcherEditor setResearcherEditorOpen={setResearcherOpen}
+                                  getResearhcers={getResearchers} editResearcherData={editResearcherData}/>
             )}
-            {researchers.length > 0 ? renderResearchers() : loggedIn && (
-                <p className="no-msg">No researchers have been added yet.</p>
-            )}
+            {researchers.length > 0 ? renderResearchers() : loggedIn &&
+                ( <p className="no-users-msg">No researchers have been added yet.</p>)}
             {loggedIn === null && ( <div className="no-user-message">
-                    <h2>Welcome to Admin</h2> <Link to="/register">
-                    Register here</Link> </div>
+                    <Link to="/login">Login here</Link></div>
             )}
         </div>
     );

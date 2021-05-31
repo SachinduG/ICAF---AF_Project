@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/test.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/backend/tests/admin.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Researcher.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +51,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DS-Assign/Seller" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/Adminside/backend/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
+    <configuration name="Should sign up for a admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/Adminside/backend/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/Adminside/backend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/Adminside/backend/tests/admin.test.js" />
+      <test-names>
+        <test-name value="Should sign up for a admin" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="register.test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Adminside/components/auth/_test_/register.test.js" working-dir="$PROJECT_DIR$/Adminside/components/auth/_test_">
+      <method v="2" />
+    </configuration>
     <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/Adminside/backend/package.json" />
       <command value="run" />
@@ -79,6 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Should sign up for a admin" />
+        <item itemvalue="Node.js.register.test.js" />
         <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
@@ -144,14 +162,7 @@
       <workItem from="1622360988764" duration="5747000" />
       <workItem from="1622369364336" duration="4605000" />
       <workItem from="1622378448876" duration="3665000" />
-      <workItem from="1622436309627" duration="3107000" />
-    </task>
-    <task id="LOCAL-00066" summary="navbar designed">
-      <created>1621577584629</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1621577584629</updated>
+      <workItem from="1622436309627" duration="17657000" />
     </task>
     <task id="LOCAL-00067" summary="navbar designed">
       <created>1621578573185</created>
@@ -489,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622365022802</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="fixes">
+      <created>1622439615155</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1622439615156</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
