@@ -58,7 +58,7 @@ function Researchers(){
             {researchers.length > 0 ? renderResearchers() : loggedIn &&
                 ( <p className="no-users-msg">No researchers have been added yet.</p>)}
             {loggedIn === null && ( <div className="no-user-message">
-                    <Link to="/login">Login here</Link></div>
+                    <Link to="/">Login here</Link></div>
             )}
         </div>
     );
