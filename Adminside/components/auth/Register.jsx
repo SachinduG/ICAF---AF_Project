@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { makeStyles } from '@material-ui/core/styles';
 import {Container, CssBaseline, TextField} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
@@ -14,9 +13,9 @@ function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
-            <Link color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
+            <a color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
                 Sachindu
-            </Link>{' '}
+            </a>{' '}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
@@ -57,6 +56,7 @@ function Register() {
     const [passwordVerify, setPasswordVerify] = useState("");
 
     const {getLoggedIn} = useContext(AuthContext);
+
     const history = useHistory();
 
     async function register(e){
@@ -121,59 +121,59 @@ function Register() {
                     Register
                 </Typography>
 
-            <form onSubmit={register} className={classes.form}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <TextField id="fname" name="fname" label="First Name" variant="outlined" fullWidth required autoFocus
-                                   type="text"
-                                   onChange={(e) => setFname(e.target.value)}
-                                   value={fname}
-                        />
+                <form onSubmit={register} className={classes.form}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} sm={6}>
+                            <TextField id="fname" name="fname" label="First Name" variant="outlined" fullWidth required autoFocus
+                                       type="text"
+                                       onChange={(e) => setFname(e.target.value)}
+                                       value={fname}
+                            />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <TextField id="lname" name="lname" label="Last Name" variant="outlined" fullWidth required
+                                       type="text"
+                                       onChange={(e) => setLname(e.target.value)}
+                                       value={lname}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField id="email" name="email" label="Email Address" variant="outlined" fullWidth required
+                                       type="email"
+                                       onChange={(e) => setEmail(e.target.value)}
+                                       value={email}
+                            />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <TextField id="password" name="password" label="Password" variant="outlined" fullWidth required
+                                       type="password"
+                                       onChange={(e) => setPassword(e.target.value)}
+                                       value={password}
+                            />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <TextField id="passwordVerify" name="passwordVerify" label="Confirm Password" variant="outlined" fullWidth required
+                                       type="password"
+                                       onChange={(e) => setPasswordVerify(e.target.value)}
+                                       value={passwordVerify}
+                            />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <TextField id="lname" name="lname" label="Last Name" variant="outlined" fullWidth required
-                                   type="text"
-                                   onChange={(e) => setLname(e.target.value)}
-                                   value={lname}
-                        />
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField id="email" name="email" label="Email Address" variant="outlined" fullWidth required
-                                   type="email"
-                                   onChange={(e) => setEmail(e.target.value)}
-                                   value={email}
-                        />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <TextField id="password" name="password" label="Password" variant="outlined" fullWidth required
-                                   type="password"
-                                   onChange={(e) => setPassword(e.target.value)}
-                                   value={password}
-                        />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <TextField id="passwordVerify" name="passwordVerify" label="Confirm Password" variant="outlined" fullWidth required
-                                   type="password"
-                                   onChange={(e) => setPasswordVerify(e.target.value)}
-                                   value={passwordVerify}
-                        />
-                    </Grid>
-                </Grid>
 
-                <button type="submit" className="btn btn-outline-success" style={{marginLeft:190, marginTop:20}}>Register</button><br/><br/>
-                <Grid container justify="center">
-                    <Grid item>
-                        <a href="/login" variant="body2" className="nav-link">
-                            Already have an account? Sign in
-                        </a>
+                    <button type="submit" className="btn btn-outline-success" style={{marginLeft:190, marginTop:20}}>Register</button><br/><br/>
+                    <Grid container justify="center">
+                        <Grid item>
+                            <a href="/login" variant="body2" className="nav-link" style={{textDecoration: 'none'}}>
+                                Already have an account? Sign in
+                            </a>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </form>
+                </form>
             </div>
             <Box mt={26} mr={10}>
                 <Copyright />
             </Box>
-    </Container>
+        </Container>
     );
 }
 

@@ -31,10 +31,7 @@ function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcherD
         try{
             if(!editResearcherData) await axios.post("http://localhost:5000/researcher/", researcherData);
             else
-                await axios.put(
-                    "http://localhost:5000/researcher/"${editResearcher._id},
-                    researcherData
-                );
+                await axios.put("http://localhost:5000/researcher/${editResearcherData._id}", researcherData);
         }catch (err){
             if(err.response){
                 if(err.response.data.errorMessage){
@@ -55,7 +52,7 @@ function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcherD
     }
 
     return(
-        <div className="ss">
+        <div className="editor">
             {errorMessage && (
                 <ErrorMessage
                     message={errorMessage}
@@ -95,8 +92,8 @@ function ResearcherEdit({ getResearchers, setResearcherEditOpen, editResearcherD
                     onChange={(e) => setEditMobile(e.target.value)}
                 />
 
-                <button className="btn-success" type="submit">Save</button>
-                <button className="btn-secondary" type="button" onClick={closeEdit}>Cancel</button>
+                <button className="btn-save" type="submit">Save</button>
+                <button className="btn-cancel" type="button" onClick={closeEdit}>Cancel</button>
             </form>
         </div>
     );

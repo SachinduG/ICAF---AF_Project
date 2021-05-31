@@ -10,16 +10,15 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@material-ui/core/Typography';
 import {Container, CssBaseline} from "@material-ui/core";
-import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
-            <Link color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
+            <a color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
                 Sachindu
-            </Link>{' '}
+            </a>{' '}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
@@ -91,7 +90,6 @@ function Login() {
                 title: 'Oops...',
                 text: 'Email or Password is wrong!'
             });
-
         }
     }
 
@@ -138,8 +136,8 @@ function Login() {
                     <button type="submit" className="btn btn-outline-success" style={{marginLeft:75}} >Log in</button><br/><br/>
                     <Grid container>
                         <Grid item >
-                            <a href="/register" variant="body2" className="nav-link" >
-                                {"Don't have an account? Sign Up"}
+                            <a href="/register" variant="body2" className="nav-link" style={{textDecoration: 'none'}} >
+                                "Don't have an account? Sign Up"
                             </a>
                         </Grid>
                     </Grid>

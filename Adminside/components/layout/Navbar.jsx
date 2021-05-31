@@ -50,9 +50,9 @@ function Navbar(){
             {loggedIn === false && (
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <a className="nav-link" href="/" style={{marginLeft: 610}}>Welcome</a>
-                            <a className="nav-link" href="/register">Register</a>
-                            <a className="nav-link" href="/login">Log In</a>
+                        <a className="nav-link" href="/" style={{marginLeft: 610}}>Welcome</a>
+                        <a className="nav-link" href="/register">Register</a>
+                        <a className="nav-link" href="/login">Log In</a>
                     </nav>
                 </div>
 
@@ -105,7 +105,6 @@ function Navbar(){
                         anchorEl={anchorEl1}
                         open={Boolean(anchorEl1)}>
                         <MenuItem onClick={handleMenuClose1}>Research Papers</MenuItem>
-                        <MenuItem onClick={handleMenuClose1}>Presentations</MenuItem>
                         <MenuItem onClick={handleMenuClose1}>Workshops</MenuItem>
                     </Menu>
                 </div>

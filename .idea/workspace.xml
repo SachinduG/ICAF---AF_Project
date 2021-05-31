@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="attendee routes">
+    <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="fixes">
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/attendeeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/presenterModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/userRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/auth/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEdit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/layout/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,28 +139,12 @@
       <workItem from="1622034003065" duration="725000" />
       <workItem from="1622088299111" duration="8750000" />
       <workItem from="1622107310810" duration="7348000" />
-      <workItem from="1622177042830" duration="3015000" />
-    </task>
-    <task id="LOCAL-00063" summary="minor fix">
-      <created>1621521776979</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1621521776980</updated>
-    </task>
-    <task id="LOCAL-00064" summary="button designed">
-      <created>1621570308281</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1621570308282</updated>
-    </task>
-    <task id="LOCAL-00065" summary="button designed">
-      <created>1621570694889</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1621570694889</updated>
+      <workItem from="1622177042830" duration="12696000" />
+      <workItem from="1622355039215" duration="5404000" />
+      <workItem from="1622360988764" duration="5747000" />
+      <workItem from="1622369364336" duration="4605000" />
+      <workItem from="1622378448876" duration="3665000" />
+      <workItem from="1622436309627" duration="3107000" />
     </task>
     <task id="LOCAL-00066" summary="navbar designed">
       <created>1621577584629</created>
@@ -474,7 +468,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622179183413</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="attendee routes">
+      <created>1622180857158</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1622180857158</updated>
+    </task>
+    <task id="LOCAL-00113" summary="fixes">
+      <created>1622364036720</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1622364036722</updated>
+    </task>
+    <task id="LOCAL-00114" summary="fixes">
+      <created>1622365022802</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1622365022802</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login created" />
     <MESSAGE value="register created" />
     <MESSAGE value="useRoutes edited" />
     <MESSAGE value="context provider created" />
@@ -518,6 +532,7 @@
     <MESSAGE value="install validator" />
     <MESSAGE value="researcher routes" />
     <MESSAGE value="attendee routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="attendee routes" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>
