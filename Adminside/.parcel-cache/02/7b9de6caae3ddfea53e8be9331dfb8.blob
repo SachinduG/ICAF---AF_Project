@@ -1,0 +1,53 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ClientList = require("./ClientList");
+  var _ClientListDefault = _parcelHelpers.interopDefault(_ClientList);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Clients.jsx", _s = $RefreshSig$();
+  function Clients() {
+    _s();
+    const [clients, setClients] = _react.useState([]);
+    async function getClients() {
+      const clientsRes = await _axiosDefault.default.get("http://localhost:5000/client/");
+      setClients(clientsRes.data);
+    }
+    _react.useEffect(() => {
+      getClients();
+    }, []);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_ClientListDefault.default, {
+        clients: clients,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 13
+        }
+      }))
+    );
+  }
+  _s(Clients, "cUQn5teewQOIEjPDAOj81V47VgI=");
+  _c = Clients;
+  exports.default = Clients;
+  var _c;
+  $RefreshReg$(_c, "Clients");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

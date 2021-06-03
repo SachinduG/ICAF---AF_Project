@@ -1,0 +1,46 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Clients.jsx", _s = $RefreshSig$();
+  function Clients() {
+    _s();
+    const [clients, setClients] = _react.useState([]);
+    async function getClients() {
+      const clientsRes = await axios.get("https://localhost:5000/client/");
+      setClients(clientsRes.data);
+    }
+    _react.useEffect(() => {
+      getClients();
+    }, []);
+  }
+  _s(Clients, "cUQn5teewQOIEjPDAOj81V47VgI=");
+  _c = Clients;
+  function Clients() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 9
+        }
+      })
+    );
+  }
+  _c2 = Clients;
+  ;
+  exports.default = Clients;
+  var _c, _c2;
+  $RefreshReg$(_c, "Clients");
+  $RefreshReg$(_c2, "Clients");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

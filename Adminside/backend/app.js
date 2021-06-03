@@ -14,7 +14,8 @@ app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
+app.use(
+    cors({
         origin: ["http://localhost:1234"],
         credentials: true,
     })
@@ -37,3 +38,4 @@ app.use("/auth", require("./routes/adminRoute"));
 app.use("/researcher", require("./routes/researcherRoute"));
 app.use("/presenter", require("./routes/presenterRoute"));
 app.use("/attendee", require("./routes/attendeeRoute"));
+app.use("/researchPaper", require("./routes/paperRoute"));

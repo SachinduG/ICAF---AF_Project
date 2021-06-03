@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc80186b-b7d0-49c5-8fbe-33095702f617" name="Default Changelist" comment="routes">
-      <change afterPath="$PROJECT_DIR$/Adminside/Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/components/clients/ResearcherEditor.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adminside/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/20/6c8490d65426dc47c0719c597bc280.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/20/6c8490d65426dc47c0719c597bc280.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/20/939d0c7d6f88b6d6059991a593abc1.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/20/939d0c7d6f88b6d6059991a593abc1.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/33/93c735132e3dcb843378a8745e4979.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/33/93c735132e3dcb843378a8745e4979.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/.parcel-cache/8c/0b0ab20fcbe776a94d5d98c7714ac7.blob" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/.parcel-cache/8c/0b0ab20fcbe776a94d5d98c7714ac7.blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Researcher.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Researcher.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/adminModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/adminModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/models/researcherModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/models/researcherModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/adminRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/adminRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adminside/backend/routes/researcherRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/backend/routes/researcherRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/components/clients/Researchers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adminside/dist/index.63f10152.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,13 +160,8 @@
       <workItem from="1622369364336" duration="4605000" />
       <workItem from="1622378448876" duration="3665000" />
       <workItem from="1622436309627" duration="17657000" />
-    </task>
-    <task id="LOCAL-00068" summary="navbar designed">
-      <created>1621581459147</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1621581459147</updated>
+      <workItem from="1622697576057" duration="4086000" />
+      <workItem from="1622701863436" duration="36000" />
     </task>
     <task id="LOCAL-00069" summary="text field designed">
       <created>1621582457371</created>
@@ -506,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622468779377</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="routes">
+      <created>1622473060775</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1622473060775</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,67 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _materialUiIconsExitToAppRounded = require('@material-ui/icons/ExitToAppRounded');
+  var _materialUiIconsExitToAppRoundedDefault = _parcelHelpers.interopDefault(_materialUiIconsExitToAppRounded);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\LogOutBtn.jsx", _s = $RefreshSig$();
+  function LogOutBtn() {
+    _s();
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = _reactRouterDom.useHistory();
+    async function logOut() {
+      await _axiosDefault.default.get("http://localhost:5000/auth/logout");
+      await getLoggedIn();
+      history.push("/");
+      await _sweetalertDefault.default.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'Log Out',
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-danger",
+        onClick: logOut,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 12
+        }
+      }, "Log Out", /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsExitToAppRoundedDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 79
+        }
+      }))
+    );
+  }
+  _s(LogOutBtn, "hMhFRdfXysRlOj98XZKPG+uyhc4=", false, function () {
+    return [_reactRouterDom.useHistory];
+  });
+  _c = LogOutBtn;
+  exports.default = LogOutBtn;
+  var _c;
+  $RefreshReg$(_c, "LogOutBtn");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

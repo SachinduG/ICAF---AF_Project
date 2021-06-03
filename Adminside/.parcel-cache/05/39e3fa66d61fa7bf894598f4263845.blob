@@ -1,0 +1,150 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _materialUiCoreStyles = require('@material-ui/core/styles');
+  var _materialUiCore = require("@material-ui/core");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
+  const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch'
+      }
+    }
+  }));
+  function Register() {
+    _s();
+    const classes = useStyles();
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const [passwordVerify, setPasswordVerify] = _react.useState("");
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = _reactRouterDom.useHistory();
+    async function register(e) {
+      e.preventDefault();
+      try {
+        const registerData = {
+          email,
+          password,
+          passwordVerify
+        };
+        await _axiosDefault.default.post("http://localhost:5000/auth/", registerData);
+        await getLoggedIn();
+        history.push("/");
+        await _sweetalertDefault.default.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'You are successfully sign in!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 13
+        }
+      }, "Register a new account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: register,
+        className: classes.root,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "outlined-basic",
+        error: true,
+        label: "Email Address",
+        variant: "outlined",
+        type: "email",
+        placeholder: "Email Address",
+        onChange: e => setEmail(e.target.value),
+        value: email,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "outlined-basic",
+        error: true,
+        label: "Email Address",
+        variant: "outlined",
+        type: "password",
+        placeholder: "Password",
+        onChange: e => setPassword(e.target.value),
+        value: password,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "outlined-basic",
+        error: true,
+        label: "Email Address",
+        variant: "outlined",
+        type: "password",
+        placeholder: "Confirm-Password",
+        onChange: e => setPasswordVerify(e.target.value),
+        value: passwordVerify,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        className: "btn btn-outline-secondary",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75,
+          columnNumber: 17
+        }
+      }, "Register")))
+    );
+  }
+  _s(Register, "fc+YJsvzIZiEFJITykEykyinsuc=", false, function () {
+    return [useStyles, _reactRouterDom.useHistory];
+  });
+  _c = Register;
+  exports.default = Register;
+  var _c;
+  $RefreshReg$(_c, "Register");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

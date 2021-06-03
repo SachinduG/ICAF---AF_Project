@@ -1,0 +1,35 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _axios = require("axios");
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _react = require("react");
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  require("react-router-dom");
+  var _s = $RefreshSig$();
+  function Researchers() {
+    _s();
+    const [researchers, setResearchers] = _react.useState([]);
+    const [researcherEdiorOpen, setResearcherEditorOpen] = _react.useState(false);
+    const [editResearcherData, setEditResearcherData] = _react.useState(null);
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    _react.useEffect(() => {
+      if (!getLoggedIn) setResearchers([]); else getResearchers();
+    }, [getLoggedIn]);
+    async function getResearchers() {
+      const researcherRes = await _axiosDefault.default;
+    }
+  }
+  _s(Researchers, "yjijFJRkP7g7TPngDo1+EVebhkk=");
+  _c = Researchers;
+  var _c;
+  $RefreshReg$(_c, "Researchers");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

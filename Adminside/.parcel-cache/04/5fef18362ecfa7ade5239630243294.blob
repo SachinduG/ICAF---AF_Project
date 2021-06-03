@@ -1,0 +1,53 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _PresenterList = require("./PresenterList");
+  var _PresenterListDefault = _parcelHelpers.interopDefault(_PresenterList);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Presenters.jsx", _s = $RefreshSig$();
+  function Presenters() {
+    _s();
+    const [presenters, setPresenters] = _react.useState([]);
+    async function getPresenters() {
+      const presentersRes = await _axiosDefault.default.get("http://localhost:5000/presenter/");
+      setPresenters(presentersRes.data);
+    }
+    _react.useEffect(() => {
+      getPresenters();
+    }, []);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_PresenterListDefault.default, {
+        presenters: presenters,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 13
+        }
+      }))
+    );
+  }
+  _s(Presenters, "5gpKyij9/H9GfvnGaN6dl/2zjYQ=");
+  _c = Presenters;
+  exports.default = Presenters;
+  var _c;
+  $RefreshReg$(_c, "Presenters");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

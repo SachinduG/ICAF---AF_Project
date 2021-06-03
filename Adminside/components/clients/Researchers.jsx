@@ -3,7 +3,7 @@ import React, {useContext, useEffect, useState} from "react";
 import AuthContext from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 import Researcher from "./Researcher";
-import ResearcherEditor from "./ResearcherEditor";
+import ResearcherEditor from "./ResearcherEditor"
 
 function Researchers(){
     const [researchers, setResearchers] = useState([]);
@@ -52,13 +52,13 @@ function Researchers(){
                     setResearcherEditorOpen(true)}>Add researcher</button>
             )}
             {researcherEditorOpen && (
-                <ResearcherEditor setResearcherEditorOpen={setResearcherOpen}
+                <ResearcherEditor setResearcherEditorOpen={setResearcherEditorOpen}
                                   getResearhcers={getResearchers} editResearcherData={editResearcherData}/>
             )}
             {researchers.length > 0 ? renderResearchers() : loggedIn &&
                 ( <p className="no-users-msg">No researchers have been added yet.</p>)}
             {loggedIn === null && ( <div className="no-user-message">
-                    <Link to="/">Login here</Link></div>
+                    <Link to="/login">Login here</Link></div>
             )}
         </div>
     );

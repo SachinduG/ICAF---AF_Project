@@ -1,0 +1,54 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require('react');
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researcher.jsx";
+  function Researcher({researcher, getResearchers, editResearcher}) {
+    async function deleteResearcher() {
+      if (window.confirm("Do you want to delete this researcher?")) {
+        await _axiosDefault.default.delete(`http://localhost:5000/researcher/delete/${researcher._id}`);
+        getResearchers;
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "user",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 9
+        }
+      }, researcher.email && /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        className: "email",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 34
+        }
+      }, researcher.email), researcher.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "fname",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 17
+        }
+      }, researcher.fname), researcher)
+    );
+  }
+  _c = Researcher;
+  var _c;
+  $RefreshReg$(_c, "Researcher");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

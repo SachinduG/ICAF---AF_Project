@@ -62,7 +62,7 @@ router.post("/", async (req, res) => {
 
         const token = jwt.sign(
             {
-                user: savedUser._id,
+                id: savedUser._id,
             },
             process.env.JWT_SECRET
         );
@@ -110,7 +110,7 @@ router.post("/login", async (req, res) => {
 
         const token = jwt.sign(
             {
-                user: existingUser._id,
+                id: existingUser._id,
             },
             process.env.JWT_SECRET
         );
@@ -144,13 +144,13 @@ router.get("/logout", (req, res) => {
 router.get("/loggedIn", (req, res) => {
     try {
         const token = req.cookies.token;
-        if (!token) return res.json(false);
+        if (!token) return res.json(null);
 
-        jwt.verify(token, process.env.JWT_SECRET);
+        const validatedUser = jwt.verify(token, process.env.JWT_SECRET);
 
-        res.send(true);
+        res.send(validatedUser.id);
     } catch (err) {
-        res.json(false);
+        res.json(null);
     }
 });
 

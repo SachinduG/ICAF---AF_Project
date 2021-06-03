@@ -1,0 +1,56 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require("react");
+  var _axios = require("axios");
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  require("../layout/ErrorMessage");
+  var _s = $RefreshSig$();
+  function ResearcherEditor({getResearhcers, setResearcherEditorOpen, editResearcherData}) {
+    _s();
+    const [editFName, setEditFName] = _react.useState("");
+    const [editLName, setEditLname] = _react.useState("");
+    const [editEmail, setEditEmail] = _react.useState("");
+    const [editMobile, setEditMobile] = _react.useState("");
+    const [errorMessage, setErrorMessage] = _react.useState(null);
+    _react.useEffect(() => {
+      if (editResearcherData) {
+        setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
+        setEditLname(editResearcherData.lname ? editResearcherData.lname : "");
+        setEditEmail(editResearcherData.email ? editResearcherData.email : "");
+        setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
+      }
+    }, [editResearcherData]);
+    async function saveResearcher(e) {
+      e.preventDefault();
+      const researcherData = {
+        fname: editFName ? editFName : undefined,
+        lname: editLName ? editLName : undefined,
+        email: editEmail ? editEmail : undefined,
+        mobile: editMobile ? editMobile : undefined
+      };
+      try {
+        if (!editResearcherData) await _axiosDefault.default.post(`http://localhost:5000/researcher/add`, researcherData); else await _axiosDefault.default.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
+      } catch (err) {
+        if (err.response) {
+          if (err.response.data.errorMessage) {
+            setErrorMessage(err.response.data.errorMessage);
+          }
+        }
+        return;
+      }
+      getResearhcers;
+    }
+  }
+  _s(ResearcherEditor, "M1shaaBebvm7+K2LwnENhR+LQW4=");
+  _c = ResearcherEditor;
+  var _c;
+  $RefreshReg$(_c, "ResearcherEditor");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

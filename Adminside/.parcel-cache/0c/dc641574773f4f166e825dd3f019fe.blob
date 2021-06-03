@@ -1,0 +1,303 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _authLogOutBtn = require("../auth/LogOutBtn");
+  var _authLogOutBtnDefault = _parcelHelpers.interopDefault(_authLogOutBtn);
+  var _materialUiIconsHomeRounded = require('@material-ui/icons/HomeRounded');
+  var _materialUiIconsHomeRoundedDefault = _parcelHelpers.interopDefault(_materialUiIconsHomeRounded);
+  var _materialUiIconsDescriptionRounded = require('@material-ui/icons/DescriptionRounded');
+  var _materialUiIconsDescriptionRoundedDefault = _parcelHelpers.interopDefault(_materialUiIconsDescriptionRounded);
+  var _materialUiIconsPeopleOutlineRounded = require('@material-ui/icons/PeopleOutlineRounded');
+  var _materialUiIconsPeopleOutlineRoundedDefault = _parcelHelpers.interopDefault(_materialUiIconsPeopleOutlineRounded);
+  var _materialUiCore = require("@material-ui/core");
+  var _clientsClients = require('../clients/Clients');
+  var _clientsClientsDefault = _parcelHelpers.interopDefault(_clientsClients);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Navbar.jsx", _s = $RefreshSig$();
+  const useStyles = _materialUiCore.makeStyles(theme => ({
+    root: {
+      flexGrow: 1
+    },
+    menuButton: {
+      marginLeft: 10,
+      marginRight: 10,
+      '&:hover': {
+        background: 'white'
+      }
+    },
+    title: {
+      flexGrow: 1
+    }
+  }));
+  function Navbar() {
+    _s();
+    const classes = useStyles();
+    const [anchorEl, setAnchorEl] = _react.useState(null);
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const handleOpenMenu = e => {
+      setAnchorEl(e.currentTarget);
+    };
+    const handleMenuClose = () => {
+      setAnchorEl(null);
+    };
+    // breakpoin
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 9
+        }
+      }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-dark",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/",
+        style: {
+          marginLeft: 610
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 29
+        }
+      }, "Welcome"), /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 29
+        }
+      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/login",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 29
+        }
+      }, "Log In"))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: classes.root,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.AppBar, {
+        position: "static",
+        color: "primary",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Toolbar, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Typography, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 33
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsHomeRoundedDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 66
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
+        "aria-controls": "menu1",
+        startIcon: /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsPeopleOutlineRoundedDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64,
+            columnNumber: 44
+          }
+        }),
+        onClick: handleOpenMenu,
+        disableRipple: true,
+        variant: "contained",
+        className: classes.menuButton,
+        color: "default",
+        style: {
+          color: "black"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 29
+        }
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
+        "aria-controls": "menu2",
+        startIcon: /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsDescriptionRoundedDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74,
+            columnNumber: 44
+          }
+        }),
+        onClick: handleOpenMenu,
+        disableRipple: true,
+        variant: "contained",
+        className: classes.menuButton,
+        color: "default",
+        style: {
+          color: "black"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72,
+          columnNumber: 29
+        }
+      }, "Events"), /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82,
+          columnNumber: 29
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
+        style: {
+          marginTop: '40px'
+        },
+        id: "menu1",
+        onClose: handleMenuClose,
+        anchorEl: anchorEl,
+        open: Boolean(anchorEl),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_clientsClientsDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91,
+          columnNumber: 61
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92,
+          columnNumber: 25
+        }
+      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93,
+          columnNumber: 25
+        }
+      }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
+        style: {
+          marginTop: '40px'
+        },
+        id: "menu2",
+        onClose: handleMenuClose,
+        anchorEl: anchorEl,
+        open: Boolean(anchorEl),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101,
+          columnNumber: 25
+        }
+      }, "Research Papers"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102,
+          columnNumber: 25
+        }
+      }, "Presentations"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103,
+          columnNumber: 25
+        }
+      }, "Workshops"))))
+    );
+  }
+  _s(Navbar, "H0zGzM7HxNjpd14ysoioy+mD07g=", false, function () {
+    return [useStyles];
+  });
+  _c = Navbar;
+  exports.default = Navbar;
+  var _c;
+  $RefreshReg$(_c, "Navbar");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

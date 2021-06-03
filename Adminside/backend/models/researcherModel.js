@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const researcherSchema = new mongoose.Schema(
-    {
+const researcherSchema = new mongoose.Schema({
         fname: {
             type: String,
             required: true,
@@ -24,11 +23,8 @@ const researcherSchema = new mongoose.Schema(
             trim: true,
             maxlength: 10,
         },
-    },
-    {
-        timestamps: true,
-    }
-);
+
+});
 
 const researcher = mongoose.model("researcher", researcherSchema);
 

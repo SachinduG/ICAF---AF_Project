@@ -1,26 +1,26 @@
-const express = require('express')
-const router = express.Router()
-const Researcher = require('../models/researcherModel')
-const auth = require('../middleware/auth')
+const express = require('express');
+const router = express.Router();
+const Researcher = require('../models/researcherModel');
+const auth = require('../middleware/auth');
 
 // @url           POST /researcher/add
 // @description   add researcher
 // @access-mode   private
-router.post('/add', auth, async (req, res) => {
+router.post('/', auth, async (req, res) => {
+    const {fname, lname, email, mobile} = req.body
     try {
-        const {fname, lname, email, mobile} = req.body
-        const user = {
+        const newUser = new Researcher({
             fname: fname,
             lname: lname,
             email: email,
             mobile: mobile,
-        }
-        const newUser = new Researcher(user)
-        await newUser.save()
-        res.status(200).send({status: 'User added', user: newUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        });
+
+        const user = await newUser.save();
+        res.json(user);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
     }
 })
 
@@ -29,41 +29,59 @@ router.post('/add', auth, async (req, res) => {
 // @access-mode   private
 router.get('/', auth, async (req, res) => {
     try {
-        const users = await Researcher.find()
-        res.status(200).send({status: 'Fetched users', user: users})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        const users = await Researcher.find();
+        res.json(users);
+    } catch (err) {
+        res.status(500).send('server error');
+        console.log(err.message);
     }
 })
 
-// @url           PUT /researcher/update/:id
+// @url           PUT /researcher/:id
 // @description   update researcher
 // @access-mode   private
-router.put('/update/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.put('/:id', auth, async(req, res) => {
+    const {fname, lname, mobile} = req.body
+
+        //build user object
+        const userFields={};
+        if(fname)userFields.fname=fname;
+        if(lname)userFields.lname=lname;
+        if(mobile)userFields.mobile=mobile;
     try {
-        const {fname, lname, mobile} = req.body
-        const user = await Researcher.findOneAndUpdate(userID, {fname: fname, lname: lname, mobile: mobile})
-        res.status(200).send({status: 'Todo Updated', updatedUser: user})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        let user = await Researcher.findById(req.params.id);
+
+        if(!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+
+        user = await Researcher.findByIdAndUpdate(req.params.id,
+            {$set:userFields},
+            {new:true});
+            res.json(user);
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
     }
 })
 
-// @url           DELETE /researher/delete/:id
+// @url           DELETE /researcher/:id
 // @description   delete researcher
 // @access-mode   private
-router.delete('/delete/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.delete('/:id', auth, async(req, res) => {
     try {
-        const deleteUser = await Researcher.findByIdAndDelete(userID)
-        res.status(200).send({status: 'User Deleted', deletedUser: deleteUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
-    }
-})
+        let user = await Researcher.findById(req.params.id);
 
-module.exports = router
+        if(!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+        
+        await Researcher.findByIdAndRemove(req.params.id);
+        res.json({msg: 'User removed.'});
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
+    }
+});
+
+module.exports = router;
