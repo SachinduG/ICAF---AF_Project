@@ -5,6 +5,7 @@ import Register from "./components/auth/Register";
 import Researchers from "./components/clients/Researchers";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
+import PaperList from "./components/events/PaperList";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -37,6 +38,9 @@ function Router() {
                         </Route>
                         <Route path="/attendee">
                             <Researchers />
+                        </Route>
+                        <Route path="/paper">
+                            <PaperList/>
                         </Route>
                     </>
                 )}
