@@ -6,6 +6,7 @@ import Researchers from "./components/clients/Researchers";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
 import PaperList from "./components/events/PaperList";
+import Paper from "./components/events/Paper";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -39,9 +40,13 @@ function Router() {
                         <Route path="/attendee">
                             <Researchers />
                         </Route>
+                        <Route path="/paper/:id">
+                            <Paper/>
+                        </Route>
                         <Route path="/paper">
                             <PaperList/>
                         </Route>
+                        
                     </>
                 )}
             </Switch>
