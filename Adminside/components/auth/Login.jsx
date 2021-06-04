@@ -137,7 +137,7 @@ function Login() {
                     <Grid container>
                         <Grid item >
                             <a href="/register" variant="body2" className="nav-link" style={{textDecoration: 'none'}} >
-                                "Don't have an account? Sign Up"
+                                Don't have an account? Sign Up
                             </a>
                         </Grid>
                     </Grid>
