@@ -1,0 +1,175 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\ResearcherEditor.jsx", _s = $RefreshSig$();
+  function ResearcherEditor({getResearchers, setResearcherEditorOpen, editResearcherData}) {
+    _s();
+    const [editFName, setEditFName] = _react.useState("");
+    const [editLName, setEditLName] = _react.useState("");
+    const [editEmail, setEditEmail] = _react.useState("");
+    const [editMobile, setEditMobile] = _react.useState("");
+    _react.useEffect(() => {
+      if (editResearcherData) {
+        setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
+        setEditLName(editResearcherData.lname ? editResearcherData.lname : "");
+        setEditEmail(editResearcherData.email ? editResearcherData.email : "");
+        setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
+      }
+    }, [editResearcherData]);
+    async function saveResearcher(e) {
+      e.preventDefault();
+      const researcherData = {
+        fname: editFName ? editFName : undefined,
+        lname: editLName ? editLName : undefined,
+        email: editEmail ? editEmail : undefined,
+        mobile: editMobile ? editMobile : undefined
+      };
+      try {
+        if (!editResearcherData) await _axiosDefault.default.post(`http://localhost:5000/researcher/`, researcherData); else await _axiosDefault.default.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
+      } catch (err) {
+        console.log(err);
+      }
+      getResearchers;
+      closeEditor();
+    }
+    function closeEditor() {
+      setResearcherEditorOpen(false);
+      setEditFName("");
+      setEditLName("");
+      setEditEmail("");
+      setEditMobile("");
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "user-editor",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("form", {
+        className: "form",
+        onSubmit: saveResearcher,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 17
+        }
+      }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-1",
+        type: "text",
+        value: editFName,
+        onChange: e => setEditFName(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 17
+        }
+      }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-2",
+        type: "text",
+        value: editLName,
+        onChange: e => setEditLName(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 17
+        }
+      }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-3",
+        type: "email",
+        value: editEmail,
+        onChange: e => setEditEmail(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76,
+          columnNumber: 17
+        }
+      }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-4",
+        type: "text",
+        value: editMobile,
+        onChange: e => setEditMobile(e.target.value),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-save",
+        type: "submit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84,
+          columnNumber: 17
+        }
+      }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-cancel",
+        type: "button",
+        onClick: closeEditor,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 17
+        }
+      }, "Cancel")))
+    );
+  }
+  _s(ResearcherEditor, "yrKM0G5uX3NfYObUAymCv3sY68I=");
+  _c = ResearcherEditor;
+  exports.default = ResearcherEditor;
+  var _c;
+  $RefreshReg$(_c, "ResearcherEditor");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

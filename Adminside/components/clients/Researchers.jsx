@@ -5,7 +5,7 @@ import ResearcherEditor from "./ResearcherEditor";
 import AuthContext from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Researchers() {
   const [researchers, setResearchers] = useState([]);
   const [researcherEditorOpen, setResearcherEditorOpen] = useState(false);
   const [editResearcherData, setEditResearcherData] = useState(null);
@@ -65,4 +65,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Researchers;
