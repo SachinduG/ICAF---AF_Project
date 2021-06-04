@@ -50,8 +50,7 @@ function Navbar(){
             {loggedIn === false && (
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a className="nav-link" href="/" style={{marginLeft: 610}}>Welcome</a>
-                        <a className="nav-link" href="/register">Register</a>
+                        <a className="nav-link" href="/register" style={{marginLeft: 610}}>Register</a>
                         <a className="nav-link" href="/login">Log In</a>
                     </nav>
                 </div>
@@ -63,7 +62,7 @@ function Navbar(){
                     <AppBar position="static" color='primary'>
                         <Toolbar>
                             <Typography>
-                                <a className="nav-link" href="/"><HomeRoundedIcon/></a>
+                                <a className="nav-link" href="/home"><HomeRoundedIcon/></a>
                             </Typography>
                             <Button
                                 aria-controls='menu'

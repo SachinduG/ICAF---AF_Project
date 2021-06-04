@@ -15,9 +15,6 @@ function Router() {
             <Switch>
                 {loggedIn === false && (
                     <>
-                        <Route exact path="/">
-                            <div>Welcome</div>
-                        </Route>
                         <Route path="/register">
                             <Register />
                         </Route>
@@ -28,7 +25,7 @@ function Router() {
                 )}
                 {loggedIn === true && (
                     <>
-                        <Route exact path="/"><div>Home</div></Route>
+                        <Route exact path="/home"><div>Home</div></Route>
                         <Route path="/researcher">
                             <Researchers />
                         </Route>

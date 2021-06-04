@@ -170,7 +170,7 @@ function Register() {
                     </Grid>
                 </form>
             </div>
-            <Box mt={26} mr={10}>
+            <Box mt={27} mr={10}>
                 <Copyright />
             </Box>
         </Container>
