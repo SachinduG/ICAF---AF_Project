@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
         if (!fname || !lname || !email || !password || !passwordVerify)
             return res
                 .status(400)
-                .json({ errorMessage: "Please enter all required fields." });
+                .json({ errorMessage: "Please enter all required fields.", });
 
         if (password.length < 6)
             return res.status(400).json({
@@ -36,6 +36,7 @@ router.post("/", async (req, res) => {
                 errorMessage: "Please enter the same password twice.",
             });
 
+        // make sure no account exists for this email
         const existingUser = await Admin.findOne({ email });
         if (existingUser)
             return res.status(400).json({
@@ -74,6 +75,7 @@ router.post("/", async (req, res) => {
                 httpOnly: true,
                 secure: true,
                 sameSite: "none",
+                    
             })
             .send();
     } catch (err) {
@@ -131,26 +133,26 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-    res
-        .cookie("token", "", {
-            httpOnly: true,
-            expires: new Date(0),
-            secure: true,
-            sameSite: "none",
-        })
-        .send();
+        res
+            .cookie("token", "", {
+                httpOnly: true,
+                expires: new Date(0),
+                secure: true,
+                sameSite: "none",
+            })
+            .send();
 });
 
 router.get("/loggedIn", (req, res) => {
     try {
         const token = req.cookies.token;
-        if (!token) return res.json(null);
+        if (!token) return res.json(false);
 
-        const validatedUser = jwt.verify(token, process.env.JWT_SECRET);
+        jwt.verify(token, process.env.JWT_SECRET);
 
-        res.send(validatedUser.id);
+        res.send(true);
     } catch (err) {
-        res.json(null);
+        res.json(false);
     }
 });
 

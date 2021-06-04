@@ -1,0 +1,130 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _Researcher = require("./Researcher");
+  var _ResearcherDefault = _parcelHelpers.interopDefault(_Researcher);
+  var _ResearcherEditor = require("./ResearcherEditor");
+  var _ResearcherEditorDefault = _parcelHelpers.interopDefault(_ResearcherEditor);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researchers.jsx", _s = $RefreshSig$();
+  function Home() {
+    _s();
+    const [researchers, setResearchers] = _react.useState([]);
+    const [researcherEditorOpen, setResearcherEditorOpen] = _react.useState(false);
+    const [editResearcherData, setEditResearcherData] = _react.useState(null);
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    _react.useEffect(() => {
+      if (!loggedIn) setResearchers([]); else getResearchers();
+    }, [loggedIn]);
+    async function getResearchers() {
+      const snippetsRes = await _axiosDefault.default.get(`http://localhost:5000/researcher/`);
+      setResearchers(snippetsRes.data);
+    }
+    function editResearcher(researcherData) {
+      setEditResearcherData(researcherData);
+      setResearcherEditorOpen(true);
+    }
+    function renderResearchers() {
+      let sortedResearchers = [...researchers];
+      sortedResearchers = sortedResearchers.sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      });
+      return sortedResearchers.map((researcher, i) => {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement(_ResearcherDefault.default, {
+            key: i,
+            researcher: researcher,
+            getResearchers: getResearchers,
+            editResearcher: editResearcher,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 38,
+              columnNumber: 9
+            }
+          })
+        );
+      });
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "home",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 5
+        }
+      }, !researcherEditorOpen && loggedIn && /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-editor-toggle",
+        onClick: () => setResearcherEditorOpen(true),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 9
+        }
+      }, "Add Researcher"), researcherEditorOpen && /*#__PURE__*/_reactDefault.default.createElement(_ResearcherEditorDefault.default, {
+        setResearcherEditorOpen: setResearcherEditorOpen,
+        getResearchers: getResearchers,
+        editResearcherData: editResearcherData,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 9
+        }
+      }), researchers.length > 0 ? renderResearchers() : loggedIn && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "no-snippets-msg",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 9
+        }
+      }, "No rese have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "no-user-message",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 31
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 7
+        }
+      }, "Welcome to Snippet manager"), " ", /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 43
+        }
+      }, "Register here"), " "))
+    );
+  }
+  _s(Home, "4akOLb0W9+lgeuBR68DmXtLVSbA=");
+  _c = Home;
+  exports.default = Home;
+  var _c;
+  $RefreshReg$(_c, "Home");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

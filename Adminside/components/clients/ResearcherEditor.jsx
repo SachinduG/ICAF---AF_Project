@@ -8,12 +8,12 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
     const [editMobile, setEditMobile] = useState("");
 
     useEffect(() => {
-        if (editResearcherData) {
-            setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
-            setEditLname(editResearcherData.lname ? editResearcherData.lname : "");
-            setEditEmail(editResearcherData.email ? editResearcherData.email : "");
-            setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
-        }
+            if (editResearcherData) {
+                setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
+                setEditLName(editResearcherData.lname ? editResearcherData.lname : "");
+                setEditEmail(editResearcherData.email ? editResearcherData.email : "");
+                setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
+            }
     }, [editResearcherData]);
 
     async function saveResearcher(e){
@@ -27,15 +27,10 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
         };
 
         try{
-            if(!editResearcherData) await axios.post(`http://localhost:5000/researcher/add`, researcherData);
+            if(!editResearcherData) await axios.post(`http://localhost:5000/researcher/`, researcherData);
             else
-                await axios.put(`http://localhost:5000/researcher/update/${editResearcherData._id}`, researcherData);
+                await axios.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
         }catch (err){
-            if(err.response){
-                /*if(err.response.data.errorMessage){
-                    setErrorMessage(err.response.data.errorMessage);
-                }*/
-            }
             return;
         }
 

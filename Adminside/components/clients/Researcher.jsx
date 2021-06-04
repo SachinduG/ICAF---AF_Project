@@ -4,7 +4,7 @@ import axios from "axios";
 function Researcher({ researcher, getResearchers, editResearcher }) {
     async function deleteResearcher(){
         if(window.confirm("Do you want to delete this researcher?")){
-            await axios.delete(`http://localhost:5000/researcher/delete/${researcher._id}`);
+            await axios.delete(`http://localhost:5000/researcher/${researcher._id}`);
 
             getResearchers;
         }

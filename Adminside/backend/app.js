@@ -23,7 +23,7 @@ app.use(
 
 //connect to monogoDB
 mongoose.connect(
-    process.env.MDB_CONNECT,
+    process.env.MDB_CONNECT_STRING,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -38,4 +38,3 @@ app.use("/auth", require("./routes/adminRoute"));
 app.use("/researcher", require("./routes/researcherRoute"));
 app.use("/presenter", require("./routes/presenterRoute"));
 app.use("/attendee", require("./routes/attendeeRoute"));
-app.use("/researchPaper", require("./routes/paperRoute"));

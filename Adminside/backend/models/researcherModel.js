@@ -23,7 +23,7 @@ const researcherSchema = new mongoose.Schema({
             trim: true,
             maxlength: 10,
         },
-
+        
 });
 
 const researcher = mongoose.model("researcher", researcherSchema);
