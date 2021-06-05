@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from "axios";
 import Swal from "sweetalert2";
-import "./user.css";
 
 function Researcher({ researcher, getResearchers, editResearcher }) {
     async function deleteResearcher(){
@@ -28,19 +27,21 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
     }
 
     return (
-        <div className="user">
-            {researcher.email && <h2 className="email">{researcher.email}</h2>}
+        <div className="card" style={{width: 750, marginLeft: 80, marginTop: 30}}>
+            <div className="card-body">
+            {researcher.email && <h3 className="card-title">Email Address : {researcher.email}</h3>}
             {researcher.fname && (
-                <p className="text-1">{researcher.fname}</p>
+                <p className="text-1">First Name : {researcher.fname}</p>
             )}
             {researcher.lname && (
-                <p className="text-2">{researcher.lname}</p>
+                <p className="text-2">Last Name : {researcher.lname}</p>
             )}
             {researcher.mobile && (
-                <p className="text-3">{researcher.mobile}</p>
+                <p className="text-3">Mobile Number : {researcher.mobile}</p>
             )}
-            <button className="btn-edit" onClick={() => editResearcher(researcher)}>Edit</button>
-            <button className="btn-delete" onClick={deleteResearcher}>Delete</button>
+            <button className="btn btn-outline-primary" onClick={() => editResearcher(researcher)} style={{marginRight: 10}}>Edit</button>
+            <button className="btn btn-outline-danger" onClick={deleteResearcher}>Delete</button>
+            </div>
         </div>
     );
 }

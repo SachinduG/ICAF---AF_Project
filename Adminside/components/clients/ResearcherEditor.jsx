@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-import "./edit.css";
 
 function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearcherData}) {
     const [editFName, setEditFName] = useState("");
@@ -121,7 +120,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                     type="email"
                     value={editEmail}
                     onChange={(e) => setEditEmail(e.target.value)}
-                    required
+                    readOnly
                 />
                 </div>
 
@@ -138,8 +137,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 </div>
 
                 <div className="form-group" style={{marginLeft: 475, marginTop:30}}>
-                <button className="btn-save" type="submit" style={{marginRight: 10, marginTop: 20}}>Save</button>  
-                    <button className="btn-cancel" type="button" onClick={closeEditor}>Cancel</button>
+                <button className="btn btn-outline-success" type="submit" style={{marginRight: 10}}>Save</button>  
+                    <button className="btn btn-outline-warning" type="button" onClick={closeEditor}>Cancel</button>
                 </div>
                     
             </form>
