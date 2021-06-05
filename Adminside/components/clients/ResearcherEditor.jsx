@@ -68,6 +68,12 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                     title: 'Oops...',
                     text: 'Mobile Number must be at least 10 characters!'
                 })
+            }else{
+                await Swal.file({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please update at least a input field!'
+                })
             }
         }
 

@@ -51,6 +51,28 @@ router.put('/:id', auth, async(req, res) => {
     try {
         let user = await Researcher.findById(req.params.id);
 
+        if (!fname && !lname && !mobile) 
+            return res.status(400).json({
+              errorMessage: "You need to update at least a input field",
+            });
+
+        if (fname.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a first name of at least 3 characters.",
+            });
+
+        if (lname.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a last name of at least 3 characters.",
+            });
+
+        if (mobile.length < 10)
+            return res.status(400).json({
+            errorMessage: "Please enter a mobile number of at least 10 characters.",
+        });    
+
+
+
         if(!user) return res.status(404).json({
             msg: 'User not found'
         });
