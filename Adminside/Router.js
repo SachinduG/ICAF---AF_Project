@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Researchers from "./components/clients/Researchers";
+import Presenters from "./components/clients/Presenters";
+import Attendees from "./components/clients/Attendees";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
 
@@ -30,10 +32,10 @@ function Router() {
                             <Researchers />
                         </Route>
                         <Route path="/presenter">
-                            <Researchers />
+                            <Presenters />
                         </Route>
                         <Route path="/attendee">
-                            <Researchers />
+                            <Attendees />
                         </Route>
                         
                     </>

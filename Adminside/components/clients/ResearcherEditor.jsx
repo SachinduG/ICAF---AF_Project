@@ -8,12 +8,14 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
     const [editEmail, setEditEmail] = useState("");
     const [editMobile, setEditMobile] = useState("");
     const mountedRef = useRef(false);
-
+    
     // effect just for tracking mounted state
     useEffect(() => {
         mountedRef.current = true
+        console.log('render!');
         return () => {
          mountedRef.current = false
+         console.log('unmounting...');
         }
     }, []);
 
@@ -73,7 +75,6 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
 
         getResearchers;
         closeEditor();
-
     }
     function closeEditor(){
         setResearcherEditorOpen(false);
@@ -120,7 +121,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                     type="email"
                     value={editEmail}
                     onChange={(e) => setEditEmail(e.target.value)}
-                    readOnly
+                    required
                 />
                 </div>
 
@@ -140,7 +141,6 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 <button className="btn btn-outline-success" type="submit" style={{marginRight: 10}}>Save</button>  
                     <button className="btn btn-outline-warning" type="button" onClick={closeEditor}>Cancel</button>
                 </div>
-                    
             </form>
             </div>
         </div>

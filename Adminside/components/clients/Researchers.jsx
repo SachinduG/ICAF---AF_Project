@@ -18,8 +18,8 @@ function Researchers() {
   }, [loggedIn]);
 
   async function getResearchers() {
-    const snippetsRes = await Axios.get(`http://localhost:5000/researcher/`);
-    setResearchers(snippetsRes.data);
+    const researchersRes = await Axios.get(`http://localhost:5000/researcher/`);
+    setResearchers(researchersRes.data);
   }
 
   function editResearcher(researcherData) {

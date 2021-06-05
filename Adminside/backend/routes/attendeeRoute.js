@@ -6,21 +6,21 @@ const auth = require('../middleware/auth')
 // @url           POST /attendee/add
 // @description   add attendee
 // @access-mode   private
-router.post('/add', auth, async (req, res) => {
+router.post('/', auth, async (req, res) => {
+    const {fname, lname, email, mobile} = req.body
     try {
-        const {fname, lname, email, mobile} = req.body
-        const user = {
+        const newUser = new Attendee({
             fname: fname,
             lname: lname,
             email: email,
             mobile: mobile,
-        }
-        const newUser = new Attendee(user)
-        await newUser.save()
-        res.status(200).send({status: 'User added', user: newUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        });
+
+        const user = await newUser.save();
+        res.json(user);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
     }
 })
 
@@ -29,41 +29,80 @@ router.post('/add', auth, async (req, res) => {
 // @access-mode   private
 router.get('/', auth, async (req, res) => {
     try {
-        const users = await Attendee.find()
-        res.status(200).send({status: 'Fetched users', user: users})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        const users = await Attendee.find();
+        res.json(users);
+    } catch (err) {
+        res.status(500).send('server error');
+        console.log(err.message);
     }
 })
-
 // @url           PUT /attendee/update/:id
 // @description   update attendee
 // @access-mode   private
-router.put('/update/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.put('/:id', auth, async(req, res) => {
+    const {fname, lname, mobile} = req.body
+
+        //build user object
+        const userFields={};
+        if(fname)userFields.fname=fname;
+        if(lname)userFields.lname=lname;
+        if(mobile)userFields.mobile=mobile;
+        
     try {
-        const {fname, lname, mobile} = req.body
-        const user = await Attendee.findOneAndUpdate(userID, {fname: fname, lname: lname, mobile: mobile})
-        res.status(200).send({status: 'Todo Updated', updatedUser: user})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        let user = await Attendee.findById(req.params.id);
+
+        if (!fname && !lname && !mobile) 
+            return res.status(400).json({
+              errorMessage: "You need to update at least a input field",
+            });
+
+        if (fname.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a first name of at least 3 characters.",
+            });
+
+        if (lname.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a last name of at least 3 characters.",
+            });
+
+        if (mobile.length < 10)
+            return res.status(400).json({
+            errorMessage: "Please enter a mobile number of at least 10 characters.",
+        });    
+
+        if(!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+
+        user = await Attendee.findByIdAndUpdate(req.params.id,
+            {$set:userFields},
+            {new:true});
+            res.json(user);
+
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
     }
 })
 
 // @url           DELETE /attendee/delete/:id
 // @description   delete attendee
 // @access-mode   private
-router.delete('/delete/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.delete('/:id', auth, async(req, res) => {
     try {
-        const deleteUser = await Attendee.findByIdAndDelete(userID)
-        res.status(200).send({status: 'User Deleted', deletedUser: deleteUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        let user = await Attendee.findById(req.params.id);
+
+        if(!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+        
+        await Attendee.findByIdAndRemove(req.params.id);
+        res.json({msg: 'User removed.'});
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
     }
-})
+});
 
 module.exports = router

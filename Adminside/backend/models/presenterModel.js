@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const presenterSchema = new mongoose.Schema(
-    {
+const presenterSchema = new mongoose.Schema({
         fname: {
             type: String,
             required: true,
@@ -24,11 +23,8 @@ const presenterSchema = new mongoose.Schema(
             trim: true,
             maxlength: 10,
         },
-    },
-    {
-        timestamps: true,
-    }
-);
+        
+});
 
 const presenter = mongoose.model("workshop_presenter", presenterSchema);
 
