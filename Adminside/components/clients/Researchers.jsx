@@ -4,6 +4,7 @@ import Researcher from "./Researcher";
 import ResearcherEditor from "./ResearcherEditor";
 import AuthContext from "../../context/AuthContext";
 import { Link } from "react-router-dom";
+import "./home.css";
 
 function Researchers() {
   const [researchers, setResearchers] = useState([]);
@@ -56,7 +57,7 @@ function Researchers() {
          getResearchers={getResearchers} editResearcherData={editResearcherData}/>
       )}
       {researchers.length > 0 ? renderResearchers() : loggedIn && 
-      ( <p className="no-snippets-msg">No researchers have been added yet.</p> )}
+      ( <p className="no-users-msg">No researchers have been added yet.</p> )}
       {loggedIn === null && ( <div className="no-user-message"> 
       <h2>Welcome</h2> <Link to="/register">
         Register here</Link> </div>

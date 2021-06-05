@@ -48,6 +48,7 @@ router.put('/:id', auth, async(req, res) => {
         if(fname)userFields.fname=fname;
         if(lname)userFields.lname=lname;
         if(mobile)userFields.mobile=mobile;
+        
     try {
         let user = await Researcher.findById(req.params.id);
 
@@ -71,8 +72,6 @@ router.put('/:id', auth, async(req, res) => {
             errorMessage: "Please enter a mobile number of at least 10 characters.",
         });    
 
-
-
         if(!user) return res.status(404).json({
             msg: 'User not found'
         });
@@ -81,6 +80,7 @@ router.put('/:id', auth, async(req, res) => {
             {$set:userFields},
             {new:true});
             res.json(user);
+
     } catch (err) {
         res.status(500).send(err.message)
         console.log(err.message)

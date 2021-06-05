@@ -1,0 +1,24 @@
+.user {
+    margin: 1.5rem 0;
+}
+.snippet .title, .snippet .description, .snippet .code {
+    margin-bottom: 1rem;
+}
+.snippet .code {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: var(--dark-color);
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+.snippet .btn-delete, .snippet .btn-edit {
+    margin-right: 1rem;
+}
+.snippet .btn-edit {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+.snippet .btn-delete {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+}

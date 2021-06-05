@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import "./edit.css";
 
 function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearcherData}) {
     const [editFName, setEditFName] = useState("");
@@ -48,31 +49,25 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                     timer: 1500
                 })
         }catch (err){
-            if(fname.length < 3){
+            if(editFName.length < 3){
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'First Name must be at least 3 characters!'
                 })
             }
-            if(lname.length < 3){
+            if(editLName.length < 3){
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Last Name must be at least 3 characters!'
                 })
             }
-            if(mobile.length < 10){
+            if(editMobile.length < 10){
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Mobile Number must be at least 10 characters!'
-                })
-            }else{
-                await Swal.file({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Please update at least a input field!'
                 })
             }
         }
@@ -90,12 +85,12 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
     }
 
     return(
-        <div style={{marginTop: 20}}>
+        <div style={{marginTop: 20}} className="user-editor">
             <h3><center>Update Researcher</center></h3>
             <div className = "container">
             <form onSubmit={saveResearcher}>
                 <div className="form-group">
-                <label>First Name</label>
+                <label htmlFor="editor-1">First Name</label>
                 <input
                     id="editor-1"
                     className="form-control"
@@ -107,7 +102,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 </div>
 
                 <div className="form-group">
-                <label>Last Name</label>
+                <label htmlFor="editor-2">Last Name</label>
                 <input
                     id="editor-2"
                     className="form-control"
@@ -118,9 +113,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 />
                 </div>
 
-
                 <div className="form-group">
-                <label>Email Address</label>
+                <label htmlFor="editor-3">Email Address</label>
                 <input
                     id="editor-3"
                     className="form-control"
@@ -131,9 +125,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 />
                 </div>
 
-                
                 <div className="form-group">
-                <label>Mobile Number</label>
+                <label htmlFor="editor-4">Mobile Number</label>
                 <input
                     id="editor-4"
                     className="form-control"
@@ -145,8 +138,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 </div>
 
                 <div className="form-group" style={{marginLeft: 475, marginTop:30}}>
-                <button className="btn-success" type="submit" style={{marginRight: 10, marginTop: 20}}>Save</button>  
-                    <button className="btn-danger" type="button" onClick={closeEditor}>Cancel</button>
+                <button className="btn-save" type="submit" style={{marginRight: 10, marginTop: 20}}>Save</button>  
+                    <button className="btn-cancel" type="button" onClick={closeEditor}>Cancel</button>
                 </div>
                     
             </form>

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import Swal from "sweetalert2";
+import "./user.css";
 
 function Researcher({ researcher, getResearchers, editResearcher }) {
     async function deleteResearcher(){
@@ -25,7 +26,6 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
             
         getResearchers;
     }
-
 
     return (
         <div className="user">
