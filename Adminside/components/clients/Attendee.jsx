@@ -23,7 +23,7 @@ function Attendee({ attendee, getAttendees, editAttendee }) {
             }
           })
             
-        getAttendees;
+        getAttendees();
     }
 
     return (

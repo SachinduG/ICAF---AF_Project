@@ -23,7 +23,7 @@ function Presenter({ presenter, getPresenters, editPresenter }) {
             }
           })
             
-        getPresenters;
+        getPresenters();
     }
 
     return (

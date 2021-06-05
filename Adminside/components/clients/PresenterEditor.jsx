@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
@@ -7,17 +7,6 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
     const [editLName, setEditLName] = useState("");
     const [editEmail, setEditEmail] = useState("");
     const [editMobile, setEditMobile] = useState("");
-    const mountedRef = useRef(false);
-    
-    // effect just for tracking mounted state
-    useEffect(() => {
-        mountedRef.current = true
-        console.log('render!');
-        return () => {
-         mountedRef.current = false
-         console.log('unmounting...');
-        }
-    }, []);
 
     useEffect(() => {
             if (editPresenterData) {

@@ -20,10 +20,11 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
                     'Your file has been deleted.',
                     'success'
                 )
+                getResearchers();
             }
           })
             
-        getResearchers;
+        
     }
 
     return (
