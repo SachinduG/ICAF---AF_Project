@@ -56,7 +56,7 @@ function Researchers() {
          getResearchers={getResearchers} editResearcherData={editResearcherData}/>
       )}
       {researchers.length > 0 ? renderResearchers() : loggedIn && 
-      ( <p className="alert alert-warning" role="alert">No researchers have been added yet.</p> )}
+      ( <p className="alert alert-warning" role="alert" style={{marginTop:40}}>No researchers have been added yet.</p> )}
       {loggedIn === null && ( <div className="no-user-message"> 
       <h2>Welcome</h2> <Link to="/register">
         Register here</Link> </div>
