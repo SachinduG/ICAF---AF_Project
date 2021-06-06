@@ -28,8 +28,8 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
     }
 
     return (
-        <div className="card" style={{width: 750, marginLeft: 80, marginTop: 30}}>
-            <div className="card-body">
+        <div className="card mb-3" style={{width: 750, marginLeft: 80, marginTop: 30}}>
+            <div className="card-body p-3">
             {researcher.email && <h3 className="card-title">Email Address : {researcher.email}</h3>}
             {researcher.fname && (
                 <p className="text-1">First Name : {researcher.fname}</p>
