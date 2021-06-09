@@ -28,16 +28,14 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
         };
 
         try{
-            if(!editResearcherData) await axios.post(`http://localhost:5000/researcher/`, researcherData);
-            else
-                await axios.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
-                await Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'You successfully updated researcher!',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
+            await axios.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You successfully updated researcher!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }catch (err){
             if(editFName.length < 3){
                 await Swal.fire({
@@ -110,7 +108,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                     type="email"
                     value={editEmail}
                     onChange={(e) => setEditEmail(e.target.value)}
-                    required
+                    readOnly
                 />
                 </div>
 

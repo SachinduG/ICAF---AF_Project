@@ -47,10 +47,6 @@ function Researchers() {
 
   return (
     <div className="home">
-      {!researcherEditorOpen && loggedIn && (
-        <button className="btn-editor-toggle" onClick={() =>
-            setResearcherEditorOpen(true)}>Add Researcher</button>
-      )}
       {researcherEditorOpen && (
         <ResearcherEditor setResearcherEditorOpen={setResearcherEditorOpen}
          getResearchers={getResearchers} editResearcherData={editResearcherData}/>
