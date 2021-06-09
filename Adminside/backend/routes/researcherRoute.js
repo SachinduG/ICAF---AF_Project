@@ -3,27 +3,6 @@ const router = express.Router();
 const Researcher = require('../models/researcherModel');
 const auth = require('../middleware/auth');
 
-// @url           POST /researcher/add
-// @description   add researcher
-// @access-mode   private
-router.post('/', auth, async (req, res) => {
-    const {fname, lname, email, mobile} = req.body
-    try {
-        const newUser = new Researcher({
-            fname: fname,
-            lname: lname,
-            email: email,
-            mobile: mobile,
-        });
-
-        const user = await newUser.save();
-        res.json(user);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server error');
-    }
-})
-
 // @url           GET /researcher/
 // @description   get all researchers
 // @access-mode   private
