@@ -47,10 +47,6 @@ function Attendees() {
 
   return (
     <div className="home">
-      {!attendeeEditorOpen && loggedIn && (
-        <button className="btn-editor-toggle" onClick={() =>
-            setAttendeeEditorOpen(true)}>Add Attendee</button>
-      )}
       {attendeeEditorOpen && (
         <AttendeeEditor setAttendeeEditorOpen={setAttendeeEditorOpen}
          getAttendees={getAttendees} editAttendeeData={editAttendeeData}/>

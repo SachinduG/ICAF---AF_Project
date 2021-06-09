@@ -28,16 +28,14 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
         };
 
         try{
-            if(!editAttendeeData) await axios.post(`http://localhost:5000/attendee/`, attendeeData);
-            else
-                await axios.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
-                await Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'You successfully updated attendee!',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
+            await axios.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You successfully updated attendee!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }catch (err){
             if(editFName.length < 3){
                 await Swal.fire({
@@ -110,7 +108,7 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
                     type="email"
                     value={editEmail}
                     onChange={(e) => setEditEmail(e.target.value)}
-                    required
+                    readOnly
                 />
                 </div>
 
