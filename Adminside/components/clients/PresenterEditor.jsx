@@ -28,16 +28,14 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
         };
 
         try{
-            if(!editPresenterData) await axios.post(`http://localhost:5000/presenter/`, presenterData);
-            else
-                await axios.put(`http://localhost:5000/presenter/${editPresenterData._id}`, presenterData);
-                await Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'You successfully updated presenter!',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
+            await axios.put(`http://localhost:5000/presenter/${editPresenterData._id}`, presenterData);
+            await Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'You successfully updated presenter!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }catch (err){
             if(editFName.length < 3){
                 await Swal.fire({
@@ -110,7 +108,7 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
                     type="email"
                     value={editEmail}
                     onChange={(e) => setEditEmail(e.target.value)}
-                    required
+                    readOnly
                 />
                 </div>
 

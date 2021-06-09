@@ -47,10 +47,6 @@ function Presenters() {
 
   return (
     <div className="home">
-      {!presenterEditorOpen && loggedIn && (
-        <button className="btn-editor-toggle" onClick={() =>
-            setPresenterEditorOpen(true)}>Add Presenter</button>
-      )}
       {presenterEditorOpen && (
         <PresenterEditor setPresenterEditorOpen={setPresenterEditorOpen}
          getPresenters={getPresenters} editPresenterData={editPresenterData}/>
