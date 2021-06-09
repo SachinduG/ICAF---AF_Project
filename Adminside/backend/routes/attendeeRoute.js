@@ -3,27 +3,6 @@ const router = express.Router()
 const Attendee = require('../models/attendeeModel')
 const auth = require('../middleware/auth')
 
-// @url           POST /attendee/add
-// @description   add attendee
-// @access-mode   private
-router.post('/', auth, async (req, res) => {
-    const {fname, lname, email, mobile} = req.body
-    try {
-        const newUser = new Attendee({
-            fname: fname,
-            lname: lname,
-            email: email,
-            mobile: mobile,
-        });
-
-        const user = await newUser.save();
-        res.json(user);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server error');
-    }
-})
-
 // @url           GET /attendee/
 // @description   get all attendees
 // @access-mode   private

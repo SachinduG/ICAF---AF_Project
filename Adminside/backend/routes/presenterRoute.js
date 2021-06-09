@@ -3,27 +3,6 @@ const router = express.Router();
 const Presenter = require('../models/presenterModel');
 const auth = require('../middleware/auth');
 
-// @url           POST /presenter/add
-// @description   add presenter
-// @access-mode   private
-router.post('/', auth, async (req, res) => {
-    const {fname, lname, email, mobile} = req.body
-    try {
-        const newUser = new Presenter({
-            fname: fname,
-            lname: lname,
-            email: email,
-            mobile: mobile,
-        });
-
-        const user = await newUser.save();
-        res.json(user);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server error');
-    }
-})
-
 // @url           GET /presenter/
 // @description   get all presenters
 // @access-mode   private
