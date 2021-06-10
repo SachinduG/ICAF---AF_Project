@@ -1,0 +1,51 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "AuthContextProvider", function () {
+    return AuthContextProvider;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "C:\\Users\\Gamitha\\OneDrive\\Desktop\\New folder (2)\\New folder\\ICAF---AF_Project\\Clientside\\user\\frontend\\context\\AuthContext.jsx", _s = $RefreshSig$();
+  const AuthContext = /*#__PURE__*/_react.createContext();
+  function AuthContextProvider(props) {
+    _s();
+    const [loggedIn, setLoggedIn] = _react.useState(undefined);
+    async function getLoggedIn() {
+      const loggedInRes = await _axiosDefault.default.get("http://localhost:5000/auth/loggedIn");
+      setLoggedIn(loggedInRes.data);
+    }
+    _react.useEffect(() => {
+      getLoggedIn();
+    }, []);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(AuthContext.Provider, {
+        value: {
+          loggedIn,
+          getLoggedIn
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 9
+        }
+      }, props.children)
+    );
+  }
+  _s(AuthContextProvider, "81emVA+KGXopSnfrhBepOR4HVzY=");
+  _c = AuthContextProvider;
+  exports.default = AuthContext;
+  var _c;
+  $RefreshReg$(_c, "AuthContextProvider");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
