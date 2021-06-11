@@ -6,15 +6,15 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
     const [editFName, setEditFName] = useState("");
     const [editLName, setEditLName] = useState("");
     const [editEmail, setEditEmail] = useState("");
-    const [editMobile, setEditMobile] = useState("");
-    const 
+    const [editContact, setEditContact] = useState("");
+    const [editUniversity, setEditUniversity] = useState("");
 
     useEffect(() => {
             if (editAttendeeData) {
                 setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
                 setEditLName(editAttendeeData.lname ? editAttendeeData.lname : "");
                 setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
-                setEditMobile(editAttendeeData.mobile ? editAttendeeData.mobile : "");
+                editContact(editAttendeeData.contact ? editAttendeeData.contact : "");
             }
     }, [editAttendeeData]);
 
@@ -25,7 +25,8 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
             fname: editFName ? editFName : undefined,
             lname: editLName ? editLName : undefined,
             email: editEmail ? editEmail : undefined,
-            mobile: editMobile ? editMobile : undefined,
+            contact: editContact ? editContact : undefined,
+            university: editUniversity ? editUniversity : undefined
         };
 
         try{
@@ -52,11 +53,18 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
                     text: 'Last Name must be at least 3 characters!'
                 })
             }
-            if(editMobile.length < 10){
+            if(editContact.length < 10){
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Mobile Number must be at least 10 characters!'
+                })
+            }
+            if(editUniversity.length < 0){
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'University must not be empty!!'
                 })
             }
         }
@@ -69,7 +77,8 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
         setEditFName("");
         setEditLName("");
         setEditEmail("");
-        setEditMobile("");
+        setEditContact("");
+        setEditUniversity("");
     }
 
     return(
@@ -119,7 +128,19 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
                     id="editor-4"
                     className="form-control"
                     type="text"
-                    value={editMobile}
+                    value={editContact}
+                    onChange={(e) => setEditMobile(e.target.value)}
+                    required
+                />
+                </div>
+
+                <div className="form-group">
+                <label htmlFor="editor-4">Mobile Number</label>
+                <input
+                    id="editor-5"
+                    className="form-control"
+                    type="text"
+                    value={editContact}
                     onChange={(e) => setEditMobile(e.target.value)}
                     required
                 />

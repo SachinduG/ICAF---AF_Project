@@ -78934,7 +78934,7 @@ try {
         lname: editLName ? editLName : undefined,
         email: editEmail ? editEmail : undefined,
         contact: editContact ? editContact : undefined,
-        university: editUniversity ? editUniversity : undefined
+        university
       };
       try {
         await _axiosDefault.default.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
@@ -78960,18 +78960,11 @@ try {
             text: 'Last Name must be at least 3 characters!'
           });
         }
-        if (editContact.length < 10) {
+        if (editMobile.length < 10) {
           await _sweetalertDefault.default.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Mobile Number must be at least 10 characters!'
-          });
-        }
-        if (editUniversity.length < 0) {
-          await _sweetalertDefault.default.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'University must not be empty!!'
           });
         }
       }
@@ -78983,8 +78976,7 @@ try {
       setEditFName("");
       setEditLName("");
       setEditEmail("");
-      setEditContact("");
-      setEditUniversity("");
+      setEditMobile("");
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -78995,21 +78987,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85,
+          lineNumber: 77,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 78,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("center", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 78,
           columnNumber: 17
         }
       }, "Update Attendee")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79017,7 +79009,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 79,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -79025,7 +79017,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88,
+          lineNumber: 80,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79033,7 +79025,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89,
+          lineNumber: 81,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79041,7 +79033,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90,
+          lineNumber: 82,
           columnNumber: 17
         }
       }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79054,7 +79046,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91,
+          lineNumber: 83,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79062,7 +79054,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
+          lineNumber: 93,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79070,7 +79062,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 94,
           columnNumber: 17
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79083,7 +79075,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103,
+          lineNumber: 95,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79091,7 +79083,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 105,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79099,7 +79091,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 106,
           columnNumber: 17
         }
       }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79112,7 +79104,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115,
+          lineNumber: 107,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79120,7 +79112,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125,
+          lineNumber: 117,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79128,49 +79120,20 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 118,
           columnNumber: 17
         }
       }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-4",
         className: "form-control",
         type: "text",
-        value: editContact,
+        value: editMobile,
         onChange: e => setEditMobile(e.target.value),
         required: true,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
-          columnNumber: 17
-        }
-      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "form-group",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 137,
-          columnNumber: 17
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
-        htmlFor: "editor-4",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 138,
-          columnNumber: 17
-        }
-      }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        id: "editor-5",
-        className: "form-control",
-        type: "text",
-        value: editContact,
-        onChange: e => setEditMobile(e.target.value),
-        required: true,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 139,
+          lineNumber: 119,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79182,7 +79145,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149,
+          lineNumber: 129,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79194,7 +79157,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150,
+          lineNumber: 130,
           columnNumber: 17
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79204,7 +79167,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 131,
           columnNumber: 21
         }
       }, "Cancel")))))
@@ -79738,4 +79701,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3SLbD","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

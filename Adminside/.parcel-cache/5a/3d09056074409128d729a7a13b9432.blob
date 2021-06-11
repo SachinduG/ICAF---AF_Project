@@ -78984,7 +78984,7 @@ try {
       setEditLName("");
       setEditEmail("");
       setEditContact("");
-      setEditUniversity("");
+      setEditUniversity;
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79135,42 +79135,13 @@ try {
         id: "editor-4",
         className: "form-control",
         type: "text",
-        value: editContact,
+        value: editMobile,
         onChange: e => setEditMobile(e.target.value),
         required: true,
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 127,
-          columnNumber: 17
-        }
-      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "form-group",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 137,
-          columnNumber: 17
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
-        htmlFor: "editor-4",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 138,
-          columnNumber: 17
-        }
-      }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        id: "editor-5",
-        className: "form-control",
-        type: "text",
-        value: editContact,
-        onChange: e => setEditMobile(e.target.value),
-        required: true,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 139,
           columnNumber: 17
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79182,7 +79153,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149,
+          lineNumber: 137,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79194,7 +79165,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150,
+          lineNumber: 138,
           columnNumber: 17
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79204,7 +79175,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 139,
           columnNumber: 21
         }
       }, "Cancel")))))
@@ -79738,4 +79709,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3SLbD","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
