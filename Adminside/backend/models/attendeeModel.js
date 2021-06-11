@@ -17,11 +17,17 @@ const attendeeSchema = new mongoose.Schema({
             trim: true,
             lowercase: true,
         },
-        mobile: {
+        contact: {
             type: String,
             required: true,
             trim: true,
             maxlength: 10,
+        },
+        university: {
+            type: String,
+            required: true,
+            trim: true,
+            lowercase: true,
         },
         
 });

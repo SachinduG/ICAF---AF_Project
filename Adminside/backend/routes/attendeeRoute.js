@@ -19,18 +19,19 @@ router.get('/', auth, async (req, res) => {
 // @description   update attendee
 // @access-mode   private
 router.put('/:id', auth, async(req, res) => {
-    const {fname, lname, mobile} = req.body
+    const {fname, lname, contact} = req.body
 
         //build user object
         const userFields={};
         if(fname)userFields.fname=fname;
         if(lname)userFields.lname=lname;
-        if(mobile)userFields.mobile=mobile;
+        if(contact)userFields.contact=contact;
+        if(university)userFields.university=university;
         
     try {
         let user = await Attendee.findById(req.params.id);
 
-        if (!fname && !lname && !mobile) 
+        if (!fname && !lname && !contact && !university) 
             return res.status(400).json({
               errorMessage: "You need to update at least a input field",
             });
@@ -45,7 +46,7 @@ router.put('/:id', auth, async(req, res) => {
                 errorMessage: "Please enter a last name of at least 3 characters.",
             });
 
-        if (mobile.length < 10)
+        if (contact.length < 10)
             return res.status(400).json({
             errorMessage: "Please enter a mobile number of at least 10 characters.",
         });    
