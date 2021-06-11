@@ -26336,6 +26336,7 @@ try {
   var _componentsAuthAttendeeRegisterDefault = _parcelHelpers.interopDefault(_componentsAuthAttendeeRegister);
   var _componentsAuthHome = require("./components/auth/Home");
   var _componentsAuthHomeDefault = _parcelHelpers.interopDefault(_componentsAuthHome);
+  require("./components/auth/LoginTypes");
   var _componentsLayoutNavbar = require("./components/layout/Navbar");
   var _componentsLayoutNavbarDefault = _parcelHelpers.interopDefault(_componentsLayoutNavbar);
   var _contextAuthContext = require("./context/AuthContext");
@@ -26349,21 +26350,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 15,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 13
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 19,
           columnNumber: 13
         }
       }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26371,14 +26372,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 22,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthAttendeeRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 23,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26386,14 +26387,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22,
+          lineNumber: 26,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthAttendeeLoginDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 27,
           columnNumber: 29
         }
       }))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26402,14 +26403,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 33,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 33,
           columnNumber: 51
         }
       }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26417,14 +26418,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 34,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthHomeDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 35,
           columnNumber: 29
         }
       })))))
@@ -26441,7 +26442,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/AttendeeLogin":"4oQ9H","./components/auth/AttendeeRegister":"2Fwyf","./components/auth/Home":"2dca9","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/AttendeeLogin":"4oQ9H","./components/auth/AttendeeRegister":"2Fwyf","./components/auth/Home":"2dca9","./components/auth/LoginTypes":"5IrpB","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -30476,7 +30477,7 @@ try {
           email,
           password
         };
-        await _axiosDefault.default.post("http://localhost:5000/auth/login", loginData);
+        await _axiosDefault.default.post("http://localhost:5000/auth/attendeelogin", loginData);
         await getLoggedIn();
         history.push("/");
         await _sweetalertDefault.default.fire({
@@ -77062,6 +77063,8 @@ try {
 
 },{"react":"3b2NM","axios":"7rA65","../../context/AuthContext":"7EfDm","react-router-dom":"1PMSK","sweetalert2":"65nX0","@material-ui/core/styles":"1Rdvd","@material-ui/core":"6DoV9","@material-ui/core/Typography":"3wcF9","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Box":"5C19c","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2dca9":[function(require,module,exports) {
 
+},{}],"5IrpB":[function(require,module,exports) {
+
 },{}],"2mdwo":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -77131,51 +77134,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59,
+          lineNumber: 60,
           columnNumber: 9
         }
-      }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, loggedIn === false && /*#__PURE__*/
+      /*<div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="nav-link" href="/attendeeregister" style={{marginLeft: 610}}>Register</a>
+      <a className="nav-link" href="/attendeelogin">Log In</a>
+      </nav>
+      </div>*/
+      _reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
-          columnNumber: 17
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("nav", {
-        className: "navbar navbar-expand-lg navbar-dark bg-dark",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62,
-          columnNumber: 21
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
-        className: "nav-link",
-        href: "/attendeeregister",
-        style: {
-          marginLeft: 610
-        },
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 25
-        }
-      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("a", {
-        className: "nav-link",
-        href: "/attendeelogin",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 25
-        }
-      }, "Log In"))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: classes.root,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71,
+          lineNumber: 68,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.AppBar, {
@@ -77184,21 +77157,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72,
+          lineNumber: 69,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Toolbar, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73,
+          lineNumber: 70,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Typography, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74,
+          lineNumber: 71,
           columnNumber: 29
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77207,23 +77180,23 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
+          lineNumber: 72,
           columnNumber: 33
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsHomeRoundedDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
+          lineNumber: 72,
           columnNumber: 70
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
-        "aria-controls": "menu",
+        "aria-controls": "menu4",
         startIcon: /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsPeopleOutlineRoundedDefault.default, {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 79,
+            lineNumber: 76,
             columnNumber: 44
           }
         }),
@@ -77238,7 +77211,244 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77,
+          lineNumber: 74,
+          columnNumber: 30
+        }
+      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
+        "aria-controls": "menu5",
+        startIcon: /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsPeopleOutlineRoundedDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 87,
+            columnNumber: 44
+          }
+        }),
+        onClick: handleOpenMenu,
+        disableRipple: true,
+        variant: "contained",
+        className: classes.menuButton,
+        color: "default",
+        style: {
+          color: "black"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 29
+        }
+      }, "Login"))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
+        id: "menu4",
+        style: {
+          marginTop: '40px'
+        },
+        onClose: handleMenuClose,
+        anchorEl: anchorEl,
+        open: Boolean(anchorEl),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/researcher",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106,
+          columnNumber: 61
+        }
+      }, "Researcher")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/presenter",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107,
+          columnNumber: 61
+        }
+      }, "Presenter")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/attendeeregister",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108,
+          columnNumber: 61
+        }
+      }, "Attendee"))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
+        id: "menu5",
+        style: {
+          marginTop: '40px'
+        },
+        onClose: handleMenuClose,
+        anchorEl: anchorEl,
+        open: Boolean(anchorEl),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/researcher",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117,
+          columnNumber: 61
+        }
+      }, "Researcher")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/presenter",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118,
+          columnNumber: 61
+        }
+      }, "Presenter")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+        onClick: handleMenuClose,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/attendeelogin",
+        style: {
+          textDecoration: 'none'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119,
+          columnNumber: 61
+        }
+      }, "Attendee")))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: classes.root,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.AppBar, {
+        position: "static",
+        color: "primary",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Toolbar, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Typography, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/home",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 33
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsHomeRoundedDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 70
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
+        "aria-controls": "menu",
+        startIcon: /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsPeopleOutlineRoundedDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 44
+          }
+        }),
+        onClick: handleOpenMenu,
+        disableRipple: true,
+        variant: "contained",
+        className: classes.menuButton,
+        color: "default",
+        style: {
+          color: "black"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135,
           columnNumber: 29
         }
       }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
@@ -77247,7 +77457,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89,
+            lineNumber: 147,
             columnNumber: 44
           }
         }),
@@ -77262,7 +77472,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 145,
           columnNumber: 29
         }
       }, "Events"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
@@ -77271,7 +77481,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 99,
+            lineNumber: 157,
             columnNumber: 44
           }
         }),
@@ -77286,14 +77496,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97,
+          lineNumber: 155,
           columnNumber: 29
         }
       }, "Approved Contents"), /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107,
+          lineNumber: 165,
           columnNumber: 29
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
@@ -77307,7 +77517,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110,
+          lineNumber: 168,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77315,7 +77525,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116,
+          lineNumber: 174,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77326,7 +77536,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116,
+          lineNumber: 174,
           columnNumber: 61
         }
       }, "Researcher")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77334,7 +77544,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117,
+          lineNumber: 175,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77345,7 +77555,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117,
+          lineNumber: 175,
           columnNumber: 61
         }
       }, "Presenter")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77353,7 +77563,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 176,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77364,7 +77574,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 176,
           columnNumber: 61
         }
       }, "Attendee"))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
@@ -77378,7 +77588,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120,
+          lineNumber: 178,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77386,7 +77596,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 184,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77397,7 +77607,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 184,
           columnNumber: 62
         }
       }, "Research Paper")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77405,7 +77615,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
+          lineNumber: 185,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77416,7 +77626,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
+          lineNumber: 185,
           columnNumber: 62
         }
       }, "Workshops"))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
@@ -77430,7 +77640,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129,
+          lineNumber: 187,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77438,7 +77648,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135,
+          lineNumber: 193,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77449,7 +77659,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135,
+          lineNumber: 193,
           columnNumber: 62
         }
       }, "Research Paper")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -77457,7 +77667,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 194,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77468,7 +77678,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 194,
           columnNumber: 62
         }
       }, "Workshops")))))

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
+
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
@@ -58,12 +59,69 @@ function Navbar(){
     return (
         <div>
             {loggedIn === false && (
-                <div>
+                /*<div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                         <a className="nav-link" href="/attendeeregister" style={{marginLeft: 610}}>Register</a>
                         <a className="nav-link" href="/attendeelogin">Log In</a>
                     </nav>
-                </div>
+                </div>*/
+                <div>
+                    <AppBar position="static" color='primary'>
+                        <Toolbar>
+                            <Typography>
+                                <a className="nav-link" href="/home"><HomeRoundedIcon/></a>
+                            </Typography>
+                             <Button
+                                aria-controls='menu4'
+                                startIcon={<PeopleOutlineRoundedIcon/>}
+                                onClick={handleOpenMenu}
+                                disableRipple
+                                variant='contained'
+                                className={classes.menuButton}
+                                color='default'
+                                style={{color: "black"}}>Register
+                            </Button>
+
+                            <Button
+                                aria-controls='menu5'
+                                startIcon={<PeopleOutlineRoundedIcon/>}
+                                onClick={handleOpenMenu}
+                                disableRipple
+                                variant='contained'
+                                className={classes.menuButton}
+                                color='default'
+                                style={{color: "black"}}>Login
+                            </Button>
+
+
+                            </Toolbar>
+                    </AppBar>
+
+                        <Menu
+                        id='menu4'
+                        style={{ marginTop: '40px' }}
+                        onClose={handleMenuClose}
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}>
+                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{textDecoration: 'none'}}>Researcher</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{textDecoration: 'none'}}>Presenter</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/attendeeregister" style={{textDecoration: 'none'}}>Attendee</a></MenuItem>
+                        </Menu>
+
+                        <Menu
+                        id='menu5'
+                        style={{ marginTop: '40px' }}
+                        onClose={handleMenuClose}
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}>
+                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{textDecoration: 'none'}}>Researcher</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{textDecoration: 'none'}}>Presenter</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/attendeelogin" style={{textDecoration: 'none'}}>Attendee</a></MenuItem>
+                        </Menu>
+
+                        
+               </div>
+               
 
             )}
             {loggedIn === true && (
