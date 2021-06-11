@@ -36,8 +36,11 @@ function Attendee({ attendee, getAttendees, editAttendee }) {
             {attendee.lname && (
                 <p className="text-2">Last Name : {attendee.lname}</p>
             )}
-            {attendee.mobile && (
-                <p className="text-3">Mobile Number : {attendee.mobile}</p>
+            {attendee.contact && (
+                <p className="text-3">Mobile Number : {attendee.contact}</p>
+            )}
+            {attendee.university && (
+                <p className="text-4">University : {attendee.university}</p>
             )}
             <button className="btn btn-outline-primary" onClick={() => editAttendee(attendee)} style={{marginRight: 10}}>Edit</button>
             <button className="btn btn-outline-danger" onClick={deleteAttendee}>Delete</button>

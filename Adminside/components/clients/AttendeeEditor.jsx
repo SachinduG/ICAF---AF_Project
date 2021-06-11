@@ -7,6 +7,7 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
     const [editLName, setEditLName] = useState("");
     const [editEmail, setEditEmail] = useState("");
     const [editMobile, setEditMobile] = useState("");
+    const 
 
     useEffect(() => {
             if (editAttendeeData) {

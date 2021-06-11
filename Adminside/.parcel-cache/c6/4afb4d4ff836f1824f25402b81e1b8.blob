@@ -78847,7 +78847,7 @@ try {
           lineNumber: 37,
           columnNumber: 17
         }
-      }, "Last Name : ", attendee.lname), attendee.contact && /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, "Last Name : ", attendee.lname), attendee.con && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-3",
         __self: this,
         __source: {
@@ -78855,15 +78855,7 @@ try {
           lineNumber: 40,
           columnNumber: 17
         }
-      }, "Mobile Number : ", attendee.contact), attendee.university && /*#__PURE__*/_reactDefault.default.createElement("p", {
-        className: "text-4",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43,
-          columnNumber: 17
-        }
-      }, "University : ", attendee.university), /*#__PURE__*/_reactDefault.default.createElement("button", {
+      }, "Mobile Number : ", attendee.mobile), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-primary",
         onClick: () => editAttendee(attendee),
         style: {
@@ -78872,7 +78864,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 42,
           columnNumber: 13
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -78881,7 +78873,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 43,
           columnNumber: 13
         }
       }, "Delete")))
@@ -79699,4 +79691,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3SLbD","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
