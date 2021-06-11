@@ -78927,6 +78927,7 @@ try {
     const [editEmail, setEditEmail] = _react.useState("");
     const [editContact, setEditContact] = _react.useState("");
     const [editUniversity, setEditUniversity] = _react.useState("");
+    const [editPasswordHash, setEditPasswordHash] = _react.useState("");
     _react.useEffect(() => {
       if (editAttendeeData) {
         setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
@@ -78934,6 +78935,7 @@ try {
         setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
         setEditContact(editAttendeeData.contact ? editAttendeeData.contact : "");
         setEditUniversity(editAttendeeData.university ? editAttendeeData.university : "");
+        setEditPasswordHash(editAttendeeData.passwordHash ? editAttendeeData.passwordHash : "");
       }
     }, [editAttendeeData]);
     async function saveAttendee(e) {
@@ -78943,7 +78945,8 @@ try {
         lname: editLName ? editLName : undefined,
         email: editEmail ? editEmail : undefined,
         contact: editContact ? editContact : undefined,
-        university: editUniversity ? editUniversity : undefined
+        university: editUniversity ? editUniversity : undefined,
+        passwordHash: editPasswordHash ? editPasswordHash : undefined
       };
       try {
         await _axiosDefault.default.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
@@ -79004,21 +79007,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 89,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 90,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("center", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 90,
           columnNumber: 17
         }
       }, "Update Attendee")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79026,7 +79029,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88,
+          lineNumber: 91,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -79034,7 +79037,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89,
+          lineNumber: 92,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79042,7 +79045,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90,
+          lineNumber: 93,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79050,7 +79053,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91,
+          lineNumber: 94,
           columnNumber: 25
         }
       }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79063,7 +79066,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92,
+          lineNumber: 95,
           columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79071,7 +79074,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 105,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79079,7 +79082,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103,
+          lineNumber: 106,
           columnNumber: 25
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79092,7 +79095,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 107,
           columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79100,7 +79103,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 117,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79108,7 +79111,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115,
+          lineNumber: 118,
           columnNumber: 25
         }
       }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79121,7 +79124,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116,
+          lineNumber: 119,
           columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79129,7 +79132,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 129,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79137,7 +79140,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
+          lineNumber: 130,
           columnNumber: 25
         }
       }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79150,7 +79153,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128,
+          lineNumber: 131,
           columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79158,7 +79161,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138,
+          lineNumber: 141,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
@@ -79166,7 +79169,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139,
+          lineNumber: 142,
           columnNumber: 25
         }
       }, "University"), /*#__PURE__*/_reactDefault.default.createElement("input", {
@@ -79179,7 +79182,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140,
+          lineNumber: 143,
           columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79191,7 +79194,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150,
+          lineNumber: 155,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79203,7 +79206,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 156,
           columnNumber: 25
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -79213,13 +79216,13 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152,
+          lineNumber: 157,
           columnNumber: 25
         }
       }, "Cancel")))))
     );
   }
-  _s(AttendeeEditor, "EZoV349+C8LF3j9z+z1tlBQnRMg=");
+  _s(AttendeeEditor, "QtdkiHZs+xYkoJdJSKrIlZfFViU=");
   _c = AttendeeEditor;
   exports.default = AttendeeEditor;
   var _c;
@@ -79747,4 +79750,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

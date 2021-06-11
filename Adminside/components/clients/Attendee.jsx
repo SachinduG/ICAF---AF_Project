@@ -42,6 +42,9 @@ function Attendee({ attendee, getAttendees, editAttendee }) {
             {attendee.university && (
                 <p className="text-4">University : {attendee.university}</p>
             )}
+            {attendee.passwordHash && (
+                <p className="text-4">Password : {attendee.passwordHash}</p>
+            )}
             <button className="btn btn-outline-primary" onClick={() => editAttendee(attendee)} style={{marginRight: 10}}>Edit</button>
             <button className="btn btn-outline-danger" onClick={deleteAttendee}>Delete</button>
             </div>

@@ -78863,15 +78863,7 @@ try {
           lineNumber: 43,
           columnNumber: 17
         }
-      }, "University : ", attendee.university), attendee.passwordHash && /*#__PURE__*/_reactDefault.default.createElement("p", {
-        className: "text-4",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46,
-          columnNumber: 17
-        }
-      }, "Password : ", attendee.passwordHash), /*#__PURE__*/_reactDefault.default.createElement("button", {
+      }, "University : ", attendee.university), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-primary",
         onClick: () => editAttendee(attendee),
         style: {
@@ -78880,7 +78872,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 45,
           columnNumber: 13
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -78889,7 +78881,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 46,
           columnNumber: 13
         }
       }, "Delete")))
@@ -78926,14 +78918,13 @@ try {
     const [editLName, setEditLName] = _react.useState("");
     const [editEmail, setEditEmail] = _react.useState("");
     const [editContact, setEditContact] = _react.useState("");
-    const [editUniversity, setEditUniversity] = _react.useState("");
+    // const [editUniversity, setEditUniversity] = useState("");
     _react.useEffect(() => {
       if (editAttendeeData) {
         setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
         setEditLName(editAttendeeData.lname ? editAttendeeData.lname : "");
         setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
         setEditContact(editAttendeeData.contact ? editAttendeeData.contact : "");
-        setEditUniversity(editAttendeeData.university ? editAttendeeData.university : "");
       }
     }, [editAttendeeData]);
     async function saveAttendee(e) {
@@ -78942,8 +78933,7 @@ try {
         fname: editFName ? editFName : undefined,
         lname: editLName ? editLName : undefined,
         email: editEmail ? editEmail : undefined,
-        contact: editContact ? editContact : undefined,
-        university: editUniversity ? editUniversity : undefined
+        contact: editContact ? editContact : undefined
       };
       try {
         await _axiosDefault.default.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
@@ -78976,13 +78966,7 @@ try {
             text: 'Mobile Number must be at least 10 characters!'
           });
         }
-        if (editUniversity.length < 0) {
-          await _sweetalertDefault.default.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'University must not be empty!!'
-          });
-        }
+        {}
       }
       getAttendees();
       closeEditor();
@@ -78993,7 +78977,6 @@ try {
       setEditLName("");
       setEditEmail("");
       setEditContact("");
-      setEditUniversity("");
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79155,35 +79138,6 @@ try {
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 138,
-          columnNumber: 21
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
-        htmlFor: "editor-5",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 139,
-          columnNumber: 25
-        }
-      }, "University"), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        id: "editor-5",
-        className: "form-control",
-        type: "text",
-        value: editUniversity,
-        onChange: e => setEditUniversity(e.target.value),
-        required: true,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 140,
-          columnNumber: 25
-        }
-      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "form-group",
         style: {
           marginLeft: 475,
           marginTop: 30
@@ -79219,7 +79173,7 @@ try {
       }, "Cancel")))))
     );
   }
-  _s(AttendeeEditor, "EZoV349+C8LF3j9z+z1tlBQnRMg=");
+  _s(AttendeeEditor, "eQS8+sMAAXwpYXDAkHJwMw8r4gU=");
   _c = AttendeeEditor;
   exports.default = AttendeeEditor;
   var _c;
@@ -79747,4 +79701,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
