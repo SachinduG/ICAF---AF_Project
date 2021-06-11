@@ -104,7 +104,7 @@ router.post("/attendeelogin", async (req, res) => {
                 .status(400)
                 .json({ errorMessage: "Please enter all required fields." });
 
-        const existingUser = await Admin.findOne({ email });
+        const existingUser = await Attendee.findOne({ email });
         if (!existingUser)
             return res.status(401).json({ errorMessage: "Wrong email or password." });
 

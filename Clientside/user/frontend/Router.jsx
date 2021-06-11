@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import AttendeeLogin from "./components/auth/AttendeeLogin";
 import AttendeeRegister from "./components/auth/AttendeeRegister";
 import Home from "./components/auth/Home";
+import LoginTypes from "./components/auth/LoginTypes";
 
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
@@ -13,11 +14,14 @@ function Router() {
     return (
         <BrowserRouter>
             <Navbar />
+            
+            
             <Switch>
                 {loggedIn === false && (
                     <>
                         <Route path="/attendeeregister">
                             <AttendeeRegister />
+                            
                         </Route>
                         <Route path="/attendeelogin">
                             <AttendeeLogin />
