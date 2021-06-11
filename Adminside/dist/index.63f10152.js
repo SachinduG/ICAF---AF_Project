@@ -740,9 +740,9 @@ if ("development" !== "production") {
   })();
 }
 
-},{}],"3SLbD":[function(require,module,exports) {
+},{}],"52mjJ":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 53210;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "ca6253830bf612b84ef417e863f10152";
@@ -78924,7 +78924,8 @@ try {
         setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
         setEditLName(editAttendeeData.lname ? editAttendeeData.lname : "");
         setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
-        editContact(editAttendeeData.contact ? editAttendeeData.contact : "");
+        setEditContact(editAttendeeData.contact ? editAttendeeData.contact : "");
+        setEditUniversity(editAttendeeData.university ? editAttendeeData.university : "");
       }
     }, [editAttendeeData]);
     async function saveAttendee(e) {
@@ -78995,21 +78996,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85,
+          lineNumber: 86,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 87,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("center", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 87,
           columnNumber: 17
         }
       }, "Update Attendee")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79017,7 +79018,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 88,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -79025,24 +79026,24 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88,
-          columnNumber: 13
+          lineNumber: 89,
+          columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89,
-          columnNumber: 17
+          lineNumber: 90,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-1",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90,
-          columnNumber: 17
+          lineNumber: 91,
+          columnNumber: 25
         }
       }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-1",
@@ -79054,24 +79055,24 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91,
-          columnNumber: 17
+          lineNumber: 92,
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
-          columnNumber: 17
+          lineNumber: 102,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-2",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
-          columnNumber: 17
+          lineNumber: 103,
+          columnNumber: 25
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-2",
@@ -79083,24 +79084,24 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103,
-          columnNumber: 17
+          lineNumber: 104,
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
-          columnNumber: 17
+          lineNumber: 114,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-3",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
-          columnNumber: 17
+          lineNumber: 115,
+          columnNumber: 25
         }
       }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-3",
@@ -79112,24 +79113,24 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115,
-          columnNumber: 17
+          lineNumber: 116,
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125,
-          columnNumber: 17
+          lineNumber: 126,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
-          columnNumber: 17
+          lineNumber: 127,
+          columnNumber: 25
         }
       }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-4",
@@ -79141,24 +79142,24 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
-          columnNumber: 17
+          lineNumber: 128,
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137,
-          columnNumber: 17
+          lineNumber: 138,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138,
-          columnNumber: 17
+          lineNumber: 139,
+          columnNumber: 25
         }
       }, "University"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-5",
@@ -79170,8 +79171,8 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139,
-          columnNumber: 17
+          lineNumber: 140,
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -79182,8 +79183,8 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149,
-          columnNumber: 17
+          lineNumber: 150,
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-success",
@@ -79194,8 +79195,8 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150,
-          columnNumber: 17
+          lineNumber: 151,
+          columnNumber: 25
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-warning",
@@ -79204,8 +79205,8 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
-          columnNumber: 21
+          lineNumber: 152,
+          columnNumber: 25
         }
       }, "Cancel")))))
     );
@@ -79736,6 +79737,6 @@ const theme = _materialUiCore.createMuiTheme({
 });
 exports.default = theme;
 
-},{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","3SLbD","5Qvcc"], "5Qvcc", "parcelRequirece13")
+},{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
 //# sourceMappingURL=index.63f10152.js.map
