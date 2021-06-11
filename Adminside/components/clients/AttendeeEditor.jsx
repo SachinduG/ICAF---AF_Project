@@ -129,19 +129,19 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData}
                     className="form-control"
                     type="text"
                     value={editContact}
-                    onChange={(e) => setEditMobile(e.target.value)}
+                    onChange={(e) => setEditContact(e.target.value)}
                     required
                 />
                 </div>
 
                 <div className="form-group">
-                <label htmlFor="editor-4">Mobile Number</label>
+                <label htmlFor="editor-4">University</label>
                 <input
                     id="editor-5"
                     className="form-control"
                     type="text"
-                    value={editContact}
-                    onChange={(e) => setEditMobile(e.target.value)}
+                    value={editUniversity}
+                    onChange={(e) => setEditUniversity(e.target.value)}
                     required
                 />
                 </div>
