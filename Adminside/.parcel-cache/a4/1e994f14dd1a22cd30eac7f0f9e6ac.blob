@@ -78829,7 +78829,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32,
-          columnNumber: 36
+          columnNumber: 32
         }
       }, "Email Address : ", attendee.email), attendee.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-1",
@@ -78837,7 +78837,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34,
-          columnNumber: 21
+          columnNumber: 17
         }
       }, "First Name : ", attendee.fname), attendee.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-2",
@@ -78845,7 +78845,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37,
-          columnNumber: 21
+          columnNumber: 17
         }
       }, "Last Name : ", attendee.lname), attendee.contact && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-3",
@@ -78853,7 +78853,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40,
-          columnNumber: 21
+          columnNumber: 17
         }
       }, "Mobile Number : ", attendee.contact), attendee.university && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-4",
@@ -78861,7 +78861,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43,
-          columnNumber: 21
+          columnNumber: 17
         }
       }, "University : ", attendee.university), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-primary",
@@ -78873,7 +78873,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45,
-          columnNumber: 17
+          columnNumber: 13
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-danger",
@@ -78882,7 +78882,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46,
-          columnNumber: 17
+          columnNumber: 13
         }
       }, "Delete")))
     );
@@ -79739,4 +79739,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

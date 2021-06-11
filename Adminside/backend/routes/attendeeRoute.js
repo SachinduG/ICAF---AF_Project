@@ -19,7 +19,7 @@ router.get('/', auth, async (req, res) => {
 // @description   update attendee
 // @access-mode   private
 router.put('/:id', auth, async(req, res) => {
-    const {fname, lname, contact} = req.body
+    const {fname, lname, contact, university} = req.body
 
         //build user object
         const userFields={};
