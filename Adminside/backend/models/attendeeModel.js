@@ -29,6 +29,10 @@ const attendeeSchema = new mongoose.Schema({
             trim: true,
             lowercase: true,
         },
+        passwordHash: {
+            type: String,
+            required: true,
+        },
         
 });
 
