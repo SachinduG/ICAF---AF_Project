@@ -27,7 +27,7 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
             lname: editLName ? editLName : undefined,
             email: editEmail ? editEmail : undefined,
             contact: editContact ? editContact : undefined,
-            university: editUniversity ? editUniversity : undefined
+            university: editUniversity ? editUniversity : undefined,
         };
 
         try {
