@@ -4,7 +4,6 @@ import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
-import AssignmentTurnedInRoundedIcon from '@material-ui/icons/AssignmentTurnedInRounded';
 import {Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -28,7 +27,6 @@ function Navbar(){
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
     const [anchorEl1, setAnchorEl1] = useState(null);
-    const [anchorEl2, setAnchorEl2] = useState(null);
     const { loggedIn } = useContext(AuthContext);
 
     const handleOpenMenu = e => {
@@ -44,14 +42,6 @@ function Navbar(){
     };
 
     const handleMenuClose1 = () => {
-        setAnchorEl1(null);
-    };
-
-    const handleOpenMenu2 = e => {
-        setAnchorEl1(e.currentTarget);
-    };
-
-    const handleMenuClose2 = () => {
         setAnchorEl1(null);
     };
 
@@ -94,16 +84,6 @@ function Navbar(){
                                 color='default'
                                 style={{color: "black"}}>Events
                             </Button>
-                            <Button
-                                aria-controls='menu2'
-                                startIcon={<AssignmentTurnedInRoundedIcon/>}
-                                onClick={handleOpenMenu2}
-                                disableRipple
-                                variant='contained'
-                                className={classes.menuButton}
-                                color='default'
-                                style={{color: "black"}}>Approved Contents
-                            </Button>
                             <LogOutBtn/>
                         </Toolbar>
                     </AppBar>
@@ -125,15 +105,6 @@ function Navbar(){
                         open={Boolean(anchorEl1)}>
                         <MenuItem onClick={handleMenuClose1}><a href="#" style={{textDecoration: 'none'}}>Research Paper</a></MenuItem>
                         <MenuItem onClick={handleMenuClose1}><a href="#" style={{textDecoration: 'none'}}>Workshops</a></MenuItem>
-                    </Menu>
-                    <Menu
-                        id='menu2'
-                        style={{ marginTop: '40px' }}
-                        onClose={handleMenuClose2}
-                        anchorEl={anchorEl2}
-                        open={Boolean(anchorEl2)}>
-                        <MenuItem onClick={handleMenuClose2}><a href="#" style={{textDecoration: 'none'}}>Research Paper</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose2}><a href="#" style={{textDecoration: 'none'}}>Workshops</a></MenuItem>
                     </Menu>
                 </div>
             )}
