@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app",
     "dev": "env-cmd ./.env nodemon app",
-    "test": "env-cmd ./test.env/ jest --watch"
+    "test": "jest --testEnvironment=node --runInBand ./tests"
   },
   "keywords": [],
   "author": "SachinduG",
