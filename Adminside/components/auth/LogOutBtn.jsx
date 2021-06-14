@@ -1,17 +1,17 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import axios from "axios";
 import AuthContext from "../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import Swal from "sweetalert2";
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppTwoTone';
-import {Button} from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
-function LogOutBtn(){
+function LogOutBtn() {
     const { getLoggedIn } = useContext(AuthContext);
 
     const history = useHistory();
 
-    async function logOut(){
+    async function logOut() {
         await axios.get("http://localhost:5000/auth/logout");
         await getLoggedIn();
         history.push("/login");
@@ -24,7 +24,7 @@ function LogOutBtn(){
         })
     }
 
-    return <Button variant="contained" color="secondary" style={{marginLeft: 'auto'}} onClick={logOut}>Log Out<ExitToAppRoundedIcon /></Button>;
+    return <Button variant="contained" color="secondary" style={{ marginLeft: 'auto' }} onClick={logOut}>Log Out<ExitToAppRoundedIcon /></Button>;
 }
 
 export default LogOutBtn;

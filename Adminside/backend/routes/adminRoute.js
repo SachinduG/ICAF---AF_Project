@@ -4,7 +4,6 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // register
-
 router.post("/", async (req, res) => {
     try {
         const { fname, lname, email, password, passwordVerify } = req.body;

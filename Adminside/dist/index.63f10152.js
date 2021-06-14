@@ -31053,14 +31053,14 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 136,
-          columnNumber: 119
+          columnNumber: 122
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 136,
-          columnNumber: 124
+          columnNumber: 128
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
         container: true,
@@ -77503,14 +77503,14 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 163,
-          columnNumber: 135
+          columnNumber: 139
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 163,
-          columnNumber: 140
+          columnNumber: 145
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
         container: true,
@@ -77561,7 +77561,7 @@ try {
       })))
     );
   }
-  _s(Register, "5iY7AYlMyXt0tYnTUE1CHJjHj0M=", false, function () {
+  _s(Register, "h1ExFEN93guYS1SFu0vaYRVKXxc=", false, function () {
     return [useStyles, _reactRouterDom.useHistory];
   });
   _c2 = Register;
@@ -77663,7 +77663,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55,
-          columnNumber: 9
+          columnNumber: 10
         }
       }, "No researchers have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "no-user-message",
@@ -77671,14 +77671,14 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56,
-          columnNumber: 31
+          columnNumber: 30
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 7
+          columnNumber: 9
         }
       }, "Welcome"), " ", /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/register",
@@ -77686,7 +77686,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 24
+          columnNumber: 26
         }
       }, "Register here"), " "))
     );
@@ -77763,7 +77763,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33,
-          columnNumber: 34
+          columnNumber: 38
         }
       }, "Email Address : ", researcher.email), researcher.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-1",
@@ -77771,7 +77771,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "First Name : ", researcher.fname), researcher.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-2",
@@ -77779,7 +77779,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "Last Name : ", researcher.lname), researcher.mobile && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-3",
@@ -77787,7 +77787,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "Mobile Number : ", researcher.mobile), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-primary",
@@ -77799,7 +77799,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-danger",
@@ -77808,7 +77808,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 44,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, "Delete")))
     );
@@ -77942,7 +77942,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 78,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -77950,7 +77950,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 79,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-1",
@@ -77958,7 +77958,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 80,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-1",
@@ -77971,7 +77971,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 81,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -77979,7 +77979,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-2",
@@ -77987,7 +77987,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 92,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-2",
@@ -78000,7 +78000,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 93,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78008,7 +78008,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 103,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-3",
@@ -78016,7 +78016,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 104,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-3",
@@ -78029,7 +78029,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 105,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78037,7 +78037,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 115,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-4",
@@ -78045,7 +78045,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 116,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-4",
@@ -78058,7 +78058,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 117,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78070,7 +78070,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 127,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-success",
@@ -78082,7 +78082,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 128,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-warning",
@@ -78092,7 +78092,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 129,
-          columnNumber: 21
+          columnNumber: 25
         }
       }, "Cancel")))))
     );
@@ -78196,7 +78196,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55,
-          columnNumber: 9
+          columnNumber: 10
         }
       }, "No presenters have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "no-user-message",
@@ -78204,14 +78204,14 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56,
-          columnNumber: 31
+          columnNumber: 30
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 7
+          columnNumber: 9
         }
       }, "Welcome"), " ", /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/register",
@@ -78219,7 +78219,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 24
+          columnNumber: 26
         }
       }, "Register here"), " "))
     );
@@ -78296,7 +78296,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32,
-          columnNumber: 33
+          columnNumber: 37
         }
       }, "Email Address : ", presenter.email), presenter.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-1",
@@ -78304,7 +78304,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "First Name : ", presenter.fname), presenter.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-2",
@@ -78312,7 +78312,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "Last Name : ", presenter.lname), presenter.mobile && /*#__PURE__*/_reactDefault.default.createElement("p", {
         className: "text-3",
@@ -78320,7 +78320,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, "Mobile Number : ", presenter.mobile), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-primary",
@@ -78332,7 +78332,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-danger",
@@ -78341,7 +78341,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, "Delete")))
     );
@@ -78475,7 +78475,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 78,
-          columnNumber: 13
+          columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78483,7 +78483,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 79,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-1",
@@ -78491,7 +78491,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 80,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-1",
@@ -78504,7 +78504,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 81,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78512,7 +78512,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-2",
@@ -78520,7 +78520,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 92,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-2",
@@ -78533,7 +78533,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 93,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78541,7 +78541,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 103,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-3",
@@ -78549,7 +78549,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 104,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-3",
@@ -78562,7 +78562,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 105,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78570,7 +78570,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 115,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
         htmlFor: "editor-4",
@@ -78578,7 +78578,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 116,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
         id: "editor-4",
@@ -78591,7 +78591,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 117,
-          columnNumber: 17
+          columnNumber: 25
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "form-group",
@@ -78603,7 +78603,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 127,
-          columnNumber: 17
+          columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-success",
@@ -78615,7 +78615,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 128,
-          columnNumber: 17
+          columnNumber: 25
         }
       }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
         className: "btn btn-outline-warning",
@@ -78625,7 +78625,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 129,
-          columnNumber: 21
+          columnNumber: 25
         }
       }, "Cancel")))))
     );
@@ -78729,7 +78729,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55,
-          columnNumber: 9
+          columnNumber: 10
         }
       }, "No attendees have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "no-user-message",
@@ -78737,14 +78737,14 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 56,
-          columnNumber: 31
+          columnNumber: 30
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 7
+          columnNumber: 9
         }
       }, "Welcome"), " ", /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/register",
@@ -78752,7 +78752,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57,
-          columnNumber: 24
+          columnNumber: 26
         }
       }, "Register here"), " "))
     );
@@ -79618,7 +79618,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27,
-          columnNumber: 111
+          columnNumber: 113
         }
       }))
     );

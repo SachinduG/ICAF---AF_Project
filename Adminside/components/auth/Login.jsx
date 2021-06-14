@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@material-ui/core/Typography';
-import {Container, CssBaseline} from "@material-ui/core";
+import { Container, CssBaseline } from "@material-ui/core";
 import Box from '@material-ui/core/Box';
 
 function Copyright() {
@@ -95,9 +95,9 @@ function Login() {
 
     return (
         <Container component="main" maxWidth="xs">
-            <CssBaseline/>
+            <CssBaseline />
             <div className={classes.paper}>
-                <Typography component="h1" variant="h5" style={{marginRight: 45, marginTop: 20}}>
+                <Typography component="h1" variant="h5" style={{ marginRight: 45, marginTop: 20 }}>
                     Sign In
                 </Typography>
 
@@ -109,10 +109,10 @@ function Login() {
                                 <AccountCircle />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal"  fullWidth required autoFocus
-                                           type="email"
-                                           onChange={(e) => setEmail(e.target.value)}
-                                           value={email}
+                                <TextField id="input-with-icon-grid" label="Email Address" margin="normal" fullWidth required autoFocus
+                                    type="email"
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={email}
                                 />
                             </Grid>
                         </Grid>
@@ -124,19 +124,19 @@ function Login() {
                                 <LockOpenIcon />
                             </Grid>
                             <Grid item>
-                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth  required
-                                           type="password"
-                                           onChange={(e) => setPassword(e.target.value)}
-                                           value={password}
+                                <TextField id="input-with-icon-grid" label="Password" margin="normal" fullWidth required
+                                    type="password"
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    value={password}
                                 />
                             </Grid>
                         </Grid>
                     </div>
 
-                    <button type="submit" className="btn btn-outline-success" style={{marginLeft:75}} >Log in</button><br/><br/>
+                    <button type="submit" className="btn btn-outline-success" style={{ marginLeft: 75 }} >Log in</button><br /><br />
                     <Grid container>
                         <Grid item >
-                            <a href="/register" variant="body2" className="nav-link" style={{textDecoration: 'none'}} >
+                            <a href="/register" variant="body2" className="nav-link" style={{ textDecoration: 'none' }} >
                                 Don't have an account? Sign Up
                             </a>
                         </Grid>
