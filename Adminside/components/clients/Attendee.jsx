@@ -26,6 +26,7 @@ function Attendee({ attendee, getAttendees, editAttendee }) {
         getAttendees();
     }
 
+
     return (
         <div className="card" style={{ width: 750, marginLeft: 80, marginTop: 30 }}>
             <div className="card-body">

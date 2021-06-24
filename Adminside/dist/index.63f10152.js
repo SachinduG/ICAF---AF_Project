@@ -78753,7 +78753,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 31,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -78761,7 +78761,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 32,
           columnNumber: 13
         }
       }, attendee.email && /*#__PURE__*/_reactDefault.default.createElement("h3", {
@@ -78769,7 +78769,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 33,
           columnNumber: 36
         }
       }, "Email Address : ", attendee.email), attendee.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -78777,7 +78777,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 21
         }
       }, "First Name : ", attendee.fname), attendee.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -78785,7 +78785,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 38,
           columnNumber: 21
         }
       }, "Last Name : ", attendee.lname), attendee.contact && /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -78793,7 +78793,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 41,
           columnNumber: 21
         }
       }, "Mobile Number : ", attendee.contact), attendee.university && /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -78801,7 +78801,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 44,
           columnNumber: 21
         }
       }, "University : ", attendee.university), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -78813,7 +78813,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 46,
           columnNumber: 17
         }
       }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -78822,7 +78822,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 47,
           columnNumber: 17
         }
       }, "Delete")))

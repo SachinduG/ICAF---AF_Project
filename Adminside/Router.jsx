@@ -45,7 +45,7 @@ function Router() {
                         <Route path="/attendee">
                             <Attendees />
                         </Route>
-                        
+
                     </>
                 )}
             </Switch>
