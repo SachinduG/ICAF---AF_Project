@@ -7,6 +7,7 @@ import Presenters from "./components/clients/Presenters";
 import Attendees from "./components/clients/Attendees";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
+import Welcome from "./components/auth/Welcome";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -18,12 +19,7 @@ function Router() {
                 {loggedIn === false && (
                     <>
                         <Route exact path="/">
-                            ICAF
-                            The Administrative Web Portal that will provide
-                            varying controls over the entire population
-                            of Smart EVSE through the Admin Interface,
-                            alongside individual customer EVSE support
-                            through the Management Console.
+                            <Welcome />
                         </Route>
                         <Route path="/register">
                             <Register />

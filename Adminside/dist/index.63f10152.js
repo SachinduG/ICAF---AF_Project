@@ -26344,6 +26344,8 @@ try {
   var _componentsLayoutNavbarDefault = _parcelHelpers.interopDefault(_componentsLayoutNavbar);
   var _contextAuthContext = require("./context/AuthContext");
   var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _componentsAuthWelcome = require("./components/auth/Welcome");
+  var _componentsAuthWelcomeDefault = _parcelHelpers.interopDefault(_componentsAuthWelcome);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx", _s = $RefreshSig$();
   function Router() {
     _s();
@@ -26353,21 +26355,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 13
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 13
         }
       }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26376,22 +26378,29 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 21,
           columnNumber: 25
         }
-      }, "ICAF The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console."), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthWelcomeDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 29
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/register",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 24,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 25,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26399,14 +26408,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 27,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthLoginDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 28,
           columnNumber: 29
         }
       }))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26415,14 +26424,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 34,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 34,
           columnNumber: 51
         }
       }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26430,14 +26439,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 35,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsResearchersDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 36,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26445,14 +26454,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 38,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsPresentersDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 39,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26460,14 +26469,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 41,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsAttendeesDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 42,
           columnNumber: 29
         }
       })))))
@@ -26484,7 +26493,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Welcome":"2VqOp"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -79729,7 +79738,142 @@ var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("pa
 }), 'PeopleOutlineRounded');
 
 exports.default = _default;
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"3vUMA":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"2VqOp":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require("react-router-dom");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Welcome.jsx";
+  class Welcome extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "container",
+          style: {
+            width: "100%"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "row",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "col text-center",
+          style: {
+            marginTop: "20%"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: {
+            width: "30%",
+            margin: "0 auto",
+            marginBottom: "10px",
+            minWidth: "200px"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11,
+            columnNumber: 29
+          }
+        }, "ICAF"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12,
+            columnNumber: 29
+          }
+        }, "The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console.")))), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "row",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "col",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+          to: "/register",
+          style: {
+            width: "120px",
+            margin: "5px",
+            float: "right"
+          },
+          className: "btn btn-outline-primary",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 25
+          }
+        }, "Register")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "col",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+          to: "/login",
+          style: {
+            width: "120px",
+            margin: "5px",
+            float: "left"
+          },
+          className: "btn btn-outline-secondary",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 25
+          }
+        }, "Log In"))))
+      );
+    }
+  }
+  exports.default = Welcome;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","react-router-dom":"1PMSK","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");
