@@ -10,7 +10,6 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@material-ui/core/Typography';
 import { Container, CssBaseline } from "@material-ui/core";
-import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
     margin: {
