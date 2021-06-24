@@ -77173,7 +77173,8 @@ try {
   var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
   var _materialUiCoreGrid = require("@material-ui/core/Grid");
   var _materialUiCoreGridDefault = _parcelHelpers.interopDefault(_materialUiCoreGrid);
-  require("@material-ui/core/Box");
+  var _materialUiCoreBox = require("@material-ui/core/Box");
+  var _materialUiCoreBoxDefault = _parcelHelpers.interopDefault(_materialUiCoreBox);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
   const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
     root: {
@@ -77500,7 +77501,23 @@ try {
           lineNumber: 154,
           columnNumber: 29
         }
-      }, "Already have an account? Sign in"))))))
+      }, "Already have an account? Sign in"))))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreBoxDefault.default, {
+        mt: 27,
+        mr: 10,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 161,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(Copyright, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 162,
+          columnNumber: 17
+        }
+      })))
     );
   }
   _s(Register, "h1ExFEN93guYS1SFu0vaYRVKXxc=", false, function () {
@@ -79886,4 +79903,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

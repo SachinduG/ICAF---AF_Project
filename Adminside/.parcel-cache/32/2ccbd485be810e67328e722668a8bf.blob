@@ -30815,7 +30815,8 @@ try {
   var _materialUiCoreTypography = require('@material-ui/core/Typography');
   var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
   var _materialUiCore = require("@material-ui/core");
-  require('@material-ui/core/Box');
+  var _materialUiCoreBox = require('@material-ui/core/Box');
+  var _materialUiCoreBoxDefault = _parcelHelpers.interopDefault(_materialUiCoreBox);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Login.jsx", _s = $RefreshSig$();
   const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
     margin: {
@@ -31092,7 +31093,23 @@ try {
           lineNumber: 126,
           columnNumber: 29
         }
-      }, "Don't have an account? Sign Up"))))))
+      }, "Don't have an account? Sign Up"))))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreBoxDefault.default, {
+        mt: 30,
+        mr: 10,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(Copyright, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 134,
+          columnNumber: 17
+        }
+      })))
     );
   }
   _s(Login, "3pCLx8H6Qkhlx7NIDHhmydaycFk=", false, function () {
@@ -77173,8 +77190,34 @@ try {
   var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
   var _materialUiCoreGrid = require("@material-ui/core/Grid");
   var _materialUiCoreGridDefault = _parcelHelpers.interopDefault(_materialUiCoreGrid);
-  require("@material-ui/core/Box");
+  var _materialUiCoreBox = require("@material-ui/core/Box");
+  var _materialUiCoreBoxDefault = _parcelHelpers.interopDefault(_materialUiCoreBox);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
+  function Copyright() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+        variant: "body2",
+        color: "textSecondary",
+        align: "center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 9
+        }
+      }, 'Copyright © ', /*#__PURE__*/_reactDefault.default.createElement("a", {
+        color: "inherit",
+        href: "https://sachindug.github.io/sachindugimhana.github.io/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 13
+        }
+      }, "Sachindu"), ' ', new Date().getFullYear(), '.')
+    );
+  }
+  _c = Copyright;
   const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
     root: {
       minWidth: 250
@@ -77265,14 +77308,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105,
+          lineNumber: 117,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.CssBaseline, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 118,
           columnNumber: 13
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -77280,7 +77323,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107,
+          lineNumber: 119,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
@@ -77292,7 +77335,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108,
+          lineNumber: 120,
           columnNumber: 17
         }
       }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("form", {
@@ -77301,7 +77344,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112,
+          lineNumber: 124,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77310,7 +77353,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 125,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77320,7 +77363,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 126,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
@@ -77337,7 +77380,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115,
+          lineNumber: 127,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77347,7 +77390,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121,
+          lineNumber: 133,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
@@ -77363,7 +77406,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122,
+          lineNumber: 134,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77372,7 +77415,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128,
+          lineNumber: 140,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
@@ -77388,7 +77431,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129,
+          lineNumber: 141,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77398,7 +77441,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135,
+          lineNumber: 147,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
@@ -77414,7 +77457,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 148,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77424,7 +77467,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142,
+          lineNumber: 154,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
@@ -77440,7 +77483,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143,
+          lineNumber: 155,
           columnNumber: 29
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement("button", {
@@ -77453,21 +77496,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 163,
           columnNumber: 21
         }
       }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 163,
           columnNumber: 139
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("br", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151,
+          lineNumber: 163,
           columnNumber: 145
         }
       }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77476,7 +77519,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152,
+          lineNumber: 164,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
@@ -77484,7 +77527,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153,
+          lineNumber: 165,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -77497,19 +77540,36 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154,
+          lineNumber: 166,
           columnNumber: 29
         }
-      }, "Already have an account? Sign in"))))))
+      }, "Already have an account? Sign in"))))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreBoxDefault.default, {
+        mt: 27,
+        mr: 10,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 173,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(Copyright, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 174,
+          columnNumber: 17
+        }
+      })))
     );
   }
   _s(Register, "h1ExFEN93guYS1SFu0vaYRVKXxc=", false, function () {
     return [useStyles, _reactRouterDom.useHistory];
   });
-  _c = Register;
+  _c2 = Register;
   exports.default = Register;
-  var _c;
-  $RefreshReg$(_c, "Register");
+  var _c, _c2;
+  $RefreshReg$(_c, "Copyright");
+  $RefreshReg$(_c2, "Register");
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
@@ -79886,4 +79946,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

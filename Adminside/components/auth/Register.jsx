@@ -9,18 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <a color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
-                Sachindu
-            </a>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -170,9 +158,6 @@ function Register() {
                     </Grid>
                 </form>
             </div>
-            <Box mt={27} mr={10}>
-                <Copyright />
-            </Box>
         </Container>
     );
 }
