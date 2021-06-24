@@ -26348,9 +26348,8 @@ try {
   var _componentsAuthWelcomeDefault = _parcelHelpers.interopDefault(_componentsAuthWelcome);
   var _componentsLayoutFooter = require("./components/layout/Footer");
   var _componentsLayoutFooterDefault = _parcelHelpers.interopDefault(_componentsLayoutFooter);
-  var _componentsHomeHome = require("./components/home/home");
-  var _componentsHomeHomeDefault = _parcelHelpers.interopDefault(_componentsHomeHome);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx", _s = $RefreshSig$();
+  imp;
   function Router() {
     _s();
     const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
@@ -26431,7 +26430,7 @@ try {
           lineNumber: 36,
           columnNumber: 25
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsHomeHomeDefault.default, {
+      }, /*#__PURE__*/_reactDefault.default.createElement(Home, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -26504,7 +26503,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Welcome":"2VqOp","./components/layout/Footer":"5mK4o","./components/home/home":"3qzmh"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Welcome":"2VqOp","./components/layout/Footer":"5mK4o"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -79869,98 +79868,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@material-ui/core/Typography":"3wcF9"}],"3qzmh":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-try {
-  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-  _parcelHelpers.defineInteropFlag(exports);
-  var _react = require("react");
-  var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
-  function Home() {
-    return (
-      /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "home",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6,
-          columnNumber: 9
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
-        class: "container",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 13
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
-        class: "row align-items-center my-5",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 17
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
-        class: "col-lg-7",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 21
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("img", {
-        class: "img-fluid rounded mb-4 mb-lg-0",
-        src: "http://placehold.it/900x400",
-        alt: "",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10,
-          columnNumber: 25
-        }
-      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
-        class: "col-lg-5",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16,
-          columnNumber: 21
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
-        class: "font-weight-light",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17,
-          columnNumber: 25
-        }
-      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18,
-          columnNumber: 25
-        }
-      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))))
-    );
-  }
-  _c = Home;
-  exports.default = Home;
-  var _c;
-  $RefreshReg$(_c, "Home");
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3vUMA":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@material-ui/core/Typography":"3wcF9"}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");
@@ -79979,4 +79887,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

@@ -9,6 +9,7 @@ import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
 import Welcome from "./components/auth/Welcome";
 import Footer from "./components/layout/Footer";
+import Home from "./components/home/home";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -32,7 +33,9 @@ function Router() {
                 )}
                 {loggedIn === true && (
                     <>
-                        <Route exact path="/home"><div>Home</div></Route>
+                        <Route exact path="/home">
+                            <Home />
+                        </Route>
                         <Route path="/researcher">
                             <Researchers />
                         </Route>
