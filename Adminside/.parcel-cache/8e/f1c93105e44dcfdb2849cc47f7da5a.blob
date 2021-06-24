@@ -79810,12 +79810,12 @@ try {
             lineNumber: 12,
             columnNumber: 29
           }
-        }, "The Administrative Web Portal that will provide varying controls over the entire population of ICAF through the Admin Interface.")))), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        }, "The Administrative Web Portal that will provide varying controls over the entire population of ICAF through the Admin Interface, alongside individual customer EVSE support through the Management Console.")))), /*#__PURE__*/_reactDefault.default.createElement("div", {
           className: "row",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 18,
+            lineNumber: 19,
             columnNumber: 17
           }
         }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79823,7 +79823,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 21
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -79837,7 +79837,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 25
           }
         }, "Register")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79845,7 +79845,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 21
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -79859,7 +79859,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 25
           }
         }, "Log In"))))
@@ -79892,4 +79892,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

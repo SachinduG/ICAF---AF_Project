@@ -10,8 +10,7 @@ class Welcome extends Component {
                         <div style={{ width: "30%", margin: "0 auto", marginBottom: "10px", minWidth: "200px" }}>
                             <h3>ICAF</h3>
                             <div>
-                                The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface,
-                                alongside individual customer EVSE support through the Management Console.
+                                The Administrative Web Portal that will provide varying controls over the entire population of ICAF through the Admin Interface.
                             </div>
                         </div>
                     </div>
