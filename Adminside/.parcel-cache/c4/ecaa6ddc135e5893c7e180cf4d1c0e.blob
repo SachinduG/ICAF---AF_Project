@@ -79912,12 +79912,22 @@ try {
           lineNumber: 9,
           columnNumber: 21
         }
-      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
-        class: "col-lg-3",
+      }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+        class: "img-fluid rounded mb-4 mb-lg-0",
+        src: "http://placehold.it/900x400",
+        alt: "",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 10,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        class: "col-lg-7",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79925,14 +79935,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 17,
           columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 18,
           columnNumber: 25
         }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))))
@@ -79967,4 +79977,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
