@@ -79892,8 +79892,6 @@ try {
   _parcelHelpers.defineInteropFlag(exports);
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _materialUiCoreTypography = require('@material-ui/core/Typography');
-  var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Footer.jsx";
   function Footer() {
     return (
@@ -79902,34 +79900,34 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
-          columnNumber: 9
+          lineNumber: 5,
+          columnNumber: 5
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("footer", {
-        class: "py-3 bg-dark fixed-bottom",
+        class: "py-5 bg-dark fixed-bottom",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 13
+          lineNumber: 6,
+          columnNumber: 7
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         class: "container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 17
+          lineNumber: 7,
+          columnNumber: 9
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+      }, /*#__PURE__*/_reactDefault.default.createElement(Typography, {
         variant: "body2",
         color: "textSecondary",
         align: "center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 21
+          lineNumber: 8,
+          columnNumber: 9
         }
       }, 'Copyright © ', /*#__PURE__*/_reactDefault.default.createElement("a", {
         color: "inherit",
@@ -79937,8 +79935,8 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
-          columnNumber: 25
+          lineNumber: 10,
+          columnNumber: 13
         }
       }, "Sachindu"), ' ', new Date().getFullYear(), '.'))))
     );
@@ -79953,7 +79951,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@material-ui/core/Typography":"3wcF9"}],"3vUMA":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");
@@ -79972,4 +79970,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

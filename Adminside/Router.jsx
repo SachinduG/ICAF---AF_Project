@@ -8,6 +8,7 @@ import Attendees from "./components/clients/Attendees";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
 import Welcome from "./components/auth/Welcome";
+import Footer from "./components/layout/Footer";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -45,6 +46,7 @@ function Router() {
                     </>
                 )}
             </Switch>
+            <Footer />
         </BrowserRouter>
     );
 }
