@@ -9,7 +9,7 @@ function Footer() {
                     <Typography variant="body2" color="textSecondary" align="center">
                         {'Copyright © '}
                         <a color="inherit" href="https://sachindug.github.io/sachindugimhana.github.io/">
-                            Sachindu
+                            Website
                         </a>{' '}
                         {new Date().getFullYear()}
                         {'.'}
