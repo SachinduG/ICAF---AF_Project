@@ -26371,27 +26371,18 @@ try {
           columnNumber: 13
         }
       }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
-        exact: true,
-        path: "/",
+        path: "/register",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20,
           columnNumber: 25
         }
-      }, "ICAF The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console."), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
-        path: "/register",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 25
-        }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 21,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26399,14 +26390,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 23,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthLoginDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 24,
           columnNumber: 29
         }
       }))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26415,14 +26406,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 30,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 30,
           columnNumber: 51
         }
       }, "Home")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26430,14 +26421,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 31,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsResearchersDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 32,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26445,14 +26436,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 34,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsPresentersDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 35,
           columnNumber: 29
         }
       })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -26460,14 +26451,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 37,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsAttendeesDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 38,
           columnNumber: 29
         }
       })))))
@@ -79748,4 +79739,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

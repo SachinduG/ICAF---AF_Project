@@ -26371,7 +26371,6 @@ try {
           columnNumber: 13
         }
       }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
-        exact: true,
         path: "/",
         __self: this,
         __source: {
@@ -26379,7 +26378,7 @@ try {
           lineNumber: 20,
           columnNumber: 25
         }
-      }, "ICAF The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console."), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+      }, "ICA The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console."), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/register",
         __self: this,
         __source: {
@@ -79748,4 +79747,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

@@ -17,6 +17,10 @@ function Router() {
             <Switch>
                 {loggedIn === false && (
                     <>
+                        <Route exact path="/">
+                            ICAF
+                            The Administrative Web Portal that will provide varying controls over the entire population of Smart EVSE through the Admin Interface, alongside individual customer EVSE support through the Management Console.
+                        </Route>
                         <Route path="/register">
                             <Register />
                         </Route>
