@@ -79875,25 +79875,23 @@ helpers.prelude(module);
 try {
   var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
   _parcelHelpers.defineInteropFlag(exports);
-  var _axios = require("axios");
-  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _clientsAttendee = require("../clients/Attendee");
-  var _clientsAttendeeDefault = _parcelHelpers.interopDefault(_clientsAttendee);
-  var _contextAuthContext = require("../../context/AuthContext");
-  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx", _s = $RefreshSig$();
   function Home() {
     _s();
-    const [attendees, setAttendees] = _react.useState([]);
-    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
-    _react.useEffect(() => {
+    const [attendees, setAttendees] = useState([]);
+    const {loggedIn} = useContext(AuthContext);
+    useEffect(() => {
       if (!loggedIn) setAttendees([]); else getAttendees();
     }, [loggedIn]);
     async function getAttendees() {
-      const attendeesRes = await _axiosDefault.default.get(`http://localhost:5000/attendee/`);
+      const attendeesRes = await Axios.get(`http://localhost:5000/attendee/`);
       setAttendees(attendeesRes.data);
+    }
+    function editAttendee(attendeeData) {
+      setEditAttendeeData(attendeeData);
+      setAttendeeEditorOpen(true);
     }
     function renderAttendees() {
       let sortedAttendees = [...attendees];
@@ -79902,14 +79900,15 @@ try {
       });
       return sortedAttendees.map((attendee, i) => {
         return (
-          /*#__PURE__*/_reactDefault.default.createElement(_clientsAttendeeDefault.default, {
+          /*#__PURE__*/_reactDefault.default.createElement(Attendee, {
             key: i,
             attendee: attendee,
             getAttendees: getAttendees,
+            editAttendee: editAttendee,
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29,
+              lineNumber: 31,
               columnNumber: 9
             }
           })
@@ -79922,7 +79921,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 42,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79930,7 +79929,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 43,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79938,14 +79937,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 44,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("center", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 44,
           columnNumber: 45
         }
       }, "Welcome to the Admin Dashboard")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79953,7 +79952,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 45,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79961,7 +79960,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 46,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79969,14 +79968,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 47,
           columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 48,
           columnNumber: 25
         }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79984,7 +79983,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 55,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79992,28 +79991,28 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 56,
           columnNumber: 25
         }
       }, "Users"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 57,
           columnNumber: 25
         }
       }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55,
+          lineNumber: 58,
           columnNumber: 25
         }
       }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56,
+          lineNumber: 59,
           columnNumber: 25
         }
       }, "Attendees"), attendees.length > 0 ? renderAttendees() : loggedIn && /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80025,7 +80024,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 61,
           columnNumber: 30
         }
       }, "No attendees have been added yet.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80033,7 +80032,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 63,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -80041,21 +80040,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 64,
           columnNumber: 25
         }
       }, "Contents"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 65,
           columnNumber: 25
         }
       }, "Research Papers"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63,
+          lineNumber: 66,
           columnNumber: 25
         }
       }, "Workshops")))))
@@ -80072,7 +80071,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","../../context/AuthContext":"7EfDm","../clients/Attendee":"3LMDP"}],"3vUMA":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");
@@ -80091,4 +80090,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

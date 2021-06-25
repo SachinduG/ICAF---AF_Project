@@ -79875,54 +79875,17 @@ helpers.prelude(module);
 try {
   var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
   _parcelHelpers.defineInteropFlag(exports);
-  var _axios = require("axios");
-  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _clientsAttendee = require("../clients/Attendee");
-  var _clientsAttendeeDefault = _parcelHelpers.interopDefault(_clientsAttendee);
-  var _contextAuthContext = require("../../context/AuthContext");
-  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx", _s = $RefreshSig$();
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
   function Home() {
-    _s();
-    const [attendees, setAttendees] = _react.useState([]);
-    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
-    _react.useEffect(() => {
-      if (!loggedIn) setAttendees([]); else getAttendees();
-    }, [loggedIn]);
-    async function getAttendees() {
-      const attendeesRes = await _axiosDefault.default.get(`http://localhost:5000/attendee/`);
-      setAttendees(attendeesRes.data);
-    }
-    function renderAttendees() {
-      let sortedAttendees = [...attendees];
-      sortedAttendees = sortedAttendees.sort((a, b) => {
-        return new Date(b.createdAt) - new Date(a.createdAt);
-      });
-      return sortedAttendees.map((attendee, i) => {
-        return (
-          /*#__PURE__*/_reactDefault.default.createElement(_clientsAttendeeDefault.default, {
-            key: i,
-            attendee: attendee,
-            getAttendees: getAttendees,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 29,
-              columnNumber: 9
-            }
-          })
-        );
-      });
-    }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "home",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 5,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79930,7 +79893,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 6,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79938,14 +79901,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 7,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("center", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 7,
           columnNumber: 45
         }
       }, "Welcome to the Admin Dashboard")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79953,7 +79916,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 8,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79961,7 +79924,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 9,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79969,14 +79932,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 10,
           columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 11,
           columnNumber: 25
         }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79984,7 +79947,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 18,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79992,48 +79955,22 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 19,
           columnNumber: 25
         }
-      }, "Users"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, "c"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 20,
           columnNumber: 25
         }
-      }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 25
-        }
-      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56,
-          columnNumber: 25
-        }
-      }, "Attendees"), attendees.length > 0 ? renderAttendees() : loggedIn && /*#__PURE__*/_reactDefault.default.createElement("p", {
-        className: "alert alert-warning",
-        role: "alert",
-        style: {
-          marginTop: 40
-        },
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58,
-          columnNumber: 30
-        }
-      }, "No attendees have been added yet.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 27,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -80041,27 +79978,19 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 28,
           columnNumber: 25
         }
-      }, "Contents"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 29,
           columnNumber: 25
         }
-      }, "Research Papers"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 25
-        }
-      }, "Workshops")))))
+      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))))
     );
   }
-  _s(Home, "MIQgaRYIvgjLbMNMsG83m+ewn0k=");
   _c = Home;
   exports.default = Home;
   var _c;
@@ -80072,7 +80001,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","../../context/AuthContext":"7EfDm","../clients/Attendee":"3LMDP"}],"3vUMA":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");
@@ -80091,4 +80020,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
