@@ -79885,7 +79885,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 5,
+          lineNumber: 6,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -79893,25 +79893,10 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 7,
           columnNumber: 13
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
-        className: "font-weight",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 17
-        }
-      }, /*#__PURE__*/_reactDefault.default.createElement("center", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 45
-        }
-      }, "Welcome to the Admin Dashboard")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "row align-items-center my-5",
         __self: this,
         __source: {
@@ -79919,58 +79904,66 @@ try {
           lineNumber: 8,
           columnNumber: 17
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "col-lg-4",
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight-light",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9,
           columnNumber: 21
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
-        className: "font-weight-light",
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "col-lg-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10,
-          columnNumber: 25
+          columnNumber: 21
         }
-      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight-light",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 11,
           columnNumber: 25
         }
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 25
+        }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         className: "font-weight-light",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19,
-          columnNumber: 25
-        }
-      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20,
           columnNumber: 25
         }
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 28,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79978,14 +79971,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 29,
           columnNumber: 25
         }
       }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 30,
           columnNumber: 25
         }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))))
@@ -80020,4 +80013,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
