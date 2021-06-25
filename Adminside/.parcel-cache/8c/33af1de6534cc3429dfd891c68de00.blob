@@ -79820,7 +79820,7 @@ try {
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("footer", {
-        className: "py-3 bg-dark fixed-bottom",
+        c: "py-3 bg-dark fixed-bottom",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -79828,7 +79828,7 @@ try {
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
-        className: "container",
+        c: "container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -80034,4 +80034,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
