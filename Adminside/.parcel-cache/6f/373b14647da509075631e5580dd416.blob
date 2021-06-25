@@ -79958,28 +79958,15 @@ try {
           lineNumber: 19,
           columnNumber: 25
         }
-      }, "Users"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
+      }, "Users"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "font-weight",
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20,
           columnNumber: 25
         }
-      }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 25
-        }
-      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 25
-        }
-      }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
         __self: this,
         __source: {
@@ -80034,4 +80021,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
