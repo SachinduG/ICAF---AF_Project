@@ -1,0 +1,136 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _Widget = require('./Widget');
+  var _WidgetDefault = _parcelHelpers.interopDefault(_Widget);
+  var _reactChartjs = require('react-chartjs-2');
+  require('../styles/GraphWidget.css');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\GraphWidget.js";
+  class GraphWidget extends _react.Component {
+    constructor(props) {
+      super(props);
+      // Set the initial state for the graphing component
+      this.state = {
+        values: {
+          labels: ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"],
+          datasets: []
+        },
+        chartOptions: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scaleShowGridLines: false,
+          scales: {
+            xAxes: [{
+              ticks: {
+                fontFamily: "'Didact Gothic', sans-serif",
+                fontSize: 18,
+                fontColor: "#ecf0f1"
+              },
+              gridLines: {
+                display: false
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                fontFamily: "'Didact Gothic', sans-serif",
+                fontSize: 18,
+                fontColor: "#ecf0f1"
+              },
+              gridLines: {
+                display: false
+              }
+            }]
+          },
+          legend: {
+            display: false
+          }
+        }
+      };
+    }
+    /*Update the state based on changing props*/
+    componentWillReceiveProps(nextProps) {
+      if (this.props.data !== nextProps.data) {
+        // Only update if the data has actually changed
+        this.generateDatasets(nextProps);
+      }
+    }
+    /*Convert the data received in props to a format the graphing component likes*/
+    generateDatasets(props) {
+      let datasets = [];
+      // Create a dataset object that Chart.js to understand
+      props.data.forEach(function (data) {
+        datasets.push({
+          label: data.label,
+          data: data.data,
+          fill: false,
+          tension: 0,
+          borderColor: data.color,
+          borderWidth: 8,
+          pointRadius: 0,
+          pointHitRadius: 10
+        });
+      }, this);
+      // Let the React wrapper for Chart.js update the view
+      this.setState({
+        values: {
+          datasets
+        }
+      });
+    }
+    render() {
+      return (
+        /*#__PURE__*/
+        // Wrap the graphing component in the generic wrapper
+        _reactDefault.default.createElement(_WidgetDefault.default, {
+          heading: this.props.heading,
+          colspan: this.props.colspan,
+          rowspan: this.props.rowspan,
+          loading: this.props.loading,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 93,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "GraphWidget",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 94,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartjs.Line, {
+          data: this.state.values,
+          options: this.state.chartOptions,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 95,
+            columnNumber: 21
+          }
+        })))
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  GraphWidget.propTypes = {
+    heading: _reactDefault.default.PropTypes.string,
+    colspan: _reactDefault.default.PropTypes.number,
+    rowspan: _reactDefault.default.PropTypes.number,
+    loading: _reactDefault.default.PropTypes.bool.isRequired,
+    data: _reactDefault.default.PropTypes.arrayOf(_reactDefault.default.PropTypes.object)
+  };
+  exports.default = GraphWidget;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

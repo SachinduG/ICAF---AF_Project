@@ -1,0 +1,38 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('../styles/ListDisplay.css');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\ListDisplay.js";
+  class ListDisplay extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/
+        // Render a wrapper around the children that are passed
+        _reactDefault.default.createElement("ul", {
+          className: "ListDisplay",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10,
+            columnNumber: 13
+          }
+        }, this.props.children)
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  ListDisplay.propTypes = {
+    children: _reactDefault.default.PropTypes.arrayOf(_reactDefault.default.PropTypes.element).isRequired
+  };
+  exports.default = ListDisplay;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

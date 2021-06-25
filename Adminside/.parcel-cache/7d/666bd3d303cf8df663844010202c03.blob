@@ -1,0 +1,60 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\NumberDisplay.js";
+  // Import styling
+  // import '../styles/NumberDisplay.css';
+  class NumberDisplay extends _react.Component {
+    render() {
+      // Only display "of xx" when a max prop is available
+      let max = null;
+      if (this.props.max !== undefined) {
+        max = /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "max",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 17
+          }
+        }, "of ", this.props.max);
+      }
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "NumberDisplay",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "value",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 17
+          }
+        }, this.props.value), max)
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  NumberDisplay.propTypes = {
+    min: _reactDefault.default.PropTypes.number,
+    max: _reactDefault.default.PropTypes.number,
+    value: _reactDefault.default.PropTypes.number
+  };
+  exports.default = NumberDisplay;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
