@@ -79958,33 +79958,19 @@ try {
           lineNumber: 19,
           columnNumber: 25
         }
-      }, "Users"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20,
           columnNumber: 25
         }
-      }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 25
-        }
-      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 25
-        }
-      }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 27,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
@@ -79992,14 +79978,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 28,
           columnNumber: 25
         }
-      }, "Contents"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 29,
           columnNumber: 25
         }
       }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")))))
