@@ -53,6 +53,8 @@ function Navbar() {
                         <Toolbar>
                             <Typography>
                                 <a className="nav-link" href="/register">Register</a>
+                            </Typography>
+                            <Typography>    
                                 <a className="nav-link" href="/login">Log In</a>
                             </Typography>
                         </Toolbar>   
