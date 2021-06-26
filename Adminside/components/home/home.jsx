@@ -17,9 +17,9 @@ function Home() {
                     </div>
                     <div className="col-lg-4">
                         <h1 className="font-weight">Clients</h1>
-                        <h4>Researchers</h4>
-                        <h4>Presenters</h4>
-                        <h4>Attendees</h4>
+                        <h4 className="font-weight-light">Researchers</h4>
+                        <h4 className="font-weight-light">Presenters</h4>
+                        <h4 className="font-weight-light">Attendees</h4>
                     </div>
                     <div className="col-lg-4">
                         <h1 className="font-weight-light">Events</h1>
