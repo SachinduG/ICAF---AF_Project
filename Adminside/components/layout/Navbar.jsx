@@ -50,9 +50,7 @@ function Navbar() {
             {loggedIn === false && (
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <center>
-                            <a className="nav-link" href="/register">Register</a><a className="nav-link" href="/login">Log In</a>
-                        </center>
+                        <a className="nav-link" href="/register">Register</a><a className="nav-link" href="/login">Log In</a>
                     </nav>
                 </div>
 
