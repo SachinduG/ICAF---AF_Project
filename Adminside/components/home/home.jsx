@@ -17,18 +17,14 @@ function Home() {
                     </div>
                     <div className="col-lg-4">
                         <h1 className="font-weight">Clients</h1>
-                        <h4 className="font-weight-light">Researchers</h4>
-                        <h4 className="font-weight-light">Presenters</h4>
-                        <h4 className="font-weight-light">Attendees</h4>
+                            <h4 className="font-weight-light">Researchers</h4>
+                            <h4 className="font-weight-light">Presenters</h4>
+                            <h4 className="font-weight-light">Attendees</h4>
                     </div>
                     <div className="col-lg-4">
-                        <h1 className="font-weight-light">Events</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book.
-                        </p>
+                        <h1 className="font-weight">Events</h1>
+                            <h4 className="font-weight-light">Researchers</h4>
+                            <h4 className="font-weight-light">Presenters</h4>
                     </div>
                 </div>
             </div>

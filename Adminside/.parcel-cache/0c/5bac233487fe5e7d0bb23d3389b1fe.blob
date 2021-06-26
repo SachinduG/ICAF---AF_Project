@@ -79991,7 +79991,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21,
-          columnNumber: 29
+          columnNumber: 25
         }
       }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
         className: "font-weight-light",
@@ -79999,7 +79999,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22,
-          columnNumber: 29
+          columnNumber: 25
         }
       }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: "col-lg-4",
@@ -80023,7 +80023,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26,
-          columnNumber: 29
+          columnNumber: 25
         }
       }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
         className: "font-weight-light",
@@ -80031,7 +80031,7 @@ try {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27,
-          columnNumber: 29
+          columnNumber: 25
         }
       }, "Presenters")))))
     );
@@ -80065,4 +80065,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
