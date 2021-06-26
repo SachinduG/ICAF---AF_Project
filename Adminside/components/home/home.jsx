@@ -17,14 +17,14 @@ function Home() {
                     </div>
                     <div className="col-lg-4">
                         <h1 className="font-weight">Clients</h1>
-                            <h4 className="font-weight-light">Researchers</h4>
-                            <h4 className="font-weight-light">Presenters</h4>
-                            <h4 className="font-weight-light">Attendees</h4>
+                            <h5 className="font-weight-light">Researchers</h5>
+                            <h5 className="font-weight-light">Presenters</h5>
+                            <h5 className="font-weight-light">Attendees</h5>
                     </div>
                     <div className="col-lg-4">
                         <h1 className="font-weight">Events</h1>
-                            <h4 className="font-weight-light">Researchers</h4>
-                            <h4 className="font-weight-light">Presenters</h4>
+                            <h5 className="font-weight-light">Researcher Papers</h5>
+                            <h5 className="font-weight-light">Workshops</h5>
                     </div>
                 </div>
             </div>
