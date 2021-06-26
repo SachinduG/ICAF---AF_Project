@@ -53,14 +53,11 @@ function Navbar() {
                         <Toolbar>
                             <Typography>
                                 <a className="nav-link" href="/register">Register</a>
+                                <a className="nav-link" href="/login">Log In</a>
                             </Typography>
                         </Toolbar>   
                     </AppBar>
-                    {/*<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a className="nav-link" href="/register">Register</a><a className="nav-link" href="/login">Log In</a>
-            </nav>*/}
                 </div>
-
             )}
             {loggedIn === true && (
 

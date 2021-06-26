@@ -79279,7 +79279,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65,
+          lineNumber: 68,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.AppBar, {
@@ -79288,21 +79288,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
+          lineNumber: 69,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Toolbar, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67,
+          lineNumber: 70,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Typography, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68,
+          lineNumber: 71,
           columnNumber: 29
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79311,14 +79311,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69,
+          lineNumber: 72,
           columnNumber: 33
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsHomeRoundedDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69,
+          lineNumber: 72,
           columnNumber: 70
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
@@ -79327,7 +79327,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 73,
+            lineNumber: 76,
             columnNumber: 44
           }
         }),
@@ -79342,7 +79342,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71,
+          lineNumber: 74,
           columnNumber: 29
         }
       }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Button, {
@@ -79351,7 +79351,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83,
+            lineNumber: 86,
             columnNumber: 44
           }
         }),
@@ -79366,14 +79366,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81,
+          lineNumber: 84,
           columnNumber: 29
         }
       }, "Events"), /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91,
+          lineNumber: 94,
           columnNumber: 29
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
@@ -79387,7 +79387,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94,
+          lineNumber: 97,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -79395,7 +79395,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 103,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79406,7 +79406,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 103,
           columnNumber: 61
         }
       }, "Researcher")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -79414,7 +79414,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
+          lineNumber: 104,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79425,7 +79425,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
+          lineNumber: 104,
           columnNumber: 61
         }
       }, "Presenter")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -79433,7 +79433,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 105,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79444,7 +79444,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102,
+          lineNumber: 105,
           columnNumber: 61
         }
       }, "Attendee"))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Menu, {
@@ -79458,7 +79458,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 107,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -79466,7 +79466,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110,
+          lineNumber: 113,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79477,7 +79477,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110,
+          lineNumber: 113,
           columnNumber: 62
         }
       }, "Research Paper")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
@@ -79485,7 +79485,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 114,
           columnNumber: 25
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("a", {
@@ -79496,7 +79496,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 114,
           columnNumber: 62
         }
       }, "Workshops")))))
@@ -80046,4 +80046,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
