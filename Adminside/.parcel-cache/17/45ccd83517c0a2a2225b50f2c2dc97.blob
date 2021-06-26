@@ -79256,16 +79256,7 @@ try {
           lineNumber: 54,
           columnNumber: 29
         }
-      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
-        className: "nav-link",
-        href: "/register",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 33
-        }
-      }, "Register"))))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
+      })))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
         className: classes.root,
         __self: this,
         __source: {
@@ -80037,4 +80028,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map
