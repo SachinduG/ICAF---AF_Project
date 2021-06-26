@@ -50,8 +50,11 @@ function Navbar() {
             {loggedIn === false && (
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a className="nav-link" href="/register" style={{ marginLeft: 610 }}>Register</a>
-                        <a className="nav-link" href="/login">Log In</a>
+                        <center>
+                            <a className="nav-link" href="/register" style={{ marginLeft: 610 }}>Register</a>
+                            <a className="nav-link" href="/login">Log In</a>
+                        </center>
+
                     </nav>
                 </div>
 
