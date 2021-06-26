@@ -16,13 +16,13 @@ function Home() {
                         </p>
                     </div>
                     <div className="col-lg-4">
-                        <h1 className="font-weight-light">Users</h1>
+                        <h1 className="font-weight">Clients</h1>
                         <h4>Researchers</h4>
                         <h4>Presenters</h4>
                         <h4>Attendees</h4>
                     </div>
                     <div className="col-lg-4">
-                        <h1 className="font-weight-light">Co</h1>
+                        <h1 className="font-weight-light">Events</h1>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard dummy text
