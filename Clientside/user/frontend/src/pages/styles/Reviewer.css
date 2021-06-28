@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0f3d68;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 50px 0 50px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0f3d68;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 50px 0 75px 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
