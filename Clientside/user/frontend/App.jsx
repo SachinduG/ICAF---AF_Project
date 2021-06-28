@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "./Router";
+import Router from "./AttendeeRouter";
 import axios from "axios";
 import { AuthContextProvider } from "./context/AuthContext";
 import { ThemeProvider } from '@material-ui/core';
