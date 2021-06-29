@@ -68,7 +68,7 @@ router.put('/:id', auth, async (req, res) => {
             return res.status(400).json({
                 errorMessage: "Department must not be empty!!",
             });
-            
+
         if (!user) return res.status(404).json({
             msg: 'User not found'
         });

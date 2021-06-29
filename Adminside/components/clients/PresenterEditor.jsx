@@ -53,7 +53,7 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
                     text: 'First Name must be at least 3 characters!'
                 })
             }
-            if (setElength < 3) {
+            if (editLastName.length < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
