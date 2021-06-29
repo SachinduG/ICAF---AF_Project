@@ -13,13 +13,13 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
 
     useEffect(() => {
         if (editResearcherData) {
-            editFirstName(editResearcherData.firstName ? editResearcherData.firstName : "");
-            editLastName(editResearcherData.lastName ? editResearcherData.lastName : "");
+            setEditFirstName(editResearcherData.firstName ? editResearcherData.firstName : "");
+            setEditLastName(editResearcherData.lastName ? editResearcherData.lastName : "");
             setEditEmail(editResearcherData.email ? editResearcherData.email : "");
-            editContactNumber(editResearcherData.contactNumber ? editResearcherData.contactNumber : "");
-            editUsername(editResearcherData.username ? editResearcherData.username : "");
-            editUniversity(editResearcherData.university ? editResearcherData.university : "");
-            editDepartment(editResearcherData.department ? editResearcherData.department : "");
+            setEditContactNumber(editResearcherData.contactNumber ? editResearcherData.contactNumber : "");
+            setEditUsername(editResearcherData.username ? editResearcherData.username : "");
+            setEditUniversity(editResearcherData.university ? editResearcherData.university : "");
+            setEditDepartment(editResearcherData.department ? editResearcherData.department : "");
         }
     }, [editResearcherData]);
 

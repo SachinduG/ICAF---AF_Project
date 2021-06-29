@@ -78483,7 +78483,7 @@ try {
   function PresenterEditor({getPresenters, setPresenterEditorOpen, editPresenterData}) {
     _s();
     const [editFirstName, setEditFirstName] = _react.useState("");
-    const [editLastName, setEditLastName] = _react.useState("");
+    const [set, setset] = _react.useState("");
     const [editEmail, setEditEmail] = _react.useState("");
     const [editContactNumber, setEditContactNumber] = _react.useState("");
     const [editUsername, setEditUsername] = _react.useState("");
@@ -78492,22 +78492,22 @@ try {
     _react.useEffect(() => {
       if (editPresenterData) {
         setEditFirstName(editPresenterData.firstName ? editPresenterData.firstName : "");
-        setEditLastName(editPresenterData.lastName ? editPresenterData.lastName : "");
+        seteditLastName(editPresenterData.lastName ? editPresenterData.lastName : "");
         setEditEmail(editPresenterData.email ? editPresenterData.email : "");
-        setEditContactNumber(editPresenterData.contactNumber ? editPresenterData.contactNumber : "");
-        setEditUsername(editPresenterData.username ? editPresenterData.username : "");
-        setEditUniversity(editPresenterData.university ? editPresenterData.university : "");
-        setEditDepartment(editPresenterData.department ? editPresenterData.department : "");
+        editContactNumber(editPresenterData.contactNumber ? editPresenterData.contactNumber : "");
+        editUsername(editPresenterData.username ? editPresenterData.username : "");
+        editUniversity(editPresenterData.university ? editPresenterData.university : "");
+        editDepartment(editPresenterData.department ? editPresenterData.department : "");
       }
     }, [editPresenterData]);
     async function savePresenter(e) {
       e.preventDefault();
       const presenterData = {
         firstName: editFirstName ? editFirstName : undefined,
-        lastName: editLastName ? editLastName : undefined,
+        lastName: set ? set : undefined,
         email: editEmail ? editEmail : undefined,
-        contactNumsetEer: esetEitContactNumber ? editContactNumber : undefined,
-        username: setEditUsernsatEme ? editUsername : undefined,
+        contactNumber: editContactNumber ? editContactNumber : undefined,
+        username: editUsername ? editUsername : undefined,
         university: editUniversity ? editUniversity : undefined,
         department: editDepartment ? editDepartment : undefined
       };
@@ -78528,7 +78528,7 @@ try {
             text: 'First Name must be at least 3 characters!'
           });
         }
-        if (setElength < 3) {
+        if (set.length < 3) {
           await _sweetalertDefault.default.fire({
             icon: 'error',
             title: 'Oops...',
@@ -78570,12 +78570,12 @@ try {
     function closeEditor() {
       setPresenterEditorOpen(false);
       setEditFirstName("");
-      setEditLastName("");
+      setset("");
       setEditEmail("");
-      setsetEditContactNumber("");
-      setsEtEditUsername("");
-      setsEtEditUniversity("");
-      setsEtEditDepartment("");
+      setEditContactNumber("");
+      setEditUsername("");
+      setEditUniversity("");
+      setEditDepartment("");
     }
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -78657,7 +78657,7 @@ try {
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("label", {
-        htmlFor: "editor-1",
+        htmlFor: "editor-2",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -78665,11 +78665,11 @@ try {
           columnNumber: 25
         }
       }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
-        id: "editor-1",
+        id: "editor-2",
         className: "form-control",
         type: "text",
-        value: editLastName,
-        onChange: e => setEditLastName(e.target.value),
+        value: set,
+        onChange: e => setset(e.target.value),
         required: true,
         __self: this,
         __source: {
@@ -78859,7 +78859,7 @@ try {
       }, "Cancel")))))
     );
   }
-  _s(PresenterEditor, "cCpPQFWP9J34AFtCcJEegAa/JIo=");
+  _s(PresenterEditor, "JtkbRFllFhlxmfb2oOX+lMs+wiI=");
   _c = PresenterEditor;
   exports.default = PresenterEditor;
   var _c;
@@ -80353,4 +80353,4 @@ exports.default = theme;
 
 },{"@material-ui/core":"6DoV9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["1j6wU","52mjJ","5Qvcc"], "5Qvcc", "parcelRequirece13")
 
-//# sourceMappingURL=index.63f10152.js.map
+//# sourceMappingURL=index.HASH_REF_ca6253830bf612b84ef417e863f10152.js.map

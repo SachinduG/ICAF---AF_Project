@@ -14,12 +14,12 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
     useEffect(() => {
         if (editPresenterData) {
             setEditFirstName(editPresenterData.firstName ? editPresenterData.firstName : "");
-            editLastName(editPresenterData.lastName ? editPresenterData.lastName : "");
+            setEditLastName(editPresenterData.lastName ? editPresenterData.lastName : "");
             setEditEmail(editPresenterData.email ? editPresenterData.email : "");
-            editContactNumber(editPresenterData.contactNumber ? editPresenterData.contactNumber : "");
-            editUsername(editPresenterData.username ? editPresenterData.username : "");
-            editUniversity(editPresenterData.university ? editPresenterData.university : "");
-            editDepartment(editPresenterData.department ? editPresenterData.department : "");
+            setEditContactNumber(editPresenterData.contactNumber ? editPresenterData.contactNumber : "");
+            setEditUsername(editPresenterData.username ? editPresenterData.username : "");
+            setEditUniversity(editPresenterData.university ? editPresenterData.university : "");
+            setEditDepartment(editPresenterData.department ? editPresenterData.department : "");
         }
     }, [editPresenterData]);
 
@@ -30,8 +30,8 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
             firstName: editFirstName ? editFirstName : undefined,
             lastName: editLastName ? editLastName : undefined,
             email: editEmail ? editEmail : undefined,
-            contactNumber: editContactNumber ? editContactNumber : undefined,
-            username: editUsername ? editUsername : undefined,
+            contactNumsetEer: esetEitContactNumber ? editContactNumber : undefined,
+            username: setEditUsernsatEme ? editUsername : undefined,
             university: editUniversity ? editUniversity : undefined,
             department: editDepartment ? editDepartment : undefined,
         };
@@ -53,7 +53,7 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
                     text: 'First Name must be at least 3 characters!'
                 })
             }
-            if (editLastName.length < 3) {
+            if (setElength < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
@@ -101,10 +101,10 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
         setEditFirstName("");
         setEditLastName("");
         setEditEmail("");
-        setEditContactNumber("");
-        setEditUsername("");
-        setEditUniversity("");
-        setEditDepartment("");
+        setsetEditContactNumber("");
+        setsEtEditUsername("");
+        setsEtEditUniversity("");
+        setsEtEditDepartment("");
     }
 
     return (
@@ -125,9 +125,9 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="editor-2">Last Name</label>
+                        <label htmlFor="editor-1">Last Name</label>
                         <input
-                            id="editor-2"
+                            id="editor-1"
                             className="form-control"
                             type="text"
                             value={editLastName}
