@@ -29,12 +29,12 @@ router.put('/:id', auth, async (req, res) => {
     if (contactNumber) userFields.contactNumber = contactNumber;
     if (username) userFields.username = username;
     if (university) userFields.university = university;
-    if (department) userFiled.department = department;
+    if (department) userFields.department = department;
 
     try {
         let user = await Presenter.findById(req.params.id);
 
-        if (!firstName && !lastName && !contactNumber)
+        if (!firstName && !lastName && !contactNumber && !username && !university && !department)
             return res.status(400).json({
                 errorMessage: "You need to update at least a input field",
             });
@@ -51,7 +51,7 @@ router.put('/:id', auth, async (req, res) => {
 
         if (contactNumber.length < 10)
             return res.status(400).json({
-                errorMessage: "Please enter a contact number of at least 10 characters.",
+                errorMessage: "Please enter a mobile number of at least 10 characters.",
             });
 
         if (username.length < 3)

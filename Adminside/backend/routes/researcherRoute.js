@@ -34,7 +34,7 @@ router.put('/:id', auth, async (req, res) => {
     try {
         let user = await Researcher.findById(req.params.id);
 
-        if (!firstName && !lastName && !contactNumber)
+        if (!firstName && !lastName && !contactNumber && !username && !university && !department)
             return res.status(400).json({
                 errorMessage: "You need to update at least a input field",
             });

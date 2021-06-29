@@ -83,7 +83,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 })
             }
 
-            if (editDepartment.length < 3) {
+            if (editDepartment.length < 0) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',

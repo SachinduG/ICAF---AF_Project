@@ -44,6 +44,6 @@ const presenterSchema = new mongoose.Schema({
 
 });
 
-const presenter = mongoose.model("presenter", presenterSchema);
+const presenter = mongoose.model("presenters", presenterSchema);
 
 module.exports = presenter;
