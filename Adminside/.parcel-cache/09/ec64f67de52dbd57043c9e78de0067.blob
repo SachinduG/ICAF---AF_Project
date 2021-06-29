@@ -1,0 +1,53 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _AttendeeList = require("./AttendeeList");
+  var _AttendeeListDefault = _parcelHelpers.interopDefault(_AttendeeList);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Attendees.jsx", _s = $RefreshSig$();
+  function Attendees() {
+    _s();
+    const [attendees, setAttendees] = _react.useState([]);
+    async function getAttendees() {
+      const attendeesRes = await _axiosDefault.default.get("http://localhost:5000/attendee/");
+      setAttendees(attendeesRes.data);
+    }
+    _react.useEffect(() => {
+      getAttendees();
+    }, []);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_AttendeeListDefault.default, {
+        attendees: attendees,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 13
+        }
+      }))
+    );
+  }
+  _s(Attendees, "wb+vkAp8RbCRvO5jvpgeYq265YQ=");
+  _c = Attendees;
+  exports.default = Attendees;
+  var _c;
+  $RefreshReg$(_c, "Attendees");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

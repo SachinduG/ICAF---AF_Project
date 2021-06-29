@@ -1,0 +1,134 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _ResearcherEdit = require("./ResearcherEdit");
+  var _ResearcherEditDefault = _parcelHelpers.interopDefault(_ResearcherEdit);
+  var _ResearcherList = require("./ResearcherList");
+  var _ResearcherListDefault = _parcelHelpers.interopDefault(_ResearcherList);
+  var _materialUiCoreLink = require("@material-ui/core/Link");
+  var _materialUiCoreLinkDefault = _parcelHelpers.interopDefault(_materialUiCoreLink);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researchers.jsx", _s = $RefreshSig$();
+  function Researchers() {
+    _s();
+    const [researchers, setResearchers] = _react.useState([]);
+    const [researcherEditOpen, setResearcherEditOpen] = _react.useState(false);
+    const [editResearcherData, setEditResearcherData] = _react.useState(null);
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    _react.useEffect(() => {
+      if (!loggedIn) setResearchers([]); else getResearchers();
+    }, [loggedIn]);
+    async function getResearchers() {
+      const researchersRes = await _axiosDefault.default.get("http://localhost:5000/researcher/");
+      setResearchers(researchersRes.data);
+    }
+    function editResearcher(researcherData) {
+      setEditResearcherData(researcherData);
+      setResearcherEditOpen(true);
+    }
+    function renderResearchers() {
+      let sortedResearchers = [...researchers];
+      sortedResearchers = sortedResearchers.sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      });
+      return sortedResearchers.map((researcher, i) => {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement(_ResearcherListDefault.default, {
+            key: i,
+            researcher: researcher,
+            getResearchers: getResearchers,
+            editResearcher: editResearcher,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 38,
+              columnNumber: 17
+            }
+          })
+        );
+      });
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "home",
+        style: {
+          marginTop: 100
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 9
+        }
+      }, !researcherEditOpen && loggedIn && /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-editor-toggle",
+        onClick: () => setResearcherEditOpen(true),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 17
+        }
+      }, "Add Researcher"), researcherEditOpen && /*#__PURE__*/_reactDefault.default.createElement(_ResearcherEditDefault.default, {
+        setResearcherEditOpen: setResearcherEditOpen,
+        getResearchers: getResearchers,
+        editResearcherData: editResearcherData,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 17
+        }
+      }), researchers.length > 0 ? renderResearchers() : loggedIn && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "no-msg",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 17
+        }
+      }, "No researchers have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "no-user-message",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64,
+          columnNumber: 37
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65,
+          columnNumber: 21
+        }
+      }, "Welcome to Admin"), " ", /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreLinkDefault.default, {
+        to: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65,
+          columnNumber: 47
+        }
+      }, "Register here"), " "))
+    );
+  }
+  _s(Researchers, "NxoWvnnB6iyUOIysXYacXqx/Oac=");
+  _c = Researchers;
+  exports.default = Researchers;
+  var _c;
+  $RefreshReg$(_c, "Researchers");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

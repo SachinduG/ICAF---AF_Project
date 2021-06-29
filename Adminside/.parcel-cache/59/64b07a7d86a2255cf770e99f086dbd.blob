@@ -1,0 +1,104 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _componentsNumberWidgetContainer = require('../components/NumberWidgetContainer');
+  var _componentsNumberWidgetContainerDefault = _parcelHelpers.interopDefault(_componentsNumberWidgetContainer);
+  var _componentsListWidgetContainer = require('../components/ListWidgetContainer');
+  var _componentsListWidgetContainerDefault = _parcelHelpers.interopDefault(_componentsListWidgetContainer);
+  var _componentsGraphWidgetContainer = require('../components/GraphWidgetContainer');
+  var _componentsGraphWidgetContainerDefault = _parcelHelpers.interopDefault(_componentsGraphWidgetContainer);
+  require('../styles/App.css');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
+  class Home extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "App",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_componentsListWidgetContainerDefault.default, {
+          href: "http://localhost:3001/stats/top",
+          heading: "Top Ticket Answerers",
+          rowspan: 3,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsNumberWidgetContainerDefault.default, {
+          href: "http://localhost:3001/tickets/open",
+          heading: "Open Ticket Total",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsGraphWidgetContainerDefault.default, {
+          href: "http://localhost:3001/tickets/progression",
+          heading: "Tickets Over Time",
+          colspan: 2,
+          rowspan: 2,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsNumberWidgetContainerDefault.default, {
+          href: "http://localhost:3001/tickets/today",
+          heading: "Tickets Opened Today",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsNumberWidgetContainerDefault.default, {
+          href: "http://localhost:3001/tickets/urgent",
+          heading: "Tickets Marked 'Urgent'",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsNumberWidgetContainerDefault.default, {
+          href: "http://localhost:3001/stats/response",
+          heading: "4 Hour Response %",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_componentsNumberWidgetContainerDefault.default, {
+          href: "http://localhost:3001/stats/solved",
+          heading: "7 Day Solved %",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 17
+          }
+        }))
+      );
+    }
+  }
+  exports.default = Home;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

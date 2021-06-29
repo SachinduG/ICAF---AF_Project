@@ -1,0 +1,15 @@
+main {
+    background: #f3f4e6;
+} 
+
+.main__container {
+    padding: 20px 35px;
+}
+
+.main__title {
+    display: flex;
+}
+
+.main__greeting > h1 {
+    font-size: 
+}

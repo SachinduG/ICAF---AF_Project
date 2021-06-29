@@ -1,0 +1,129 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require("./Researcher");
+  require("./ResearcherEditor");
+  require("./Home.scss");
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researchers.jsx", _s = $RefreshSig$();
+  function Home() {
+    _s();
+    const [researchers, setSnippets] = _react.useState([]);
+    const [snippetEditorOpen, setSnippetEditorOpen] = _react.useState(false);
+    const [editSnippetData, setEditSnippetData] = _react.useState(null);
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    _react.useEffect(() => {
+      if (!loggedIn) setSnippets([]); else getSnippets();
+    }, [loggedIn]);
+    async function getSnippets() {
+      const snippetsRes = await _axiosDefault.default.get(`${domain}/snippet/`);
+      setSnippets(snippetsRes.data);
+    }
+    function editSnippet(snippetData) {
+      setEditSnippetData(snippetData);
+      setSnippetEditorOpen(true);
+    }
+    function renderSnippets() {
+      let sortedSnippets = [...snippets];
+      sortedSnippets = sortedSnippets.sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      });
+      return sortedSnippets.map((snippet, i) => {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement(Snippet, {
+            key: i,
+            snippet: snippet,
+            getSnippets: getSnippets,
+            editSnippet: editSnippet,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 39,
+              columnNumber: 9
+            }
+          })
+        );
+      });
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "home",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 5
+        }
+      }, !snippetEditorOpen && loggedIn && /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-editor-toggle",
+        onClick: () => setSnippetEditorOpen(true),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 9
+        }
+      }, "Add snippet"), snippetEditorOpen && /*#__PURE__*/_reactDefault.default.createElement(SnippetEditor, {
+        setSnippetEditorOpen: setSnippetEditorOpen,
+        getSnippets: getSnippets,
+        editSnippetData: editSnippetData,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 9
+        }
+      }), snippets.length > 0 ? renderSnippets() : loggedIn && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "no-snippets-msg",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 9
+        }
+      }, "No snippets have been added yet."), loggedIn === null && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "no-user-message",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 31
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 7
+        }
+      }, "Welcome to Snippet manager"), " ", /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 43
+        }
+      }, "Register here"), " "))
+    );
+  }
+  _s(Home, "NYu/vSGdsQq92zOO2Kk4PuDp2uo=");
+  _c = Home;
+  exports.default = Home;
+  var _c;
+  $RefreshReg$(_c, "Home");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

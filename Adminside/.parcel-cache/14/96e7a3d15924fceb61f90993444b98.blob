@@ -1,0 +1,12 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _materialUiCore = require("@material-ui/core");
+const theme = _materialUiCore.createMuiTheme({
+  palette: {
+    primary: {
+      main: '#003049'
+    },
+    secondary
+  }
+});
+exports.default = theme;

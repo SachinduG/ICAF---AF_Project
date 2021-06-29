@@ -1,0 +1,56 @@
+require("./Home.css");
+require("./chart");
+var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\Home.jsx";
+const Home = () => {
+  return (
+    /*#__PURE__*/React.createElement("main", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "main__container",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "main__title",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "main__greeting",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/React.createElement("h1", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 25
+      }
+    }, "Hello Admin"), /*#__PURE__*/React.createElement("p", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 25
+      }
+    })))))
+  );
+};
+_c = Home;
+var _c;
+$RefreshReg$(_c, "Home");

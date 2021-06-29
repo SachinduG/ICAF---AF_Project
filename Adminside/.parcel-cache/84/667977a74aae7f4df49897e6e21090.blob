@@ -1,0 +1,175 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _materialUiIconsNote = require('@material-ui/icons/Note');
+  var _materialUiIconsNoteDefault = _parcelHelpers.interopDefault(_materialUiIconsNote);
+  require('@material-ui/icons/Work');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\Home.jsx";
+  function Home() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "home",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 45
+        }
+      }, "Welcome to the Admin Dashboard")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "row align-items-center my-5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "col-lg-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 25
+        }
+      }, "Home"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 25
+        }
+      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "col-lg-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement("h5", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 29
+        }
+      }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("h5", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 29
+        }
+      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("h5", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 29
+        }
+      }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "col-lg-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 25
+        }
+      }, "Events"), /*#__PURE__*/_reactDefault.default.createElement("h5", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsNoteDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 63
+        }
+      }), "Researcher Papers"), /*#__PURE__*/_reactDefault.default.createElement("h5", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(Wo, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 63
+        }
+      }), "Workshops")))))
+    );
+  }
+  _c = Home;
+  exports.default = Home;
+  var _c;
+  $RefreshReg$(_c, "Home");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

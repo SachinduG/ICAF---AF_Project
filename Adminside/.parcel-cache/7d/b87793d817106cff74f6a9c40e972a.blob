@@ -1,0 +1,120 @@
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require("react-router-dom");
+  var _componentsAuthLogin = require("./components/auth/Login");
+  var _componentsAuthLoginDefault = _parcelHelpers.interopDefault(_componentsAuthLogin);
+  var _componentsAuthRegister = require("./components/auth/Register");
+  var _componentsAuthRegisterDefault = _parcelHelpers.interopDefault(_componentsAuthRegister);
+  var _componentsClientsResearchers = require("./components/clients/Researchers");
+  var _componentsClientsResearchersDefault = _parcelHelpers.interopDefault(_componentsClientsResearchers);
+  var _componentsLayoutNavbar = require("./components/layout/Navbar");
+  var _componentsLayoutNavbarDefault = _parcelHelpers.interopDefault(_componentsLayoutNavbar);
+  var _contextAuthContext = require("./context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.js", _s = $RefreshSig$();
+  function Router() {
+    _s();
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsLayoutNavbarDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        exact: true,
+        path: "/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 21
+        }
+      }, "Home")), loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthRegisterDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 29
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/login",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsAuthLoginDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 29
+        }
+      }))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/customer",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_componentsClientsResearchersDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 29
+        }
+      })))))
+    );
+  }
+  _s(Router, "BqpBbvcR7D05G3CArRyJxrdORYE=");
+  _c = Router;
+  exports.default = Router;
+  var _c;
+  $RefreshReg$(_c, "Router");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

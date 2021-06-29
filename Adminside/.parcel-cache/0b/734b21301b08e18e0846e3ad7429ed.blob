@@ -1,0 +1,154 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _authLogOutBtn = require("../auth/LogOutBtn");
+  var _authLogOutBtnDefault = _parcelHelpers.interopDefault(_authLogOutBtn);
+  var _materialUiIconsHomeRounded = require('@material-ui/icons/HomeRounded');
+  var _materialUiIconsHomeRoundedDefault = _parcelHelpers.interopDefault(_materialUiIconsHomeRounded);
+  var _materialUiCoreStyles = require('@material-ui/core/styles');
+  var _materialUiCoreAppBar = require('@material-ui/core/AppBar');
+  var _materialUiCoreAppBarDefault = _parcelHelpers.interopDefault(_materialUiCoreAppBar);
+  require('@material-ui/core/Toolbar');
+  var _materialUiCoreTypography = require('@material-ui/core/Typography');
+  var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
+  var _materialUiCoreButton = require('@material-ui/core/Button');
+  var _materialUiCoreButtonDefault = _parcelHelpers.interopDefault(_materialUiCoreButton);
+  require('@material-ui/core/IconButton');
+  require('@material-ui/icons/Menu');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\layout\\Navbar.jsx", _s = $RefreshSig$();
+  const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
+    root: {
+      flexGrow: 1
+    },
+    menuButton: {
+      marginRight: theme.spacing(2)
+    },
+    title: {
+      flexGrow: 1
+    }
+  }));
+  function Navbar() {
+    _s();
+    const classes = useStyles();
+    const {loggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-dark",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 13
+        }
+      }, loggedIn === false && /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/register",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 25
+        }
+      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("a", {
+        className: "nav-link",
+        href: "/login",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 25
+        }
+      }, "Log In"))), loggedIn === true && /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: classes.root,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreAppBarDefault.default, {
+        position: "static",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsHomeRoundedDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 42
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: "sr-only",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 60
+        }
+      }, "(current)"), " "), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+        variant: "h6",
+        className: classes.title,
+        href: "/client",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 29
+        }
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreButtonDefault.default, {
+        color: "inherit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_authLogOutBtnDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 53
+        }
+      })))))
+    );
+  }
+  _s(Navbar, "4waOQImWh+z5YKATglbm2mxUc9I=", false, function () {
+    return [useStyles];
+  });
+  _c = Navbar;
+  exports.default = Navbar;
+  var _c;
+  $RefreshReg$(_c, "Navbar");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

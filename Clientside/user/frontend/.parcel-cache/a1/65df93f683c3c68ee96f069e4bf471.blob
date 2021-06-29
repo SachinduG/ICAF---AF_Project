@@ -1,0 +1,191 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _materialUiCoreStyles = require('@material-ui/core/styles');
+  var _materialUiCoreButtonBase = require('@material-ui/core/ButtonBase');
+  var _materialUiCoreButtonBaseDefault = _parcelHelpers.interopDefault(_materialUiCoreButtonBase);
+  var _materialUiCoreTypography = require('@material-ui/core/Typography');
+  var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
+  var _jsxFileName = "C:\\Users\\Gamitha\\OneDrive\\Desktop\\New folder (2)\\New folder\\ICAF---AF_Project\\Clientside\\user\\frontend\\components\\auth\\LoginTypes.jsx", _s = $RefreshSig$();
+  const images = [{
+    url: '/assets/images/attendee.jpg',
+    title: 'Attendee',
+    width: '40%',
+    href: "/attendeelogin"
+  }, {
+    url: '/assets/images/researcher.jpg',
+    title: 'Researcher',
+    width: '30%',
+    href: "/researcherlogin"
+  }, {
+    url: '/assets/images/presenter.jpg',
+    title: 'Presenter',
+    width: '30%',
+    href: "/presenterlogin"
+  }];
+  const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      minWidth: 300,
+      width: '100%'
+    },
+    image: {
+      position: 'relative',
+      height: 200,
+      [theme.breakpoints.down('xs')]: {
+        width: '100% !important',
+        // Overrides inline-style
+        height: 100
+      },
+      '&:hover, &$focusVisible': {
+        zIndex: 1,
+        '& $imageBackdrop': {
+          opacity: 0.15
+        },
+        '& $imageMarked': {
+          opacity: 0
+        },
+        '& $imageTitle': {
+          border: '4px solid currentColor'
+        }
+      }
+    },
+    focusVisible: {},
+    imageButton: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: theme.palette.common.white
+    },
+    imageSrc: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center 40%'
+    },
+    imageBackdrop: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      backgroundColor: theme.palette.common.black,
+      opacity: 0.4,
+      transition: theme.transitions.create('opacity')
+    },
+    imageTitle: {
+      position: 'relative',
+      padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`
+    },
+    imageMarked: {
+      height: 3,
+      width: 18,
+      backgroundColor: theme.palette.common.white,
+      position: 'absolute',
+      bottom: -2,
+      left: 'calc(50% - 9px)',
+      transition: theme.transitions.create('opacity')
+    }
+  }));
+  function LoginTypes() {
+    _s();
+    const classes = useStyles();
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: classes.root,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110,
+          columnNumber: 7
+        }
+      }, images.map(image => /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreButtonBaseDefault.default, {
+        focusRipple: true,
+        key: image.title,
+        className: classes.image,
+        focusVisibleClassName: classes.focusVisible,
+        style: {
+          width: image.width
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: classes.imageSrc,
+        style: {
+          backgroundImage: `url(${image.url})`
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: classes.imageBackdrop,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: classes.imageButton,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+        component: "span",
+        variant: "subtitle1",
+        color: "inherit",
+        className: classes.imageTitle,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129,
+          columnNumber: 15
+        }
+      }, image.title, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: classes.imageMarked,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136,
+          columnNumber: 17
+        }
+      }))))))
+    );
+  }
+  exports.default = LoginTypes;
+  _s(LoginTypes, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+    return [useStyles];
+  });
+  _c = LoginTypes;
+  var _c;
+  $RefreshReg$(_c, "LoginTypes");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,30 @@
+.home .btn-editor-toggle {
+    background: var(--light-color);
+}
+.home .no-snippets-msg {
+    margin-top: 2rem;
+    color: var(--text-light-color);
+    font-weight: bold;
+}
+.home .no-user-message {
+    margin-top: 6rem;
+    color: var(--text-light-color);
+    text-align: center;
+}
+.home .no-user-message h2 {
+    font-size: 3rem;
+}
+.home .no-user-message a {
+    margin-top: 2rem;
+    color: var(--text-dark-color);
+    background: var(--light-color);
+    display: inline-block;
+}
+.home .no-user-message a:hover {
+    text-decoration: unset;
+}
+@media screen and (max-width: 420px) {
+    .home .no-user-message h2 {
+        font-size: 2rem;
+   }
+}

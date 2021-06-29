@@ -1,0 +1,262 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require('react-router-dom');
+  var _axios = require('axios');
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researchers.jsx";
+  const Researcher = props => /*#__PURE__*/_reactDefault.default.createElement("tr", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("td", {
+    className: props.user.completed ? 'completed' : '',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, props.user.fname), /*#__PURE__*/_reactDefault.default.createElement("td", {
+    className: props.user.completed ? 'completed' : '',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, props.user.lname), /*#__PURE__*/_reactDefault.default.createElement("td", {
+    className: props.user.completed ? 'completed' : '',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, props.user.email), /*#__PURE__*/_reactDefault.default.createElement("td", {
+    className: props.user.completed ? 'completed' : '',
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }, props.user.mobile), /*#__PURE__*/_reactDefault.default.createElement("td", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement("button", {
+    class: "btn btn-outline-warning",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/edit/" + props.user._id,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 54
+    }
+  }, "Edit")), "  ", /*#__PURE__*/_reactDefault.default.createElement("button", {
+    class: "btn btn-outline-danger",
+    href: "/",
+    onClick: () => {
+      props.deleteCustomer(props.user._id);
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 111
+    }
+  }, "Delete")));
+  _c = Researcher;
+  class Researchers extends _react.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        users: []
+      };
+      this.deleteUser = this.deleteUser.bind(this);
+    }
+    componentDidMount() {
+      _axiosDefault.default.get('http://localhost:5000/researcher/').then(response => {
+        this.setState({
+          users: response.data
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+    componentDidUpdate() {
+      _axiosDefault.default.get('http://localhost:5000/researcher/').then(response => {
+        this.setState({
+          users: response.data
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+    deleteCustomer(id) {
+      _axiosDefault.default.delete('http://localhost:5000/researcher/' + id).then(res => {
+        console.log(res.data);
+      });
+      this.setState({
+        users: this.state.users.filter(el => el._id !== id)
+      });
+      alert('Delete customer Successfully');
+    }
+    userList() {
+      return this.state.users.map(currentUser => {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement(Researcher, {
+            user: currentUser,
+            deleteCustomer: this.deleteUser,
+            key: currentUser.id,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 59,
+              columnNumber: 20
+            }
+          })
+        );
+      });
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: {
+            marginTop: 20,
+            marginLeft: 20,
+            width: '98%'
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 66,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 67,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 67,
+            columnNumber: 21
+          }
+        }, "List Of Researchers")), /*#__PURE__*/_reactDefault.default.createElement("table", {
+          className: "table table-striped",
+          style: {
+            marginTop: 20
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 68,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("thead", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 69,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("tr", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 71,
+            columnNumber: 25
+          }
+        }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 72,
+            columnNumber: 25
+          }
+        }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 73,
+            columnNumber: 25
+          }
+        }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74,
+            columnNumber: 25
+          }
+        }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 75,
+            columnNumber: 25
+          }
+        }, "Home Address"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76,
+            columnNumber: 25
+          }
+        }, "Password"), /*#__PURE__*/_reactDefault.default.createElement("th", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 77,
+            columnNumber: 25
+          }
+        }, "Actions"))), /*#__PURE__*/_reactDefault.default.createElement("tbody", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 21
+          }
+        }, this.userList())))
+      );
+    }
+  }
+  exports.default = Researchers;
+  var _c;
+  $RefreshReg$(_c, "Researcher");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

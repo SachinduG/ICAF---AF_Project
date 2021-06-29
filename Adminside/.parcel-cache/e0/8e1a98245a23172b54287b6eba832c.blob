@@ -1,0 +1,11 @@
+.user-editor .btn-save, .snippet-editor .btn-cancel {
+    margin-right: 1rem;
+}
+.user-editor .btn-save {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+.user-editor .btn-cancel {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+}

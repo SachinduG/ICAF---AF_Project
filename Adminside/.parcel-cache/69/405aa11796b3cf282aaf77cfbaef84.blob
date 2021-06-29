@@ -1,0 +1,6 @@
+"use strict";
+if ("development" === 'production') {
+  module.exports = require('./redux-saga-effects.prod.cjs.js');
+} else {
+  module.exports = require('./redux-saga-effects.dev.cjs.js');
+}

@@ -1,0 +1,16 @@
+.user-editor .btn-save, .user-editor .btn-cancel {
+    margin-right: 1rem;
+}
+.user-editor .btn-save {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+
+    &:hover {
+    box-shadow: var(--box-shadow);
+}
+.user-editor .btn-cancel {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+    paddin

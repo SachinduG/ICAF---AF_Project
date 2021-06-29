@@ -1,0 +1,53 @@
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('./App.css');
+  var _reactAdmin = require('react-admin');
+  var _raDataSimpleRest = require('ra-data-simple-rest');
+  var _raDataSimpleRestDefault = _parcelHelpers.interopDefault(_raDataSimpleRest);
+  var _componentsPostList = require('./components/PostList');
+  var _componentsPostListDefault = _parcelHelpers.interopDefault(_componentsPostList);
+  var _componentsPostCreate = require('./components/PostCreate');
+  var _componentsPostCreateDefault = _parcelHelpers.interopDefault(_componentsPostCreate);
+  var _componentsPostEdit = require('./components/PostEdit');
+  var _componentsPostEditDefault = _parcelHelpers.interopDefault(_componentsPostEdit);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\App.jsx";
+  function App() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactAdmin.Admin, {
+        dataProvider: _raDataSimpleRestDefault.default('http://localhost:1234'),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 12
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactAdmin.Resource, {
+        name: "posts",
+        list: _componentsPostListDefault.default,
+        create: _componentsPostCreateDefault.default,
+        edit: _componentsPostEditDefault.default,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 9
+        }
+      }))
+    );
+  }
+  _c = App;
+  exports.default = App;
+  var _c;
+  $RefreshReg$(_c, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

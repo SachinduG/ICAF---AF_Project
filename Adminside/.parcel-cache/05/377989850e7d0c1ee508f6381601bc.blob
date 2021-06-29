@@ -1,0 +1,166 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouterDom = require("react-router-dom");
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _materialUiCoreStyles = require('@material-ui/core/styles');
+  var _materialUiCoreTextField = require('@material-ui/core/TextField');
+  var _materialUiCoreTextFieldDefault = _parcelHelpers.interopDefault(_materialUiCoreTextField);
+  var _materialUiCoreGrid = require('@material-ui/core/Grid');
+  var _materialUiCoreGridDefault = _parcelHelpers.interopDefault(_materialUiCoreGrid);
+  var _materialUiIconsAccountCircle = require('@material-ui/icons/AccountCircle');
+  var _materialUiIconsAccountCircleDefault = _parcelHelpers.interopDefault(_materialUiIconsAccountCircle);
+  require('@material-ui/icons/LockOpen');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Login.jsx", _s = $RefreshSig$();
+  const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
+    margin: {
+      margin: theme.spacing(1)
+    }
+  }));
+  function Login() {
+    _s();
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = _reactRouterDom.useHistory();
+    async function login(e) {
+      e.preventDefault();
+      try {
+        const loginData = {
+          email,
+          password
+        };
+        await _axiosDefault.default.post("http://localhost:5000/auth/login", loginData);
+        await getLoggedIn();
+        history.push("/");
+        await _sweetalertDefault.default.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'You are successfully log in!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 13
+        }
+      }, "Log in to your account"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: login,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        container: true,
+        spacing: 1,
+        alignItems: "flex-end",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiIconsAccountCircleDefault.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58,
+          columnNumber: 29
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTextFieldDefault.default, {
+        id: "input-with-icon-grid",
+        label: "Email Address",
+        type: "email",
+        onChange: e => setEmail(e.target.value),
+        value: email,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 29
+        }
+      })))), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-g",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        className: "btn btn-outline-success",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72,
+          columnNumber: 17
+        }
+      }, "Log in")))
+    );
+  }
+  _s(Login, "n3XOzSXZyrkolocw45s6v6bHQgE=", false, function () {
+    return [_reactRouterDom.useHistory];
+  });
+  _c = Login;
+  exports.default = Login;
+  var _c;
+  $RefreshReg$(_c, "Login");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

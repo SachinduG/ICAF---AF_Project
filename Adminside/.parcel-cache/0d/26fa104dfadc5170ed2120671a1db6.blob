@@ -1,0 +1,404 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _contextAuthContext = require("../../context/AuthContext");
+  var _contextAuthContextDefault = _parcelHelpers.interopDefault(_contextAuthContext);
+  var _reactRouterDom = require("react-router-dom");
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _materialUiCoreStyles = require('@material-ui/core/styles');
+  var _materialUiCore = require("@material-ui/core");
+  var _materialUiCoreTypography = require("@material-ui/core/Typography");
+  var _materialUiCoreTypographyDefault = _parcelHelpers.interopDefault(_materialUiCoreTypography);
+  var _materialUiCoreLink = require("@material-ui/core/Link");
+  var _materialUiCoreLinkDefault = _parcelHelpers.interopDefault(_materialUiCoreLink);
+  var _materialUiCoreGrid = require("@material-ui/core/Grid");
+  var _materialUiCoreGridDefault = _parcelHelpers.interopDefault(_materialUiCoreGrid);
+  var _materialUiCoreBox = require("@material-ui/core/Box");
+  var _materialUiCoreBoxDefault = _parcelHelpers.interopDefault(_materialUiCoreBox);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\auth\\Register.jsx", _s = $RefreshSig$();
+  function Copyright() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+        variant: "body2",
+        color: "textSecondary",
+        align: "center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 9
+        }
+      }, 'Copyright © ', /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreLinkDefault.default, {
+        color: "inherit",
+        href: "https://sachindug.github.io/sachindugimhana.github.io/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 13
+        }
+      }, "Sachindu"), ' ', new Date().getFullYear(), '.')
+    );
+  }
+  _c = Copyright;
+  const useStyles = _materialUiCoreStyles.makeStyles(theme => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch'
+      }
+    },
+    paper: {
+      margin: theme.spacing(10),
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      background: '#AAB7B8',
+      borderRadius: 15
+    },
+    form: {
+      width: '100%',
+      // Fix IE 11 issue.
+      padding: theme
+    },
+    submit: {
+      margin: theme.spacing(3, 0, 2)
+    }
+  }));
+  function Register() {
+    _s();
+    const classes = useStyles();
+    const [fname, setFname] = _react.useState("");
+    const [lname, setLname] = _react.useState("");
+    const [email, setEmail] = _react.useState("");
+    const [password, setPassword] = _react.useState("");
+    const [passwordVerify, setPasswordVerify] = _react.useState("");
+    const {getLoggedIn} = _react.useContext(_contextAuthContextDefault.default);
+    const history = _reactRouterDom.useHistory();
+    async function register(e) {
+      e.preventDefault();
+      try {
+        const registerData = {
+          fname,
+          lname,
+          email,
+          password,
+          passwordVerify
+        };
+        await _axiosDefault.default.post("http://localhost:5000/auth/", registerData);
+        await getLoggedIn();
+        history.push("/");
+        await _sweetalertDefault.default.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'You are successfully sign in!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } catch (err) {
+        if (fname.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'First Name must be at least 3 characters!'
+          });
+        }
+        if (lname.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Last Name must be at least 3 characters!'
+          });
+        }
+        if (password !== passwordVerify) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter the same password twice!'
+          });
+        } else {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'An account with this email address already exists!'
+          });
+        }
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.Container, {
+        component: "main",
+        maxWidth: "xs",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.CssBaseline, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118,
+          columnNumber: 13
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: classes.paper,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreTypographyDefault.default, {
+        component: "h1",
+        variant: "h5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120,
+          columnNumber: 17
+        }
+      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: register,
+        className: classes.form,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 123,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        container: true,
+        spacing: 2,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        xs: 12,
+        sm: 6,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 125,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "fname",
+        name: "fname",
+        label: "First Name",
+        variant: "outlined",
+        fullWidth: true,
+        required: true,
+        autoFocus: true,
+        type: "text",
+        onChange: e => setFname(e.target.value),
+        value: fname,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        xs: 12,
+        sm: 6,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "lname",
+        name: "lname",
+        label: "Last Name",
+        variant: "outlined",
+        fullWidth: true,
+        required: true,
+        type: "text",
+        onChange: e => setLname(e.target.value),
+        value: lname,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        xs: 12,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 139,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "email",
+        name: "email",
+        label: "Email Address",
+        variant: "outlined",
+        fullWidth: true,
+        required: true,
+        type: "email",
+        onChange: e => setEmail(e.target.value),
+        value: email,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        xs: 12,
+        sm: 6,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 146,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "password",
+        name: "password",
+        label: "Password",
+        variant: "outlined",
+        fullWidth: true,
+        required: true,
+        type: "password",
+        onChange: e => setPassword(e.target.value),
+        value: password,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 147,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        xs: 12,
+        sm: 6,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 153,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.TextField, {
+        id: "passwordVerify",
+        name: "passwordVerify",
+        label: "Confirm Password",
+        variant: "outlined",
+        fullWidth: true,
+        required: true,
+        type: "password",
+        onChange: e => setPasswordVerify(e.target.value),
+        value: passwordVerify,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 154,
+          columnNumber: 25
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        type: "submit",
+        className: "btn btn-outline-success",
+        style: {
+          marginLeft: 150,
+          marginTop: 20
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 162,
+          columnNumber: 17
+        }
+      }, "Register"), /*#__PURE__*/_reactDefault.default.createElement("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 162,
+          columnNumber: 131
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("br", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 162,
+          columnNumber: 136
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        container: true,
+        justify: "flex-center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 163,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreGridDefault.default, {
+        item: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 164,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/login",
+        variant: "body2",
+        className: "nav-link",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 165,
+          columnNumber: 25
+        }
+      }, "Already have an account? Sign in"))))), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCoreBoxDefault.default, {
+        mt: 30,
+        mr: 10,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(Copyright, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 173,
+          columnNumber: 17
+        }
+      })))
+    );
+  }
+  _s(Register, "5iY7AYlMyXt0tYnTUE1CHJjHj0M=", false, function () {
+    return [useStyles, _reactRouterDom.useHistory];
+  });
+  _c2 = Register;
+  exports.default = Register;
+  var _c, _c2;
+  $RefreshReg$(_c, "Copyright");
+  $RefreshReg$(_c2, "Register");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
