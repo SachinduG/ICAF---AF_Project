@@ -19,6 +19,18 @@ describe('Admin Model Test', () => {
         };
     });
 
+    it('create & save admin successfully', async () => {
+        const validAdmin = new Admin(adminData);
+        const savedAdmin = await validAdmin.save();
+        // Object Id should be defined when successfully saved to MongoDB.
+        expect(savedAdmin._id).toBeDefined();
+        expect(savedAdmin.fname).toBe(adminData.name);
+        expect(savedAdmin.lname).toBe(adminData.gender);
+        expect(savedAdmin.email).toBe(adminData.dob);
+        expect(savedAdmin.passwordHash).toBe(adminData.passwordHash);
+    });
+
+
     // Test Validation is working!!!
     // It should us told us the errors in on last name field.
     it('create admin without required field should failed', async () => {
