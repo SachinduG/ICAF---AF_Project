@@ -20,33 +20,36 @@ router.get('/', auth, async (req, res) => {
 // @description   update researcher
 // @access-mode   private
 router.put('/:id', auth, async (req, res) => {
-    const { fname, lname, mobile } = req.body
+    const { firstName, lastName, contactNumber, username, university, department } = req.body
 
     //build user object
     const userFields = {};
-    if (fname) userFields.fname = fname;
-    if (lname) userFields.lname = lname;
-    if (mobile) userFields.mobile = mobile;
+    if (firstName) userFields.firstName = firstName;
+    if (lastName) userFields.lastName = lastName;
+    if (contactNumber) userFields.contactNumber = contactNumber;
+    if (username) userFields.username = username;
+    if (university) userFields.university = university;
+    if (department) userFields.department = department;
 
     try {
         let user = await Researcher.findById(req.params.id);
 
-        if (!fname && !lname && !mobile)
+        if (!firstName && !lastName && !contactNumber)
             return res.status(400).json({
                 errorMessage: "You need to update at least a input field",
             });
 
-        if (fname.length < 3)
+        if (firstName.length < 3)
             return res.status(400).json({
                 errorMessage: "Please enter a first name of at least 3 characters.",
             });
 
-        if (lname.length < 3)
+        if (lastName.length < 3)
             return res.status(400).json({
                 errorMessage: "Please enter a last name of at least 3 characters.",
             });
 
-        if (mobile.length < 10)
+        if (contactNumber.length < 10)
             return res.status(400).json({
                 errorMessage: "Please enter a mobile number of at least 10 characters.",
             });

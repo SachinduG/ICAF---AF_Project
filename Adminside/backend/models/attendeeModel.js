@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const attendeeSchema = new mongoose.Schema({
-    fname: {
+    firstName: {
         type: String,
         required: true,
         trim: true,
     },
-    lname: {
+    lastName: {
         type: String,
         required: true,
         trim: true,
@@ -17,13 +17,13 @@ const attendeeSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
     },
-    contact: {
+    contactNumber: {
         type: String,
         required: true,
         trim: true,
         maxlength: 10,
     },
-    university: {
+    username: {
         type: String,
         required: true,
         trim: true,
