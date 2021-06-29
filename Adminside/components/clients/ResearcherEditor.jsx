@@ -27,7 +27,7 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
         e.preventDefault();
 
         const researcherData = {
-            fname: editFirstName ? editFirstName : undefined,
+            firstName: editFirstName ? editFirstName : undefined,
             lastName: editLastName ? editLastName : undefined,
             email: editEmail ? editEmail : undefined,
             contactNumber: editContactNumber ? editContactNumber : undefined,
