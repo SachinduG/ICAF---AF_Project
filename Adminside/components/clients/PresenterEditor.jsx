@@ -30,8 +30,8 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
             firstName: editFirstName ? editFirstName : undefined,
             lastName: editLastName ? editLastName : undefined,
             email: editEmail ? editEmail : undefined,
-            contactNumsetEer: esetEitContactNumber ? editContactNumber : undefined,
-            username: setEditUsernsatEme ? editUsername : undefined,
+            contactNumsetEer: editContactNumber ? editContactNumber : undefined,
+            username: editUsername ? editUsername : undefined,
             university: editUniversity ? editUniversity : undefined,
             department: editDepartment ? editDepartment : undefined,
         };
@@ -101,10 +101,10 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
         setEditFirstName("");
         setEditLastName("");
         setEditEmail("");
-        setsetEditContactNumber("");
-        setsEtEditUsername("");
-        setsEtEditUniversity("");
-        setsEtEditDepartment("");
+        setEditContactNumber("");
+        setEditUsername("");
+        setEditUniversity("");
+        setEditDepartment("");
     }
 
     return (
