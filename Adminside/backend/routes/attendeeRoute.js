@@ -51,6 +51,11 @@ router.put('/:id', auth, async (req, res) => {
                 errorMessage: "Please enter a mobile number of at least 10 characters.",
             });
 
+        if (username.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a username of at least 3 characters.",
+            });
+
         if (!user) return res.status(404).json({
             msg: 'User not found'
         });
