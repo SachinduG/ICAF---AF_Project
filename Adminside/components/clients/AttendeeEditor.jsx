@@ -3,19 +3,19 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData }) {
-    const [editFName, setEditFName] = useState("");
-    const [editLName, setEditLName] = useState("");
+    const [editFirstName, setEditFirstName] = useState("");
+    const [editLastName, setEditLastName] = useState("");
     const [editEmail, setEditEmail] = useState("");
-    const [editContact, setEditContact] = useState("");
-    const [editUniversity, setEditUniversity] = useState("");
+    const [editContactNumber, setEditContactNumber] = useState("");
+    const [editUsername, setEditUsername] = useState("");
 
     useEffect(() => {
         if (editAttendeeData) {
-            setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
-            setEditLName(editAttendeeData.lname ? editAttendeeData.lname : "");
+            setEditFirstName(editAttendeeData.firstName ? editAttendeeData.firstName : "");
+            setEditLastName(editAttendeeData.lastName ? editAttendeeData.lastName : "");
             setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
-            setEditContact(editAttendeeData.contact ? editAttendeeData.contact : "");
-            setEditUniversity(editAttendeeData.university ? editAttendeeData.university : "");
+            setEditContactNumber(editAttendeeData.contactNumber ? editAttendeeData.contactNumber : "");
+            setEditUsername(editAttendeeData.username ? editAttendeeData.username : "");
         }
     }, [editAttendeeData]);
 
@@ -23,11 +23,11 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
         e.preventDefault();
 
         const attendeeData = {
-            fname: editFName ? editFName : undefined,
-            lname: editLName ? editLName : undefined,
+            firstName: editFirstName ? editFirstName : undefined,
+            lastName: editLastName ? editLastName : undefined,
             email: editEmail ? editEmail : undefined,
-            contact: editContact ? editContact : undefined,
-            university: editUniversity ? editUniversity : undefined,
+            contact: editContactNumber ? editContactNumber : undefined,
+            username: editUsername ? editUsername : undefined,
         };
 
         try {
@@ -40,32 +40,32 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
                 timer: 1500
             })
         } catch (err) {
-            if (editFName.length < 3) {
+            if (editFirstName.length < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'First Name must be at least 3 characters!'
                 })
             }
-            if (editLName.length < 3) {
+            if (editLastName.length < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Last Name must be at least 3 characters!'
                 })
             }
-            if (editContact.length < 10) {
+            if (editContactNumber.length < 10) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Mobile Number must be at least 10 characters!'
                 })
             }
-            if (editUniversity.length < 0) {
+            if (editUsername.length < 0) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'University must not be empty!!'
+                    text: 'username must not be empty!!'
                 })
             }
         }
@@ -75,11 +75,11 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
     }
     function closeEditor() {
         setAttendeeEditorOpen(false);
-        setEditFName("");
-        setEditLName("");
+        setEditFirstName("");
+        setEditLastName("");
         setEditEmail("");
-        setEditContact("");
-        setEditUniversity("");
+        setEditContactNumber("");
+        setEditUsername("");
     }
 
     return (
@@ -93,8 +93,8 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
                             id="editor-1"
                             className="form-control"
                             type="text"
-                            value={editFName}
-                            onChange={(e) => setEditFName(e.target.value)}
+                            value={editFirstName}
+                            onChange={(e) => setEditFirstName(e.target.value)}
                             required
                         />
                     </div>
@@ -105,8 +105,8 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
                             id="editor-2"
                             className="form-control"
                             type="text"
-                            value={editLName}
-                            onChange={(e) => setEditLName(e.target.value)}
+                            value={editLastName}
+                            onChange={(e) => setEditLastName(e.target.value)}
                             required
                         />
                     </div>
@@ -129,20 +129,20 @@ function AttendeeEditor({ getAttendees, setAttendeeEditorOpen, editAttendeeData 
                             id="editor-4"
                             className="form-control"
                             type="text"
-                            value={editContact}
-                            onChange={(e) => setEditContact(e.target.value)}
+                            value={editContactNumber}
+                            onChange={(e) => setEditContactNumber(e.target.value)}
                             required
                         />
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="editor-5">University</label>
+                        <label htmlFor="editor-5">Username</label>
                         <input
                             id="editor-5"
                             className="form-control"
                             type="text"
-                            value={editUniversity}
-                            onChange={(e) => setEditUniversity(e.target.value)}
+                            value={editUsername}
+                            onChange={(e) => setEditUsername(e.target.value)}
                             required
                         />
                     </div>

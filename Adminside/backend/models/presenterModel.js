@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const presenterSchema = new mongoose.Schema({
-    fname: {
+    firstName: {
         type: String,
         required: true,
         trim: true,
     },
-    lname: {
+    lastName: {
         type: String,
         required: true,
         trim: true,
@@ -17,15 +17,33 @@ const presenterSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
     },
-    mobile: {
+    contactNumber: {
         type: String,
         required: true,
         trim: true,
         maxlength: 10,
     },
+    username: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
+    university: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
+    department: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
 
 });
 
-const presenter = mongoose.model("workshop_presenter", presenterSchema);
+const presenter = mongoose.model("presenter", presenterSchema);
 
 module.exports = presenter;

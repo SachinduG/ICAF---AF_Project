@@ -31,17 +31,17 @@ function Attendee({ attendee, getAttendees, editAttendee }) {
         <div className="card" style={{ width: 750, marginLeft: 80, marginTop: 30 }}>
             <div className="card-body">
                 {attendee.email && <h3 className="card-title">Email Address : {attendee.email}</h3>}
-                {attendee.fname && (
-                    <p className="text-1">First Name : {attendee.fname}</p>
+                {attendee.firstName && (
+                    <p className="text-1">First Name : {attendee.firstName}</p>
                 )}
-                {attendee.lname && (
-                    <p className="text-2">Last Name : {attendee.lname}</p>
+                {attendee.lastName && (
+                    <p className="text-2">Last Name : {attendee.lastName}</p>
                 )}
-                {attendee.contact && (
-                    <p className="text-3">Mobile Number : {attendee.contact}</p>
+                {attendee.contactNumber && (
+                    <p className="text-3">Mobile Number : {attendee.contactNumber}</p>
                 )}
-                {attendee.university && (
-                    <p className="text-4">University : {attendee.university}</p>
+                {attendee.username && (
+                    <p className="text-4">Username : {attendee.username}</p>
                 )}
                 <button className="btn btn-outline-primary" onClick={() => editAttendee(attendee)} style={{ marginRight: 10 }}>Edit</button>
                 <button className="btn btn-outline-danger" onClick={deleteAttendee}>Delete</button>

@@ -24,8 +24,8 @@ router.put('/:id', auth, async (req, res) => {
     //build user object
     const userFields = {};
     if (firstName) userFields.firstName = firstName;
-    if (lastName) userFields.lname = lastName;
-    if (contactNumber) userFields.contact = contact;
+    if (lastName) userFields.lastName = lastName;
+    if (contactNumber) userFields.contactNumber = contactNumber;
     if (username) userFields.username = username;
 
     try {

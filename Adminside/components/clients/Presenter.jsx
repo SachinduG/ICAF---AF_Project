@@ -30,14 +30,23 @@ function Presenter({ presenter, getPresenters, editPresenter }) {
         <div className="card" style={{ width: 750, marginLeft: 80, marginTop: 30 }}>
             <div className="card-body">
                 {presenter.email && <h3 className="card-title">Email Address : {presenter.email}</h3>}
-                {presenter.fname && (
-                    <p className="text-1">First Name : {presenter.fname}</p>
+                {presenter.firstName && (
+                    <p className="text-1">First Name : {presenter.firstName}</p>
                 )}
-                {presenter.lname && (
-                    <p className="text-2">Last Name : {presenter.lname}</p>
+                {presenter.lastName && (
+                    <p className="text-2">Last Name : {presenter.lastName}</p>
                 )}
-                {presenter.mobile && (
-                    <p className="text-3">Mobile Number : {presenter.mobile}</p>
+                {presenter.contactNumber && (
+                    <p className="text-3">Mobile Number : {presenter.contactNumber}</p>
+                )}
+                {presenter.username && (
+                    <p className="text-3">Username : {presenter.username}</p>
+                )}
+                {presenter.university && (
+                    <p className="text-3">University : {presenter.university}</p>
+                )}
+                {presenter.department && (
+                    <p className="text-3">Department : {presenter.department}</p>
                 )}
                 <button className="btn btn-outline-primary" onClick={() => editPresenter(presenter)} style={{ marginRight: 10 }}>Edit</button>
                 <button className="btn btn-outline-danger" onClick={deletePresenter}>Delete</button>
