@@ -31,14 +31,23 @@ function Researcher({ researcher, getResearchers, editResearcher }) {
         <div className="card mb-3" style={{ width: 750, marginLeft: 80, marginTop: 30 }}>
             <div className="card-body p-3">
                 {researcher.email && <h3 className="card-title">Email Address : {researcher.email}</h3>}
-                {researcher.fname && (
-                    <p className="text-1">First Name : {researcher.fname}</p>
+                {researcher.firstName && (
+                    <p className="text-1">First Name : {researcher.firstName}</p>
                 )}
-                {researcher.lname && (
-                    <p className="text-2">Last Name : {researcher.lname}</p>
+                {researcher.lastName && (
+                    <p className="text-2">Last Name : {researcher.lastName}</p>
                 )}
-                {researcher.mobile && (
-                    <p className="text-3">Mobile Number : {researcher.mobile}</p>
+                {researcher.contactNumber && (
+                    <p className="text-3">Mobile Number : {researcher.contactNumber}</p>
+                )}
+                {researcher.username && (
+                    <p className="text-3">Username : {researcher.username}</p>
+                )}
+                {researcher.university && (
+                    <p className="text-3">University : {researcher.university}</p>
+                )}
+                {researcher.department && (
+                    <p className="text-3">Department : {researcher.department}</p>
                 )}
                 <button className="btn btn-outline-primary" onClick={() => editResearcher(researcher)} style={{ marginRight: 10 }}>Edit</button>
                 <button className="btn btn-outline-danger" onClick={deleteResearcher}>Delete</button>

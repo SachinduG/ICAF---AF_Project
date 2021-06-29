@@ -3,17 +3,23 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearcherData }) {
-    const [editFName, setEditFName] = useState("");
-    const [editLName, setEditLName] = useState("");
+    const [editFirstName, setEditFirstName] = useState("");
+    const [editLastName, setEditLastName] = useState("");
     const [editEmail, setEditEmail] = useState("");
-    const [editMobile, setEditMobile] = useState("");
+    const [editContactNumber, setEditContactNumber] = useState("");
+    const [editUsername, setEditUsername] = useState("");
+    const [editUniversity, setEditUniversity] = useState("");
+    const [editDepartment, setEditDepartment] = useState("");
 
     useEffect(() => {
         if (editResearcherData) {
-            setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
-            setEditLName(editResearcherData.lname ? editResearcherData.lname : "");
+            editFirstName(editResearcherData.firstName ? editResearcherData.firstName : "");
+            editLastName(editResearcherData.lastName ? editResearcherData.lastName : "");
             setEditEmail(editResearcherData.email ? editResearcherData.email : "");
-            setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
+            editContactNumber(editResearcherData.contactNumber ? editResearcherData.contactNumber : "");
+            editUsername(editResearcherData.username ? editResearcherData.username : "");
+            editUniversity(editResearcherData.university ? editResearcherData.university : "");
+            editDepartment(editResearcherData.department ? editResearcherData.department : "");
         }
     }, [editResearcherData]);
 
@@ -21,10 +27,13 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
         e.preventDefault();
 
         const researcherData = {
-            fname: editFName ? editFName : undefined,
-            lname: editLName ? editLName : undefined,
+            fname: editFirstName ? editFirstName : undefined,
+            lastName: editLastName ? editLastName : undefined,
             email: editEmail ? editEmail : undefined,
-            mobile: editMobile ? editMobile : undefined,
+            contactNumber: editContactNumber ? editContactNumber : undefined,
+            username: editUsername ? editUsername : undefined,
+            university: editUniversity ? editUniversity : undefined,
+            department: editDepartment ? editDepartment : undefined,
         };
 
         try {
@@ -37,25 +46,48 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                 timer: 1500
             })
         } catch (err) {
-            if (editFName.length < 3) {
+            if (editFirstName.length < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'First Name must be at least 3 characters!'
                 })
             }
-            if (editLName.length < 3) {
+            if (editLastName.length < 3) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Last Name must be at least 3 characters!'
                 })
             }
-            if (editMobile.length < 10) {
+            if (editContactNumber.length < 10) {
                 await Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Mobile Number must be at least 10 characters!'
+                })
+            }
+            if (editUsername.length < 3) {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'UserName must be at least 3 characters!'
+                })
+            }
+
+            if (editUniversity.length < 0) {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'University cannot be empty!'
+                })
+            }
+
+            if (editDepartment.length < 3) {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Department cannot be empty!'
                 })
             }
         }
@@ -65,10 +97,13 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
     }
     function closeEditor() {
         setResearcherEditorOpen(false);
-        setEditFName("");
-        setEditLName("");
+        setEditFirstName("");
+        setEditLastName("");
         setEditEmail("");
-        setEditMobile("");
+        setEditContactNumber("");
+        setEditUsername("");
+        setEditUniversity("");
+        setEditDepartment("");
     }
 
     return (
@@ -82,8 +117,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                             id="editor-1"
                             className="form-control"
                             type="text"
-                            value={editFName}
-                            onChange={(e) => setEditFName(e.target.value)}
+                            value={editFirstName}
+                            onChange={(e) => setEditFirstName(e.target.value)}
                             required
                         />
                     </div>
@@ -94,8 +129,8 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                             id="editor-2"
                             className="form-control"
                             type="text"
-                            value={editLName}
-                            onChange={(e) => setEditLName(e.target.value)}
+                            value={editLastName}
+                            onChange={(e) => setEditLastName(e.target.value)}
                             required
                         />
                     </div>
@@ -118,8 +153,44 @@ function ResearcherEditor({ getResearchers, setResearcherEditorOpen, editResearc
                             id="editor-4"
                             className="form-control"
                             type="text"
-                            value={editMobile}
-                            onChange={(e) => setEditMobile(e.target.value)}
+                            value={editContactNumber}
+                            onChange={(e) => setEditContactNumber(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="editor-2">Username</label>
+                        <input
+                            id="editor-2"
+                            className="form-control"
+                            type="text"
+                            value={editUsername}
+                            onChange={(e) => setEditUsername(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="editor-2">University</label>
+                        <input
+                            id="editor-2"
+                            className="form-control"
+                            type="text"
+                            value={editUniversity}
+                            onChange={(e) => setEditUniversity(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="editor-2">Department</label>
+                        <input
+                            id="editor-2"
+                            className="form-control"
+                            type="text"
+                            value={editDepartment}
+                            onChange={(e) => setEditDepartment(e.target.value)}
                             required
                         />
                     </div>
