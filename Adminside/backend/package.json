@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "dev": "env-cmd ./.env nodemon app",
-    "test": "jest --testEnvironment=node --runInBand ./tests"
+    "dev": "env-cmd ./.env nodemon app"
   },
   "keywords": [],
   "author": "SachinduG",
@@ -21,9 +20,7 @@
     "mongoose": "^5.12.7"
   },
   "devDependencies": {
-    "@shelf/jest-mongodb": "^1.2.5",
     "env-cmd": "^8.0.2",
-    "jest": "^27.0.5",
     "nodemon": "^2.0.7"
   }
 }

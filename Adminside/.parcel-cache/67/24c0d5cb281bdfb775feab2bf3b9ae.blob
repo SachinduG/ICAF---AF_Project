@@ -1,2 +1,0 @@
-require("./Home.css");
-require("./chart");

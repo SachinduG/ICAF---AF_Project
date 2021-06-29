@@ -3,9 +3,7 @@ const Admin = require("../models/adminModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-// @url           POST /register/
-// @description   add new admin
-// @access-mode   private
+// register
 router.post("/register", async (req, res) => {
     try {
         const { fname, lname, email, password, passwordVerify } = req.body;
@@ -85,9 +83,8 @@ router.post("/register", async (req, res) => {
     }
 });
 
-// @url           POST /login/
-// @description   login admin
-// @access-mode   private
+// log in
+
 router.post("/login", async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -134,9 +131,6 @@ router.post("/login", async (req, res) => {
     }
 });
 
-// @url           GET /logout/
-// @description   admin logout
-// @access-mode   private
 router.get("/logout", (req, res) => {
     res
         .cookie("token", "", {

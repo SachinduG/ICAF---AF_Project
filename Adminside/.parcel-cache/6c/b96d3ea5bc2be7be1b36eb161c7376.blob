@@ -1,8 +1,0 @@
-require("./Home.css");
-require("./chart");
-const Home = () => {
-  return;
-};
-_c = Home;
-var _c;
-$RefreshReg$(_c, "Home");

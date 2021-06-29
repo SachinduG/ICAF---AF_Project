@@ -9,7 +9,7 @@ import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
 import Welcome from "./components/auth/Welcome";
 import Footer from "./components/layout/Footer";
-import Home from "./components/home/Home";
+import Home from "./components/home/home";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
