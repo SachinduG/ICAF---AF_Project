@@ -6,7 +6,7 @@ function PresenterEditor({ getPresenters, setPresenterEditorOpen, editPresenterD
     const [editFirstName, setEditFirstName] = useState("");
     const [editLastName, setEditLastName] = useState("");
     const [editEmail, setEditEmail] = useState("");
-    const [editcontactNumber, setEditcontactNumber] = useState("");
+    const [editContactNumber, setEditContactNumber] = useState("");
     const [editUsername, setEditUsername] = useState("");
     const [editUniversity, setEditUniversity] = useState("");
     const [editDepartment, setEditDepartment] = useState("");
