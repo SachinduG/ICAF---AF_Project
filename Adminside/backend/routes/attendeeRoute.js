@@ -36,7 +36,7 @@ router.put('/:id', auth, async (req, res) => {
                 errorMessage: "You need to update at least a input field",
             });
 
-        if (firstName.length < 3)
+            if (firstName.length < 3)
             return res.status(400).json({
                 errorMessage: "Please enter a first name of at least 3 characters.",
             });
@@ -51,9 +51,9 @@ router.put('/:id', auth, async (req, res) => {
                 errorMessage: "Please enter a mobile number of at least 10 characters.",
             });
 
-        if (username.length < 3)
+        if (username.length < 0)
             return res.status(400).json({
-                errorMessage: "Please enter a username of at least 3 characters.",
+                errorMessage: "Username must not be empty!!.",
             });
 
         if (!user) return res.status(404).json({

@@ -54,7 +54,7 @@ router.put('/:id', auth, async (req, res) => {
                 errorMessage: "Please enter a mobile number of at least 10 characters.",
             });
 
-        if (username.length < 3)
+        if (username.length < 0)
             return res.status(400).json({
                 errorMessage: "Username must not be empty!!.",
             });
