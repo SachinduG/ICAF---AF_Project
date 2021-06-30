@@ -87,7 +87,7 @@ function Navbar() {
                                 variant='contained'
                                 className={classes.menuButton}
                                 color='default'
-                                style={{ color: "black" }}>Events
+                                style={{ color: "black" }}>Contents
                             </Button>
                             <LogOutBtn />
                         </Toolbar>
