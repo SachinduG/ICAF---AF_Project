@@ -80178,6 +80178,9 @@ try {
   _parcelHelpers.defineInteropFlag(exports);
   var _react = require("react");
   var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require("bootstrap/dist/css/bootstrap.min.css");
+  require("./css/animate.min.css");
+  require("./css/demo.css");
   var _reactChartist = require("react-chartist");
   var _reactChartistDefault = _parcelHelpers.interopDefault(_reactChartist);
   var _reactBootstrap = require("react-bootstrap");
@@ -80189,14 +80192,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 17,
           columnNumber: 7
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 18,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80205,7 +80208,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 19,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
@@ -80213,21 +80216,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 20,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 21,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 22,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80235,7 +80238,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 23,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80243,7 +80246,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 24,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80251,7 +80254,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22,
+          lineNumber: 25,
           columnNumber: 23
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80259,7 +80262,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 28,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80267,7 +80270,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26,
+          lineNumber: 29,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80275,7 +80278,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 30,
           columnNumber: 23
         }
       }, "Number"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80283,21 +80286,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 31,
           columnNumber: 23
         }
       }, "150GB"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 36,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 37,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80305,7 +80308,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 38,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80313,7 +80316,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 39,
           columnNumber: 19
         }
       }), "Update Now")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80322,7 +80325,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 45,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
@@ -80330,21 +80333,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 46,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 47,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 48,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80352,7 +80355,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 49,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80360,7 +80363,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 50,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80368,7 +80371,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 51,
           columnNumber: 23
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80376,7 +80379,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51,
+          lineNumber: 54,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80384,7 +80387,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 55,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80392,7 +80395,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 56,
           columnNumber: 23
         }
       }, "Revenue"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80400,21 +80403,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 57,
           columnNumber: 23
         }
       }, "Rs 134,500"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59,
+          lineNumber: 62,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 63,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80422,7 +80425,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61,
+          lineNumber: 64,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80430,7 +80433,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 65,
           columnNumber: 19
         }
       }), "Last day")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80439,7 +80442,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68,
+          lineNumber: 71,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
@@ -80447,21 +80450,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69,
+          lineNumber: 72,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70,
+          lineNumber: 73,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71,
+          lineNumber: 74,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80469,7 +80472,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72,
+          lineNumber: 75,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80477,7 +80480,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73,
+          lineNumber: 76,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80485,7 +80488,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74,
+          lineNumber: 77,
           columnNumber: 23
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80493,7 +80496,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77,
+          lineNumber: 80,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80501,7 +80504,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78,
+          lineNumber: 81,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80509,7 +80512,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
+          lineNumber: 82,
           columnNumber: 23
         }
       }, "Errors"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80517,21 +80520,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80,
+          lineNumber: 83,
           columnNumber: 23
         }
       }, "23"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85,
+          lineNumber: 88,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86,
+          lineNumber: 89,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80539,7 +80542,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 90,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80547,7 +80550,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88,
+          lineNumber: 91,
           columnNumber: 19
         }
       }), "In the last hour")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80556,7 +80559,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94,
+          lineNumber: 97,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
@@ -80564,21 +80567,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95,
+          lineNumber: 98,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96,
+          lineNumber: 99,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97,
+          lineNumber: 100,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80586,7 +80589,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98,
+          lineNumber: 101,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80594,7 +80597,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99,
+          lineNumber: 102,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80602,7 +80605,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100,
+          lineNumber: 103,
           columnNumber: 23
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80610,7 +80613,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103,
+          lineNumber: 106,
           columnNumber: 19
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80618,7 +80621,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 107,
           columnNumber: 21
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80626,7 +80629,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105,
+          lineNumber: 108,
           columnNumber: 23
         }
       }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80634,21 +80637,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 109,
           columnNumber: 23
         }
       }, "+450"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 114,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112,
+          lineNumber: 115,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80656,7 +80659,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 116,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80664,14 +80667,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 117,
           columnNumber: 19
         }
       }), "Update now"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121,
+          lineNumber: 124,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80679,21 +80682,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122,
+          lineNumber: 125,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123,
+          lineNumber: 126,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Header, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 127,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80701,7 +80704,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125,
+          lineNumber: 128,
           columnNumber: 17
         }
       }, "Clients Behavior"), /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80709,14 +80712,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 129,
           columnNumber: 17
         }
       }, "24 Hours performance")), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128,
+          lineNumber: 131,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80725,7 +80728,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129,
+          lineNumber: 132,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartistDefault.default, {
@@ -80760,14 +80763,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130,
+          lineNumber: 133,
           columnNumber: 19
         }
       }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 180,
+          lineNumber: 183,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80775,7 +80778,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181,
+          lineNumber: 184,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80783,7 +80786,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182,
+          lineNumber: 185,
           columnNumber: 19
         }
       }), "Open ", /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80791,7 +80794,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183,
+          lineNumber: 186,
           columnNumber: 24
         }
       }), "Click ", /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80799,14 +80802,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 184,
+          lineNumber: 187,
           columnNumber: 25
         }
       }), "Click Second Time"), /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187,
+          lineNumber: 190,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80814,7 +80817,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188,
+          lineNumber: 191,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80822,7 +80825,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189,
+          lineNumber: 192,
           columnNumber: 19
         }
       }), "Updated 3 minutes ago")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
@@ -80830,21 +80833,21 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195,
+          lineNumber: 198,
           columnNumber: 11
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 196,
+          lineNumber: 199,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Header, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 197,
+          lineNumber: 200,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
@@ -80852,7 +80855,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 198,
+          lineNumber: 201,
           columnNumber: 17
         }
       }, "Email Statistics"), /*#__PURE__*/_reactDefault.default.createElement("p", {
@@ -80860,14 +80863,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199,
+          lineNumber: 202,
           columnNumber: 17
         }
       }, "Last Campaign Performance")), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 201,
+          lineNumber: 204,
           columnNumber: 15
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80876,7 +80879,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 202,
+          lineNumber: 205,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartistDefault.default, {
@@ -80888,7 +80891,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206,
+          lineNumber: 209,
           columnNumber: 19
         }
       })), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80896,7 +80899,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 214,
+          lineNumber: 217,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80904,7 +80907,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 215,
+          lineNumber: 218,
           columnNumber: 19
         }
       }), "Open ", /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80912,7 +80915,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216,
+          lineNumber: 219,
           columnNumber: 24
         }
       }), "Bounce ", /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80920,14 +80923,14 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217,
+          lineNumber: 220,
           columnNumber: 26
         }
       }), "Unsubscribe"), /*#__PURE__*/_reactDefault.default.createElement("hr", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220,
+          lineNumber: 223,
           columnNumber: 17
         }
       }), /*#__PURE__*/_reactDefault.default.createElement("div", {
@@ -80935,7 +80938,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 221,
+          lineNumber: 224,
           columnNumber: 17
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -80943,7 +80946,7 @@ try {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222,
+          lineNumber: 225,
           columnNumber: 19
         }
       }), "Campaign sent 2 days ago")))))))
@@ -80959,7 +80962,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-chartist":"651UH","react-bootstrap":"4n7hB","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"651UH":[function(require,module,exports) {
+},{"react":"3b2NM","react-chartist":"651UH","react-bootstrap":"4n7hB","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","bootstrap/dist/css/bootstrap.min.css":"5GTF8","./css/demo.css":"5MMDi","./css/animate.min.css":"wI4QD"}],"651UH":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -81084,7 +81087,7 @@ ChartistGraph.propTypes = {
 
 exports.default = ChartistGraph;
 
-},{"react":"3b2NM","prop-types":"4dfy5","chartist":"552Ru"}],"552Ru":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","chartist":"2EwDf"}],"2EwDf":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 (function (root, factory) {
@@ -98025,7 +98028,7 @@ Tooltip.displayName = 'Tooltip';
 var _default = Tooltip;
 exports.default = _default;
 module.exports = exports["default"];
-},{"@babel/runtime/helpers/interopRequireDefault":"4PcH8","@babel/runtime/helpers/extends":"3iXsU","@babel/runtime/helpers/objectWithoutPropertiesLoose":"1kWdM","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"3vUMA":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4PcH8","@babel/runtime/helpers/extends":"3iXsU","@babel/runtime/helpers/objectWithoutPropertiesLoose":"1kWdM","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"5GTF8":[function() {},{}],"5MMDi":[function() {},{}],"wI4QD":[function() {},{}],"3vUMA":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _materialUiCore = require("@material-ui/core");

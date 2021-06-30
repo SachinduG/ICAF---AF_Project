@@ -14,6 +14,7 @@
     "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
+    "chartist": "^0.11.4",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-chartist": "^0.14.4",
@@ -23,6 +24,7 @@
     "sweetalert2": "^11.0.8"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "parcel": "^2.0.0-beta.2"
   }
 }

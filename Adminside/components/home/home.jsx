@@ -1,4 +1,7 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/animate.min.css";
+import "./css/demo.css";
 import ChartistGraph from "react-chartist";
 // react-bootstrap components
 import {
