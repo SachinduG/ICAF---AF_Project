@@ -1,0 +1,115 @@
+.cdForm {
+  width: 800px;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  margin-left: 300px;
+  padding-left: 100px;
+  padding-right: 70px;
+  border-radius: 10px;
+}
+.h1 {
+  font-size: 40px;
+  text-align: center;
+}
+h4 {
+  font-size: 20px;
+  display: inline;
+}
+.lables {
+  text-shadow: 0 0 black;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.fee {
+  margin-top: 20px;
+  text-align: center;
+  color: grey;
+}
+
+.price {
+  margin-left: 320px;
+}
+
+.card {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.numberInput {
+  width: 420px;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 70px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.cardIcon {
+  position: relative;
+  top: 13px;
+  left: -47px;
+  width: 40px;
+  height: 40px;
+  color: #23286b;
+}
+.cvcInput {
+  margin-left: 60px;
+  width: 120px;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 35px;
+  border-radius: 6px;
+}
+
+.cvc {
+  margin-left: 130px;
+  text-shadow: 0 0 black;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.dateInput {
+  width: 200px;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 50px;
+  border-radius: 6px;
+}
+
+.lockIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+  left: -45px;
+  color: #23286b;
+}
+
+.dateIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+  left: -45px;
+  color: #23286b;
+}
+
+.payBt {
+  margin-left: 10rem;
+  padding: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: white;
+  background-color: #23286b;
+  font-weight: bolder;
+  width: 100px;
+  margin-top: 40px;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
