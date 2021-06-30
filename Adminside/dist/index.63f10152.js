@@ -79769,7 +79769,7 @@ try {
           lineNumber: 111,
           columnNumber: 62
         }
-      }, "Research Paper")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
+      }, "Conference")), /*#__PURE__*/_reactDefault.default.createElement(_materialUiCore.MenuItem, {
         onClick: handleMenuClose1,
         __self: this,
         __source: {

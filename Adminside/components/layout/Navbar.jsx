@@ -108,7 +108,7 @@ function Navbar() {
                         onClose={handleMenuClose1}
                         anchorEl={anchorEl1}
                         open={Boolean(anchorEl1)}>
-                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Research Paper</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Conference</a></MenuItem>
                         <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Workshop</a></MenuItem>
                     </Menu>
                 </div>
