@@ -4,8 +4,7 @@ import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
-import AssignmentTurnedInRoundedIcon from '@material-ui/icons/AssignmentTurnedInRounded';
-import {Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
+import { Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
         marginLeft: 10,
         marginRight: 10,
-        '&:hover':{
+        '&:hover': {
             background: 'white',
         },
     },
@@ -24,11 +23,10 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function Navbar(){
+function Navbar() {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
     const [anchorEl1, setAnchorEl1] = useState(null);
-    const [anchorEl2, setAnchorEl2] = useState(null);
     const { loggedIn } = useContext(AuthContext);
 
     const handleOpenMenu = e => {
@@ -47,24 +45,21 @@ function Navbar(){
         setAnchorEl1(null);
     };
 
-    const handleOpenMenu2 = e => {
-        setAnchorEl1(e.currentTarget);
-    };
-
-    const handleMenuClose2 = () => {
-        setAnchorEl1(null);
-    };
-
     return (
         <div>
             {loggedIn === false && (
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a className="nav-link" href="/register" style={{marginLeft: 610}}>Register</a>
-                        <a className="nav-link" href="/login">Log In</a>
-                    </nav>
+                    <AppBar position="static" color='primary'>
+                        <Toolbar>
+                            <Typography>
+                                <a className="nav-link" href="/register">Register</a>
+                            </Typography>
+                            <Typography>    
+                                <a className="nav-link" href="/login">Log In</a>
+                            </Typography>
+                        </Toolbar>   
+                    </AppBar>
                 </div>
-
             )}
             {loggedIn === true && (
 
@@ -72,39 +67,29 @@ function Navbar(){
                     <AppBar position="static" color='primary'>
                         <Toolbar>
                             <Typography>
-                                <a className="nav-link" href="/home"><HomeRoundedIcon/></a>
+                                <a className="nav-link" href="/home"><HomeRoundedIcon /></a>
                             </Typography>
                             <Button
                                 aria-controls='menu'
-                                startIcon={<PeopleOutlineRoundedIcon/>}
+                                startIcon={<PeopleOutlineRoundedIcon />}
                                 onClick={handleOpenMenu}
                                 disableRipple
                                 variant='contained'
                                 className={classes.menuButton}
                                 color='default'
-                                style={{color: "black"}}>Clients
+                                style={{ color: "black" }}>Clients
                             </Button>
                             <Button
                                 aria-controls='menu2'
-                                startIcon={<DescriptionRoundedIcon/>}
+                                startIcon={<DescriptionRoundedIcon />}
                                 onClick={handleOpenMenu1}
                                 disableRipple
                                 variant='contained'
                                 className={classes.menuButton}
                                 color='default'
-                                style={{color: "black"}}>Events
+                                style={{ color: "black" }}>Contents
                             </Button>
-                            <Button
-                                aria-controls='menu2'
-                                startIcon={<AssignmentTurnedInRoundedIcon/>}
-                                onClick={handleOpenMenu2}
-                                disableRipple
-                                variant='contained'
-                                className={classes.menuButton}
-                                color='default'
-                                style={{color: "black"}}>Approved Contents
-                            </Button>
-                            <LogOutBtn/>
+                            <LogOutBtn />
                         </Toolbar>
                     </AppBar>
                     <Menu
@@ -113,9 +98,9 @@ function Navbar(){
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{textDecoration: 'none'}}>Researcher</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{textDecoration: 'none'}}>Presenter</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose}><a href="/attendee" style={{textDecoration: 'none'}}>Attendee</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{ textDecoration: 'none' }}>Researcher</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{ textDecoration: 'none' }}>Presenter</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/attendee" style={{ textDecoration: 'none' }}>Attendee</a></MenuItem>
                     </Menu>
                     <Menu
                         id='menu2'
@@ -123,17 +108,8 @@ function Navbar(){
                         onClose={handleMenuClose1}
                         anchorEl={anchorEl1}
                         open={Boolean(anchorEl1)}>
-                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{textDecoration: 'none'}}>Research Paper</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{textDecoration: 'none'}}>Workshops</a></MenuItem>
-                    </Menu>
-                    <Menu
-                        id='menu2'
-                        style={{ marginTop: '40px' }}
-                        onClose={handleMenuClose2}
-                        anchorEl={anchorEl2}
-                        open={Boolean(anchorEl2)}>
-                        <MenuItem onClick={handleMenuClose2}><a href="#" style={{textDecoration: 'none'}}>Research Paper</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose2}><a href="#" style={{textDecoration: 'none'}}>Workshops</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Conference</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Workshop</a></MenuItem>
                     </Menu>
                 </div>
             )}

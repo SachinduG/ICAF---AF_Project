@@ -1,0 +1,67 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _Progress = require('./Progress');
+  var _ProgressDefault = _parcelHelpers.interopDefault(_Progress);
+  require('../styles/ListItem.css');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\ListItem.js";
+  class ListItem extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("li", {
+          className: "ListItem",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "value",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 17
+          }
+        }, this.props.value), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "label",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 17
+          }
+        }, this.props.label, /*#__PURE__*/_reactDefault.default.createElement(_ProgressDefault.default, {
+          min: this.props.min,
+          max: this.props.max,
+          value: this.props.value,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 21
+          }
+        })))
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  ListItem.propTypes = {
+    label: _reactDefault.default.PropTypes.string,
+    min: _reactDefault.default.PropTypes.number,
+    max: _reactDefault.default.PropTypes.number,
+    value: _reactDefault.default.PropTypes.number
+  };
+  exports.default = ListItem;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

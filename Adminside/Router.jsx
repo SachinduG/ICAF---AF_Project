@@ -7,6 +7,9 @@ import Presenters from "./components/clients/Presenters";
 import Attendees from "./components/clients/Attendees";
 import Navbar from "./components/layout/Navbar";
 import AuthContext from "./context/AuthContext";
+import Welcome from "./components/auth/Welcome";
+import Footer from "./components/layout/Footer";
+import Dashboard from "./components/home/home";
 
 function Router() {
     const { loggedIn } = useContext(AuthContext);
@@ -17,6 +20,9 @@ function Router() {
             <Switch>
                 {loggedIn === false && (
                     <>
+                        <Route exact path="/">
+                            <Welcome />
+                        </Route>
                         <Route path="/register">
                             <Register />
                         </Route>
@@ -27,7 +33,9 @@ function Router() {
                 )}
                 {loggedIn === true && (
                     <>
-                        <Route exact path="/home"><div>Home</div></Route>
+                        <Route exact path="/home">
+                            <Dashboard />
+                        </Route>
                         <Route path="/researcher">
                             <Researchers />
                         </Route>
@@ -37,10 +45,11 @@ function Router() {
                         <Route path="/attendee">
                             <Attendees />
                         </Route>
-                        
+
                     </>
                 )}
             </Switch>
+            <Footer />
         </BrowserRouter>
     );
 }

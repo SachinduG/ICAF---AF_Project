@@ -28,10 +28,10 @@ mongoose.connect(
         useNewUrlParser: true,
         useUnifiedTopology: true,
     },
-    (err) =>{
-    if(err) return console.error(err);
-    console.log("Connected to MongoDB");
-});
+    (err) => {
+        if (err) return console.error(err);
+        console.log("Connected to MongoDB");
+    });
 
 //set up routes
 app.use("/auth", require("./routes/adminRoute"));

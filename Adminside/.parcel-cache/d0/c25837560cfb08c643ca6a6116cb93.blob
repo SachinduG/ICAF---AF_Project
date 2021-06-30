@@ -1,0 +1,323 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\AttendeeEditor.jsx", _s = $RefreshSig$();
+  function AttendeeEditor({getAttendees, setAttendeeEditorOpen, editAttendeeData}) {
+    _s();
+    const [editFName, setEditFName] = _react.useState("");
+    const [editLName, setEditLName] = _react.useState("");
+    const [editEmail, setEditEmail] = _react.useState("");
+    const [editContact, setEditContact] = _react.useState("");
+    const [editUniversity, setEditUniversity] = _react.useState("");
+    _react.useEffect(() => {
+      if (editAttendeeData) {
+        setEditFName(editAttendeeData.fname ? editAttendeeData.fname : "");
+        setEditLName(editAttendeeData.lname ? editAttendeeData.lname : "");
+        setEditEmail(editAttendeeData.email ? editAttendeeData.email : "");
+        editContact(editAttendeeData.contact ? editAttendeeData.contact : "");
+        editUniversity(editAttendeeData.university ? editAttendeeData.university : "");
+      }
+    }, [editAttendeeData]);
+    async function saveAttendee(e) {
+      e.preventDefault();
+      const attendeeData = {
+        fname: editFName ? editFName : undefined,
+        lname: editLName ? editLName : undefined,
+        email: editEmail ? editEmail : undefined,
+        contact: editContact ? editContact : undefined,
+        university: editUniversity ? editUniversity : undefined
+      };
+      try {
+        await _axiosDefault.default.put(`http://localhost:5000/attendee/${editAttendeeData._id}`, attendeeData);
+        await _sweetalertDefault.default.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'You successfully updated attendee!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } catch (err) {
+        if (editFName.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'First Name must be at least 3 characters!'
+          });
+        }
+        if (editLName.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Last Name must be at least 3 characters!'
+          });
+        }
+        if (editContact.length < 10) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Mobile Number must be at least 10 characters!'
+          });
+        }
+        if (editUniversity.length < 0) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'University must not be empty!!'
+          });
+        }
+      }
+      getAttendees();
+      closeEditor();
+    }
+    function closeEditor() {
+      setAttendeeEditorOpen(false);
+      setEditFName("");
+      setEditLName("");
+      setEditEmail("");
+      setEditContact("");
+      setEditUniversity("");
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          marginTop: 20
+        },
+        className: "user-editor",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87,
+          columnNumber: 17
+        }
+      }, "Update Attendee")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: saveAttendee,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91,
+          columnNumber: 17
+        }
+      }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-1",
+        className: "form-control",
+        type: "text",
+        value: editFName,
+        onChange: e => setEditFName(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103,
+          columnNumber: 17
+        }
+      }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-2",
+        className: "form-control",
+        type: "text",
+        value: editLName,
+        onChange: e => setEditLName(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115,
+          columnNumber: 17
+        }
+      }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-3",
+        className: "form-control",
+        type: "email",
+        value: editEmail,
+        onChange: e => setEditEmail(e.target.value),
+        readOnly: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127,
+          columnNumber: 17
+        }
+      }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-4",
+        className: "form-control",
+        type: "text",
+        value: editContact,
+        onChange: e => setEditContact(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        htmlFor: "editor-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 139,
+          columnNumber: 17
+        }
+      }, "University"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-5",
+        className: "form-control",
+        type: "text",
+        value: editUniversity,
+        onChange: e => setEditUniversity(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        style: {
+          marginLeft: 475,
+          marginTop: 30
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 150,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-success",
+        type: "submit",
+        style: {
+          marginRight: 10
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 151,
+          columnNumber: 17
+        }
+      }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-warning",
+        type: "button",
+        onClick: closeEditor,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 152,
+          columnNumber: 21
+        }
+      }, "Cancel")))))
+    );
+  }
+  _s(AttendeeEditor, "EZoV349+C8LF3j9z+z1tlBQnRMg=");
+  _c = AttendeeEditor;
+  exports.default = AttendeeEditor;
+  var _c;
+  $RefreshReg$(_c, "AttendeeEditor");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

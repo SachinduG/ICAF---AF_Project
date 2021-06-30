@@ -4,8 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // register
-
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         const { fname, lname, email, password, passwordVerify } = req.body;
 
@@ -75,7 +74,7 @@ router.post("/", async (req, res) => {
                 httpOnly: true,
                 secure: true,
                 sameSite: "none",
-                    
+
             })
             .send();
     } catch (err) {
@@ -133,14 +132,14 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-        res
-            .cookie("token", "", {
-                httpOnly: true,
-                expires: new Date(0),
-                secure: true,
-                sameSite: "none",
-            })
-            .send();
+    res
+        .cookie("token", "", {
+            httpOnly: true,
+            expires: new Date(0),
+            secure: true,
+            sameSite: "none",
+        })
+        .send();
 });
 
 router.get("/loggedIn", (req, res) => {

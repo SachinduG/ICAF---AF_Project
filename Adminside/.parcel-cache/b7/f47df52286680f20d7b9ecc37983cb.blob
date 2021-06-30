@@ -1,0 +1,110 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _Widget = require('./Widget');
+  var _WidgetDefault = _parcelHelpers.interopDefault(_Widget);
+  var _NumberDisplay = require('./NumberDisplay');
+  var _NumberDisplayDefault = _parcelHelpers.interopDefault(_NumberDisplay);
+  var _Progress = require('./Progress');
+  var _ProgressDefault = _parcelHelpers.interopDefault(_Progress);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\NumberWidget.js";
+  // Import styling
+  // import '../styles/NumberWidget.css';
+  class NumberWidget extends _react.Component {
+    // Decide whether to show widget
+    showWidget() {
+      // Show loading indicator while initial data is being fetched
+      if (this.props.value === undefined) {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement("p", {
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16,
+              columnNumber: 20
+            }
+          }, "Loading...")
+        );
+      }
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "NumberWidget",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 16
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_NumberDisplayDefault.default, {
+          max: this.props.max,
+          value: this.props.value,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 13
+          }
+        }), this.showProgress())
+      );
+    }
+    /*Decide whether to show a progress bar*/
+    showProgress() {
+      // Only show if the required min, max and value props are supplied
+      if (this.props.min !== undefined && this.props.max !== undefined && this.props.value !== undefined) {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement(_ProgressDefault.default, {
+            min: this.props.min,
+            max: this.props.max,
+            value: this.props.value,
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30,
+              columnNumber: 20
+            }
+          })
+        );
+      }
+      return null;
+    }
+    render() {
+      return (
+        /*#__PURE__*/
+        // Wrap the number display component in the generic wrapper
+        _reactDefault.default.createElement(_WidgetDefault.default, {
+          heading: this.props.heading,
+          colspan: this.props.colspan,
+          rowspan: this.props.rowspan,
+          loading: this.props.loading,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39,
+            columnNumber: 13
+          }
+        }, this.showWidget())
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  NumberWidget.propTypes = {
+    heading: _reactDefault.default.PropTypes.string,
+    colspan: _reactDefault.default.PropTypes.number,
+    rowspan: _reactDefault.default.PropTypes.number,
+    loading: _reactDefault.default.PropTypes.bool.isRequired,
+    min: _reactDefault.default.PropTypes.number,
+    max: _reactDefault.default.PropTypes.number,
+    value: _reactDefault.default.PropTypes.number
+  };
+  exports.default = NumberWidget;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

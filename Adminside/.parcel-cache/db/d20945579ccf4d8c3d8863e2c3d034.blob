@@ -1,0 +1,115 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  require("sweetalert2");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Attendee.jsx";
+  function Attendee({attendee, getAttendees, editAttendee}) {
+    async function deleteAttendee() {
+      if (window.confirm("Do you want to delete this snippet?")) {
+        _axiosDefault.default.delete(`http://localhost:5000/attendee/${attendee._id}`);
+        getSnippets();
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "card",
+        style: {
+          width: 750,
+          marginLeft: 80,
+          marginTop: 30
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "card-body",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 13
+        }
+      }, attendee.email && /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        className: "card-title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 36
+        }
+      }, "Email Address : ", attendee.email), attendee.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 21
+        }
+      }, "First Name : ", attendee.fname), attendee.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 21
+        }
+      }, "Last Name : ", attendee.lname), attendee.contact && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 21
+        }
+      }, "Mobile Number : ", attendee.contact), attendee.university && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 21
+        }
+      }, "University : ", attendee.university), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-primary",
+        onClick: () => editAttendee(attendee),
+        style: {
+          marginRight: 10
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 17
+        }
+      }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-danger",
+        onClick: deleteAttendee,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 17
+        }
+      }, "Delete")))
+    );
+  }
+  _c = Attendee;
+  exports.default = Attendee;
+  var _c;
+  $RefreshReg$(_c, "Attendee");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

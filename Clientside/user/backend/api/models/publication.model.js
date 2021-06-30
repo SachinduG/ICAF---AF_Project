@@ -9,7 +9,6 @@ const PublicationSchema = new mongoose.Schema({
 		trim: true,
 		ref: "researchers",
 	},
-	src: { type: String, required: true, trim: true },
 	createdAt: { type: Date, required: true, default: Date.now() },
 	isApproved: { type: String, required: true, default: "pending" },
 	isPaid: { type: Boolean, required: true, default: false },
@@ -17,4 +16,4 @@ const PublicationSchema = new mongoose.Schema({
 
 const Publication = mongoose.model("publications", PublicationSchema);
 
-module.exports = Publication;
+module.exports = Publication

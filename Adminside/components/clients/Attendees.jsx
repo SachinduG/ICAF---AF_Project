@@ -49,13 +49,13 @@ function Attendees() {
     <div className="home">
       {attendeeEditorOpen && (
         <AttendeeEditor setAttendeeEditorOpen={setAttendeeEditorOpen}
-         getAttendees={getAttendees} editAttendeeData={editAttendeeData}/>
+          getAttendees={getAttendees} editAttendeeData={editAttendeeData} />
       )}
-      {attendees.length > 0 ? renderAttendees() : loggedIn && 
-      ( <p className="alert alert-warning" role="alert" style={{marginTop:40}}>No attendees have been added yet.</p> )}
-      {loggedIn === null && ( <div className="no-user-message"> 
-      <h2>Welcome</h2> <Link to="/register">
-        Register here</Link> </div>
+      {attendees.length > 0 ? renderAttendees() : loggedIn &&
+        (<p className="alert alert-warning" role="alert" style={{ marginTop: 40 }}>No attendees have been added yet.</p>)}
+      {loggedIn === null && (<div className="no-user-message">
+        <h2>Welcome</h2> <Link to="/register">
+          Register here</Link> </div>
       )}
     </div>
   );
