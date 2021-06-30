@@ -1,0 +1,789 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactChartist = require("react-chartist");
+  var _reactChartistDefault = _parcelHelpers.interopDefault(_reactChartist);
+  var _reactBootstrap = require("react-bootstrap");
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
+  function Dashboard() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Container, {
+        fluid: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        lg: "3",
+        sm: "6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        className: "card-stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "icon-big text-center icon-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "nc-icon nc-chart text-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 23
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "7",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "numbers",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 23
+        }
+      }, "Number"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 23
+        }
+      }, "150GB"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-redo mr-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 19
+        }
+      }), "Update Now")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        lg: "3",
+        sm: "6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        className: "card-stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "icon-big text-center icon-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "nc-icon nc-light-3 text-success",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 23
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "7",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "numbers",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 23
+        }
+      }, "Revenue"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 23
+        }
+      }, "Rs 134,500"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "far fa-calendar-alt mr-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 19
+        }
+      }), "Last day")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        lg: "3",
+        sm: "6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        className: "card-stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "icon-big text-center icon-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "nc-icon nc-vector text-danger",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74,
+          columnNumber: 23
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "7",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "numbers",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79,
+          columnNumber: 23
+        }
+      }, "Errors"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80,
+          columnNumber: 23
+        }
+      }, "23"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "far fa-clock-o mr-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88,
+          columnNumber: 19
+        }
+      }), "In the last hour")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        lg: "3",
+        sm: "6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        className: "card-stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "icon-big text-center icon-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "nc-icon nc-favourite-28 text-primary",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100,
+          columnNumber: 23
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        xs: "7",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "numbers",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105,
+          columnNumber: 23
+        }
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106,
+          columnNumber: 23
+        }
+      }, "+450"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-redo mr-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114,
+          columnNumber: 19
+        }
+      }), "Update now"))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        md: "8",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 123,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Header, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 125,
+          columnNumber: 17
+        }
+      }, "Clients Behavior"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126,
+          columnNumber: 17
+        }
+      }, "24 Hours performance")), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "ct-chart",
+        id: "chartHours",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartistDefault.default, {
+        data: {
+          labels: ["9:00AM", "12:00AM", "3:00PM", "6:00PM", "9:00PM", "12:00PM", "3:00AM", "6:00AM"],
+          series: [[287, 385, 490, 492, 554, 586, 698, 695], [67, 152, 143, 240, 287, 335, 435, 437], [23, 113, 67, 108, 190, 239, 307, 308]]
+        },
+        type: "Line",
+        options: {
+          low: 0,
+          high: 800,
+          showArea: false,
+          height: "245px",
+          axisX: {
+            showGrid: false
+          },
+          lineSmooth: true,
+          showLine: true,
+          showPoint: true,
+          fullWidth: true,
+          chartPadding: {
+            right: 50
+          }
+        },
+        responsiveOptions: [["screen and (max-width: 640px)", {
+          axisX: {
+            labelInterpolationFnc: function (value) {
+              return value[0];
+            }
+          }
+        }]],
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130,
+          columnNumber: 19
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Footer, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 180,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "legend",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 181,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-info",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 182,
+          columnNumber: 19
+        }
+      }), "Open ", /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-danger",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 183,
+          columnNumber: 24
+        }
+      }), "Click ", /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 184,
+          columnNumber: 25
+        }
+      }), "Click Second Time"), /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 187,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 188,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-history",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 189,
+          columnNumber: 19
+        }
+      }), "Updated 3 minutes ago")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+        md: "4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 195,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 196,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Header, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 197,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Title, {
+        as: "h4",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 198,
+          columnNumber: 17
+        }
+      }, "Email Statistics"), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "card-category",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 199,
+          columnNumber: 17
+        }
+      }, "Last Campaign Performance")), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Card.Body, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 201,
+          columnNumber: 15
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "ct-chart ct-perfect-fourth",
+        id: "chartPreferences",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 202,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartistDefault.default, {
+        data: {
+          labels: ["40%", "20%", "40%"],
+          series: [40, 20, 40]
+        },
+        type: "Pie",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 206,
+          columnNumber: 19
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "legend",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 214,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-info",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 215,
+          columnNumber: 19
+        }
+      }), "Open ", /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-danger",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 216,
+          columnNumber: 24
+        }
+      }), "Bounce ", /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-circle text-warning",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 217,
+          columnNumber: 26
+        }
+      }), "Unsubscribe"), /*#__PURE__*/_reactDefault.default.createElement("hr", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 220,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "stats",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 221,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "far fa-clock",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 222,
+          columnNumber: 19
+        }
+      }), "Campaign sent 2 days ago")))))))
+    );
+  }
+  _c = Dashboard;
+  exports.default = Dashboard;
+  var _c;
+  $RefreshReg$(_c, "Dashboard");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
