@@ -1,0 +1,7 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "Feeds", function () {
+  return _feedsFeedDefault.default;
+});
+var _feedsFeed = require('./feeds/feed');
+var _feedsFeedDefault = _parcelHelpers.interopDefault(_feedsFeed);

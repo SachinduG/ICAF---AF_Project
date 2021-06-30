@@ -1,0 +1,210 @@
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactstrap = require('reactstrap');
+  var _reactChartjs = require('react-chartjs-2');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\dashboard-components\\charts\\chart.jsx";
+  // Line chart
+  let lineData = {
+    labels: [1, 2, 3, 4, 5, 6, 7, 8],
+    datasets: [{
+      label: 'Income',
+      borderWidth: 1,
+      backgroundColor: 'rgba(94,114,228,.1)',
+      borderColor: 'rgb(94,114,228)',
+      pointBorderColor: 'rgb(94,114,228)',
+      pointBackgroundColor: 'rgb(94,114,228)',
+      data: [0, 15, 6, 11, 25, 9, 18, 24]
+    }, {
+      label: 'Outcome',
+      borderWidth: 1,
+      backgroundColor: 'rgba(79,195,247,.1)',
+      borderColor: 'rgb(79,195,247)',
+      pointBorderColor: 'rgb(79,195,247)',
+      pointBackgroundColor: 'rgb(79,195,247)',
+      data: [0, 8, 11, 22, 8, 10, 5, 21]
+    }]
+  };
+  const Chart = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Card, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.CardBody, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "d-flex align-items-center",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.CardTitle, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 25
+        }
+      }, "Sales Summary"), /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.CardSubtitle, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 25
+        }
+      }, "summary of the month")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "ml-auto d-flex align-items-center",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        className: "list-inline font-12 dl mr-3 mb-0",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "border-0 p-0 text-info list-inline-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fa fa-circle",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 33
+        }
+      }), " Iphone"), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "border-0 p-0 text-primary list-inline-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fa fa-circle",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 33
+        }
+      }), " Ipad")))), /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Row, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Col, {
+        lg: "12",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "campaign ct-charts",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "chart-wrapper",
+        style: {
+          width: '100%',
+          margin: '0 auto',
+          height: 250
+        },
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactChartjs.Line, {
+        data: lineData,
+        options: {
+          maintainAspectRatio: false,
+          legend: {
+            display: false,
+            labels: {
+              fontFamily: "Nunito Sans"
+            }
+          },
+          scales: {
+            yAxes: [{
+              stacked: true,
+              gridLines: {
+                display: false
+              },
+              ticks: {
+                fontFamily: "Nunito Sans"
+              }
+            }],
+            xAxes: [{
+              gridLines: {
+                display: false
+              },
+              ticks: {
+                fontFamily: "Nunito Sans"
+              }
+            }]
+          }
+        },
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58,
+          columnNumber: 33
+        }
+      })))))))
+    );
+  };
+  _c = Chart;
+  exports.default = Chart;
+  var _c;
+  $RefreshReg$(_c, "Chart");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
