@@ -56,7 +56,7 @@ function Register() {
                 passwordVerify,
             };
 
-            await axios.post("http://localhost:5000/auth/", registerData);
+            await axios.post("http://localhost:5000/auth/register", registerData);
             await getLoggedIn();
             history.push("/home");
             await Swal.fire({
