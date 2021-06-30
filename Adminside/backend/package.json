@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "dev": "env-cmd ./.env nodemon app"
+    "dev": "env-cmd ./.env nodemon app",
+    "test": "jest --testEnvironment=node --runInBand ./tests"
   },
   "keywords": [],
   "author": "SachinduG",
