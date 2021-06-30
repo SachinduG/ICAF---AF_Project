@@ -40,7 +40,7 @@ const ResearcherProfile = () => {
 					Add new Publication
 				</Link>
 			</div>
-			<h1>Your Publications</h1>
+			<h1>Your Research Uploads</h1>
 			<motion.div
 				className="publications"
 				initial={{ y: 100, opacity: 0 }}
