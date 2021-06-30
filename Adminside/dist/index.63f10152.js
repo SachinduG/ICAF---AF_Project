@@ -26348,7 +26348,7 @@ try {
   var _componentsAuthWelcomeDefault = _parcelHelpers.interopDefault(_componentsAuthWelcome);
   var _componentsLayoutFooter = require("./components/layout/Footer");
   var _componentsLayoutFooterDefault = _parcelHelpers.interopDefault(_componentsLayoutFooter);
-  var _componentsHomeHome = require("./components/home/home");
+  var _componentsHomeHome = require("./components/home/Home");
   var _componentsHomeHomeDefault = _parcelHelpers.interopDefault(_componentsHomeHome);
   var _jsxFileName = "D:\\AF-ICAF\\Adminside\\Router.jsx", _s = $RefreshSig$();
   function Router() {
@@ -26504,7 +26504,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Welcome":"2VqOp","./components/layout/Footer":"5mK4o","./components/home/home":"3qzmh"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/auth/Login":"b1IMF","./components/auth/Register":"4h2oD","./components/clients/Researchers":"2C3OL","./components/clients/Presenters":"6792w","./components/clients/Attendees":"2iWkw","./components/layout/Navbar":"2mdwo","./context/AuthContext":"7EfDm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/auth/Welcome":"2VqOp","./components/layout/Footer":"5mK4o","./components/home/Home":"33cK6"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 if ("development" === "production") {
   module.exports = require("./cjs/react-router-dom.min.js");
@@ -80168,7 +80168,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@material-ui/core/Typography":"3wcF9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3qzmh":[function(require,module,exports) {
+},{"react":"3b2NM","@material-ui/core/Typography":"3wcF9","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"33cK6":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -80181,7 +80181,7 @@ try {
   var _reactChartist = require("react-chartist");
   var _reactChartistDefault = _parcelHelpers.interopDefault(_reactChartist);
   var _reactBootstrap = require("react-bootstrap");
-  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\Home.jsx";
   function Dashboard() {
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Container, {
@@ -80959,7 +80959,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-chartist":"651UH","react-bootstrap":"4n7hB"}],"651UH":[function(require,module,exports) {
+},{"react":"3b2NM","react-chartist":"651UH","react-bootstrap":"4n7hB","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"651UH":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
