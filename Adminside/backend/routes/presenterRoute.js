@@ -39,7 +39,7 @@ router.put('/:id', auth, async (req, res) => {
                 errorMessage: "You need to update at least a input field",
             });
 
-        if (firstName.length < 3)
+        {/*if (firstName.length < 3)
             return res.status(400).json({
                 errorMessage: "Please enter a first name of at least 3 characters.",
             });
@@ -67,7 +67,7 @@ router.put('/:id', auth, async (req, res) => {
         if (department.length < 0)
             return res.status(400).json({
                 errorMessage: "Department must not be empty!!",
-            });
+            });*/}
 
         if (!user) return res.status(404).json({
             msg: 'User not found'
