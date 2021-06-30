@@ -14,7 +14,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import Admin from "./admin/admin";
+
 import Editor from "../pages/Editor.dashboard";
 import Researcher from "../pages/Researcher";
 import Attendee from "../pages/Attendee";
@@ -61,9 +61,7 @@ const App = () => {
 				<Route exact path="/auth/login">
 					<Login />
 				</Route>
-				<PrivateRoute exact path="/auth/user/admin/dashboard">
-					<Admin />
-				</PrivateRoute>
+				
 				<PrivateRoute exact path="/auth/user/editor/dashboard">
 					<Editor />
 				</PrivateRoute>
