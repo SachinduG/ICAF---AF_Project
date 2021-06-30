@@ -15,7 +15,7 @@ const PublicationList = () => {
 
 	return (
 		<div>
-			<h1>Publications</h1>
+			<h1>Research Publications</h1>
 			<motion.div
 				className="event-card-content"
 				initial={{ y: 100, opacity: 0 }}
