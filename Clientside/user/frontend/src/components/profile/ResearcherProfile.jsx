@@ -37,7 +37,7 @@ const ResearcherProfile = () => {
 			<div className="profile-container">
 				<ProfileCard profile={profile} />
 				<Link className="add-new" to="/publication/create">
-					Add new Publication
+					Add new Research 
 				</Link>
 			</div>
 			<h1>Your Research Uploads</h1>
