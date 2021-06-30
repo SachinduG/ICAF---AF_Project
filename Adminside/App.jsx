@@ -7,7 +7,7 @@ import theme from './utils/theme';
 
 axios.defaults.withCredentials = true;
 
-function App(){
+function App() {
     return (
         <ThemeProvider theme={theme}>
             <AuthContextProvider>

@@ -1,0 +1,103 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Researcher.jsx";
+  function Researcher({researcher, getResearchers, editResearcher}) {
+    async function deleteResearcher() {
+      if (window.confirm("Do you want to delete this researcher?")) {
+        await _axiosDefault.default.delete(`http://localhost:5000/researcher/${researcher._id}`);
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then(result => {
+          if (result.isConfirmed) {
+            Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
+          }
+        });
+        getResearchers;
+      }
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "user",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 9
+        }
+      }, researcher.email && /*#__PURE__*/_reactDefault.default.createElement("h2", {
+        className: "email",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 34
+        }
+      }, researcher.email), researcher.fname && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 17
+        }
+      }, researcher.fname), researcher.lname && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 17
+        }
+      }, researcher.lname), researcher.mobile && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 17
+        }
+      }, researcher.mobile), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-edit",
+        onClick: () => editResearcher(researcher),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 13
+        }
+      }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-delete",
+        onClick: deleteResearcher,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 13
+        }
+      }, "Delete"))
+    );
+  }
+  _c = Researcher;
+  exports.default = Researcher;
+  var _c;
+  $RefreshReg$(_c, "Researcher");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

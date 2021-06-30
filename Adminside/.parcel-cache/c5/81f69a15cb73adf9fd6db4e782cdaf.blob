@@ -1,0 +1,69 @@
+.user {
+    margin: 1.5rem 0;
+}
+.user .title, .snippet .description, .snippet .code {
+    margin-bottom: 1rem;
+}
+.user .code {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: var(--dark-color);
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+.user .btn-delete, .snippet .btn-edit {
+    margin-right: 1rem;
+}
+.snippet .btn-edit {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+.snippet .btn-delete {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+}
+
+.snippet-editor .btn-save, .snippet-editor .btn-cancel {
+    margin-right: 1rem;
+}
+.snippet-editor .btn-save {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+.snippet-editor .btn-cancel {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+}
+
+.home .btn-editor-toggle {
+    background: var(--light-color);
+}
+.home .no-users-msg {
+    margin-top: 2rem;
+    color: var(--text-light-color);
+    font-weight: bold;
+}
+.home .no-user-message {
+    margin-top: 6rem;
+    color: var(--text-light-color);
+    text-align: center;
+}
+.home .no-user-message h2 {
+    font-size: 3rem;
+}
+.home .no-user-message a {
+    margin-top: 2rem;
+    color: var(--text-dark-color);
+    background: var(--light-color);
+    display: inline-block;
+}
+.home .no-user-message a:hover {
+    text-decoration: unset;
+}
+@media screen and (max-width: 420px) {
+    .home .no-user-message h2 {
+        font-size: 2rem;
+   }
+}
+
+/*# sourceMappingURL=index.HASH_REF_b351d1ecbe2115027aba524e37aa8743.css.map */

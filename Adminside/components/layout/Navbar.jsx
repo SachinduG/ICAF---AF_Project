@@ -4,7 +4,7 @@ import LogOutBtn from "../auth/LogOutBtn";
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
-import {Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem} from "@material-ui/core";
+import { Button, Menu, makeStyles, AppBar, Toolbar, Typography, MenuItem } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
         marginLeft: 10,
         marginRight: 10,
-        '&:hover':{
+        '&:hover': {
             background: 'white',
         },
     },
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function Navbar(){
+function Navbar() {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
     const [anchorEl1, setAnchorEl1] = useState(null);
@@ -49,13 +49,17 @@ function Navbar(){
         <div>
             {loggedIn === false && (
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a className="nav-link" href="/" style={{marginLeft: 610}}>Welcome</a>
-                        <a className="nav-link" href="/register">Register</a>
-                        <a className="nav-link" href="/login">Log In</a>
-                    </nav>
+                    <AppBar position="static" color='primary'>
+                        <Toolbar>
+                            <Typography>
+                                <a className="nav-link" href="/register">Register</a>
+                            </Typography>
+                            <Typography>    
+                                <a className="nav-link" href="/login">Log In</a>
+                            </Typography>
+                        </Toolbar>   
+                    </AppBar>
                 </div>
-
             )}
             {loggedIn === true && (
 
@@ -63,29 +67,29 @@ function Navbar(){
                     <AppBar position="static" color='primary'>
                         <Toolbar>
                             <Typography>
-                                <a className="nav-link" href="/"><HomeRoundedIcon/></a>
+                                <a className="nav-link" href="/home"><HomeRoundedIcon /></a>
                             </Typography>
                             <Button
                                 aria-controls='menu'
-                                startIcon={<PeopleOutlineRoundedIcon/>}
+                                startIcon={<PeopleOutlineRoundedIcon />}
                                 onClick={handleOpenMenu}
                                 disableRipple
                                 variant='contained'
                                 className={classes.menuButton}
                                 color='default'
-                                style={{color: "black"}}>Clients
+                                style={{ color: "black" }}>Clients
                             </Button>
                             <Button
                                 aria-controls='menu2'
-                                startIcon={<DescriptionRoundedIcon/>}
+                                startIcon={<DescriptionRoundedIcon />}
                                 onClick={handleOpenMenu1}
                                 disableRipple
                                 variant='contained'
                                 className={classes.menuButton}
                                 color='default'
-                                style={{color: "black"}}>Events
+                                style={{ color: "black" }}>Contents
                             </Button>
-                            <LogOutBtn/>
+                            <LogOutBtn />
                         </Toolbar>
                     </AppBar>
                     <Menu
@@ -94,9 +98,9 @@ function Navbar(){
                         onClose={handleMenuClose}
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}>
-                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{textDecoration: 'none'}}>Researcher</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{textDecoration: 'none'}}>Presenter</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose}><a href="/attendee" style={{textDecoration: 'none'}}>Attendee</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/researcher" style={{ textDecoration: 'none' }}>Researcher</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/presenter" style={{ textDecoration: 'none' }}>Presenter</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose}><a href="/attendee" style={{ textDecoration: 'none' }}>Attendee</a></MenuItem>
                     </Menu>
                     <Menu
                         id='menu2'
@@ -104,8 +108,8 @@ function Navbar(){
                         onClose={handleMenuClose1}
                         anchorEl={anchorEl1}
                         open={Boolean(anchorEl1)}>
-                        <MenuItem onClick={handleMenuClose1}><a href="/paper" style={{textDecoration: 'none'}}>Research Paper</a></MenuItem>
-                        <MenuItem onClick={handleMenuClose1}>Workshops</MenuItem>
+                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Research Paper</a></MenuItem>
+                        <MenuItem onClick={handleMenuClose1}><a href="#" style={{ textDecoration: 'none' }}>Workshop</a></MenuItem>
                     </Menu>
                 </div>
             )}

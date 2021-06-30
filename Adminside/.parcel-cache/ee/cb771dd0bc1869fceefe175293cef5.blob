@@ -1,0 +1,158 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactstrap = require('reactstrap');
+  var _dashboardComponentsIndex = require('./dashboard-components/index');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\home.jsx";
+  function Home() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "home",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 45
+        }
+      }, "Welcome to the Admin Dashboard")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "row align-items-center my-5",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Col, {
+        sm: 6,
+        lg: 4,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_dashboardComponentsIndex.Feeds, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 29
+        }
+      }))), /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 25
+        }
+      }, "Clients"), /*#__PURE__*/_reactDefault.default.createElement("h6", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 25
+        }
+      }, "Researchers"), /*#__PURE__*/_reactDefault.default.createElement("h6", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 25
+        }
+      }, "Presenters"), /*#__PURE__*/_reactDefault.default.createElement("h6", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 25
+        }
+      }, "Attendees")), /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Row, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        className: "font-weight",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 25
+        }
+      }, "Events"), /*#__PURE__*/_reactDefault.default.createElement("h6", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 25
+        }
+      }, "Researcher Papers"), /*#__PURE__*/_reactDefault.default.createElement("h6", {
+        className: "font-weight-light",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 25
+        }
+      }, "Workshops")))))
+    );
+  }
+  _c = Home;
+  exports.default = Home;
+  var _c;
+  $RefreshReg$(_c, "Home");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

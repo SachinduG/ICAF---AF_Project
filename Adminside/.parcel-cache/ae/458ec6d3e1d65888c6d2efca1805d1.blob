@@ -1,0 +1,85 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require('axios');
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _ListWidget = require('./ListWidget');
+  var _ListWidgetDefault = _parcelHelpers.interopDefault(_ListWidget);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\ListWidgetContainer.js";
+  class ListWidgetContainer extends _react.Component {
+    constructor() {
+      super();
+      // Set initial state
+      this.state = {
+        loading: false,
+        values: []
+      };
+      // Bind function to refer to component
+      this.getData = this.getData.bind(this);
+    }
+    /*Fetch data when the component is added*/
+    componentDidMount() {
+      this.getData().then(_ => {
+        // Re-fetch every minute
+        this.interval = setInterval(this.getData, 60000);
+      });
+    }
+    /*Fetch new data*/
+    getData() {
+      // Tell the Widget component we're currently loading
+      this.setState({
+        loading: true
+      });
+      return _axiosDefault.default.get(this.props.href).then(response => {
+        // Update state with data
+        this.setState({
+          loading: false,
+          values: response.data
+        });
+      }).catch(error => {
+        // At least tell the Widget component we have stopped loading
+        console.log(error);
+        this.setState({
+          loading: false
+        });
+      });
+    }
+    render() {
+      return (
+        /*#__PURE__*/
+        // Render the list widget
+        _reactDefault.default.createElement(_ListWidgetDefault.default, {
+          heading: this.props.heading,
+          colspan: this.props.colspan,
+          rowspan: this.props.rowspan,
+          listItems: this.state.values,
+          loading: this.state.loading,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 51,
+            columnNumber: 13
+          }
+        })
+      );
+    }
+  }
+  // Enforce the type of props to send to this component
+  ListWidgetContainer.propTypes = {
+    heading: _reactDefault.default.PropTypes.string,
+    colspan: _reactDefault.default.PropTypes.number,
+    rowspan: _reactDefault.default.PropTypes.number,
+    href: _reactDefault.default.PropTypes.string.isRequired
+  };
+  exports.default = ListWidgetContainer;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

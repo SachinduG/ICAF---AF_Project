@@ -1,69 +1,106 @@
-const express = require('express')
-const router = express.Router()
-const Presenter = require('../models/presenterModel')
-const auth = require('../middleware/auth')
-
-// @url           POST /presenter/add
-// @description   add presenter
-// @access-mode   private
-router.post('/add', auth, async (req, res) => {
-    try {
-        const {fname, lname, email, mobile} = req.body
-        const user = {
-            fname: fname,
-            lname: lname,
-            email: email,
-            mobile: mobile,
-        }
-        const newUser = new Presenter(user)
-        await newUser.save()
-        res.status(200).send({status: 'User added', user: newUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
-    }
-})
+const express = require('express');
+const router = express.Router();
+const Presenter = require('../models/presenterModel');
+const auth = require('../middleware/auth');
 
 // @url           GET /presenter/
 // @description   get all presenters
 // @access-mode   private
 router.get('/', auth, async (req, res) => {
     try {
-        const users = await Presenter.find()
-        res.status(200).send({status: 'Fetched users', user: users})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        const users = await Presenter.find();
+        res.json(users);
+    } catch (err) {
+        res.status(500).send('server error');
+        console.log(err.message);
     }
 })
 
-// @url           PUT /presenter/update/:id
+// @url           PUT /presenter/:id
 // @description   update presenter
 // @access-mode   private
-router.put('/update/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.put('/:id', auth, async (req, res) => {
+    const { firstName, lastName, contactNumber, username, university, department } = req.body
+
+    //build user object
+    const userFields = {};
+    if (firstName) userFields.firstName = firstName;
+    if (lastName) userFields.lastName = lastName;
+    if (contactNumber) userFields.contactNumber = contactNumber;
+    if (username) userFields.username = username;
+    if (university) userFields.university = university;
+    if (department) userFields.department = department;
+
     try {
-        const {fname, lname, mobile} = req.body
-        const user = await Presenter.findOneAndUpdate(userID, {fname: fname, lname: lname, mobile: mobile})
-        res.status(200).send({status: 'Todo Updated', updatedUser: user})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
+        let user = await Presenter.findById(req.params.id);
+
+        if (!firstName && !lastName && !contactNumber && !username && !university && !department)
+            return res.status(400).json({
+                errorMessage: "You need to update at least a input field",
+            });
+
+        {/*if (firstName.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a first name of at least 3 characters.",
+            });
+
+        if (lastName.length < 3)
+            return res.status(400).json({
+                errorMessage: "Please enter a last name of at least 3 characters.",
+            });
+
+        if (contactNumber.length < 10)
+            return res.status(400).json({
+                errorMessage: "Please enter a mobile number of at least 10 characters.",
+            });
+
+        if (username.length < 0)
+            return res.status(400).json({
+                errorMessage: "Username must not be empty!!.",
+            });
+
+        if (university.length < 0)
+            return res.status(400).json({
+                errorMessage: "University must not be empty!!",
+            });
+
+        if (department.length < 0)
+            return res.status(400).json({
+                errorMessage: "Department must not be empty!!",
+            });*/}
+
+        if (!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+
+        user = await Presenter.findByIdAndUpdate(req.params.id,
+            { $set: userFields },
+            { new: true });
+        res.json(user);
+
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
     }
 })
 
-// @url           DELETE /presenter/delete/:id
+// @url           DELETE /presenter/:id
 // @description   delete presenter
 // @access-mode   private
-router.delete('/delete/:id', auth, async(req, res) => {
-    const userID = req.params.id
+router.delete('/:id', auth, async (req, res) => {
     try {
-        const deleteUser = await Presenter.findByIdAndDelete(userID)
-        res.status(200).send({status: 'User Deleted', deletedUser: deleteUser})
-    } catch (error) {
-        res.status(500).send(error.message)
-        console.log(error.message)
-    }
-})
+        let user = await Presenter.findById(req.params.id);
 
-module.exports = router
+        if (!user) return res.status(404).json({
+            msg: 'User not found'
+        });
+
+        await Presenter.findByIdAndRemove(req.params.id);
+        res.json({ msg: 'User removed.' });
+    } catch (err) {
+        res.status(500).send(err.message)
+        console.log(err.message)
+    }
+});
+
+module.exports = router;

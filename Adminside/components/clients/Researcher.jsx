@@ -1,29 +1,57 @@
 import React from 'react';
 import axios from "axios";
+import Swal from "sweetalert2";
 
 function Researcher({ researcher, getResearchers, editResearcher }) {
-    async function deleteResearcher(){
-        if(window.confirm("Do you want to delete this researcher?")){
-            await axios.delete(`http://localhost:5000/researcher/delete/${researcher._id}`);
+    async function deleteResearcher() {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axios.delete(`http://localhost:5000/researcher/${researcher._id}`);
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+                getResearchers();
+            }
+        })
 
-            getResearchers;
-        }
+
     }
 
     return (
-        <div className="user">
-            {researcher.email && <h2 className="email">{researcher.email}</h2>}
-            {researcher.fname && (
-                <p className="text-1">{researcher.fname}</p>
-            )}
-            {researcher.lname && (
-                <p className="text-2">{researcher.lname}</p>
-            )}
-            {researcher.mobile && (
-                <p className="text-3">{researcher.mobile}</p>
-            )}
-            <button className="btn-edit" onClick={() => editResearcher(researcher)}>Edit</button>
-            <button className="btn-delete" onClick={deleteResearcher}>Delete</button>
+        <div className="card mb-3" style={{ width: 750, marginLeft: 80, marginTop: 30 }}>
+            <div className="card-body p-3">
+                {researcher.email && <h3 className="card-title">Email Address : {researcher.email}</h3>}
+                {researcher.firstName && (
+                    <p className="text-1">First Name : {researcher.firstName}</p>
+                )}
+                {researcher.lastName && (
+                    <p className="text-2">Last Name : {researcher.lastName}</p>
+                )}
+                {researcher.contactNumber && (
+                    <p className="text-3">Mobile Number : {researcher.contactNumber}</p>
+                )}
+                {researcher.username && (
+                    <p className="text-3">Username : {researcher.username}</p>
+                )}
+                {researcher.university && (
+                    <p className="text-3">University : {researcher.university}</p>
+                )}
+                {researcher.department && (
+                    <p className="text-3">Department : {researcher.department}</p>
+                )}
+                <button className="btn btn-outline-primary" onClick={() => editResearcher(researcher)} style={{ marginRight: 10 }}>Edit</button>
+                <button className="btn btn-outline-danger" onClick={deleteResearcher}>Delete</button>
+            </div>
         </div>
     );
 }

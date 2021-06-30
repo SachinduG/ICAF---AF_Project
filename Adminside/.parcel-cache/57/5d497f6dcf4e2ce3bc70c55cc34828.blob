@@ -1,0 +1,190 @@
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactstrap = require('reactstrap');
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\dashboard-components\\feeds\\feed.jsx";
+  const Feeds = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.Card, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.CardBody, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactstrap.CardTitle, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 17
+        }
+      }, "Feeds"), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "feed-widget",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        className: "list-style-none feed-body m-0 pb-3",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "feed-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "feed-icon bg-info",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "far fa-bell",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 64
+        }
+      })), " You have 4 pending tasks. ", /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: "ml-auto font-12 text-muted",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 128
+        }
+      }, "Just Now")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "feed-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "feed-icon bg-success",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "ti-server",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 67
+        }
+      })), " Server #1 overloaded.", /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: "ml-auto font-12 text-muted",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 124
+        }
+      }, "2 Hours ago")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "feed-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "feed-icon bg-warning",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "ti-shopping-cart",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 67
+        }
+      })), " New conte received.", /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: "ml-auto font-12 text-muted",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 129
+        }
+      }, "31 May")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        className: "feed-item",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 25
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "feed-icon bg-danger",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 29
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "ti-user",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 66
+        }
+      })), " New user registered.", /*#__PURE__*/_reactDefault.default.createElement("span", {
+        className: "ml-auto font-12 text-muted",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 120
+        }
+      }, "30 May"))))))
+    );
+  };
+  _c = Feeds;
+  exports.default = Feeds;
+  var _c;
+  $RefreshReg$(_c, "Feeds");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

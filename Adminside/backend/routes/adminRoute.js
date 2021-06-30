@@ -4,8 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // register
-
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         const { fname, lname, email, password, passwordVerify } = req.body;
 
@@ -14,7 +13,7 @@ router.post("/", async (req, res) => {
         if (!fname || !lname || !email || !password || !passwordVerify)
             return res
                 .status(400)
-                .json({ errorMessage: "Please enter all required fields." });
+                .json({ errorMessage: "Please enter all required fields.", });
 
         if (password.length < 6)
             return res.status(400).json({
@@ -36,6 +35,7 @@ router.post("/", async (req, res) => {
                 errorMessage: "Please enter the same password twice.",
             });
 
+        // make sure no account exists for this email
         const existingUser = await Admin.findOne({ email });
         if (existingUser)
             return res.status(400).json({
@@ -74,6 +74,7 @@ router.post("/", async (req, res) => {
                 httpOnly: true,
                 secure: true,
                 sameSite: "none",
+
             })
             .send();
     } catch (err) {
@@ -144,13 +145,13 @@ router.get("/logout", (req, res) => {
 router.get("/loggedIn", (req, res) => {
     try {
         const token = req.cookies.token;
-        if (!token) return res.json(null);
+        if (!token) return res.json(false);
 
-        const validatedUser = jwt.verify(token, process.env.JWT_SECRET);
+        jwt.verify(token, process.env.JWT_SECRET);
 
-        res.send(validatedUser.id);
+        res.send(true);
     } catch (err) {
-        res.json(null);
+        res.json(false);
     }
 });
 

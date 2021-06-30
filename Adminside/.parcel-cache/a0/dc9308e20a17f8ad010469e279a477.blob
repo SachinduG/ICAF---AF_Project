@@ -1,0 +1,24 @@
+.user {
+    margin: 1.5rem 0;
+}
+.user .title, .text-1 .description, .user .code {
+    margin-bottom: 1rem;
+}
+.user .code {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: var(--dark-color);
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+.user .btn-delete, .user .btn-edit {
+    margin-right: 1rem;
+}
+.user .btn-edit {
+    background: var(--primary-color);
+    color: var(--text-light-color);
+}
+.user .btn-delete {
+    background: var(--danger-color);
+    color: var(--text-light-color);
+}

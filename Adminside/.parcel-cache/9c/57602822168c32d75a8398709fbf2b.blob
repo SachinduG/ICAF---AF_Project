@@ -1,0 +1,90 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _Loading = require('./Loading');
+  var _LoadingDefault = _parcelHelpers.interopDefault(_Loading);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\home\\Widget.js";
+  // Import styling
+  // import '../styles/Widget.css';
+  class Widget extends _react.Component {
+    constructor(props) {
+      super(props);
+      // Create inline styles to make grid elements span multiple rows/columns
+      this.spanStyles = {};
+      if (props.colspan !== 1) {
+        this.spanStyles.gridColumn = `span ${props.colspan}`;
+      }
+      if (props.rowspan !== 1) {
+        this.spanStyles.gridRow = `span ${props.rowspan}`;
+      }
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: this.spanStyles,
+          className: "Widget",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "header",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 21
+          }
+        }, this.props.heading), this.props.loading ? /*#__PURE__*/_reactDefault.default.createElement(_LoadingDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 43
+          }
+        }) : ""), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "content",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 17
+          }
+        }, this.props.children))
+      );
+    }
+  }
+  // Provide default settings for when they aren't supplied
+  Widget.defaultProps = {
+    heading: "Unnamed Widget",
+    colspan: 1,
+    rowspan: 1
+  };
+  // Enforce the type of props to send to this component
+  Widget.propTypes = {
+    heading: _reactDefault.default.PropTypes.string,
+    colspan: _reactDefault.default.PropTypes.number,
+    rowspan: _reactDefault.default.PropTypes.number,
+    children: _reactDefault.default.PropTypes.element.isRequired
+  };
+  exports.default = Widget;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

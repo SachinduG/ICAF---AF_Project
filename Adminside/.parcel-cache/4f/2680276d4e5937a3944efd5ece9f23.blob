@@ -1,0 +1,143 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\Presenter.jsx";
+  function Presenter({presenter, getPresenters, editPresenter}) {
+    async function deletePresenter() {
+      _sweetalertDefault.default.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then(result => {
+        if (result.isConfirmed) {
+          _axiosDefault.default.delete(`http://localhost:5000/presenter/${presenter._id}`);
+          _sweetalertDefault.default.fire('Deleted!', 'Your file has been deleted.', 'success');
+        }
+      });
+      getPresenters();
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "card",
+        style: {
+          width: 750,
+          marginLeft: 80,
+          marginTop: 30
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "card-body",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 13
+        }
+      }, presenter.email && /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        className: "card-title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 37
+        }
+      }, "Email Address : ", presenter.email), presenter.firstName && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 21
+        }
+      }, "First Name : ", presenter.firstName), presenter.lastName && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-2",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 21
+        }
+      }, "Last Name : ", presenter.lastName), presenter.contactNumber && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 21
+        }
+      }, "Mobile Number : ", presenter.contactNumber), presenter.username && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 21
+        }
+      }, "Username : ", presenter.username), presenter.university && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 21
+        }
+      }, "University : ", presenter.university), presenter.department && /*#__PURE__*/_reactDefault.default.createElement("p", {
+        className: "text-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 21
+        }
+      }, "Department : ", presenter.department), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-primary",
+        onClick: () => editPresenter(presenter),
+        style: {
+          marginRight: 10
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 17
+        }
+      }, "Edit"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-outline-danger",
+        onClick: deletePresenter,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 17
+        }
+      }, "Delete")))
+    );
+  }
+  _c = Presenter;
+  exports.default = Presenter;
+  var _c;
+  $RefreshReg$(_c, "Presenter");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,284 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require('axios');
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\ResearcherEditor.jsx";
+  class ResearcherEditor extends _react.Component {
+    constructor(props) {
+      super(props);
+      this.onChangeFirstName = this.onChangeFirstName.bind(this);
+      this.onChangeLastName = this.onChangeLastName.bind(this);
+      this.onChangeEmailAddress = this.onChangeEmailAddress.bind(this);
+      this.onChangeMobileNumber = this.onChangeMobileNumber.bind(this);
+      this.onSubmit = this.onSubmit.bind(this);
+      this.state = {
+        fname: '',
+        lname: '',
+        email: '',
+        mobile: ''
+      };
+    }
+    componentDidMount() {
+      _axiosDefault.default.get('http://localhost:5000/researcher/' + this.props.match.params.id).then(response => {
+        this.setState({
+          fname: response.data.fname,
+          lname: response.data.lname,
+          email: response.data.email,
+          mobile: response.data.mobile
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+    onChangeFirstName(e) {
+      this.setState({
+        fname: e.target.value
+      });
+    }
+    onChangeLastName(e) {
+      this.setState({
+        lname: e.target.value
+      });
+    }
+    onChangeEmailAddress(e) {
+      this.setState({
+        email: e.target.value
+      });
+    }
+    onChangeMobileNumber(e) {
+      this.setState({
+        mobile: e.target.value
+      });
+    }
+    onSubmit(e) {
+      e.preventDefault();
+      const obj = {
+        fname: this.state.fname,
+        lname: this.state.lname,
+        email: this.state.email,
+        mobile: this.state.mobile
+      };
+      _axiosDefault.default.post('http://localhost:5000/researcher/update/' + this.props.match.params.id, obj).then(res => console.log(res.data));
+      alert('Edit Customer Successfully');
+      this.props.history.push('/');
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: {
+            marginTop: 20
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 79,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 21
+          }
+        }, "Update Researcher")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "container",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 81,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("form", {
+          onSubmit: this.onSubmit,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 82,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "form-group",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 84,
+            columnNumber: 25
+          }
+        }, "First Name:"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+          type: "text",
+          className: "form-control",
+          value: this.state.fname,
+          onChange: this.onChangeFirstName,
+          required: true,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 85,
+            columnNumber: 25
+          }
+        })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "form-group",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 93,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 94,
+            columnNumber: 25
+          }
+        }, "Last Name:"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+          type: "text",
+          className: "form-control",
+          value: this.state.lname,
+          onChange: this.onChangeLastName,
+          required: true,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 95,
+            columnNumber: 25
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "text-danger",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 101,
+            columnNumber: 25
+          }
+        }, this.state.LastNameError)), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "form-group",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 104,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 105,
+            columnNumber: 25
+          }
+        }, "Email Address:"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+          type: "email",
+          className: "form-control",
+          value: this.state.email,
+          onChange: this.onChangeEmailAddress,
+          required: true,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 106,
+            columnNumber: 25
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "text-danger",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 112,
+            columnNumber: 25
+          }
+        }, this.state.EmailAddressError)), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "form-group",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 115,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 116,
+            columnNumber: 25
+          }
+        }, "Mobile Number:"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+          type: "number",
+          className: "form-control",
+          value: this.state.mobile,
+          onChange: this.onChangeMobileNumber,
+          required: true,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 117,
+            columnNumber: 25
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "text-danger",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123,
+            columnNumber: 25
+          }
+        }, this.state.MobileNumberError)), /*#__PURE__*/_reactDefault.default.createElement("br", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 126,
+            columnNumber: 25
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "form-group",
+          style: {
+            marginLeft: 475,
+            marginTop: 30
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 128,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+          type: "submit",
+          value: "Update Researcher",
+          className: "btn btn-outline-success",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 129,
+            columnNumber: 29
+          }
+        })))))
+      );
+    }
+  }
+  exports.default = ResearcherEditor;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,293 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require("axios");
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _sweetalert = require("sweetalert2");
+  var _sweetalertDefault = _parcelHelpers.interopDefault(_sweetalert);
+  var _jsxFileName = "D:\\AF-ICAF\\Adminside\\components\\clients\\ResearcherEditor.jsx", _s = $RefreshSig$();
+  function ResearcherEditor({getResearchers, setResearcherEditorOpen, editResearcherData}) {
+    _s();
+    const [editFName, setEditFName] = _react.useState("");
+    const [editLName, setEditLName] = _react.useState("");
+    const [editEmail, setEditEmail] = _react.useState("");
+    const [editMobile, setEditMobile] = _react.useState("");
+    const mountedRef = _react.useRef(false);
+    // effect just for tracking mounted state
+    _react.useEffect(() => {
+      mountedRef.current = true;
+      return () => {
+        mountedRef.current = false;
+      };
+    }, []);
+    _react.useEffect(() => {
+      if (editResearcherData) {
+        setEditFName(editResearcherData.fname ? editResearcherData.fname : "");
+        setEditLName(editResearcherData.lname ? editResearcherData.lname : "");
+        setEditEmail(editResearcherData.email ? editResearcherData.email : "");
+        setEditMobile(editResearcherData.mobile ? editResearcherData.mobile : "");
+      }
+    }, [editResearcherData]);
+    async function saveResearcher(e) {
+      e.preventDefault();
+      const researcherData = {
+        fname: editFName ? editFName : undefined,
+        lname: editLName ? editLName : undefined,
+        email: editEmail ? editEmail : undefined,
+        mobile: editMobile ? editMobile : undefined
+      };
+      try {
+        if (!editResearcherData) await _axiosDefault.default.post(`http://localhost:5000/researcher/`, researcherData); else await _axiosDefault.default.put(`http://localhost:5000/researcher/${editResearcherData._id}`, researcherData);
+        await _sweetalertDefault.default.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'You successfully updated researcher!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      } catch (err) {
+        if (fname.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'First Name must be at least 3 characters!'
+          });
+        }
+        if (lname.length < 3) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Last Name must be at least 3 characters!'
+          });
+        }
+        if (mobile.length < 10) {
+          await _sweetalertDefault.default.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Mobile Number must be at least 10 characters!'
+          });
+        } else {
+          await _sweetalertDefault.default.file({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please update a'
+          });
+        }
+      }
+      getResearchers;
+      closeEditor();
+    }
+    function closeEditor() {
+      setResearcherEditorOpen(false);
+      setEditFName("");
+      setEditLName("");
+      setEditEmail("");
+      setEditMobile("");
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        style: {
+          marginTop: 20
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h3", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("center", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94,
+          columnNumber: 17
+        }
+      }, "Update Researcher")), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("form", {
+        onSubmit: saveResearcher,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98,
+          columnNumber: 17
+        }
+      }, "First Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-1",
+        className: "form-control",
+        type: "text",
+        value: editFName,
+        onChange: e => setEditFName(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110,
+          columnNumber: 17
+        }
+      }, "Last Name"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-2",
+        className: "form-control",
+        type: "text",
+        value: editLName,
+        onChange: e => setEditLName(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 123,
+          columnNumber: 17
+        }
+      }, "Email Address"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-3",
+        className: "form-control",
+        type: "email",
+        value: editEmail,
+        onChange: e => setEditEmail(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("label", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136,
+          columnNumber: 17
+        }
+      }, "Mobile Number"), /*#__PURE__*/_reactDefault.default.createElement("input", {
+        id: "editor-4",
+        className: "form-control",
+        type: "text",
+        value: editMobile,
+        onChange: e => setEditMobile(e.target.value),
+        required: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 137,
+          columnNumber: 17
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        style: {
+          marginLeft: 475,
+          marginTop: 30
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 147,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-success",
+        type: "submit",
+        style: {
+          marginRight: 10,
+          marginTop: 20
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 148,
+          columnNumber: 17
+        }
+      }, "Save"), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn-danger",
+        type: "button",
+        onClick: closeEditor,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 149,
+          columnNumber: 21
+        }
+      }, "Cancel")))))
+    );
+  }
+  _s(ResearcherEditor, "LhUOACnIVbwSDHZSZMiozPMhI6w=");
+  _c = ResearcherEditor;
+  exports.default = ResearcherEditor;
+  var _c;
+  $RefreshReg$(_c, "ResearcherEditor");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
