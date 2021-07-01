@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Button from '@material-ui/core/Button';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import { RegisterDataContext } from "../../context/RegisterFormContext";
 import Loading from "../../helpers/Loading";
 import { BASE_URL } from "../../config/config";
@@ -12,7 +13,6 @@ const PresenterForm = ({ title }) => {
 	const { material, setMaterial } = useContext(RegisterDataContext);
 	const allowedTypes = [
 		"application/pdf",
-		"application/x-zip-compressed",
 		"application/vnd.openxmlformats-officedocument.presentationml.presentation",
 		"application/vnd.ms-powerpoint",
 	];
@@ -91,7 +91,7 @@ const PresenterForm = ({ title }) => {
 				>
 					<div className="name-info">
 						<div className="first-name">
-							<label htmlFor="topic">Your Topic</label>
+							<label htmlFor="topic"> Topic</label>
 							<input
 								type="text"
 								name="topic"
@@ -105,17 +105,20 @@ const PresenterForm = ({ title }) => {
 							/>
 						</div>
 						<div className="last-name">
-							<label htmlFor="material">Upload your materials</label>
+							<label htmlFor="material">Upload your Documents</label>
 							<input
+								startIcon={<CloudUploadIcon />}
 								type="file"
-								accept=".pdf, .zip, .rar, .ppt, .pptx"
+								accept=".pdf,  .ppt, .pptx"
 								name="material"
 								id="material"
 								required
 								autoComplete="off"
 								maxLength="3"
 								onChange={fileChangeHandler}
+								
 							/>
+							<h4>*Upload only pdf and ppt versions of your documents </h4>
 						</div>
 					</div>
 					{getUserType() === "presenter" && (

@@ -53,10 +53,10 @@
 }
 
 .add-new {
-  background-color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
   border: 1px var(--secondary-accent-color) solid;
   margin-top: 200px;
-  width: 190px;
+  width: 185px;
 }
 
 .item-card .pay {
@@ -69,7 +69,13 @@
 .profile-avatar {
   font-size: 3.5rem;
   color: var(--secondary-accent-color);
-  margin-right: 1rem;
+  margin-right: 3rem;
+}
+.profile-img h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  color: rgb(240, 45, 10);
 }
 
 .profile-card {
@@ -83,7 +89,7 @@
   align-items: center;
   box-shadow: 0px 0px 20px 2px rgba(221, 8, 8, 0.1);
   border-radius: 10px;
-  background-image: url(../../assets/images/profile.jpg);
+  background-color: rgb(240, 227, 207);
 }
 
 .profile-card p {

@@ -1,63 +1,67 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { SiFacebook, SiInstagram, SiTwitter, SiYoutube } from "react-icons/si";
+
+import './Footer.css';
 
 import FooterLogo from "url:../../assets/images/favicon.png";
 
 const Footer = () => {
 	return (
-		<footer>
-			<div className="footer-main-content">
-				<div className="footer-content-left">
-					<img src={FooterLogo} alt="footer-logo" className="footer-logo" />
-					<div className="details-links">
-						<Link to="/blogs">Blogs</Link>
-						<Link to="/events">Events</Link>
-						<Link to="/publications">Resarches</Link>
-						<Link to="/about">About</Link>
-						<Link to="/contact">Contact</Link>
-					</div>
-				</div>
-				<div className="footer-content-right">
-					<div className="social-links">
-						<Link
-							to={{
-								pathname: "https://facebook.com",
-							}}
-							target="blank"
-						>
-							<SiFacebook />
-						</Link>
-						<Link
-							to={{
-								pathname: "https://instagram.com",
-							}}
-							target="blank"
-						>
-							<SiInstagram />
-						</Link>
-						<Link
-							to={{
-								pathname: "https://twitter.com",
-							}}
-							target="blank"
-						>
-							<SiTwitter />
-						</Link>
-						<Link
-							to={{
-								pathname: "https://youtube.com",
-							}}
-							target="blank"
-						>
-							<SiYoutube />
-						</Link>
-					</div>
-					<p>&copy; By INTIMIDATORS. All rights reserved</p>
-				</div>
-			</div>
-		</footer>
-	);
-};
+		<div className='footer-container'>
 
+<div className='footer-logo' color="gold">
+            <Link to='/' >
+              ICAF 
+              
+            </Link>
+          </div>
+      
+      <div className='footer-links'>
+        <div className='footer-link-wrapper'>
+          <div className='footer-link-items'>
+            
+            <h2><Link to="/blogs">Blogs</Link></h2>
+						
+						
+          </div>
+          
+        </div>
+        <div className='footer-link-wrapper'>
+          
+          <div className='footer-link-items'>
+            
+            <h2><Link to="/publications">Resarches</Link></h2>
+            
+          </div>
+        </div>
+
+		<div className='footer-link-wrapper'>
+          
+          <div className='footer-link-items'>
+            
+            <h2><Link to="/about">About</Link></h2>
+            
+          </div>
+        </div>
+
+		<div className='footer-link-wrapper'>
+          
+          <div className='footer-link-items'>
+            
+            <h2><Link to="/contact">Contact</Link></h2>
+            
+          </div>
+        </div>
+
+      </div>
+      <section className='social-media'>
+        
+          <center>
+          <small className='website-rights'>ICAF © 2021</small>
+		  </center>
+          
+      </section>
+    </div>
+  );
+}
 export default Footer;

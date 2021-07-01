@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer";
 
 import "./styles/Home.css";
 import LandingImg from "url:../../src/assets/images/a1.jpg";
-import PatternImg from "url:../../src/assets/images/pattern.png";
+
 
 const Home = () => {
 	document.title = "International Conference on Application Frameworks | 2021";

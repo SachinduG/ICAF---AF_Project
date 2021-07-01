@@ -1,6 +1,6 @@
 import React, { useState , useEffect} from "react";
 import { useParams } from "react-router-dom";
-import { MdCreditCard, MdLockOutline, MdDateRange } from "react-icons/md";
+
 import "../../pages/styles/payment.css";
 import { BASE_URL } from "../../config/config";
 import { getUserToken } from "../../auth/userAuth";
@@ -44,9 +44,9 @@ const payment = () => {
 	return (
 		<div>
 			<form className="cdForm" onSubmit={(e) => paymenthandle(e)}>
-				<h1 className="h1">Publication Payment</h1>
+				<h1 className="h1">Research Publication Payment</h1>
 				<div className="fee">
-					<h4>Submission Fee - LKR 800.00</h4>
+					<h4>Submission Fee - 10 $</h4>
 				</div>
 				<br />
 				<div className="card">
@@ -62,10 +62,11 @@ const payment = () => {
 						className="numberInput"
 						required
 					/>
-					<MdCreditCard className="cardIcon" />
+					
 					<br />
 					<label className="lables">Expiration Date</label>
-					<label className="cvc">CVC</label>
+					<label className="lables1">CVC</label>
+					
 					<br />
 					<input
 						type="text"
@@ -76,7 +77,8 @@ const payment = () => {
 						className="dateInput"
 						required
 					/>
-					<MdDateRange className="dateIcon" />
+					
+					
 					<input
 						type="number"
 						placeholder="cvc"
@@ -87,7 +89,7 @@ const payment = () => {
 						className="cvcInput"
 						required
 					/>
-					<MdLockOutline className="lockIcon" />
+					
 					<br />
 					<button
 						type="submit"

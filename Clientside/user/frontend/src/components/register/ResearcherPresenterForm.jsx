@@ -13,7 +13,6 @@ const PresenterForm = ({ title }) => {
 		useContext(RegisterDataContext);
 	const allowedTypes = [
 		"application/pdf",
-		"application/x-zip-compressed",
 		"application/vnd.openxmlformats-officedocument.presentationml.presentation",
 		"application/vnd.ms-powerpoint",
 	];
@@ -31,7 +30,7 @@ const PresenterForm = ({ title }) => {
 		} else {
 			setFile(null);
 			setError(
-				"Select valid type. (only pdf, presentation and zip files are allowed)"
+				"Select valid type. (only pdf, presentation  files are allowed)"
 			);
 		}
 	};
